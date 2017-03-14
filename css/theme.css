@@ -1,0 +1,43 @@
+body {
+	background-color: #FFFFFF;
+}
+#logo {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	background-color: #000000;
+}
+
+#logoOne {
+	background-color: #FFF234;
+}
+
+#logoTwo {
+	background-color: #AAA324;
+}
+
+#logoThree {
+	background-color: #BBB999;
+}
+
+#links, #link {
+	text-align: center;
+	font-size: 5em;
+	background-color: #BBB999;
+}
+
+a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+p {
+	text-align: center;
+	font-size: 5em;
+	margin: 0;
+}
+.img {
+	display: inline-block;
+	margin: auto;
+}
