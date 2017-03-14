@@ -31,7 +31,7 @@ body {
 
 #links, #link {
 	text-align: center;
-	font-size: 5em;
+	font-size: 1em;
 	background-color: #BBB999;
 }
 
@@ -42,7 +42,7 @@ a {
 
 p {
 	text-align: center;
-	font-size: 5em;
+	font-size: 1em;
 	margin: 0;
 }
 
