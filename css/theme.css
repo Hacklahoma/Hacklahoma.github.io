@@ -1,5 +1,6 @@
 body {
 	background-color: #FFFFFF;
+		min-width: 0px;
 }
 #logo {
 	position: absolute;
@@ -7,14 +8,21 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 	background-color: #000000;
+	min-width: 0px;
 }
 
 #logoOne {
 	background-color: #FFF234;
+	max-width: 100%;
+	height: auto;
+	width: auto\9;
 }
 
 #logoTwo {
 	background-color: #AAA324;
+	max-width: 100%;
+	height: auto;
+	width: auto\9;
 }
 
 #logoThree {
@@ -37,7 +45,13 @@ p {
 	font-size: 5em;
 	margin: 0;
 }
-.img {
+
+.image {
 	display: inline-block;
-	margin: auto;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9;
 }
