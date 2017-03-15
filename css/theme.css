@@ -4,29 +4,15 @@ body {
 }
 #logo {
 	position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 	background-color: #000000;
-	min-width: 0px;
-}
-
-#logoOne {
-	background-color: #FFF234;
-	max-width: 100%;
-	height: auto;
-	width: auto\9;
+	width: 80%;
 }
 
 #logoTwo {
 	background-color: #AAA324;
-	max-width: 100%;
-	height: auto;
-	width: auto\9;
-}
-
-#logoThree {
-	background-color: #BBB999;
 }
 
 #links, #link {
