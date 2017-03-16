@@ -70,12 +70,12 @@ html, body {
 	margin-top: 40px;
 }
 #landing h3:hover {
-	color: #FF0000;
+	color: #F80206;
 }
 
 #landing a {
 	text-decoration: none;
-	color: #BA0000;
+	color: #F80206;
 }
 #landing a:hover {
 	color:#FFFFFF;
