@@ -12,8 +12,8 @@
 html, body {
 	width: 100%;
 	height: 100%;
-	background-color: #000000;
-	color: #FFFFFF;
+	background-color: #FFFFFF;
+	color: #000000;
 	font-family: "Futura Light";
 }
 
@@ -64,7 +64,7 @@ html, body {
 
 @media screen and (max-width: 768px) {
   	#landing img {
-    	max-height: 100%;
+		max-height: 100%;
 		width: 100%;
 	}
 	#landing h1 {
