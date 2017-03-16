@@ -28,12 +28,19 @@ html, body {
 	display: -moz-box;
 	display: -ms-flexbox;
 	display: -webkit-flex;
+
+	/*!*/
 	display: flex;
 	-webkit-flex-flow: column nowrap;
+	/*!*/
+
 	flex-flow: column nowrap;
 	flex: 1;
+
+	/*!*/
 	justify-content: center;
 	align-items: center;
+	/*!*/
 }
 
 #landing img {
@@ -51,8 +58,6 @@ html, body {
 #landing p {
 
 }
-
-
 
 @media screen and (max-width: 768px) {
   	#landing img {
