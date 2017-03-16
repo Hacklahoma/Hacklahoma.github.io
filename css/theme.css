@@ -22,8 +22,11 @@ html, body {
 }
 
 #landing .contents {
+	/*!important*/
 	height: 100%;
 	width: 100%;
+	/*!*/
+
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
