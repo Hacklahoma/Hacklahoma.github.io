@@ -63,6 +63,7 @@ html, body {
 #landing h2 {
 	text-align: center;
 	text-transform: uppercase;
+	font-size: 2.0em;
 }
 
 #landing h3 {
