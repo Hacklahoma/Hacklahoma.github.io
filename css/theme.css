@@ -53,18 +53,6 @@ html, body {
 }
 
 
-@media screen and (max-height: 736px) {
-  	#landing img {
-    	max-height: 100%;
-		width: 100%;
-	}
-  	#landing h1 {
-    	font-size: 2.5em;
-	}
-  	#landing h3 {
-    	font-size: 1em;
-	}
-}
 
 @media screen and (max-width: 768px) {
   	#landing img {
