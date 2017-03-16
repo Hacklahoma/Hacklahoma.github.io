@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "Futura Medium";
+    font-family: "Futura Light";
     src: url("fonts/Futura Light.otf");
 }
 
@@ -14,7 +14,7 @@ html, body {
 	height: 100%;
 	background-color: #000000;
 	color: #FFFFFF;
-	font-family: "Futura Medium";
+	font-family: "Futura Light";
 }
 
 #landing {
@@ -38,7 +38,7 @@ html, body {
 
 #landing img {
 	height: auto;
-	width: 45%;
+	width: 750px;
 }
 
  #landing h1 {
@@ -53,9 +53,23 @@ html, body {
 }
 
 
-@media screen and (max-height: 700px) {
+@media screen and (max-height: 736px) {
   	#landing img {
-    	max-height: 40%;
+    	max-height: 100%;
+		width: 100%;
+	}
+  	#landing h1 {
+    	font-size: 2.5em;
+	}
+  	#landing h3 {
+    	font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 200px) {
+  	#landing img {
+    	max-height: 100%;
+		width: 70%;
 	}
   	#landing h1 {
     	font-size: 2.5em;
