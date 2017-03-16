@@ -67,12 +67,28 @@ html, body {
 
 #landing h3 {
 	text-align: center;
-	margin-top: 30px;
+	margin-top: 40px;
+}
+#landing h3:hover {
+	color: #FF0000;
 }
 
-p {
-	text-align: center;
+#landing a {
+	text-decoration: none;
+	color: #BA0000;
+}
+#landing a:hover {
+	color:#FFFFFF;
+}
+
+#landing p {
 	margin-top: 100px;
+	color: #FFFFFF;
+	font-size: .80em;
+}
+
+#OU, #comingSoon, #logo, #updates, #joinCom, #sponsor, #whatIs, #email {
+	visibility: hidden;
 }
 
 @media screen and (max-width: 768px) {
