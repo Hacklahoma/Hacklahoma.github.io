@@ -66,15 +66,12 @@ html, body {
 	}
 }
 
-@media screen and (max-width: 200px) {
+@media screen and (max-width: 768px) {
   	#landing img {
     	max-height: 100%;
-		width: 70%;
+		width: 100%;
 	}
-  	#landing h1 {
-    	font-size: 2.5em;
-	}
-  	#landing h3 {
-    	font-size: 1em;
+	#landing h1 {
+		font-size: 2.5em;
 	}
 }
