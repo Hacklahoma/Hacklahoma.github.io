@@ -67,8 +67,12 @@ html, body {
 
 #landing h3 {
 	text-align: center;
-	text-transform: uppercase;
 	margin-top: 30px;
+}
+
+p {
+	text-align: center;
+	margin-top: 100px;
 }
 
 @media screen and (max-width: 768px) {
