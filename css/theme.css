@@ -110,7 +110,7 @@ html, body {
 
 @media screen and (max-height: 413px) {
 	#landing .contents {
-		height: 175%;
+		height: 200%;
 	}
   	#landing img {
 		max-height: 100%;
