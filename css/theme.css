@@ -83,7 +83,7 @@ html, body {
 }
 
 #landing p {
-	margin-top: 100px;
+	margin-top: 80px;
 	color: #FFFFFF;
 	font-size: .80em;
 }
@@ -92,7 +92,26 @@ html, body {
 	visibility: hidden;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+  	#landing img {
+		max-height: 100%;
+		width: 100%;
+	}
+	#landing h1 {
+		font-size: 2.5em;
+	}
+	#landing h2 {
+		font-size: 1.5em;
+	}
+	#landing h3 {
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-height: 413px) {
+	#landing .contents {
+		height: 175%;
+	}
   	#landing img {
 		max-height: 100%;
 		width: 100%;
