@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<<<<<<< HEAD
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Hacklahoma</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/hyperlinkhover.js"></script>
+</head>
+
+
+<body>
+
+    <nav id="navbar">
+        <div class="navbar-header">
+            <button type="button" id="navbar-toggle"></button>
+            <a>Hacklahoma</a>
+        </div>
+    </nav>
+
+    <header id="header">
+    </header>
+
+    <section id="about">
+        <a href="google.com" class="noUnderline">Google test.</a>
+        <a href="google.com" class="noUnderline">Google test 2.</a>
+        <a href="google.com" class="neverUnderline"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"></img></a>
+        <a href="fredthemonkey.com" class="noUnderline">Not Google.</a>
+    </section>
+
+    <section id="register">
+    </section>
+
+    <section id="faq">
+    </section>
+
+    <section id="sponsors">
+    </section>
+
+    <section id="contact">
+    </section>
+
+</body>
+=======
+<!-- 
+	  The main page for Hacklahoma.
+	  
+      index.html
+      HacklahomaWebsite
+      
+      Created by Tyler Walker on 2017-06-01.
+      Copyright 2017 Tyler Walker and Hacklahoma. All rights reserved.
+      
+      TODO: Fix positioning issues (navbar, info button, footer)
+      TODO: Fix fonts on safari
+ -->
+<html>
+	<head>
+		<!-- Charset attribute for the webpage. -->
+		<meta charset="UTF-8" />
+		
+		<!-- Title of page. -->
+		<title>HACKLAHOMA</title>
+		
+		<!-- Description for search engines. -->
+		<meta name="description" content="" /> <!-- TODO: CONTENT DESC HERE -->
+		
+		<!-- Link the page to the style sheet. -->
+		<link rel="stylesheet" href="styles/main.css" />
+		
+		<!-- Install JQuery from Microsoft CDN. -->
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"> </script>
+	</head>
+	
+	<body onload="determineContentPaneLocation(); determineFooterLocation()">
+		<div id="header">
+			<!-- Displays the logo on the screen. -->
+			<img src="images/official_logo.png" class="logo" />
+			
+			<!-- Displays Hacklahoma under the logo. -->
+			<img src="images/title.png" class="logo" width="750" height="148"/>
+			
+			<!-- The dates that Hacklahoma takes place. -->
+			<p class="dates">March 3rd - 4th, 2018</p>
+			
+			<!-- The location that Hacklahoma takes place. -->
+			<p class=location>The University of Oklahoma</p>
+			
+			<!-- Button to sign up for more information. -->
+			<button class="infoButton"><span>Interested? </span></button> <!-- TODO: Set up information page. -->
+			
+			<!-- The nav bar. -->
+			<nav id="navBar" class="absolute">
+				<a href="#about" id="aboutLink">About</a>
+				<a href="#faq" id="faqLink">FAQ</a>
+				<a href="#agenda" id="agendaLink">Agenda</a>
+				<a href="#sponsors" id="sponsorsLink">Sponsors</a>
+				<a href="#judges" id="judgesLink">Judges</a>
+			</nav>
+		</div>
+		
+		<!-- The content pane of the main page. -->
+		<div id="contentPane">
+			<!-- TODO: Populate content. -->
+			
+			<!-- The About section. -->
+			<div id="about">
+				<h1 class="anchor" style="text-align: center;">About</h1>
+				<div id="explain">
+					<h1>What is Hacklahoma?</h1>
+					<h2>Hacklahoma is a <span class="avenirMedium">hackathon</span> soon to happen at the University of Oklahoma.</h2>
+					<h1>... well what is a Hackathon?</h1>
+					<h2>
+						A hackathon is best described as an <span class="avenirMedium">invention marathon</span>. Anyone who has an interest
+						in technology can attend a hackathon to <span class="avenirMedium">learn, build, and share</span> their creations over
+						the course of a weekend in a relaxed and welcoming atomosphere. <span class="avenirMedium">You don't have to be a 
+						programmer</span> and you certainly <span class="avenirMedium">don't have to be majoring in computer science</span>. - MLH<br>
+						
+						<ul>
+							<li>Hacking as in "life hack," <span class="avenirMedium">not the exploitation kind</span></li>
+							<li><span class="avenirMedium">A career fair with a twist</span>; mentors and engineers from companies, talks, etc. (bring your resume!)</li>
+							<li>For <span class="avenirMedium">beginners</span> and <span class="avenirMedium">pros</span></li>
+							<li>Very good <span class="avenirMedium">real-life experience</span></li>
+							<li>Great way to <span class="avenirMedium">network</span></li>
+							<li>Meet people from <span class="avenirMedium">all around the nation</span></li>
+							<li><span class="avenirMedium">Resume builder</span>, especially for companies like Google, Microsoft, etc.</li>
+							<li>Companies like <span class="avenirMedium">GroupMe</span> (now owned by Microsoft) <span class="avenirMedium">started at Hackathons</span></li>
+						</ul>
+					</h2>
+				</div>
+				<div id="missionStatement">
+					<h1>Mission Statement</h1>
+					<h2>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec dui aliquam, ornare ligula gravida, scelerisque nunc. Nam condimentum bibendum sapien.
+						Etiam et viverra nulla. Phasellus porttitor augue interdum, mattis nisi ac, finibus magna. Nullam non mattis ex, et feugiat lorem. Curabitur quis massa non elit
+						ultrices fermentum eget nec nisi. Nulla nisl tortor, tempus vel viverra sit amet, aliquam eu nibh. Suspendisse justo eros, laoreet maximus aliquet vitae, viverra
+						sed nisl. Donec finibus turpis ut pellentesque tempus. Curabitur maximus blandit dolor, vitae mollis augue molestie nec. Phasellus volutpat posuere tellus non convallis.
+						Aenean vitae mollis velit. Sed luctus nisl a risus lacinia, eget aliquam leo gravida. Fusce erat velit, aliquet eu odio et, viverra mollis tortor. Sed vitae vulputate turpis.
+					</h2>
+				</div>
+			</div>
+			
+			<!-- The FAQ section. -->
+			<div id="faq">
+				<h1 class="anchor" style="text-align: center;">FAQ</h1>
+				<h2>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec dui aliquam, ornare ligula gravida, scelerisque nunc. Nam condimentum bibendum sapien.
+					Etiam et viverra nulla. Phasellus porttitor augue interdum, mattis nisi ac, finibus magna. Nullam non mattis ex, et feugiat lorem. Curabitur quis massa non elit
+					ultrices fermentum eget nec nisi. Nulla nisl tortor, tempus vel viverra sit amet, aliquam eu nibh. Suspendisse justo eros, laoreet maximus aliquet vitae, viverra
+					sed nisl. Donec finibus turpis ut pellentesque tempus. Curabitur maximus blandit dolor, vitae mollis augue molestie nec. Phasellus volutpat posuere tellus non convallis.
+					Aenean vitae mollis velit. Sed luctus nisl a risus lacinia, eget aliquam leo gravida. Fusce erat velit, aliquet eu odio et, viverra mollis tortor. Sed vitae vulputate turpis.
+				</h2>
+			</div>
+			
+			<!-- The Agenda section. -->
+			<div id="agenda">
+				<h1 class="anchor" style="text-align: center;">Agenda</h1>
+				<h2>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec dui aliquam, ornare ligula gravida, scelerisque nunc. Nam condimentum bibendum sapien.
+					Etiam et viverra nulla. Phasellus porttitor augue interdum, mattis nisi ac, finibus magna. Nullam non mattis ex, et feugiat lorem. Curabitur quis massa non elit
+					ultrices fermentum eget nec nisi. Nulla nisl tortor, tempus vel viverra sit amet, aliquam eu nibh. Suspendisse justo eros, laoreet maximus aliquet vitae, viverra
+					sed nisl. Donec finibus turpis ut pellentesque tempus. Curabitur maximus blandit dolor, vitae mollis augue molestie nec. Phasellus volutpat posuere tellus non convallis.
+					Aenean vitae mollis velit. Sed luctus nisl a risus lacinia, eget aliquam leo gravida. Fusce erat velit, aliquet eu odio et, viverra mollis tortor. Sed vitae vulputate turpis.
+				</h2>
+			</div>
+			
+			<!-- The Sponsors section. -->
+			<div id="sponsors">
+				<h1 class="anchor" style="text-align: center">Sponsors</h1>
+				<h2>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec dui aliquam, ornare ligula gravida, scelerisque nunc. Nam condimentum bibendum sapien.
+					Etiam et viverra nulla. Phasellus porttitor augue interdum, mattis nisi ac, finibus magna. Nullam non mattis ex, et feugiat lorem. Curabitur quis massa non elit
+				</h2>
+				<div class="sponsorsLogos">
+					<h2>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec dui aliquam, ornare ligula gravida, scelerisque nunc. Nam condimentum bibendum sapien.
+						Etiam et viverra nulla. Phasellus porttitor augue interdum, mattis nisi ac, finibus magna. Nullam non mattis ex, et feugiat lorem. Curabitur quis massa non elit
+					</h2>
+				</div>
+			</div>
+			
+			<!-- The Judges section. -->
+			<div id="judges">
+				<h1 class="anchor" style="text-align: center;">Judges</h1>
+				<h2>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec dui aliquam, ornare ligula gravida, scelerisque nunc. Nam condimentum bibendum sapien.
+					Etiam et viverra nulla. Phasellus porttitor augue interdum, mattis nisi ac, finibus magna. Nullam non mattis ex, et feugiat lorem. Curabitur quis massa non elit
+					ultrices fermentum eget nec nisi. Nulla nisl tortor, tempus vel viverra sit amet, aliquam eu nibh. Suspendisse justo eros, laoreet maximus aliquet vitae, viverra
+					sed nisl. Donec finibus turpis ut pellentesque tempus. Curabitur maximus blandit dolor, vitae mollis augue molestie nec. Phasellus volutpat posuere tellus non convallis.
+					Aenean vitae mollis velit. Sed luctus nisl a risus lacinia, eget aliquam leo gravida. Fusce erat velit, aliquet eu odio et, viverra mollis tortor. Sed vitae vulputate turpis. 
+				</h2>
+			</div>
+		</div>
+		
+		<!-- The footer of the main page. -->
+		<div id="footer">
+			<!-- <img src="images/ou.png" class="ouLogo" />
+			<img src="images/mlh.png" class="mlhLogo" /> -->
+			<img src="images/gear.png" class="gear" />
+			<p style="font-size: 22px;">team@hacklahoma.org</p>
+			
+			<div class="socialMedia">
+				<a href="https://www.facebook.com/Hacklahoma/"> <img src="images/facebook.jpg" /> </a>
+				<a href="https://twitter.com/hacklahoma"> <img src="images/twitter.jpg" /> </a>
+				<a href="https://www.instagram.com/hacklahoma/"> <img src="images/instagram.jpg" /> </a>
+			</div>
+		</div>
+		
+		<!-- Link this page to the scripts that will run on the site. -->
+		<script src="scripts/scripts.js"></script>
+	</body>
+</html>
+>>>>>>> f9e614892edc7bf9ad0425afde1626bacbef6c93

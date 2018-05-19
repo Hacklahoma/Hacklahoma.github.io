@@ -1,0 +1,129 @@
+/*
+ * The style sheet for the info page.
+ */
+
+h3 {
+    font-family: "Futura";
+	font-size: 1.75em;
+    font-weight: 300;
+    letter-spacing: .06em;
+	margin-top: .4em;
+	margin-bottom: .4em;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+    width: 50%;
+    vertical-align: baseline;
+}
+
+#slackAndWifi {
+	display: table;
+	width: 25em;
+	height: auto;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+}
+
+#slackInfo {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	width: 20%;
+}
+
+#devpostInfo {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	width: 20%;
+}
+
+#wifiInfo {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	width: 60%;
+}
+
+#scheduleInfo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	margin-bottom: 5em;
+	height: auto;
+	overflow: hidden;
+	text-align: center;
+	font-size: 1.25em;
+}
+
+#locationInfo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 2em;
+	height: auto;
+	width: 100%;
+	background-color: #FFFFFF;
+	color: #000000;
+	text-align: center;
+	box-shadow: 0 0 3em #000000;
+	-moz-box-shadow: 0 0 3em #000000;
+	-webkit-box-shadow: 0 0 3em #000000;
+}
+
+.googleMapsIframe {
+	position: relative;
+	padding-bottom: 60%;
+	padding-top: 1em;
+	height: 0;
+	overflow: hidden;
+}
+.googleMapsIframe iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#floorPlansInfo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	margin-bottom: 5em;
+	height: auto;
+	overflow: hidden;
+	text-align: center;
+}
+
+#resourcesInfo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 2em;
+	height: auto;
+	width: 100%;
+	background-color: #FFFFFF;
+	color: #000000;
+	text-align: center;
+	box-shadow: 0 0 3em #000000;
+	-moz-box-shadow: 0 0 3em #000000;
+	-webkit-box-shadow: 0 0 3em #000000;
+}
+
+#faqInfo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	margin-bottom: 5em;
+	height: auto;
+	overflow: hidden;
+	text-align: center;
+}

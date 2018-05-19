@@ -1,0 +1,28 @@
+<html>
+<script type="text/javascript" src="scripts/jquery.min.js"> </script>
+<script src="scripts/snap.svg.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        var s = Snap("#svg");
+        var circles = s.group();
+        var circle = s.circle(10, 10, 10).appendTo(circles);
+        var smallCircle = s.circle(10, 10, 5).attr({fill: "#f00"}).appendTo(circles);
+        circle.animate({r: 2}, 1000);
+        var circlesArray = circles.children();
+        console.log(circlesArray);
+        for (var i = 0; i < circlesArray.length; i++) {
+            circlesArray[i].animate({fill: "#0f0"}, 1000);
+        }
+        var lineOne = s.line(20, 20, 60, 60).attr({stroke: "#000", strokeWidth: 1, "stroke-dasharray": 56.56, "stroke-dashoffset": 56.56});
+        console.log(lineOne);
+        console.log($(window).width());
+        Snap.animate(56.56, 0, function( value ) {
+                lineOne.attr({ "stroke-dashoffset": value});
+        }, 800);
+    });
+</script>
+<body>
+    <svg id="svg"></svg>
+</body>
+</html>

@@ -1,0 +1,45 @@
+@media (max-width: 1000px) {
+	#scheduleInfo {
+		width: 95%;
+	}
+	
+	.fc-time span {
+		font-size: 0.8em;
+	}
+	
+	.fc-title {
+		font-size: 0.7em;
+	}
+	
+	.fc-event {
+		line-height: 1;
+	}
+	
+	.small-text {
+		letter-spacing: -1px;
+	}
+
+	@media (max-height: 800px) {
+		.socialMedia {
+			margin-top: -4em;
+		}
+		
+		#slackAndWifi {
+			margin-bottom: 3em;
+		}
+	}
+}
+
+@media (max-width: 750px) {
+	.anchor {
+		font-size: 3em;
+	}
+	
+	.small-text {
+		letter-spacing: -1.3px;
+	}
+	
+	#navBar a {
+		font-size: 0.5em;
+	}
+}

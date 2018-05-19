@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<!--
+			  /\_/\
+			 ( o.o )
+		      > ^ <
+	  The info page for Hacklahoma.
+-->
+<html lang="en">
+	<head>
+		<!-- Charset attribute for the webpage. -->
+		<meta charset="UTF-8" />
+
+		<!-- Title of page. -->
+		<title >HACKLAHOMA</title>
+
+        <!-- Favicons etc -->
+        <link rel="apple-touch-icon" size="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" size="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" size="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="images/manifest.json">
+        <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#841617">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <meta name="msapplication-config" content="images/browserconfig.xml">
+        <meta name="theme-color" content="#333333">
+
+		<!-- Description for search engines. -->
+		<meta name="description" content="The first hackathon to ever take place in Oklahoma. Come create with us March 3-4 2018." />
+
+		<!-- Viewport width for mobile devices. -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+
+        <!-- Facebook pixel stuff. -->
+        <meta property="og:title" content="HACKLAHOMA">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://hacklahoma.org/images/facebookCardImage.png">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:url" content="https://hacklahoma.org">
+        <meta property="og:description" content="The first hackathon to ever take place in Oklahoma. Come create with us March 3-4 2018.">
+
+        <!-- Twitter pixel stuff. -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@hacklahoma">
+        <meta name="twitter:title" content="HACKLAHOMA">
+        <meta name="twitter:description" content="The first hackathon to ever take place in Oklahoma. Come create with us March 3-4 2018.">
+        <meta name="twitter:image" content="https://hacklahoma.org/images/twitterCardImage.png">
+        <meta property="og:image:type" content="image/png">
+        <meta name="twitter:image:width" content="512">
+        <meta name="twitter:image:width" content="512">
+
+		<!-- Facebook Pixel Code -->
+		<script>
+		!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+		n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+		document,'script','https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '1555823664723200'); // Insert your pixel ID here.
+		fbq('track', 'PageView');
+		</script>
+		<noscript><img height="1" width="1" style="display:none"
+		src="https://www.facebook.com/tr?id=1555823664723200&ev=PageView&noscript=1"
+		/></noscript>
+		<!-- DO NOT MODIFY -->
+		<!-- End Facebook Pixel Code -->
+
+		<!-- FB Pixel that tracks when people visit our website -->
+		<script>
+		fbq('track', 'ViewContent');
+		</script>
+
+
+		<!-- Style sheets. -->
+		<link rel="stylesheet" type="text/css" href="styles/main.css" />
+        <link rel="stylesheet" type="text/css" href="styles/mobile.css" />
+        <link rel="stylesheet" type="text/css" href="styles/menu-icon.css" />
+        <link rel="stylesheet" type="text/css" href="styles/info.css" />
+        <link rel="stylesheet" type="text/css" href="styles/bootstrap-carousel.min.css" />
+        <link rel="stylesheet" type="text/css" href="styles/fullcalendar.min.css" />
+        <link rel="stylesheet" type="text/css" href="styles/infoMobile.css" />
+
+		<!-- Scripts. -->
+		<script type="text/javascript" src="scripts/jquery.min.js"> </script>
+        <script src="scripts/snap.svg-min.js"></script>
+        <script src="scripts/hyperlinkhover.js"></script>
+        <script src="scripts/tracesInfo.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<!-- Pattern styling. -->
+        <svg id="traces"></svg>
+
+        <!-- Where all page content goes. (honestly can't remember why this is here but website looks wonky without it) -->
+		<div id="holder" style="height: 100%; min-height: 100%; position: relative;">
+			<!-- Header of the page. -->
+			<header id="header">
+				<!-- Logo for the header/landing page. -->
+                <div class="header-info">
+				    <img src="images/hacklahoma_artisticlogo_transparent.svg" class="logo" id="logo" alt="Hacklahoma Logo" />
+                </div>
+
+                <!-- Information about Hacklahoma on landing page. -->
+                <div class="header-info">
+    	            <img src="images/gear-white.png" alt="Hacklahoma letter icon" style="margin=top: 0; max-width: 100%; height: auto">
+
+    				<p style="font-size: 32px; margin-top: 2em; margin-bottom: 3em;">Welcome to Hacklahoma!</p>
+
+    				<!-- Social media logos. -->
+    				<div class="socialMedia">
+						<a class="neverUnderline" target='_blank' href="https://www.facebook.com/Hacklahoma/"><img src="images/facebook.png" class="socMedLogo" alt="Facebook" /></a><br />
+						<a class="neverUnderline" target='_blank' href="https://twitter.com/hacklahoma"><img src="images/twitter.png" class="socMedLogo" alt="Twitter" /></a><br />
+						<a class="neverUnderline" target='_blank' href="https://www.instagram.com/hacklahoma/"><img src="images/instagram.png" class="socMedLogo" alt="Instagram" /></a>
+					</div>
+
+					<div id="slackAndWifi">
+						<a id="slackInfo" class="neverUnderline" target='_blank' href="https://hacklahoma18.slack.com" alt="Slack">
+							<svg width="50" height="50" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><path d="M165.964 15.838c-3.89-11.975-16.752-18.528-28.725-14.636-11.975 3.89-18.528 16.752-14.636 28.725l58.947 181.365c4.048 11.187 16.132 17.473 27.732 14.135 12.1-3.483 19.475-16.334 15.614-28.217L165.964 15.838" fill="#DFA22F"/><path d="M74.626 45.516C70.734 33.542 57.873 26.989 45.9 30.879 33.924 34.77 27.37 47.631 31.263 59.606l58.948 181.366c4.047 11.186 16.132 17.473 27.732 14.132 12.099-3.481 19.474-16.332 15.613-28.217L74.626 45.516" fill="#3CB187"/><path d="M240.162 166.045c11.975-3.89 18.526-16.75 14.636-28.726-3.89-11.973-16.752-18.527-28.725-14.636L44.708 181.632c-11.187 4.046-17.473 16.13-14.135 27.73 3.483 12.099 16.334 19.475 28.217 15.614l181.372-58.93" fill="#CE1E5B"/><path d="M82.508 217.27l43.347-14.084-14.086-43.352-43.35 14.09 14.089 43.347" fill="#392538"/><path d="M173.847 187.591c16.388-5.323 31.62-10.273 43.348-14.084l-14.088-43.36-43.35 14.09 14.09 43.354" fill="#BB242A"/><path d="M210.484 74.706c11.974-3.89 18.527-16.751 14.637-28.727-3.89-11.973-16.752-18.526-28.727-14.636L15.028 90.293C3.842 94.337-2.445 106.422.896 118.022c3.481 12.098 16.332 19.474 28.217 15.613l181.371-58.93" fill="#72C5CD"/><path d="M52.822 125.933c11.805-3.836 27.025-8.782 43.354-14.086-5.323-16.39-10.273-31.622-14.084-43.352l-43.36 14.092 14.09 43.346" fill="#248C73"/><path d="M144.16 96.256l43.356-14.088a546179.21 546179.21 0 0 0-14.089-43.36L130.07 52.9l14.09 43.356" fill="#62803A"/></svg>
+						</a>
+
+						<a id="devpostInfo" class="neverUnderline" target="_blank" href="https://hacklahoma18.devpost.com" alt="Devpost">
+							<svg width="60" height="60" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 280.3 242.7" enable-background="new 0 0 280.3 242.7" xml:space="preserve"><g id="XMLID_126_"><polygon id="XMLID_3_" fill="#003E54" points="70.1,242.7 0,121.4 70.1,0 210.2,0 280.3,121.4 210.2,242.7  "/><path id="XMLID_2_" fill="#FFFFFF" d="M132.7,195h-44V47.7h46.1c42.1,0,73.3,19.8,73.3,73.7C208.1,173.2,170.6,195,132.7,195z    M133.7,76.3h-15.6v90.1h14.5c30.9,0,45.1-18.1,45.1-45.1C177.8,91.3,164.9,76.3,133.7,76.3z"/></g></svg>
+						</a>
+
+						<div id="wifiInfo">
+							<img src="images/wifi-icon-1.png" style="padding-left: 1em; float: left;" />
+							<p style="font-size: 1em;">SSID: OUWIFI</p>
+							<p style="font-size: 1em;">Password: PASSWORD</p>
+						</div>
+					</div>
+                </div>
+			</header>
+
+			<!-- The nav bar. -->
+	        <div id="navWrapper" class="menuClosed">
+				<nav id="navBar" class="absolute">
+					<a href="#scheduleInfo" id="scheduleInfoLink" class="neverUnderline">Schedule</a>
+					<a href="#locationInfo" id="locationInfoLink" class="neverUnderline">Location</a>
+					<a href="#floorPlansInfo" id="floorPlansInfoLink" class="neverUnderline">Floor Plans</a>
+					<a href="#resourcesInfo" id="resourcesInfoLink" class="neverUnderline">Resources</a>
+					<a href="#faqInfo" id="faqInfoLink" class="neverUnderline">FAQ</a>
+					<a href="#footer" id="footerLink" class="neverUnderline">Contact</a>
+				</nav>
+			</div>
+
+            <input id="menu-trigger" class="menu-trigger" type="checkbox" autocomplete="off"/>
+            <label for="menu-trigger" id="menu-trigger-label">
+                <div class="menu-icon">
+                    <section class="menu-box">
+                        <div class="menu-icon hamburger" data-icon="hamburger">
+                            <span class="first"></span>
+                            <span class="second"></span>
+                            <span class="third"></span>
+                        </div>
+                    </section>
+                </div>
+            </label>
+
+            <script src="../scripts/mobileMenu.js"></script>
+
+			<!-- The main content. -->
+			<div id="contentPane">
+				<!-- The Schedule section. -->
+				<section id="scheduleInfo">
+					<h1 class="anchor" style="text-align: center;">Schedule</h1>
+					<div id="calendar" class="fc fc-unthemed fc-ltr">
+						<div class="fc-toolbar fc-header-toolbar">
+							<div class="fc-left"></div><div class="fc-right"></div>
+							<div class="fc-center">
+								<h2>Mar 3 – 4, 2018</h2>
+							</div><div class="fc-clear"></div>
+						</div>
+						<div class="fc-view-container" style="">
+							<div class="fc-view fc-agenda-view" style="">
+								<table class="">
+									<thead class="fc-head">
+										<tr>
+											<td class="fc-head-container fc-widget-header">
+											<div class="fc-row fc-widget-header">
+												<table class="">
+													<thead>
+														<tr>
+															<th class="fc-axis fc-widget-header" style="width: 1px;"></th><th class="fc-day-header fc-widget-header fc-sat fc-future" data-date="2018-03-03"><span>Sat 3/3</span></th><th class="fc-day-header fc-widget-header fc-sun fc-future" data-date="2018-03-04"><span>Sun 3/4</span></th>
+														</tr>
+													</thead>
+												</table>
+											</div></td>
+										</tr>
+									</thead>
+									<tbody class="fc-body">
+										<tr>
+											<td class="fc-widget-content">
+											<div class="fc-scroller fc-time-grid-container" style="overflow-x: hidden; overflow-y: scroll; height: 829px;">
+												<div class="fc-time-grid fc-unselectable">
+													<div class="fc-bg">
+														<table class="">
+															<tbody>
+																<tr>
+																	<td class="fc-axis fc-widget-content" style="width: 1px;"></td><td class="fc-day fc-widget-content fc-sat fc-future" data-date="2018-03-03"></td><td class="fc-day fc-widget-content fc-sun fc-future" data-date="2018-03-04"></td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<div class="fc-slats">
+														<table class="">
+															<tbody>
+																<tr data-time="08:00:00">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"><span>8am</span></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="08:10:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="08:20:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="08:30:00">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"><span>8:30am</span></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="08:40:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="08:50:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="09:00:00">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"><span>9am</span></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="09:10:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="09:20:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="09:30:00">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"><span>9:30am</span></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="09:40:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="09:50:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="10:00:00">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"><span>10am</span></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="10:10:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="10:20:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="10:30:00">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"><span>10:30am</span></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="10:40:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="10:50:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="11:00:00">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"><span>11am</span></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="11:10:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="11:20:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="11:30:00">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"><span>11:30am</span></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="11:40:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="11:50:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="12:00:00">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"><span>12pm</span></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="12:10:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="12:20:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="12:30:00">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"><span>12:30pm</span></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="12:40:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="12:50:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="13:00:00">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"><span>1pm</span></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="13:10:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="13:20:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="13:30:00">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"><span>1:30pm</span></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="13:40:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="13:50:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="14:00:00">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"><span>2pm</span></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="14:10:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="14:20:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="14:30:00">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"><span>2:30pm</span></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="14:40:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="14:50:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="15:00:00">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"><span>3pm</span></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="15:10:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="15:20:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="15:30:00">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"><span>3:30pm</span></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="15:40:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="15:50:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="16:00:00">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"><span>4pm</span></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="16:10:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="16:20:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="16:30:00">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"><span>4:30pm</span></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="16:40:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="16:50:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="17:00:00">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"><span>5pm</span></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="17:10:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="17:20:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="17:30:00">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"><span>5:30pm</span></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="17:40:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="17:50:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="18:00:00">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"><span>6pm</span></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="18:10:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="18:20:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="18:30:00">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"><span>6:30pm</span></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="18:40:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="18:50:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="19:00:00">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"><span>7pm</span></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="19:10:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="19:20:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="19:30:00">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"><span>7:30pm</span></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="19:40:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="19:50:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="20:00:00">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"><span>8pm</span></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="20:10:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="20:20:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="20:30:00">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"><span>8:30pm</span></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="20:40:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="20:50:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="21:00:00">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"><span>9pm</span></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="21:10:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="21:20:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="21:30:00">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"><span>9:30pm</span></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="21:40:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="21:50:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="22:00:00">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"><span>10pm</span></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="22:10:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="22:20:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="22:30:00">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"><span>10:30pm</span></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="22:40:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="22:50:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="23:00:00">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"><span>11pm</span></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="23:10:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="23:20:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="23:30:00">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"><span>11:30pm</span></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="23:40:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+																<tr data-time="23:50:00" class="fc-minor">
+																	<td class="fc-axis fc-time fc-widget-content" style="width: 1px;"></td><td class="fc-widget-content"></td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+													<hr class="fc-divider fc-widget-header" style="display:none">
+													<div class="fc-content-skeleton">
+														<table>
+															<tbody>
+																<tr>
+																	<td class="fc-axis" style="width: 1px;"></td><td>
+																	<div class="fc-content-col">
+																		<div class="fc-event-container fc-helper-container"></div>
+																		<div class="fc-event-container">
+																			<a class="fc-time-grid-event fc-v-event fc-event fc-start fc-end" style="background-color: rgb(145, 41, 41); border-color: rgb(145, 41, 41); top: 90px; bottom: -180px; z-index: 1; left: 0%; right: 0%;">
+																			<div class="fc-content">
+																				<div class="fc-time" data-start="8:30" data-full="8:30 AM - 9:00 AM">
+																					<span>8:30 - 9:00</span>
+																				</div>
+																				<div class="fc-title">
+																					Sponsor Check-In/Booth Setup Opens
+																				</div>
+																			</div><div class="fc-bg"></div></a><a class="fc-time-grid-event fc-v-event fc-event fc-start fc-end" style="background-color: rgb(145, 41, 41); border-color: rgb(145, 41, 41); top: 180px; bottom: -720px; z-index: 1; left: 0%; right: 50%;">
+																			<div class="fc-content">
+																				<div class="fc-time" data-start="9:00" data-full="9:00 AM - 12:00 PM">
+																					<span>9:00 - 12:00</span>
+																				</div>
+																				<div class="fc-title">
+																					Attendee Check-In
+																				</div>
+																			</div><div class="fc-bg"></div></a><a class="fc-time-grid-event fc-v-event fc-event fc-start fc-end" style="background-color: rgb(145, 41, 41); border-color: rgb(145, 41, 41); top: 630px; bottom: -720px; z-index: 2; left: 50%; right: 0%;">
+																			<div class="fc-content">
+																				<div class="fc-time" data-start="11:30" data-full="11:30 AM - 12:00 PM">
+																					<span>11:30 - 12:00</span>
+																				</div>
+																				<div class="fc-title">
+																					Opening Ceremony
+																				</div>
+																			</div><div class="fc-bg"></div></a><a class="fc-time-grid-event fc-v-event fc-event fc-start fc-end" style="background-color: rgb(145, 41, 41); border-color: rgb(145, 41, 41); top: 720px; bottom: -810px; z-index: 1; left: 0%; right: 50%;">
+																			<div class="fc-content">
+																				<div class="fc-time" data-start="12:00" data-full="12:00 PM - 12:30 PM">
+																					<span>12:00 - 12:30</span>
+																				</div>
+																				<div class="fc-title">
+																					Hacking Begins/Check-In Closes
+																				</div>
+																			</div><div class="fc-bg"></div></a><a class="fc-time-grid-event fc-v-event fc-event fc-start fc-end" style="background-color: rgb(145, 41, 41); border-color: rgb(145, 41, 41); top: 735px; bottom: -825px; z-index: 2; left: 50%; right: 0%;">
+																			<div class="fc-content">
+																				<div class="fc-time" data-start="12:05" data-full="12:05 PM - 12:35 PM">
+																					<span>12:05 - 12:35</span>
+																				</div>
+																				<div class="fc-title">
+																					Vitech Challenge and Tech Talk in Workshop Room A
+																				</div>
+																			</div><div class="fc-bg"></div></a><a class="fc-time-grid-event fc-v-event fc-event fc-start fc-end" style="background-color: rgb(145, 41, 41); border-color: rgb(145, 41, 41); top: 810px; bottom: -900px; z-index: 1; left: 0%; right: 50%;">
+																			<div class="fc-content">
+																				<div class="fc-time" data-start="12:30" data-full="12:30 PM - 1:00 PM">
+																					<span>12:30 - 1:00</span>
+																				</div>
+																				<div class="fc-title">
+																					Team Forming in Activity Room
+																				</div>
+																			</div><div class="fc-bg"></div></a><a class="fc-time-grid-event fc-v-event fc-event fc-start fc-end" style="background-color: rgb(145, 41, 41); border-color: rgb(145, 41, 41); top: 900px; bottom: -1080px; z-index: 1; left: 0%; right: 0%;">
+																			<div class="fc-content">
+																				<div class="fc-time" data-start="1:00" data-full="1:00 PM - 2:00 PM">
+																					<span>1:00 - 2:00</span>
+																				</div>
+																				<div class="fc-title">
+																					Lunch
+																				</div>
+																			</div><div class="fc-bg"></div></a><a class="fc-time-grid-event fc-v-event fc-event fc-start fc-end" style="background-color: rgb(145, 41, 41); border-color: rgb(145, 41, 41); top: 1080px; bottom: -1170px; z-index: 1; left: 0%; right: 0%;">
+																			<div class="fc-content">
+																				<div class="fc-time" data-start="2:00" data-full="2:00 PM - 2:30 PM">
+																					<span>2:00 - 2:30</span>
+																				</div>
+																				<div class="fc-title">
+																					Idea Brainstorming Session in Activity Room
+																				</div>
+																			</div><div class="fc-bg"></div></a><a class="fc-time-grid-event fc-v-event fc-event fc-start fc-end" style="background-color: rgb(145, 41, 41); border-color: rgb(145, 41, 41); top: 1260px; bottom: -1350px; z-index: 1; left: 0%; right: 50%;">
+																			<div class="fc-content">
+																				<div class="fc-time" data-start="3:00" data-full="3:00 PM - 3:30 PM">
+																					<span>3:00 - 3:30</span>
+																				</div>
+																				<div class="fc-title">
+																					Git Workshop in Workshop Room A
+																				</div>
+																			</div><div class="fc-bg"></div></a><a class="fc-time-grid-event fc-v-event fc-event fc-start fc-end" style="background-color: rgb(145, 41, 41); border-color: rgb(145, 41, 41); top: 1260px; bottom: -1350px; z-index: 2; left: 50%; right: 0%;">
+																			<div class="fc-content">
+																				<div class="fc-time" data-start="3:00" data-full="3:00 PM - 3:30 PM">
+																					<span>3:00 - 3:30</span>
+																				</div>
+																				<div class="fc-title small-text">
+																					Entrepreneurship/
+																					<br>
+																					How to Turn Your Hack Into a Startup in Workshop Room B
+																				</div>
+																			</div><div class="fc-bg"></div></a><a class="fc-time-grid-event fc-v-event fc-event fc-start fc-end" style="background-color: rgb(145, 41, 41); border-color: rgb(145, 41, 41); top: 1350px; bottom: -1440px; z-index: 1; left: 0%; right: 0%;">
+																			<div class="fc-content">
+																				<div class="fc-time" data-start="3:30" data-full="3:30 PM - 4:00 PM">
+																					<span>3:30 - 4:00</span>
+																				</div>
+																				<div class="fc-title">
+																					Peer Feedback on Ideas in Activity Room
+																				</div>
+																			</div><div class="fc-bg"></div></a><a class="fc-time-grid-event fc-v-event fc-event fc-start fc-end" style="background-color: rgb(145, 41, 41); border-color: rgb(145, 41, 41); top: 1440px; bottom: -1530px; z-index: 1; left: 0%; right: 50%;">
+																			<div class="fc-content">
+																				<div class="fc-time" data-start="4:00" data-full="4:00 PM - 4:30 PM">
+																					<span>4:00 - 4:30</span>
+																				</div>
+																				<div class="fc-title">
+																					!Light HTML/CSS Workshop in Workshop Room A
+																				</div>
+																			</div><div class="fc-bg"></div></a><a class="fc-time-grid-event fc-v-event fc-event fc-start fc-end" style="background-color: rgb(145, 41, 41); border-color: rgb(145, 41, 41); top: 1440px; bottom: -1530px; z-index: 2; left: 50%; right: 0%;">
+																			<div class="fc-content">
+																				<div class="fc-time" data-start="4:00" data-full="4:00 PM - 4:30 PM">
+																					<span>4:00 - 4:30</span>
+																				</div>
+																				<div class="fc-title">
+																					Technical Interview Prep in Workshop Room B
+																				</div>
+																			</div><div class="fc-bg"></div></a><a class="fc-time-grid-event fc-v-event fc-event fc-start fc-end" style="background-color: rgb(145, 41, 41); border-color: rgb(145, 41, 41); top: 1620px; bottom: -1710px; z-index: 1; left: 0%; right: 50%;">
+																			<div class="fc-content">
+																				<div class="fc-time" data-start="5:00" data-full="5:00 PM - 5:30 PM">
+																					<span>5:00 - 5:30</span>
+																				</div>
+																				<div class="fc-title small-text">
+																					How to Demo and Why You Should/Slideshow Karaoke Workshop in Workshop Room A
+																				</div>
+																			</div><div class="fc-bg"></div></a><a class="fc-time-grid-event fc-v-event fc-event fc-start fc-end" style="background-color: rgb(145, 41, 41); border-color: rgb(145, 41, 41); top: 1620px; bottom: -1710px; z-index: 2; left: 50%; right: 0%;">
+																			<div class="fc-content">
+																				<div class="fc-time" data-start="5:00" data-full="5:00 PM - 5:30 PM">
+																					<span>5:00 - 5:30</span>
+																				</div>
+																				<div class="fc-title small-text">
+																					How to Prepare For a Full Time Job in Software Development
+																					<br>
+																					in Workshop Room B
+																				</div>
+																			</div><div class="fc-bg"></div></a><a class="fc-time-grid-event fc-v-event fc-event fc-start fc-end" style="background-color: rgb(145, 41, 41); border-color: rgb(145, 41, 41); top: 1980px; bottom: -2160px; z-index: 1; left: 0%; right: 0%;">
+																			<div class="fc-content">
+																				<div class="fc-time" data-start="7:00" data-full="7:00 PM - 8:00 PM">
+																					<span>7:00 - 8:00</span>
+																				</div>
+																				<div class="fc-title">
+																					Dinner
+																				</div>
+																			</div><div class="fc-bg"></div></a><a class="fc-time-grid-event fc-v-event fc-event fc-start fc-end" style="background-color: rgb(145, 41, 41); border-color: rgb(145, 41, 41); top: 2070px; bottom: -2160px; z-index: 1; left: 0%; right: 0%;">
+																			<div class="fc-content">
+																				<div class="fc-time" data-start="7:30" data-full="7:30 PM - 8:00 PM">
+																					<span>7:30 - 8:00</span>
+																				</div>
+																				<div class="fc-title">
+																					Evening Yoga in Activity Room
+																				</div>
+																			</div><div class="fc-bg"></div></a><a class="fc-time-grid-event fc-v-event fc-event fc-start fc-end" style="background-color: rgb(145, 41, 41); border-color: rgb(145, 41, 41); top: 2160px; bottom: -2250px; z-index: 1; left: 0%; right: 0%;">
+																			<div class="fc-content">
+																				<div class="fc-time" data-start="8:00" data-full="8:00 PM - 8:30 PM">
+																					<span>8:00 - 8:30</span>
+																				</div>
+																				<div class="fc-title">
+																					HQ Trivia with Vitech in Workshop Room A
+																				</div>
+																			</div><div class="fc-bg"></div></a><a class="fc-time-grid-event fc-v-event fc-event fc-start fc-end" style="background-color: rgb(145, 41, 41); border-color: rgb(145, 41, 41); top: 2250px; bottom: -2340px; z-index: 1; left: 0%; right: 0%;">
+																			<div class="fc-content">
+																				<div class="fc-time" data-start="8:30" data-full="8:30 PM - 9:00 PM">
+																					<span>8:30 - 9:00</span>
+																				</div>
+																				<div class="fc-title">
+																					MLH Cup Stacking in Activity Room
+																				</div>
+																			</div><div class="fc-bg"></div></a><a class="fc-time-grid-event fc-v-event fc-event fc-start fc-end" style="background-color: rgb(145, 41, 41); border-color: rgb(145, 41, 41); top: 2520px; bottom: -2700px; z-index: 1; left: 0%; right: 0%;">
+																			<div class="fc-content">
+																				<div class="fc-time" data-start="10:00" data-full="10:00 PM - 11:00 PM">
+																					<span>10:00 - 11:00</span>
+																				</div>
+																				<div class="fc-title">
+																					Game Night in Activity Room
+																				</div>
+																			</div><div class="fc-bg"></div></a>
+																		</div><div class="fc-highlight-container"></div><div class="fc-bgevent-container"></div><div class="fc-business-container"></div>
+																	</div></td><td>
+																	<div class="fc-content-col">
+																		<div class="fc-event-container fc-helper-container"></div>
+																		<div class="fc-event-container">
+																			<a class="fc-time-grid-event fc-v-event fc-event fc-start fc-end" style="background-color: rgb(145, 41, 41); border-color: rgb(145, 41, 41); top: 0px; bottom: -180px; z-index: 1; left: 0%; right: 0%;">
+																			<div class="fc-content">
+																				<div class="fc-time" data-start="8:00" data-full="8:00 AM - 9:00 AM">
+																					<span>8:00 - 9:00</span>
+																				</div>
+																				<div class="fc-title">
+																					Breakfast
+																				</div>
+																			</div><div class="fc-bg"></div></a><a class="fc-time-grid-event fc-v-event fc-event fc-start fc-end" style="background-color: rgb(145, 41, 41); border-color: rgb(145, 41, 41); top: 180px; bottom: -720px; z-index: 1; left: 0%; right: 0%;">
+																			<div class="fc-content">
+																				<div class="fc-time" data-start="9:00" data-full="9:00 AM - 12:00 PM">
+																					<span>9:00 - 12:00</span>
+																				</div>
+																				<div class="fc-title">
+																					FINISH HACKING
+																				</div>
+																			</div><div class="fc-bg"></div></a><a class="fc-time-grid-event fc-v-event fc-event fc-start fc-end" style="background-color: rgb(145, 41, 41); border-color: rgb(145, 41, 41); top: 720px; bottom: -900px; z-index: 1; left: 0%; right: 50%;">
+																			<div class="fc-content">
+																				<div class="fc-time" data-start="12:00" data-full="12:00 PM - 1:00 PM">
+																					<span>12:00 - 1:00</span>
+																				</div>
+																				<div class="fc-title">
+																					Lunch
+																				</div>
+																			</div><div class="fc-bg"></div></a><a class="fc-time-grid-event fc-v-event fc-event fc-start fc-end" style="background-color: rgb(145, 41, 41); border-color: rgb(145, 41, 41); top: 720px; bottom: -810px; z-index: 2; left: 50%; right: 0%;">
+																			<div class="fc-content">
+																				<div class="fc-time" data-start="12:00" data-full="12:00 PM - 12:30 PM">
+																					<span>12:00 - 12:30</span>
+																				</div>
+																				<div class="fc-title">
+																					HACKING ENDS (submit to Devpost by 12PM)
+																				</div>
+																			</div><div class="fc-bg"></div></a><a class="fc-time-grid-event fc-v-event fc-event fc-start fc-end" style="background-color: rgb(145, 41, 41); border-color: rgb(145, 41, 41); top: 900px; bottom: -1080px; z-index: 1; left: 0%; right: 0%;">
+																			<div class="fc-content">
+																				<div class="fc-time" data-start="1:00" data-full="1:00 PM - 2:00 PM">
+																					<span>1:00 - 2:00</span>
+																				</div>
+																				<div class="fc-title">
+																					Judging/Expo
+																				</div>
+																			</div><div class="fc-bg"></div></a><a class="fc-time-grid-event fc-v-event fc-event fc-start fc-end" style="background-color: rgb(145, 41, 41); border-color: rgb(145, 41, 41); top: 1080px; bottom: -1215px; z-index: 1; left: 0%; right: 0%;">
+																			<div class="fc-content">
+																				<div class="fc-time" data-start="2:00" data-full="2:00 PM - 2:45 PM">
+																					<span>2:00 - 2:45</span>
+																				</div>
+																				<div class="fc-title">
+																					Closing Ceremony
+																				</div>
+																			</div><div class="fc-bg"></div></a><a class="fc-time-grid-event fc-v-event fc-event fc-start fc-end" style="background-color: rgb(145, 41, 41); border-color: rgb(145, 41, 41); top: 1215px; bottom: -1305px; z-index: 1; left: 0%; right: 0%;">
+																			<div class="fc-content">
+																				<div class="fc-time" data-start="2:45" data-full="2:45 PM - 3:15 PM">
+																					<span>2:45 - 3:15</span>
+																				</div>
+																				<div class="fc-title">
+																					HACKLAHOMA 2018 ENDS
+																				</div>
+																			</div><div class="fc-bg"></div></a>
+																		</div><div class="fc-highlight-container"></div><div class="fc-bgevent-container"></div><div class="fc-business-container"></div>
+																	</div></td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+											</div></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- The Location section. -->
+				<section id="locationInfo">
+					<h1 class="anchor" style="text-align: center; margin: auto;">Location</h1>
+					<div style="width: 65%; margin-left: auto; margin-right: auto;">
+						<h3>Devon Energy Hall</h3>
+						<p>110 West Boyd Street Norman, OK 73019</p>
+						<div class="googleMapsIframe">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3259.8269510118616!2d-97.44402318467694!3d35.21077916323586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b269d4244ae647%3A0xee193280b8b016ad!2sDevon+Energy+Hall%2C+Norman%2C+OK+73019!5e0!3m2!1sen!2sus!4v1516570006552" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div><br />
+
+						<h3>Rawl Engineering Practice Facility</h3>
+						<p>850 S Jenkins Ave Norman, OK 73019</p>
+						<div class="googleMapsIframe">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3259.849187715513!2d-97.44387308462876!3d35.21022533030686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b269d43a187b11%3A0xaea09d6edb568022!2sExxonMobil+Lawrence+G.+Rawl+Engineering+Practice+Facility%2C+850+S+Jenkins+Ave%2C+Norman%2C+OK+73019!5e0!3m2!1sen!2sus!4v1519873235921" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</section>
+
+				<!-- The Floor Plans section. -->
+				<section id="floorPlansInfo">
+					<h1 class="anchor" style="text-align: center; margin: auto;">Floor Plans</h1>
+					<div id="floorPlans" class="carousel slide" data-ride="carousel" data-pause="hover">
+						<!-- Indicators -->
+						<ul class="carousel-indicators">
+							<li data-target="#floorPlans" data-slide-to="0" class="active"></li>
+							<li data-target="#floorPlans" data-slide-to="1"></li>
+							<li data-target="#floorPlans" data-slide-to="2"></li>
+							<li data-target="#floorPlans" data-slide-to="3"></li>
+							<li data-target="#floorPlans" data-slide-to="4"></li>
+							<li data-target="#floorPlans" data-slide-to="5"></li>
+						</ul>
+
+						<!-- The slideshow -->
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="images/floor 1.png" alt="First Floor" width="1280" height="720">
+							</div>
+							<div class="carousel-item">
+								<img src="images/floor 2.png" alt="Second Floor"  width="1280" height="720">
+							</div>
+							<div class="carousel-item">
+								<img src="images/floor 3.png" alt="Third Floor" width="1280" height="720">
+							</div>
+							<div class="carousel-item">
+								<img src="images/floor 4.png" alt="Fourth Floor" width="1280" height="720">
+							</div>
+							<div class="carousel-item">
+								<img src="images/floor 5.png" alt="Fifth Floor" width="1280" height="720">
+							</div>
+							<div class="carousel-item">
+								<img src="images/repf.png" alt="REPF" width="1280" height="720">
+							</div>
+						</div>
+
+						<!-- Left and right controls -->
+						<a id="prevArrow" class="carousel-control-prev" href="#floorPlans" data-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</a>
+						<a id="nextArrow" class="carousel-control-next" href="#floorPlans" data-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</a>
+					</div>
+				</section>
+
+				<!-- The Arrival and Parking section. -->
+				<section id="resourcesInfo">
+					<h1 class="anchor" style="text-align: center;">Resources</h1>
+					<p style="text-align: center; font-size: 30px">
+						<div id="hardware" style="width: 65%; margin-left: auto; margin-right: auto; font-size: 2em;">
+							<p>See <a href="https://hacklahoma18.devpost.com/" class="neverUnderline">the Hacklahoma Devpost</a> for challenges and prizes.</p>
+							<div id="hardware-left">
+								<h2>APIs, Software, etc.</h2>
+	                            <p><a href="https://account.wolfram.com/redeem/hacklahomaW12018" class="neverUnderline">Wolfram|One</a></p>
+	                            <p><a href="https://v3v10.vitechinc.com/hacklahoma/" class="neverUnderline">Vitech Dataset</a></p>
+	                            <p><a href="http://www.domain.com/mlh/index.mas?utm_source=Direct" class="neverUnderline">Domain.com</a></p>
+	                            <p>$100 AWS Credit (Check your email)</p>
+		                    </div>
+		                    <div id="hardware-right">
+		                        <h2>Hardware</h2>
+								<table>
+								    <tr><td>3D printers (Prints must take no longer than 1.5 hours)</td></tr>
+								    <tr><td>8 Amazon Echo</td></tr>
+								    <tr><td>3 Samsung Gear VR</td></tr>
+								    <tr><td>6 Oculus Rifts</td></tr>
+								    <tr><td>1 Amazon Fire Phone</td></tr>
+								    <tr><td>6 Arduino 10</td></tr>
+								    <tr><td>6 Base Shield</td></tr>
+								    <tr><td>6 DragonBoard 410c</td></tr>
+								    <tr><td>1 LinkSprite 7" Touchscreen Monitor and keyboard</td></tr>
+								    <tr><td>1 Grove Starter Kit</td></tr>
+								    <tr><td>1 Intel Starter Kit</td></tr>
+								    <tr><td>5 Leap Motion</td></tr>
+								    <tr><td>1 Muse Headband</td></tr>
+								    <tr><td>6 Myo Armband</td></tr>
+								    <tr><td>4 Pebble Time</td></tr>
+								    <tr><td>2 Alienware Laptop</td></tr>
+								    <tr><td>2 Dell XPS 13 Laptop</td></tr>
+								</table>
+		                    </div>
+						</div>
+					</p>
+				</section>
+
+				<!-- The FAQ section. -->
+				<section id="faqInfo">
+					<h1 class="anchor" style="text-align: center; margin: auto;">FAQ</h1>
+					<div id="faqContent">
+                       <div id="faqItem">
+							<h2>Do I need a team in order to participate?</h2>
+							<h3 style="font-size: 1.1em">
+								Nope! You can always go solo if that's your style, otherwise you are allowed to have up to four people at the
+								maximum. We will have team formation sessions in the future, which we'll announce on our social media and email!
+							</h3>
+						</div>
+						<div id="faqItem">
+							<h2>Can I start working before Hacklahoma starts?</h2>
+							<h3 style="font-size: 1.1em">
+								No, hackers are not allowed to work on their projects before Hacklahoma's official hacking period. You are, however,
+								allowed to come up with ideas, plan, and prepare!
+							</h3>
+						</div>
+						<div id="faqItem">
+							<h2>What should I bring?</h2>
+							<h3 style="font-size: 1.1em">
+								Bring your school ID for registration! We also recommend bringing laptops, any chargers, cell phones, a pillow, a sleeping bag, toiletries, an extra set of
+								clothes, and a refillable water bottle. You could also bring an extension cord or additional hardware
+								(which will need to be approved) for your hack just in case.
+							</h3>
+						</div>
+						<div id="faqItem">
+							<h2>What should I not bring?</h2>
+							<h3 style="font-size: 1.1em">
+								Any weapons, drugs, alcohol, and anything illegal are strictly prohibited. If you're not sure about bringing
+								something, please ask us about it in advance!
+							</h3>
+						</div>
+						<div id="faqItem">
+							<h2>Will you be offering travel reimbursement?</h2>
+							<h3 style="font-size: 1.1em">
+								Yes, we are offering a <u>limited</u> amount of travel reimbursement of up to $25 a person! Carpools of 4 will be able to receive up to $100.
+								To be eligible for reimbursement, hackers need to submit a project on DevPost and be present at the hackathon.
+							</h3>
+						</div>
+                        <div id="faqItem">
+							<h2>Where will I sleep?</h2>
+							<h3 style="font-size: 1.1em">
+                                We'll have a dedicated nap room during the event!
+                            </h3>
+						</div>
+						<div id="faqItem">
+							<h2>Where will I park?</h2>
+							<h3 style="font-size: 1.1em">
+								Click <a href="https://www.google.com/maps/d/viewer?mid=1mKRBR-mSlaId0mzKxDYRovgzPIjB25Rf&ll=35.20848343877381%2C-97.43958950000001&z=17" class="neverUnderline" target="_blank" style="color: #FFFFFF;">here</a>
+								for a map of where you are allowed to park on campus.
+							</h3>
+						</div>
+						<div id="faqItem">
+							<h2>Any other rules?</h2>
+							<h3 style="font-size: 1.1em">
+								Everyone is required to follow the
+								<a target='_blank' href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" class="neverUnderline" style="color: #FFFFFF;">
+									MLH Code of Conduct</a>
+                                and the
+                                <a target='_blank' href="https://www.ou.edu/studentconduct/policies.html" class="neverUnderline" style="color: #FFFFFF;">
+									OU Student Conduct</a>.
+							</h3>
+						</div>
+						<div id="faqItem">
+							<h2>I didn't find my question...</h2>
+							<h3 style="font-size: 1.1em">
+								Don't worry! You can email us your inquiries at
+								<a href="mailto:team@hacklahoma.org" class="neverUnderline" style="color: #FFFFFF">team@hacklahoma.org</a>
+								and we will get back to you as soon as possible.
+							</h3>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<!-- The footer. -->
+			<footer id="footer">
+				<p style="margin-top: 20px">Organized by the OU Student Chapter ACM ❤</p>
+
+				<p style="font-size: 18px;"><a href="mailto:team@hacklahoma.org" class="neverUnderline" style="color: #333333;">team@hacklahoma.org</a></p>
+
+				<p style="font-size: 16px;"><a target='_blank' href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" class="neverUnderline" style="color: #333333;">MLH Code of Conduct</a></p><br />
+			</footer>
+		</div>
+
+		<!-- Scripts that require access to DOM. -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="scripts/scriptsInfo.js"></script>
+		<script src="scripts/moment.min.js"></script>
+		<!-- <script src="scripts/fullcalendar.min.js"></script>
+  		<script src="scripts/schedule.js"></script> -->
+
+  		<style type="text/css">
+			.fc-axis
+			{
+			   display:none !important;
+			}
+		</style>
+
+		<!-- MLH Trust Badge -->
+		<a target='_blank' id="mlh-trust-badge" class="neverUnderline" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=white" target="_blank">
+			<img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%">
+		</a>
+	</body>
+</html>

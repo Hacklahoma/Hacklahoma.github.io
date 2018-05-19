@@ -1,0 +1,162 @@
+/* Use with main.css
+ * Just includes some additional rules for small displays. */
+
+# changed to 1100 to cover 1080p displays in portrait
+@media (max-width: 1100px) {
+    .logo {
+        max-width: 80vw;
+        width: 350px;
+        max-height: 350px;
+        margin-top: -1em;
+        margin-bottom: -1em;
+    }
+
+    .header-info {
+        width: 100%;
+    }
+
+    .header-info h1 {
+        font-size: 8vw;
+    }
+
+    .header-info p {
+        font-size: 4vw;
+    }
+
+    .infoButton {
+    	margin-top: 1em !important;
+    	margin-bottom: 0 !important;
+    }
+
+    /*#title {
+    	margin-bottom: -0.4em;
+    }*/
+
+    .socialMedia {
+    	margin-top: 1em;
+    	margin-bottom: 4em;
+    }
+
+    .sponsorLogo {
+       flex: 0 0 auto;
+       margin: 2em;
+       max-width: 40vh;
+    }
+}
+
+ /* Settings for mobile (less than or 750px wide) */
+ @media (max-width: 750px) {
+     #menu-trigger-label {
+         display: block !important;
+     }
+
+     .logo {
+        margin-bottom: 0;
+     }
+
+     .header-info {
+         width: 100%;
+         display: block;
+     }
+
+     #navWrapper {
+         text-align: left;
+         height: 100%;
+         width: 150px;
+         top: 0;
+         right: auto;
+         position: fixed !important;
+         font-size: 1.8em;
+     }
+
+     .menuClosed {
+         left: -150px !important;
+     }
+
+     #navWrapper a {
+         display: block;
+     }
+
+     #navBar {
+         text-align: left;
+         height: 100vh;
+         width: 150px;
+         min-width: 150px;
+         padding-top: 48px;
+     }
+
+     #navBar a {
+         text-align: left;
+     }
+
+     .dates {
+     	font-size: 8vw;
+     }
+
+     .location {
+     	font-size: 6vw;
+     }
+
+     #embeddedmap {
+         width: 90%;
+         height: 300px;
+     }
+
+     .notmobile {
+         display: none;
+     }
+
+     #about {
+         width: calc(100% - 4em);
+     }
+
+     #faqItem {
+     	flex: 0 0 calc(100% - 4em);
+     }
+
+     #agenda {
+         width: calc(100% - 2em);
+         margin: 1em;
+         padding: 0;
+     }
+
+     #agenda div {
+     	flex: 0 0 100%;
+     }
+
+     .sponsorLogo {
+        flex: 0 0 80% !important;
+     	margin: 2em 0;
+     	max-width: 100%;
+     }
+
+     .sponsorLogo img {
+         max-width: 100%;
+     }
+
+     #judges {
+         width: calc(100% - 4em);
+         margin: 2em;
+         padding: 0;
+     }
+
+     #mlh-trust-badge {
+     	right: 1vw !important;
+     }
+
+     .socialMedia {
+     	right: 3vw !important;
+     }
+
+     #ntlogo a {
+     	margin: 2em 0;
+     }
+
+     #cplogo a {
+     	margin: 2em 0;
+     }
+
+     #pcilogo a {
+     	margin: 2em 0;
+     }
+}
