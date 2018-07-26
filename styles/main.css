@@ -22,6 +22,7 @@ body {
   width: 100%;
   margin: 0;
   background-color: white;
+  font-family: "Avenir";
 }
 
 h1 {
@@ -31,8 +32,11 @@ h1 {
 }
 
 h3 {
-  font-family: "Avenir";
   font-size: 2em;
+}
+
+h5 {
+  font-size: 1.4em;
 }
 
 .row {
@@ -64,12 +68,17 @@ h3 {
 }
 
 .navbar {
+  position: fixed;
   width: 100%;
   background-color: #a9d9bc;
   color: #a97c50;
   display: flex;
   justify-content: space-between;
   /*box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);*/
+}
+
+.navbar.content {
+  margin: 0 20vw;
 }
 
 .navbar-logo {
@@ -100,6 +109,37 @@ h3 {
 }
 
 .splash {
+  padding-top: 80px;
   background-color: #a9d9bc;
   color: white;
+}
+
+.about p {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.faq {
+  
+}
+
+.faq h5 {
+  margin: 0;
+}
+
+/* Why bean?  Why not? */
+.bean-pile {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bean {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-bottom: 1em;
+}
+
+.bean-filler {
+  height: 0;
 }
