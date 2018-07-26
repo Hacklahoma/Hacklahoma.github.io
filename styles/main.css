@@ -43,11 +43,14 @@ h3 {
 .content {
   max-width: 60vw;
   margin: 0 auto;
-  width: 100%
 }
 
 .justify-around {
   justify-content: space-around;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .hidden {
@@ -69,8 +72,15 @@ h3 {
   /*box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);*/
 }
 
+.navbar-logo {
+  flex-grow: 1;
+  margin: auto 50px;
+  max-height: 80px;
+}
+
 .navbar-half {
-  width: calc(50% - 40px);
+  flex-grow: 1;
+  max-width: calc(50% - 100px);
   display: flex;
   justify-content: space-between;
 }
@@ -78,10 +88,10 @@ h3 {
 .navbar a {
   color: #a97c50;
   font-family: "LemonMilk";
-  font-size: 1.4em;
+  font-size: 1.8em;
   font-weight: 300;
   text-decoration: none;
-  margin: auto;
+  margin: auto 0;
 }
 
 .navbar .blurred {
