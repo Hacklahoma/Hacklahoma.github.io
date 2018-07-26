@@ -25,6 +25,10 @@ body {
   font-family: "Avenir";
 }
 
+section {
+  margin: 4em 0;
+}
+
 h1 {
   font-family: "LemonMilk";
   font-size: 6em;
@@ -46,7 +50,8 @@ h5 {
 
 .content {
   max-width: 60vw;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .justify-around {
@@ -67,9 +72,35 @@ h5 {
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
 
+/* Why bean?  Why not? */
+.bean-pile {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bean {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-bottom: 1em;
+}
+
+.bean-small {
+  display: flex;
+  flex-direction: column;
+  width: 22%;
+  margin-bottom: 1em;
+}
+
+.bean-filler {
+  height: 0;
+  margin: 0 !important;
+}
+
 .navbar {
   position: fixed;
   width: 100%;
+  height: 80px;
   background-color: #a9d9bc;
   color: #a97c50;
   display: flex;
@@ -112,6 +143,7 @@ h5 {
   padding-top: 80px;
   background-color: #a9d9bc;
   color: white;
+  margin-top: 0;
 }
 
 .about p {
@@ -127,19 +159,28 @@ h5 {
   margin: 0;
 }
 
-/* Why bean?  Why not? */
-.bean-pile {
-  display: flex;
-  flex-wrap: wrap;
+.sponsors img {
+  width: 100%;
+  height: auto;
 }
 
-.bean {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  margin-bottom: 1em;
+footer {
+  background-color: #a9d9bc;
+  color: white;
+  width: 100%;
+  height: 60px;
+  margin: 0;
 }
 
-.bean-filler {
-  height: 0;
+footer .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+footer h5 {
+  font-family: "LemonMilk";
+  margin: auto 0;
+  font-size: 1.4em;
 }
