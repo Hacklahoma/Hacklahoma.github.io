@@ -18,6 +18,11 @@
   font-style: normal;
 }
 
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   width: 100%;
   margin: 0;
@@ -63,6 +68,13 @@ h5 {
 }
 
 .hidden {
+  visibility: hidden;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: calc(-80px - 2em);
   visibility: hidden;
 }
 
@@ -146,13 +158,14 @@ h5 {
   margin-top: 0;
 }
 
+.splash-logo {
+  max-height: 400px;
+  /* z-index: 10; */
+}
+
 .about p {
   max-width: 60%;
   margin: 0 auto;
-}
-
-.faq {
-  
 }
 
 .faq h5 {
@@ -174,13 +187,20 @@ footer {
 
 footer .content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 100%;
 }
 
-footer h5 {
+footer a {
   font-family: "LemonMilk";
-  margin: auto 0;
-  font-size: 1.4em;
+  font-size: 1.2em;
+  color: white;
+  text-decoration: none;
+  min-width: 60px;
+  height: 100%;
+}
+
+footer img {
+  max-height: 100%;
 }
