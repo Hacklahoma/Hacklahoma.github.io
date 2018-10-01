@@ -98,13 +98,14 @@ a.anchor {
   align-items: center;
 }
 
-.bean img, .bean-small a {
+.bean img, .bean a, .bean-small img, .bean-small a {
   margin: auto;
 }
 
 .bean-small {
   display: flex;
   flex-direction: column;
+  align-items: start;
   width: 22%;
   margin-bottom: 1em;
 }
@@ -168,6 +169,17 @@ a.anchor {
   /* z-index: 10; */
 }
 
+.link-button {
+  background-color: #ffd58a;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.link-button:hover {
+  box-shadow: 0 0 5px white;
+}
+
 .about p {
   max-width: 60%;
   margin: 0 auto;
@@ -180,6 +192,10 @@ a.anchor {
 .sponsors img {
   width: 100%;
   height: auto;
+}
+
+.sponsors p {
+  text-align: center;
 }
 
 footer {
