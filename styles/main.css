@@ -1,3 +1,5 @@
+/* TODO: get rid of extra margin at bottom of FAQ (looks weird) */
+
 @font-face {
   font-family: "LemonMilk";
   src: url("../fonts/LemonMilk/LemonMilklight.otf");
@@ -62,6 +64,10 @@ h5 {
 
 .hidden {
   visibility: hidden;
+}
+
+.display-none {
+  display: none;
 }
 
 a.anchor {
@@ -140,7 +146,14 @@ a.anchor {
   flex-grow: 1;
   max-width: calc(50% - 100px);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+
+.navbar-half * {
+  flex-basis: 33%;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .navbar a {
@@ -149,7 +162,8 @@ a.anchor {
   font-size: 1.8em;
   font-weight: 300;
   text-decoration: none;
-  margin: auto 0;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .navbar .blurred {
@@ -165,7 +179,10 @@ a.anchor {
 }
 
 .splash-logo {
+  height: 60vmin;
   max-height: 400px;
+  width: 60vmin;
+  max-width: 400px;
   /* z-index: 10; */
 }
 
@@ -208,11 +225,18 @@ footer .content {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
 footer a {
-  min-width: 60px;
+  width: 60px;
+  height: 100%;
   display: flex;
+}
+
+footer img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /* debug 
