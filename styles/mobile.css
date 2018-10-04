@@ -1,6 +1,7 @@
 @media (max-width: 1580px) {
     .content {
         max-width: 80vw;
+        margin: 0 10vw;
     }
 
     .navbar.content {
@@ -11,6 +12,7 @@
 @media (max-width: 1180px) {
     .content {
         max-width: 90vw;
+        margin: 0 5vw;
     }
 
     .navbar.content {
@@ -19,21 +21,18 @@
 }
 
 @media (max-width: 1060px) {
-    .content {
-        max-width: 90vw;
-    }
-
     .navbar {
         position: relative;
-    }
-
-    .navbar.content {
-        margin: 0 5vw;
     }
 
     .navbar-half {
         max-width: 100%;
         justify-content: space-around;
+    }
+
+    .navbar-half * {
+        flex-basis: 33%;
+        text-align: center;
     }
 
     #info-row {
@@ -75,13 +74,17 @@
     .navbar-half * {
         flex-basis: 0;
         text-align: center;
-      }
+    }
 
     .about p {
         max-width: 100%;
     }
 
     .bean {
+        width: 92%;
+    }
+
+    .faq  .bean {
         width: 100%;
     }
 

@@ -44,14 +44,18 @@ h5 {
   font-size: 1.4em;
 }
 
+a {
+  text-decoration: none;
+}
+
 .row {
   display: flex;
 }
 
 .content {
   max-width: 60vw;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 20vw;
+  margin-right: 20vw;
 }
 
 .justify-around {
@@ -94,7 +98,7 @@ a.anchor {
   flex-direction: column;
   align-items: start;
   width: 30%;
-  margin-bottom: 1em;
+  margin: 1em 0;
 }
 
 .sponsors .bean a, .sponsors .bean-small a {
@@ -113,7 +117,7 @@ a.anchor {
   flex-direction: column;
   align-items: start;
   width: 22%;
-  margin-bottom: 1em;
+  margin: 1em 0;
 }
 
 .bean-filler {
@@ -150,7 +154,7 @@ a.anchor {
 }
 
 .navbar-half * {
-  flex-basis: 33%;
+  flex-basis: 0;
   text-align: center;
   margin-left: 10px;
   margin-right: 10px;
