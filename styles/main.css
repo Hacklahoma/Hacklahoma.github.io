@@ -1,779 +1,249 @@
-/*
-   The main style sheet for the Hacklahoma website.
-*/
+/* TODO: get rid of extra margin at bottom of FAQ (looks weird) */
 
-/*
-	Avenir typeface
-*/
 @font-face {
-	font-family: "Avenir";
-	src: url("fonts/Avenir/AvenirNextLTPro-UltLt.otf");
-    font-weight: 100;
-    font-style: normal;
+  font-family: "LemonMilk";
+  src: url("../fonts/LemonMilk/LemonMilklight.otf");
+  font-weight: 300;
+  font-style: normal;
 }
 @font-face {
-    font-family: "Avenir";
-    src: url("fonts/Avenir/AvenirNextLTPro-Regular.otf");
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-	font-family: "Avenir";
-	src: url("fonts/Avenir/AvenirNextLTPro-Medium.otf");
-    font-weight: 400;
-    font-style: normal;
+  font-family: "LemonMilk";
+  src: url("../fonts/LemonMilk/LemonMilk.otf");
+  font-weight: 500;
+  font-style: normal;
 }
 
-/*
-	Futura typeface
-*/
 @font-face {
-	font-family: "Futura";
-	src: url('fonts/Futura/FuturaPRO-Book.otf');
-    font-weight: 300;
-    font-style: normal;
-}
-@font-face {
-	font-family: "Futura";
-	src: url('fonts/Futura/FuturaPRO-Heavy.otf');
-    font-weight: 500;
-    font-style: normal;
+  font-family: "Avenir";
+  src: url("../fonts/Avenir/AvenirNextLTPro-Regular.otf");
+  font-weight: 500;
+  font-style: normal;
 }
 
-/*
-	Default style for the body of the webpage.
-*/
 body {
-	background: #333333; /* Dark grey */
-	-webkit-font-smoothing: antialiased; /* Makes fonts smoother. Not necessary, just looks nice. */
-
-	font-family: "Avenir"; /* Use Avenir by default, can change for certain elements. */
-	color: #FFF; /* Text color should be white by default, can change for certain elements. */
-
-	overflow-x: hidden;
-	overflow-y: scroll;
-
-	margin: 0 auto;
-	width: 100%;
-	height: 100%;
+  margin: 0;
+  background-color: white;
+  font-family: "Avenir";
 }
 
-/*
-	Default style for text elements within the h1 tag.
-*/
+section {
+  margin: 4em 0;
+}
+
 h1 {
-	font-family: "Futura";
-	font-size: 4em;
-	font-size: 5vw;
-    font-weight: 300;
-    letter-spacing: .06em;
-	margin-top: .4em;
-	margin-bottom: .4em;
+  font-family: "LemonMilk";
+  font-size: 6em;
+  margin: 0;
 }
 
-/*
-	Default style for text elements within the h3 tag.
-*/
 h3 {
-    font-family: "Futura";
-	font-size: 1.5em;
-    font-weight: 300;
-    letter-spacing: .06em;
-	margin-top: .4em;
-	margin-bottom: .4em;
-}
-
-/*
-	Style for futura heavy.
-*/
-h1 .bold, h3 .bold {
-	font-family: "Futura";
-    font-weight: 500;
-	font-size: 2em;
-	letter-spacing: .06em;
-}
-
-/*
-	Default style for the main section headings.
-*/
-.anchor {
-	font-family: "Futura";
-    font-weight: 300;
-	font-size: 4em;
-	margin-top: .4em;
-	margin-bottom: .4em;
-	padding-top: 60px;
-}
-
-/*
-	Default style for text elements within the p tag.
-*/
-p {
-    font-weight: 300;
-	font-size: 1em;
-	margin-top: .4em;
-	margin-bottom: .4em;
-}
-
-/*
-	Style for avenir medium.
-*/
-p .bold {
-	font-size: 1em;
-}
-
-/*
-	Style for the pattern traces.
-*/
-#traces {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: visible;
-    z-index: 20;
-}
-
-/*
-	Style for the header.
-*/
-#header {
-	display: table;
-	width: 80%;
-	height: 100vh;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-/*
-	Style for the header items.
-*/
-.header-info {
-	display: table-cell;
-	text-align: center;
-	vertical-align: middle;
-	width: 50%;
-}
-
-/*
-	The style for the logo placed in the header.
-*/
-.logo {
-	margin: -10px;
-    max-width: 100%;
-}
-
-/*
-	The style for the dates placed in the header.
-*/
-.dates {
-	font-size: 42px;
-	font-size: 2.92vw;
-	text-align: center;
-	text-transform: none;
-	margin-top: .625em;
-	margin-bottom: 0;
-}
-
-/*
-	The style for the location placed in the header.
-*/
-.location {
-	font-size: 28px;
-	font-size: 1.94vw;
-	text-align: center;
-	text-transform: none;
-	margin: 0;
-}
-
-/*
-	The style for the information button placed in the header.
-*/
-.infoButton {
-	background-color: #912929; /* Red from logo. */
-	border: none;
-	color: #FFF;
-	text-align: center;
-	font-size: 1em;
-	text-transform: none;
-	padding: 0.2em 1.313em;
-	width: auto;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-	-moz-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-	-webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-	transition: all 0.5s;
-	cursor: pointer;
-	display: block;
-    margin: auto;
-    margin-top: 1.4em;
-    margin-bottom: 0;
-    position: relative;
-    vertical-align: center;
-}
-
-/*
-	Stylize the text within the information button.
-*/
-.infoButton span {
-	cursor: pointer;
-	display: inline-block;
-	position: relative;
-	transition: 0.5s;
-    font-family: "Avenir";
-    font-weight: 300;
-    font-size: 1.6em;
-}
-
-/*
-	Stylize the text in the information button after the user hovers over it.
-*/
-.infoButton span:after {
-	content: '\00bb';
-	position: absolute;
-	opacity: 0;
-	top: 0;
-	right: -20px;
-	transition: 0.5s;
-}
-
-/*
-	Change the look of the information button when the user hovers over it.
-*/
-.infoButton:hover span {
-	padding-right: 25px;
-}
-
-/*
-	Change the look of the information button after the user has hovered over it.
-*/
-.infoButton:hover span:after {
-	opacity: 1;
-	right: 0;
-}
-
-/*
-	Style for the nav bar wrapper.
-*/
-#navWrapper {
-	position: relative;
-	bottom: 3.125em;
-	width: 100%;
-	left: 0;
-	right: 0;
-	z-index: 90;
-}
-
-/*
-	Style for the nav bar.
-*/
-#navBar {
-	width: 100%;
-	height: 3.125em;
-	text-align: center;
-	background-color: #000000;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-	-moz-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-	-webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-	z-index: 89;
-}
-
-/*
-	Style for the links within the nav bar.
-*/
-#navBar a {
-	display: inline-block;
-	color: white;
-	text-align: center;
-	padding: 18px 14px;
-	text-decoration: none;
-	height: calc(3.125em - 36px);
-	vertical-align: center;
-}
-
-/*
-	Style for the links in the nav bar when the user hovers over them.
-*/
-#navBar a:hover {
-	background-color: #912929;
-	/* height: 0.75em; */
-	transition: 0.5s;
-}
-
-/*
-	Style for the active links in the nav bar.
-*/
-#navBar a.active {
-	background-color: #912929;
-	height: calc(3.125em - 36px);
-	transition: 0.5s;
-}
-
-/*
-	Properties for the position of the nav bar when the user is not looking at the content pane.
-*/
-.absolute {
-	position: absolute;
-	left: 0;
-	right: 0;
-}
-
-/*
-	Properties for the position of the nav bar when the user is looking at the content pane.
-*/
-.fixed {
-	position: fixed;
-    -webkit-transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
-	top: 0;
-	left: 0;
-}
-
-/*
-	Style for the nav bar links to be underlined.
-*/
-.underline {
-    border-bottom: 1px solid;
-    transition: 0.5s;
-}
-
-/*
-	Style for the nav bar links to not be underlined.
-*/
-.noUnderline {
-    border-bottom: 1px solid transparent;
-    transition: 0.5s;
-}
-
-/*
-	Style for the content container.
-*/
-#contentPane {
-	position: relative;
-	padding-top: 0.625em;
-	width: 100%;
-	height: auto;
-	overflow: auto;
-	left: 0;
-    margin: 0 0%;
-}
-
-/*
-	Style for the About section.
-*/
-#about {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 65%;
-	margin-bottom: 5em;
-	height: auto;
-	overflow: hidden;
-	text-align: center;
-}
-
-/*
-	Style for the FAQ section.
-*/
-#faq {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	padding-bottom: 2em;
-	height: auto;
-	width: 100%;
-	background-color: #FFFFFF;
-	color: #000000;
-	text-align: center;
-	box-shadow: 0 0 3em #000000;
-	-moz-box-shadow: 0 0 3em #000000;
-	-webkit-box-shadow: 0 0 3em #000000;
-}
-
-/*
-	Style for the content of the FAQ section.
-*/
-#faqContent {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	flex-wrap: wrap;
-	-webkit-flex-flow: row wrap;
-	justify-content: space-around;
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-/*
-	Style for each item of the FAQ section.
-*/
-#faqItem {
-	flex: 0 0 25%;
-	margin-left: 2em;
-	margin-right: 2em;
-	height: auto;
-	margin-bottom: 5px;
-}
-
-/*
-	Style for the Agenda section.
-*/
-#agenda {
-	display: flex;
-	margin-left: auto;
-	margin-right: auto;
-	width: 90%;
-	flex-wrap: wrap;
-	-webkit-flex-flow: row wrap;
-	justify-content: space-around;
-}
-
-#agenda h1, h3 {
-	flex: 0 0 100%;
-}
-
-#agenda div {
-	display: inline;
-	flex: 0 1 auto;
-}
-
-#agenda-sat {
-
-}
-
-#agenda-sun {
-
-}
-
-/*
-	Style for the Sponsors section.
-*/
-#sponsors {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	padding-bottom: 2em;
-	height: auto;
-	width: 100%;
-	background-color: #FFFFFF;
-	color: #000000;
-	text-align: center;
-	box-shadow: 0 0 3em #000000;
-	-moz-box-shadow: 0 0 3em #000000;
-	-webkit-box-shadow: 0 0 3em #000000;
-}
-
-#sponsors hr {
-	width: 80%;
-	border-color: #dddddd;
-}
-
-/*
-	Content wrapper for the Sponsors section.
-*/
-.sponsorsLogos {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	flex-wrap: wrap;
-	-webkit-flex-flow: row wrap;
-	justify-content: space-around;
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 2em;
-	margin-top: 2em;
-}
-
-.logoHelper {
-	height: 100%;
-	display: inline-block;
-	vertical-align: middle;
-	margin: 0;
-	padding: 0;
-}
-
-/*
-	Style for the container of each sponsor's logo.
-*/
-.sponsorLogo {
-	/*flex: 0 0 auto;
-	margin: auto;
-	max-width: 100%;
-	*/
-	flex: 0 0 25%;
-	margin-left: 2em;
-	margin-right: 2em;
-	height: auto;
-	margin-top: 2em;
-	margin-bottom: 2em;
-	display: inline-block;
-	vertical-align: none;
-	white-space: nowrap;
-}
-
-.sponsorLogo a {
-	display: inline-block;
-	width: 100%;
-	height: 100%;
-}
-
-/*
-	Style for the image of each sponsor's logo.
-*/
-.sponsorLogo img {
-	max-width: 80%;
-	height: auto;
-	vertical-align: middle;
-	display: inline-block;
-}
-
-#vitechlogo {
-	flex: 0 1 64%;
-}
-
-#ntlogo {
-	flex: 0 1 30%;
-	margin: 0;
-}
-
-#ntlogo a {
-	margin: 0;
-}
-
-#cplogo {
-	flex: 0 1 34%;
-	margin: 0;
-}
-
-#cplogo a {
-	margin: 0;
-}
-
-#pcilogo {
-	flex: 0 1 30%;
-	margin: 0;
-}
-
-#pcilogo a {
-	margin: 0;
-}
-
-#twlogo {
-	flex: 0 1 30%;
-	margin: 0;
-}
-
-#devonlogo {
-	flex: 0 1 34%;
-	margin: 0;
-}
-
-#hobbylobbylogo {
-	flex: 0 1 32%;
-}
-
-#githublogo {
-	flex: 0 1 26%;
-}
-
-#wolframlogo {
-	flex: 0 1 18%;
-}
-
-#rescollogo {
-	flex: 0 1 18%;
-}
-
-#mlhlogo {
-	flex: 0 1 20%;
-}
-
-#techlahomalogo {
-	flex: 0 1 30%;
-}
-
-#hackdfwlogo {
-	flex: 0 1 25%;
-}
-
-#smlogo {
-	flex: 0 1 30%;
-}
-
-#taikologo {
-	flex: 0 1 20%;
-}
-
-#garminlogo {
-	flex: 0 1 18%;
-}
-
-#ousaalogo {
-	flex: 0 1 18%;
-}
-
-/*
-	Style for the Judges section.
-*/
-#judges {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
-	margin-bottom: 5em;
-	height: auto;
-	overflow: hidden;
-}
-
-/*
-	Style for the footer.
-*/
-#footer {
-	background-color: #FFFFFF;
-	color: #333333;
-	left: 0;
-	right: 0;
-	width: 100%;
-	height: 8em;
-	position: absolute;
-	bottom: -8em;
-	text-align: center;
-	flex-shrink: 0;
-	box-shadow: 0 0 3em #000000;
-	-moz-box-shadow: 0 0 3em #000000;
-	-webkit-box-shadow: 0 0 3em #000000;
-}
-
-/*
-	Style for the social media logos.
-*/
-.socialMedia {
-	display: flex;
-	justify-content: space-between;
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 9.375em;
-	width: 9.375em;
-	height: 3.125em;
-	padding-right: 5px;
-	margin-top: -2em;
-}
-
-/*
-	Style for the MLH trust badge container.
-*/
-#mlh-trust-badge {
-	display: block;
-	max-width: 100px;
-	min-width: 60px;
-	position: fixed;
-	right: 20px;
-	right: 1.5vw;
-	top: 0;
-	width: 10%;
-	z-index: 10000;
-	-webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(5px 5px 5px #222);
-}
-
-/*
-	Style for the MLH trust badge image.
-*/
-#mlh-trust-badge img{
-    top: -8px;
-    position: relative;
-    transition: top 150ms ease-in;
-}
-
-/*
-	Style for the MLH trust badge image when the user hovers
-	over the MLH trust badge.
-*/
-#mlh-trust-badge img:hover {
-	top: 0px;
-}
-
-.googleMapsIframe {
-	position: relative;
-	padding-bottom: 60%;
-	padding-top: 1em;
-	height: 0;
-	overflow: hidden;
-}
-.googleMapsIframe iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
-#prizes {
-	background-color: #FFFFFF;
-	color: #000000;
-	padding-bottom: 2em;
-}
-
-#prizes #faqItem {
-	margin: 1em;
-}
-
-#prizes img {
-	max-width: calc(100% - 2em);
-	margin: 1em;
-}
-
-#hardware {
-	padding-bottom: 2em;
-	display: flex;
-	flex-wrap: wrap;
-	overflow: hidden;
-}
-
-#hardware h1 {
-	flex: 0 0 100%;
-}
-
-#hardware p {
-	font-size: 1em;
-	padding: .2em;
-}
-
-#hardware ul {
-	list-style-type: none;
-}
-
-#hardware a {
-	color: black;
-}
-
-#hardware-left {
-	width: calc(50% - 2em);
-	margin-right: 2em;
-}
-
-#hardware-left img {
-	max-width: 80%;
-}
-
-#hardware-right {
-	width: calc(50% - 2em);
-	margin-left: 2em;
-}
-
-#resourcesInfo p {
-	margin: auto;
-}
-
-#hardware-right th {
-	max-width: 2em;
-	min-width: 2em;
-	width: 2em;
-	padding: 0;
-	margin: 0;
+  font-size: 2em;
 }
+
+h5 {
+  font-size: 1.4em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.row {
+  display: flex;
+}
+
+.content {
+  max-width: 60vw;
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.display-none {
+  display: none;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: calc(-80px - 2em);
+  visibility: hidden;
+}
+
+/* TEXT ONLY */
+.blurred {
+  color: transparent;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Why bean?  Why not? */
+.bean-pile {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bean {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 30%;
+  margin: 1em 0;
+}
+
+.sponsors .bean a, .sponsors .bean-small a {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bean img, .bean a, .bean-small img, .bean-small a {
+  margin: auto;
+}
+
+.bean-small {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 22%;
+  margin: 1em 0;
+}
+
+.bean-filler {
+  height: 0;
+  margin: 0 !important;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  background-color: #a9d9bc;
+  color: #a97c50;
+  display: flex;
+  justify-content: space-between;
+  /*box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);*/
+}
+
+.navbar.content {
+  margin: 0 20vw;
+}
+
+.navbar-logo {
+  flex-grow: 1;
+  margin: auto 50px;
+  max-height: 80px;
+}
+
+.navbar-half {
+  flex-grow: 1;
+  max-width: calc(50% - 100px);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar-half * {
+  flex-basis: 0;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.navbar a {
+  color: #a97c50;
+  font-family: "LemonMilk";
+  font-size: 1.8em;
+  font-weight: 300;
+  text-decoration: none;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.navbar .blurred {
+  color: transparent;
+  text-shadow: 0 0 3px rgba(169, 124, 80, 1);
+}
+
+.splash {
+  padding-top: 80px;
+  background-color: #a9d9bc;
+  color: white;
+  margin-top: 0;
+}
+
+.splash-logo {
+  height: 60vmin;
+  max-height: 400px;
+  width: 60vmin;
+  max-width: 400px;
+  /* z-index: 10; */
+}
+
+.link-button {
+  background-color: #ffd58a;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.link-button:hover {
+  box-shadow: 0 0 5px white;
+}
+
+.about p {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.faq h5 {
+  margin: 0;
+}
+
+.sponsors img {
+  width: 100%;
+  height: auto;
+}
+
+.sponsors p {
+  text-align: center;
+}
+
+footer {
+  background-color: #a9d9bc;
+  color: white;
+  height: 60px;
+}
+
+footer .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+footer a {
+  width: 60px;
+  height: 100%;
+  display: flex;
+}
+
+footer img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* debug 
+* {
+  border: 1px solid red;
+} */

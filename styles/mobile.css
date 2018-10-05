@@ -1,162 +1,94 @@
-/* Use with main.css
- * Just includes some additional rules for small displays. */
-
-# changed to 1100 to cover 1080p displays in portrait
-@media (max-width: 1100px) {
-    .logo {
+@media (max-width: 1580px) {
+    .content {
         max-width: 80vw;
-        width: 350px;
-        max-height: 350px;
-        margin-top: -1em;
-        margin-bottom: -1em;
+        margin: 0 10vw;
     }
 
-    .header-info {
-        width: 100%;
-    }
-
-    .header-info h1 {
-        font-size: 8vw;
-    }
-
-    .header-info p {
-        font-size: 4vw;
-    }
-
-    .infoButton {
-    	margin-top: 1em !important;
-    	margin-bottom: 0 !important;
-    }
-
-    /*#title {
-    	margin-bottom: -0.4em;
-    }*/
-
-    .socialMedia {
-    	margin-top: 1em;
-    	margin-bottom: 4em;
-    }
-
-    .sponsorLogo {
-       flex: 0 0 auto;
-       margin: 2em;
-       max-width: 40vh;
+    .navbar.content {
+        margin: 0 10vw;
     }
 }
 
- /* Settings for mobile (less than or 750px wide) */
- @media (max-width: 750px) {
-     #menu-trigger-label {
-         display: block !important;
-     }
+@media (max-width: 1180px) {
+    .content {
+        max-width: 90vw;
+        margin: 0 5vw;
+    }
 
-     .logo {
-        margin-bottom: 0;
-     }
+    .navbar.content {
+        margin: 0 5vw;
+    }
+}
 
-     .header-info {
-         width: 100%;
-         display: block;
-     }
+@media (max-width: 1060px) {
+    .navbar {
+        position: relative;
+    }
 
-     #navWrapper {
-         text-align: left;
-         height: 100%;
-         width: 150px;
-         top: 0;
-         right: auto;
-         position: fixed !important;
-         font-size: 1.8em;
-     }
+    .navbar-half {
+        max-width: 100%;
+        justify-content: space-around;
+    }
 
-     .menuClosed {
-         left: -150px !important;
-     }
+    .navbar-half * {
+        flex-basis: 33%;
+        text-align: center;
+    }
 
-     #navWrapper a {
-         display: block;
-     }
+    #info-row {
+        flex-direction: column;
+        text-align: center;
+    }
 
-     #navBar {
-         text-align: left;
-         height: 100vh;
-         width: 150px;
-         min-width: 150px;
-         padding-top: 48px;
-     }
+    #nav-links {
+        display: none;
+    }
 
-     #navBar a {
-         text-align: left;
-     }
+    .splash {
+        padding-top: 0;
+    }
 
-     .dates {
-     	font-size: 8vw;
-     }
+    .splash-title {
+        max-width: 80vw;
+        font-size: 10vw;
+    }
 
-     .location {
-     	font-size: 6vw;
-     }
+    .about p {
+        max-width: 80%;
+    }
 
-     #embeddedmap {
-         width: 90%;
-         height: 300px;
-     }
+    .bean {
+        width: 46%;
+    }
 
-     .notmobile {
-         display: none;
-     }
+    .bean-small {
+        width: 30%;
+    }
+}
 
-     #about {
-         width: calc(100% - 4em);
-     }
+@media (max-width: 530px) {
+    .navbar {
+        font-size: 3vw;
+    }
+    
+    .navbar-half * {
+        flex-basis: 0;
+        text-align: center;
+    }
 
-     #faqItem {
-     	flex: 0 0 calc(100% - 4em);
-     }
+    .about p {
+        max-width: 100%;
+    }
 
-     #agenda {
-         width: calc(100% - 2em);
-         margin: 1em;
-         padding: 0;
-     }
+    .bean {
+        width: 92%;
+    }
 
-     #agenda div {
-     	flex: 0 0 100%;
-     }
+    .faq  .bean {
+        width: 100%;
+    }
 
-     .sponsorLogo {
-        flex: 0 0 80% !important;
-     	margin: 2em 0;
-     	max-width: 100%;
-     }
-
-     .sponsorLogo img {
-         max-width: 100%;
-     }
-
-     #judges {
-         width: calc(100% - 4em);
-         margin: 2em;
-         padding: 0;
-     }
-
-     #mlh-trust-badge {
-     	right: 1vw !important;
-     }
-
-     .socialMedia {
-     	right: 3vw !important;
-     }
-
-     #ntlogo a {
-     	margin: 2em 0;
-     }
-
-     #cplogo a {
-     	margin: 2em 0;
-     }
-
-     #pcilogo a {
-     	margin: 2em 0;
-     }
+    .bean-small {
+        width: 46%;
+    }
 }
