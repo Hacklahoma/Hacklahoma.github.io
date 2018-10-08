@@ -76,6 +76,10 @@
         text-align: center;
     }
 
+    .navbar-logo-link {
+        display: none;
+    }
+
     .about p {
         max-width: 100%;
     }

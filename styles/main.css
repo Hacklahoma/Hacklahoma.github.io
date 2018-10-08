@@ -140,10 +140,17 @@ a.anchor {
   margin: 0 20vw;
 }
 
+.navbar-logo-link {
+  height: 100%;
+}
+
 .navbar-logo {
   flex-grow: 1;
-  margin: auto 50px;
+  margin: auto auto;
   max-height: 80px;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 .navbar-half {
