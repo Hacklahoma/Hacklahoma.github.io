@@ -37,6 +37,10 @@ body {
   z-index:10000
 }
 
+#mlh-trust-badge img {
+  width: 100%;
+}
+
 section {
   margin: 4em 0;
 }
@@ -57,6 +61,11 @@ h5 {
 
 a {
   text-decoration: none;
+}
+
+.bg {
+  background-color: white;
+  padding-top: 1em;
 }
 
 .row {
@@ -198,6 +207,7 @@ a.anchor {
   background-color: #a9d9bc;
   color: white;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .splash-logo {
@@ -217,6 +227,19 @@ a.anchor {
 
 .link-button:hover {
   box-shadow: 0 0 5px white;
+}
+
+#parallax-container {
+  position: fixed;
+  min-height: 100vh;
+  width: 100%;
+  z-index: -50;
+}
+
+.parallax {
+  position: fixed;
+  max-width: 100%;
+  z-index: -50;
 }
 
 .about p {

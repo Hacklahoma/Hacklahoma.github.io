@@ -1,27 +1,63 @@
 // TODO: separate nav logo size from bottom/offset
 
-NAV_LOGO_BOTTOM = 80;
-MAX_SPLASH_SIZE = 400;
+const NAV_LOGO_BOTTOM = 80;
+const MAX_SPLASH_SIZE = 400;
 
-splash_logo = null;
-nav_logo = null;
-nav_logo_img = null;
-should_slide = true;
+var lastScrollY = -1;
 
-max_logo_offset = 0;
+var splash_logo = null;
+var nav_logo = null;
+var parallax_components = null;
+var max_parallax_offsets = [];
+var max_max_parallax_offset = 0;
+
+var nav_logo_img = null;
+var should_slide = true;
+
+var max_logo_offset = 0;
+
+var raf = window.requestAnimationFrame ||
+    window.webkitRequestAnimationFrame ||
+    window.mozRequestAnimationFrame ||
+    window.msRequestAnimationFrame ||
+    window.oRequestAnimationFrame;
 
 window.onload = function () {
     handle_resize();
-    handle_scroll();
-}
 
-window.onscroll = function () {
-    handle_scroll();
+    if (raf) {
+        handle_scroll();
+    }
 }
 
 window.onresize = function () {
     handle_resize();
     handle_scroll();
+}
+
+parallax_setup = function() {
+    if (window.innerWidth > 1060) {
+        lastScrollY = -1; // make sure scroll position will be "different", triggering handle_scroll
+        splash = document.querySelector(".splash");
+        splash.style.backgroundColor = "transparent";
+        parallax_components = document.querySelectorAll(".parallax");
+        for (i = 0; i < parallax_components.length; i++) {
+            parallax_components[i].style.display = "block";
+            offset_top = (splash.getBoundingClientRect().bottom - parallax_components[i].getBoundingClientRect().height);
+            max_parallax_offsets[i] = offset_top;
+            parallax_components[i].style.top = offset_top + "px";
+        }
+    } else {
+        splash = document.querySelector(".splash");
+        splash.style.backgroundColor = "#a9d9bc";
+        parallax_components = document.querySelectorAll(".parallax");
+        for (i = 0; i < parallax_components.length; i++) {
+            parallax_components[i].style.display = "none";
+            offset_top = (splash.getBoundingClientRect().bottom - parallax_components[i].getBoundingClientRect().height);
+            max_parallax_offsets[i] = offset_top;
+            parallax_components[i].style.top = offset_top + "px";
+        }
+    }
 }
 
 slide_setup = function () {
@@ -70,6 +106,7 @@ slide_setup = function () {
 }
 
 handle_resize = function () {
+    parallax_setup();
     slide_setup();
     if (should_slide) {
         // difference in distances between the bottoms of the splash and nav logos and the top of the page
@@ -90,15 +127,31 @@ handle_resize = function () {
 }
 
 handle_scroll = function () {
-    if (should_slide) {
-        splash_client_rect = splash_logo.getBoundingClientRect();
-        logo_offset = splash_client_rect.bottom - NAV_LOGO_BOTTOM;
+    var currentScrollY = window.scrollY;
+    if (lastScrollY === currentScrollY) {
+        raf(handle_scroll);
+        return;
+    } else {
+        lastScrollY = currentScrollY;
 
-        nav_logo.style.top = Math.max((logo_offset / max_logo_offset) * NAV_LOGO_BOTTOM, 0) + "px";
+        if (should_slide) {
+            splash_client_rect = splash_logo.getBoundingClientRect();
+            logo_offset = splash_client_rect.bottom - NAV_LOGO_BOTTOM;
 
-        logo_size = Math.max((logo_offset / max_logo_offset) * (MAX_SPLASH_SIZE - NAV_LOGO_BOTTOM) + NAV_LOGO_BOTTOM, NAV_LOGO_BOTTOM) + "px";
+            nav_logo.style.top = Math.max((logo_offset / max_logo_offset) * NAV_LOGO_BOTTOM, 0) + "px";
 
-        nav_logo.style.width = logo_size;
-        nav_logo.style.height = logo_size;
+            logo_size = Math.max((logo_offset / max_logo_offset) * (MAX_SPLASH_SIZE - NAV_LOGO_BOTTOM) + NAV_LOGO_BOTTOM, NAV_LOGO_BOTTOM) + "px";
+
+            nav_logo.style.width = logo_size;
+            nav_logo.style.height = logo_size;
+        }
+
+        if (parallax_components.length > 0 && window.innerWidth > 1060) {
+            for (i = 0; i < parallax_components.length; i++) {
+                offset_top = (max_parallax_offsets[i] - ((i / parallax_components.length) * window.scrollY)) + "px";
+                parallax_components[i].style.top = offset_top;
+            }
+        }
+        raf(handle_scroll);
     }
 }

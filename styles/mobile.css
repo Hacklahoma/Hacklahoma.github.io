@@ -7,6 +7,10 @@
     .navbar.content {
         margin: 0 10vw;
     }
+
+    #mlh-trust-badge {
+        right: 20px;
+    }
 }
 
 @media (max-width: 1180px) {
@@ -16,13 +20,28 @@
     }
 
     .navbar.content {
-        margin: 0 5vw;
+        max-width: 80vw;
+        margin: 0 10vw;
+    }
+
+    #mlh-trust-badge {
+        max-width: 80px;
     }
 }
 
 @media (max-width: 1060px) {
     .navbar {
         position: relative;
+    }
+
+    .navbar.content {
+        max-width: 90vw;
+        margin: 0 5vw;
+    }
+
+    #mlh-trust-badge {
+        position: relative;
+        right: 10px;
     }
 
     .navbar-half {
