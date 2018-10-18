@@ -162,6 +162,8 @@ a.anchor {
 
 .navbar-logo-link {
   height: 100%;
+  transform-origin: center top;
+  will-change: transform;
 }
 
 .navbar-logo {
@@ -208,14 +210,51 @@ a.anchor {
   color: white;
   margin-top: 0;
   margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  max-height: calc(100vh - 80px);
+}
+
+.splash * {
+  overflow: hidden;
+}
+
+.splash #logo-row {
+  display: block;
+  flex: 0 1 30%;
+}
+
+.splash #title-row {
+  margin-bottom: 20px;
+  flex: 1 1 12%;
+  text-shadow: 0 0 1px black;
+}
+
+.splash #button-row {
+  flex: 0 1 20%;
+}
+
+.splash #info-row {
+  flex: 1 1 10%;
+  text-shadow: 0 0 1px black;
+}
+
+.splash #info-row {
+  flex: 1 1 10%;
+  text-shadow: 0 0 1px black;
+}
+
+.splash h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .splash-logo {
-  height: 60vmin;
   max-height: 400px;
-  width: 60vmin;
   max-width: 400px;
-  /* z-index: 10; */
+  flex: 1 1 auto;
+  margin: 0 auto;
 }
 
 .link-button {
@@ -223,10 +262,16 @@ a.anchor {
   text-decoration: none;
   color: white;
   padding: 10px;
+  box-shadow: 0 0 1px black;
+  margin: 1px;
 }
 
 .link-button:hover {
-  box-shadow: 0 0 5px white;
+  box-shadow: 0 0 1px white;
+}
+
+.link-button h3 {
+  margin: 0px;
 }
 
 #parallax-container {
@@ -240,6 +285,7 @@ a.anchor {
   position: fixed;
   max-width: 100%;
   z-index: -50;
+  will-change: transform;
 }
 
 .about p {

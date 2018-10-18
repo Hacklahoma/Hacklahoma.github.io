@@ -9,12 +9,12 @@ var splash_logo = null;
 var nav_logo = null;
 var parallax_components = null;
 var max_parallax_offsets = [];
-var max_max_parallax_offset = 0;
 
 var nav_logo_img = null;
 var should_slide = true;
 
 var max_logo_offset = 0;
+var min_scale_factor = 1;
 
 var raf = window.requestAnimationFrame ||
     window.webkitRequestAnimationFrame ||
@@ -32,7 +32,6 @@ window.onload = function () {
 
 window.onresize = function () {
     handle_resize();
-    handle_scroll();
 }
 
 parallax_setup = function() {
@@ -113,14 +112,13 @@ handle_resize = function () {
         splash_client_rect = splash_logo.getBoundingClientRect();
         logo_offset = splash_client_rect.bottom - NAV_LOGO_BOTTOM;
         max_logo_offset = logo_offset + window.scrollY;
+        min_scale_factor = NAV_LOGO_BOTTOM / splash_client_rect.width;
 
         logo_width = splash_client_rect.width;
         nav_logo.style.width = logo_width + "px";
 
         logo_height = splash_client_rect.height;        
         nav_logo.style.height = logo_height + "px";
-
-        nav_logo.style.top = (logo_offset - logo_height) + "px";
     } else {
         console.warn("A logo was not found, not applying animation.");
     }
@@ -132,26 +130,19 @@ handle_scroll = function () {
         raf(handle_scroll);
         return;
     } else {
-        lastScrollY = currentScrollY;
-
         if (should_slide) {
             splash_client_rect = splash_logo.getBoundingClientRect();
             logo_offset = splash_client_rect.bottom - NAV_LOGO_BOTTOM;
 
-            nav_logo.style.top = Math.max((logo_offset / max_logo_offset) * NAV_LOGO_BOTTOM, 0) + "px";
-
-            logo_size = Math.max((logo_offset / max_logo_offset) * (MAX_SPLASH_SIZE - NAV_LOGO_BOTTOM) + NAV_LOGO_BOTTOM, NAV_LOGO_BOTTOM) + "px";
-
-            nav_logo.style.width = logo_size;
-            nav_logo.style.height = logo_size;
-        }
-
-        if (parallax_components.length > 0 && window.innerWidth > 1060) {
+            nav_logo.style.transform = "scale(" + Math.max(min_scale_factor, (logo_offset / max_logo_offset)) + ") translate(0px, " + Math.round(Math.max((logo_offset / max_logo_offset) * NAV_LOGO_BOTTOM, 0)) + "px)";
+        
             for (i = 0; i < parallax_components.length; i++) {
-                offset_top = (max_parallax_offsets[i] - ((i / parallax_components.length) * window.scrollY)) + "px";
-                parallax_components[i].style.top = offset_top;
+                offset_top = Math.round((i / parallax_components.length) * window.scrollY) + "px";
+                parallax_components[i].style.transform = "translate(0px, -" + offset_top + ")";
             }
         }
+
+        lastScrollY = currentScrollY;
         raf(handle_scroll);
     }
 }
