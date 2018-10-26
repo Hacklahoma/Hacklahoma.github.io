@@ -285,6 +285,12 @@ a.anchor {
   will-change: transform;
 }
 
+.heading {
+  font-family: "LemonMilk";
+  font-weight: 500;
+  color: #a97c50
+}
+
 .about p {
   max-width: 60%;
   margin: 0 auto;
