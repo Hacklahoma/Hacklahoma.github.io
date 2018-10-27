@@ -288,7 +288,11 @@ a.anchor {
 .heading {
   font-family: "LemonMilk";
   font-weight: 500;
-  color: #a97c50
+  color: #a97c50;
+}
+
+#faq-heading {
+  color: #ffd58a;
 }
 
 .about p {
@@ -296,8 +300,20 @@ a.anchor {
   margin: 0 auto;
 }
 
+#faq-background {
+  background-color: #008A88;
+  width: 100%;
+  height: auto;
+  color: white;
+  padding-top: 5px;
+}
+
 .faq h5 {
   margin: 0;
+}
+
+.faq a {
+  color: #ffd58a;
 }
 
 .sponsors img {
