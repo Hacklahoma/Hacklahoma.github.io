@@ -325,6 +325,10 @@ a.anchor {
   text-align: center;
 }
 
+.media {
+  display: block;
+}
+
 footer {
   background-color: #a9d9bc;
   color: white;
