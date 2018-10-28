@@ -228,7 +228,7 @@ a.anchor {
 .splash #title-row {
   margin-bottom: 20px;
   flex: 1 1 12%;
-  text-shadow: 1px 3px 4px black;
+  text-shadow: 0 0 2px #666666;
 }
 
 .splash #button-row {
@@ -237,7 +237,7 @@ a.anchor {
 
 .splash #info-row {
   flex: 1 1 10%;
-  text-shadow: 1px 3px 4px black;
+  text-shadow: 1px 2px 2px #666666;
   font-family: "LemonMilk";
   font-weight: 300;
 }
@@ -259,7 +259,7 @@ a.anchor {
   text-decoration: none;
   color: white;
   padding: 10px;
-  box-shadow: 1px 3px 8px black;
+  box-shadow: 1px 2px 2px #666666;
   margin: 5px;
 }
 
