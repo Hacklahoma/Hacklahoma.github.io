@@ -4,11 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="styles/carousel.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/mobile.css">
     <script type="text/javascript" src="scripts/logo_slide.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="scripts/carousel.min.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
     <title>Hacklahoma // 2019</title>
     
     <link rel="shortcut icon" href="/img/favicon/favicon.ico">
@@ -73,35 +75,99 @@
         <section id="faq-background" class="faq">
             <div class="content">
                 <h3 id="faq-heading" class="heading">FAQ</h3>
-                <div class="bean-pile justify-between">
-                    <div class="bean">
-                        <h5>Sounds cool! But what's a hackathon?</h5>
-                        <p>A hackathon is best described as an “invention marathon”. Anyone who has an interest in technology attends one to learn, build & share their creations over the course of a weekend in a relaxed and welcoming atmosphere. - MLH </p>
+                <div class="faq-desktop">
+                    <div class="bean-pile justify-between">
+                        <div class="bean">
+                            <h5>Sounds cool! But what's a hackathon?</h5>
+                            <p>A hackathon is best described as an “invention marathon”. Anyone who has an interest in technology attends one to learn, build & share their creations over the course of a weekend in a relaxed and welcoming atmosphere. - MLH </p>
+                        </div>
+                        <div class="bean">
+                            <h5>Who can attend?</h5>
+                            <p>Any university student over the age of 18 can participate, regardless of major, background, or skill level. Participants must also abide by the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct.</a></p>
+                        </div>
+                        <div class="bean">
+                            <h5>Does this cost anything?</h5>
+                            <p>Admission to Hacklahoma is <b>free</b> for all attendees! Food, drinks, and sleeping areas are provided by us. Travel reimbursement will be granted based on our funding.</p>
+                        </div>
+                        <div class="bean">
+                            <h5>Can we have teams?</h5>
+                            <p>We encourage everyone to work with a team! Teams may contain up to 4 people. If you don't have one before coming to Hacklahoma, no worries! We will have a team-building session at the beginning of the hacking period.</p>
+                        </div>
+                        <div class="bean">
+                            <h5>Sweet! What should I bring?</h5>
+                            <p>Please bring your student ID for registration! You should also bring your computer, chargers, any hardware/software you plan on using, cell phone, toiletries, sleeping bag, pillow, and a change of clothes. We also recommend you bring a power strip just in case. </p>
+                        </div>
+                        <div class="bean">
+                            <h5>What if my question didn't get answered?</h5>
+                            <p>Hey, we're here to help! Email us at <a href="mailto:team@hacklahoma.org">team@hacklahoma.org</a> or reach out to us via Facebook, Twitter, or Instagram. </p>
+                        </div>
+                        <div class="bean bean-filler"></div>
+                        <div class="bean bean-filler"></div>
+                        <div class="bean bean-filler"></div>
+                        <div class="bean bean-filler"></div>
                     </div>
-                    <div class="bean">
-                        <h5>Who can attend?</h5>
-                        <p>Any university student over the age of 18 can participate, regardless of major, background, or skill level. Participants must also abide by the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct.</a></p>
+                </div>
+                <div class="faq-mobile">
+                    <div class="row">
+                        <div class="col-sm">
+                            <button class="collapsed" type="button" data-toggle="collapse" data-target="#faq1" aria-expanded="false" aria-controls="#faq1">Sounds cool! But what's a hackathon?</button>
+                            <div class="collapse multi-collapse" id="faq1">
+                                <div class="card card-body">
+                                    A hackathon is best described as an “invention marathon”. Anyone who has an interest in technology attends one to learn, build & share their creations over the course of a weekend in a relaxed and welcoming atmosphere. - MLH
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="bean">
-                        <h5>Does this cost anything?</h5>
-                        <p>Admission to Hacklahoma is <b>free</b> for all attendees! Food, drinks, and sleeping areas are provided by us. Travel reimbursement will be granted based on our funding.</p>
+                    <div class="row">
+                        <div class="col-sm">
+                            <button class="collapsed" type="button" data-toggle="collapse" data-target="#faq2" aria-expanded="false" aria-controls="#faq2">Who can attend?</button>
+                            <div class="collapse multi-collapse" id="faq2">
+                                <div class="card card-body">
+                                    Any university student over the age of 18 can participate, regardless of major, background, or skill level. Participants must also abide by the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct.</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="bean">
-                        <h5>Can we have teams?</h5>
-                        <p>We encourage everyone to work with a team! Teams may contain up to 4 people. If you don't have one before coming to Hacklahoma, no worries! We will have a team-building session at the beginning of the hacking period.</p>
+                    <div class="row">
+                        <div class="col-sm">
+                            <button class="collapsed" type="button" data-toggle="collapse" data-target="#faq3" aria-expanded="false" aria-controls="#faq3">Does this cost anything?</button>
+                            <div class="collapse multi-collapse" id="faq3">
+                                <div class="card card-body">
+                                    Admission to Hacklahoma is <b>free</b> for all attendees! Food, drinks, and sleeping areas are provided by us. Travel reimbursement will be granted based on our funding.
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="bean">
-                        <h5>Sweet! What should I bring?</h5>
-                        <p>Please bring your student ID for registration! You should also bring your computer, chargers, any hardware/software you plan on using, cell phone, toiletries, sleeping bag, pillow, and a change of clothes. We also recommend you bring a power strip just in case. </p>
+                    <div class="row">
+                        <div class="col-sm">
+                            <button class="collapsed" type="button" data-toggle="collapse" data-target="#faq4" aria-expanded="false" aria-controls="#faq4">Can we have teams?</button>
+                            <div class="collapse multi-collapse" id="faq4">
+                                <div class="card card-body">
+                                    We encourage everyone to work with a team! Teams may contain up to 4 people. If you don't have one before coming to Hacklahoma, no worries! We will have a team-building session at the beginning of the hacking period.
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="bean">
-                        <h5>What if my question didn't get answered?</h5>
-                        <p>Hey, we're here to help! Email us at <a href="mailto:team@hacklahoma.org">team@hacklahoma.org</a> or reach out to us via Facebook, Twitter, or Instagram. </p>
+                    <div class="row">
+                        <div class="col-sm">
+                            <button class="collapsed" type="button" data-toggle="collapse" data-target="#faq5" aria-expanded="false" aria-controls="#faq5">Sweet! What should I bring?</button>
+                            <div class="collapse multi-collapse" id="faq5">
+                                <div class="card card-body">
+                                    Please bring your student ID for registration! You should also bring your computer, chargers, any hardware/software you plan on using, cell phone, toiletries, sleeping bag, pillow, and a change of clothes. We also recommend you bring a power strip just in case.
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="bean bean-filler"></div>
-                    <div class="bean bean-filler"></div>
-                    <div class="bean bean-filler"></div>
-                    <div class="bean bean-filler"></div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <button class="collapsed" type="button" data-toggle="collapse" data-target="#faq6" aria-expanded="false" aria-controls="#faq6">What if my question didn't get answered?</button>
+                            <div class="collapse multi-collapse" id="faq6">
+                                <div class="card card-body">
+                                    Hey, we're here to help! Email us at <a href="mailto:team@hacklahoma.org">team@hacklahoma.org</a> or reach out to us via Facebook, Twitter, or Instagram.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

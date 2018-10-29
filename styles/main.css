@@ -316,6 +316,14 @@ a.anchor {
   color: #ffd58a;
 }
 
+.faq-desktop {
+	display: block;
+}
+
+.faq-mobile {
+	display: none;
+}
+
 .sponsors img {
   width: 100%;
   height: auto;
