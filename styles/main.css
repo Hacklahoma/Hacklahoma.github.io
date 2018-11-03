@@ -219,10 +219,6 @@ a.anchor {
   max-height: calc(100vh - 80px);
 }
 
-.splash * {
-  /* overflow: hidden; */
-}
-
 .splash #logo-row {
   display: block;
   flex: 0 1 30%;
