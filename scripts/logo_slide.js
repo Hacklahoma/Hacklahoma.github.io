@@ -45,7 +45,9 @@ class Perlin {
         return 0.395 * (n0 + n1);
     }
 }
-  
+ 
+
+const debug = false;
 
 var lastScrollY = -1;
 
@@ -90,6 +92,18 @@ window.onload = function () {
     bee_1_img = document.querySelector("#bee-1 img");
     bee_2 = document.querySelector("#bee-2");
     bee_2_img = document.querySelector("#bee-2 img");
+
+    bee_1.style.display = "block";
+    bee_2.style.display = "block";
+
+    if (debug) {
+        document.querySelector("#bee-1-speed-indicator").style.display = "block";
+        document.querySelector("#bee-1-stats").style.display = "block";
+        document.querySelector("#bee-1-restr").style.display = "block";
+        document.querySelector("#bee-2-speed-indicator").style.display = "block";
+        document.querySelector("#bee-2-stats").style.display = "block";
+        document.querySelector("#bee-2-restr").style.display = "block";
+    }
 
     handle_resize();
 
@@ -137,6 +151,7 @@ function slide_setup() {
 
     if (window.innerWidth <= 1060) {
         should_slide = false;
+        splash_logo.style.visibility = "visible";
     } else {
         if (splash_logo == null) {
             should_slide = false;
@@ -156,15 +171,20 @@ function slide_setup() {
         nav_logo.style.left = "0";
         nav_logo.style.right = "0";
         nav_logo.style.margin = "auto";
+        nav_logo.style.width = "100%";
+        nav_logo.style.max_height = "";
         nav_logo_img.style.maxWidth = "none";
         nav_logo_img.style.width = "100%";
         nav_logo_img.style.maxHeight = "none";
         nav_logo_img.style.height = "100%";
     } else {
-        nav_logo.style.position = "";
+        nav_logo.style.position = "relative";
         nav_logo.style.left = "";
         nav_logo.style.right = "";
         nav_logo.style.margin = "";
+        nav_logo.style.width = "auto";
+        nav_logo.style.height = "auto";
+        nav_logo.style.maxHeight = "80px";
         nav_logo_img.style.maxWidth = "";
         nav_logo_img.style.width = "";
         nav_logo_img.style.maxHeight = "";
@@ -177,6 +197,10 @@ function handle_resize() {
     bee_2_x = Math.random() * document.body.clientWidth;
     bee_1_y = Math.random() * window.innerHeight;
     bee_2_y = Math.random() * window.innerHeight;
+
+    // TODO: this is a hack, fix the underlying problem with the code that determines
+    // the base parallax positions
+    window.scrollTo(0, 0)
 
     parallax_setup();
     slide_setup();
