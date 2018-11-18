@@ -7,6 +7,10 @@
     .navbar.content {
         margin: 0 10vw;
     }
+
+    #mlh-trust-badge {
+        right: 20px;
+    }
 }
 
 @media (max-width: 1180px) {
@@ -16,13 +20,28 @@
     }
 
     .navbar.content {
-        margin: 0 5vw;
+        max-width: 80vw;
+        margin: 0 10vw;
+    }
+
+    #mlh-trust-badge {
+        max-width: 80px;
     }
 }
 
 @media (max-width: 1060px) {
     .navbar {
         position: relative;
+    }
+
+    .navbar.content {
+        max-width: 90vw;
+        margin: 0 5vw;
+    }
+
+    #mlh-trust-badge {
+        position: relative;
+        right: 10px;
     }
 
     .navbar-half {
@@ -64,6 +83,52 @@
     .bean-small {
         width: 30%;
     }
+
+    .faq-desktop {
+        display: none;
+    }
+
+    .faq-mobile {
+        display: block;
+        padding-bottom: 2em;
+        position: relative;
+        width: 60vw;
+        margin: 0 auto;
+    }
+
+	.faq-mobile .row {
+		margin: 0 auto;
+	}
+
+    .faq-mobile button {
+        height: 75px;
+        width: 60vw;
+        background-color: #ffd58a;
+        color: black;
+        border: 2px solid #ffd58a;
+        border-radius: 4px;
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+        margin-top: 0.5em;
+    }
+    
+    .faq-mobile button:not(.collapsed) {
+        background-color: #ffd58a;
+        color: black;
+    }
+    
+    .faq-mobile button:hover {
+        background-color: #008A88;
+        color: #ffffff;
+    }
+
+    .faq-mobile .card {
+        background-color: #008A88;
+        color: white;
+        border: 2px solid #ffd58a;
+        border-radius: 4px;
+        padding: 1em;
+    }
 }
 
 @media (max-width: 530px) {
@@ -74,6 +139,10 @@
     .navbar-half * {
         flex-basis: 0;
         text-align: center;
+    }
+
+    .navbar-logo-link {
+        display: none;
     }
 
     .about p {
