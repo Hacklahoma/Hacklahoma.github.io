@@ -341,14 +341,16 @@ a.anchor {
 footer {
   background-color: #a9d9bc;
   color: white;
-  height: 60px;
+  height: auto;
+  text-align: center;
+  padding-bottom: 5px;
 }
 
 footer .content {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 60px;
 }
 
 footer a {
