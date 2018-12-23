@@ -119,8 +119,12 @@ a.anchor {
   display: flex;
   flex-direction: column;
   align-items: start;
-  width: 30%;
+  width: 28%;
   margin: 1em 0;
+}
+
+.media .bean {
+  width: calc(33% - 1em);
 }
 
 .sponsors .bean a, .sponsors .bean-small a {
@@ -132,13 +136,16 @@ a.anchor {
 
 .bean img, .bean a, .bean-small img, .bean-small a {
   margin: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .bean-small {
   display: flex;
   flex-direction: column;
   align-items: start;
-  width: 22%;
+  width: 21%;
   margin: 1em 0;
 }
 
