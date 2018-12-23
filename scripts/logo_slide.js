@@ -42,7 +42,7 @@ parallax_setup = function() {
         parallax_components = document.querySelectorAll(".parallax");
         for (i = 0; i < parallax_components.length; i++) {
             parallax_components[i].style.display = "block";
-            offset_top = (splash.getBoundingClientRect().bottom - parallax_components[i].getBoundingClientRect().height);
+            offset_top = (splash.getBoundingClientRect().height - parallax_components[i].getBoundingClientRect().height);
             max_parallax_offsets[i] = offset_top;
             parallax_components[i].style.top = offset_top + "px";
         }
