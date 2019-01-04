@@ -301,6 +301,20 @@ a.anchor {
   margin: 0 auto;
 }
 
+.location-content {
+  max-width: 80vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+}
+
+.location-map {
+  flex: 1;
+}
+
 #faq-background {
   background-color: #008A88;
   width: 100%;
