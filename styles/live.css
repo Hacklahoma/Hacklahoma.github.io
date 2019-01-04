@@ -306,13 +306,15 @@ a.anchor {
   margin-left: 10vw;
   margin-right: 10vw;
   display: flex;
-  align-items: center;
-  align-self: center;
   text-align: center;
 }
 
 .location-map {
   flex: 1;
+}
+
+.floor-plans {
+  text-align: center;
 }
 
 #faq-background {
