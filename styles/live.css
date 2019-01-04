@@ -292,10 +292,6 @@ a.anchor {
   color: #a97c50;
 }
 
-#faq-heading {
-  color: #ffd58a;
-}
-
 .about p {
   max-width: 60%;
   margin: 0 auto;
@@ -317,12 +313,29 @@ a.anchor {
   text-align: center;
 }
 
+.agenda-background {
+  background-color: #008A88;
+  width: 100%;
+  height: auto;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#agenda-heading {
+  color: #ffd58a;
+}
+
 #faq-background {
   background-color: #008A88;
   width: 100%;
   height: auto;
   color: white;
   padding-top: 5px;
+}
+
+#faq-heading {
+  color: #ffd58a;
 }
 
 .faq h5 {
