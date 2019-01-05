@@ -340,6 +340,7 @@ a.anchor {
   height: auto;
   color: white;
   padding-top: 5px;
+  margin-bottom: 0;
 }
 
 #faq-heading {
