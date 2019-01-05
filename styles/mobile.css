@@ -129,6 +129,20 @@
         border-radius: 4px;
         padding: 1em;
     }
+
+    .location-desktop {
+        display: none;
+    }
+
+    .location-mobile {
+        display: block;
+        text-align: center;
+    }
+
+    .map-frame {
+        margin-left: 5em;
+        margin-right: 5em;
+    }
 }
 
 @media (max-width: 530px) {
