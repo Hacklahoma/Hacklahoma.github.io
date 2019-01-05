@@ -334,13 +334,16 @@ a.anchor {
   color: #ffd58a;
 }
 
+#faq {
+  margin-bottom: 0;
+}
+
 #faq-background {
   background-color: #008A88;
   width: 100%;
   height: auto;
   color: white;
   padding-top: 5px;
-  margin-bottom: 0;
 }
 
 #faq-heading {
