@@ -118,14 +118,19 @@ a.anchor {
 .bean-pile {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .bean {
   display: flex;
   flex-direction: column;
   align-items: start;
-  width: 30%;
+  width: 28%;
   margin: 1em 0;
+}
+
+.media .bean {
+  width: calc(33% - 1em);
 }
 
 .sponsors .bean a, .sponsors .bean-small a {
@@ -137,13 +142,16 @@ a.anchor {
 
 .bean img, .bean a, .bean-small img, .bean-small a {
   margin: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .bean-small {
   display: flex;
   flex-direction: column;
   align-items: start;
-  width: 22%;
+  width: 21%;
   margin: 1em 0;
 }
 
@@ -370,11 +378,17 @@ footer img {
   max-height: 100%;
 }
 
+footer > p {
+  float: left;
+  height: 14px;
+  margin: 23px 1em;
+}
+
 .bee {
   position: absolute;
   width: 60px;
-  top: -30px; /* TODO: set to -30px */
-  left: -30px; /* TODO: set to -30px */
+  top: -30px;
+  left: -30px;
   z-index: 1;
   transform-origin: center center;
 }

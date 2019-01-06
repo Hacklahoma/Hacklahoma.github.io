@@ -80,6 +80,10 @@
         width: 46%;
     }
 
+    .bean-pile {
+        justify-content: space-around;
+    }
+
     .bean-small {
         width: 30%;
     }
@@ -156,6 +160,10 @@
     .faq  .bean {
         width: 100%;
     }
+
+    .media .bean {
+        width: 100%;
+      }
 
     .bean-small {
         width: 46%;
