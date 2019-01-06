@@ -47,6 +47,10 @@ section {
   margin: 4em 0;
 }
 
+h1, h3, h5, a, p {
+  z-index: 10;
+}
+
 h1 {
   font-family: "LemonMilk";
   font-size: 6em;
@@ -68,6 +72,7 @@ a {
 .bg {
   background-color: white;
   padding-top: 1em;
+  z-index: -20;
 }
 
 .row {
@@ -163,6 +168,7 @@ a.anchor {
   color: #a97c50;
   display: flex;
   justify-content: space-between;
+  z-index: 100;
   /*box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);*/
   z-index: 9998;
 }
@@ -349,14 +355,16 @@ a.anchor {
 footer {
   background-color: #a9d9bc;
   color: white;
-  height: 60px;
+  height: auto;
+  text-align: center;
+  padding-bottom: 5px;
 }
 
 footer .content {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 60px;
 }
 
 footer a {
@@ -374,6 +382,15 @@ footer > p {
   float: left;
   height: 14px;
   margin: 23px 1em;
+}
+
+.bee {
+  position: absolute;
+  width: 60px;
+  top: -30px;
+  left: -30px;
+  z-index: 1;
+  transform-origin: center center;
 }
 
 /* debug 

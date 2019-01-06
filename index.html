@@ -1,7 +1,11 @@
 <!doctype html>
 <html lang="en">
 <head>
+
+	<!-- Charset attribute for the webpage -->    
     <meta charset="utf-8">
+
+    <!-- Bootstrap stylesheets and scripts -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/main.css">
@@ -10,8 +14,11 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="scripts/carousel.min.js"></script>
     <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
-    <title>Hacklahoma // 2019</title>
     
+    <!-- Title -->
+    <title>Hacklahoma 2019</title>
+    
+    <!-- Favicon -->
     <link rel="shortcut icon" href="/img/favicon/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
@@ -21,6 +28,40 @@
     <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
     <meta name="msapplication-TileColor" content="#2d89ef">
     <meta name="theme-color" content="#ffffff">
+
+    <!-- Description for search engines. -->
+    <meta name="description" content="Hacklahoma. February 9-10 2019. Come create with us at our second annual hackathon!" />
+    
+    <!-- Facebook pixel stuff. -->
+    <meta property="og:title" content="HACKLAHOMA">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://hacklahoma.org/img/facebookCardImage.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:url" content="https://hacklahoma.org">
+    <meta property="og:description" content="Hacklahoma. February 9-10 2019. Come create with us at our second annual hackathon!">
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+        document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1555823664723200'); // Insert your pixel ID here.
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1555823664723200&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- DO NOT MODIFY -->
+    <!-- End Facebook Pixel Code -->
+    
+    <!-- FB Pixel that tracks when people visit our website -->
+    <script>
+    fbq('track', 'ViewContent');
+    </script>
 </head>
 
 <body>
@@ -29,6 +70,22 @@
         <img class="parallax display-none" id="parallax-1" src="img/Farthest Hill.svg">
         <img class="parallax display-none" id="parallax-2" src="img/Middle Hill.svg">
         <img class="parallax display-none" id="parallax-3" src="img/Closest Hill.svg">
+    </div>
+    <div id="bee-1" class="bee display-none">
+        <img src="img/hacklahoma_bee.svg" alt="A Really Cute Bee">
+        <div id="bee-1-speed-indicator" class="display-none" style="background-color: blue; height: 50px; width: 3px;">
+            <div id="bee-1-speed" style="background-color: red; height: 100%; width: 3px;"></div>
+        </div>
+        <p id="bee-1-stats" class="display-none"></p>
+        <p id="bee-1-restr" class="display-none"></p>
+    </div>
+    <div id="bee-2" class="bee display-none">
+        <img src="img/hacklahoma_bee.svg" alt="A Really Cute Bee">
+        <div id="bee-2-speed-indicator" class="display-none" style="background-color: blue; height: 50px; width: 3px;">
+            <div id="bee-2-speed" style="background-color: red; height: 100%; width: 3px;"></div>
+        </div>
+        <p id="bee-2-stats" class="display-none"></p>
+        <p id="bee-2-restr" class="display-none"></p>
     </div>
     <nav class="navbar">
         <div class="navbar content">
@@ -53,7 +110,7 @@
             <h1 class="splash-title">HACKLAHOMA</h1>
         </div>
         <div class="row justify-around" id="button-row">
-            <a class="link-button" href="https://goo.gl/forms/Y8Ix9qOKU2ZnQ1u33"><h3>Stay Updated</h3></a>
+            <a class="link-button" href="https://hacklahoma.typeform.com/to/x3Hpf3"><h3>APPLY NOW</h3></a>
         </div>
         <div class="row content justify-between" id="info-row">
             <div class="">
@@ -226,6 +283,7 @@
                 <a href="https://twitter.com/hacklahoma"><img src="img/twitter_d3.svg"></a>
                 <a href="https://www.instagram.com/hacklahoma/"><img src="img/insta_d3.svg"></a>
             </div>
+            <p>© 2018 Hacklahoma</p>
         </footer>
     </div>
 </body>
