@@ -24,6 +24,7 @@ body {
   margin: 0;
   background-color: white;
   font-family: "Avenir";
+  max-width: 100vw;
   overflow-x: hidden;
 }
 
@@ -154,13 +155,14 @@ a.anchor {
 .navbar {
   position: fixed;
   width: 100%;
-  height: 80px;
+  height: 60px;
   background-color: #a9d9bc;
   color: #a97c50;
   display: flex;
   justify-content: space-between;
   z-index: 100;
   /*box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);*/
+  z-index: 9998;
 }
 
 .navbar.content {
@@ -223,10 +225,6 @@ a.anchor {
   max-height: calc(100vh - 80px);
 }
 
-.splash * {
-  overflow: hidden;
-}
-
 .splash #logo-row {
   display: block;
   flex: 0 1 30%;
@@ -235,7 +233,7 @@ a.anchor {
 .splash #title-row {
   margin-bottom: 20px;
   flex: 1 1 12%;
-  text-shadow: 0 0 1px black;
+  text-shadow: 0 0 2px #666666;
 }
 
 .splash #button-row {
@@ -244,12 +242,9 @@ a.anchor {
 
 .splash #info-row {
   flex: 1 1 10%;
-  text-shadow: 0 0 1px black;
-}
-
-.splash #info-row {
-  flex: 1 1 10%;
-  text-shadow: 0 0 1px black;
+  text-shadow: 1px 2px 2px #666666;
+  font-family: "LemonMilk";
+  font-weight: 300;
 }
 
 .splash h3 {
@@ -262,6 +257,7 @@ a.anchor {
   max-width: 400px;
   flex: 1 1 auto;
   margin: 0 auto;
+  z-index: 9999;
 }
 
 .link-button {
@@ -269,8 +265,9 @@ a.anchor {
   text-decoration: none;
   color: white;
   padding: 10px;
-  box-shadow: 0 0 1px black;
-  margin: 1px;
+  box-shadow: 1px 2px 2px #666666;
+  margin: 5px;
+  height: 55px;
 }
 
 .link-button:hover {
@@ -295,13 +292,43 @@ a.anchor {
   will-change: transform;
 }
 
+.heading {
+  font-family: "LemonMilk";
+  font-weight: 500;
+  color: #a97c50;
+}
+
+#faq-heading {
+  color: #ffd58a;
+}
+
 .about p {
   max-width: 60%;
   margin: 0 auto;
 }
 
+#faq-background {
+  background-color: #008A88;
+  width: 100%;
+  height: auto;
+  color: white;
+  padding-top: 5px;
+}
+
 .faq h5 {
   margin: 0;
+}
+
+.faq a {
+  color: #ffd58a;
+}
+
+.faq-desktop {
+	display: block;
+}
+
+.faq-mobile {
+	display: none;
 }
 
 .sponsors img {
@@ -313,17 +340,23 @@ a.anchor {
   text-align: center;
 }
 
+.media {
+  display: block;
+}
+
 footer {
   background-color: #a9d9bc;
   color: white;
-  height: 60px;
+  height: auto;
+  text-align: center;
+  padding-bottom: 5px;
 }
 
 footer .content {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 60px;
 }
 
 footer a {

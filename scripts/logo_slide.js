@@ -1,6 +1,6 @@
 // TODO: separate nav logo size from bottom/offset
 
-const NAV_LOGO_BOTTOM = 80;
+const NAV_LOGO_BOTTOM = 60;
 const MAX_SPLASH_SIZE = 400;
 const BASE_SPEED_FACTOR = 0.6;
 const BEE_BORDER_WIDTH = 200;
