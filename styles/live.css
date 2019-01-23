@@ -428,6 +428,15 @@ footer img {
   max-height: 100%;
 }
 
+.bee {
+  position: absolute;
+  width: 60px;
+  top: -30px;
+  left: -30px;
+  z-index: 1;
+  transform-origin: center center;
+}
+
 /* debug 
 * {
   border: 1px solid red;
