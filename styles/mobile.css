@@ -133,6 +133,20 @@
         border-radius: 4px;
         padding: 1em;
     }
+
+    .location-desktop {
+        display: none;
+    }
+
+    .location-mobile {
+        display: block;
+        text-align: center;
+    }
+
+    .map-frame {
+        margin-left: 5em;
+        margin-right: 5em;
+    }
 }
 
 @media (max-width: 530px) {
@@ -167,5 +181,11 @@
 
     .bean-small {
         width: 46%;
+    }
+}
+
+@media (max-width: 475px) {
+    .fc-resource-cell {
+        font-size: 0.7em;
     }
 }

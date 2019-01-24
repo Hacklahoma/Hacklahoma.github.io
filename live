@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+	<!-- Charset attribute for the webpage -->    
+    <meta charset="utf-8">
+
+    <!-- Bootstrap stylesheets and scripts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="styles/carousel.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/live.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/fullcalendar.min.css">
+    <link rel="stylesheet" href="styles/scheduler.min.css">
+    <script type="text/javascript" src="scripts/logo_slide.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/carousel.min.js"></script>
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/moment.js"></script>
+    <script type="text/javascript" src="scripts/fullcalendar.min.js"></script>
+    <script type="text/javascript" src="scripts/scheduler.min.js"></script>
+    <script type="text/javascript" src="scripts/calendar.js"></script>
+    
+    <!-- Title -->
+    <title>Hacklahoma 2019</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#ffd58a">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Description for search engines. -->
+    <meta name="description" content="Hacklahoma. February 9-10 2019. Come create with us at our second annual hackathon!" />
+    
+    <!-- Facebook pixel stuff. -->
+    <meta property="og:title" content="HACKLAHOMA">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://hacklahoma.org/img/facebookCardImage.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:url" content="https://hacklahoma.org">
+    <meta property="og:description" content="Hacklahoma. February 9-10 2019. Come create with us at our second annual hackathon!">
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+        document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1555823664723200'); // Insert your pixel ID here.
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1555823664723200&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- DO NOT MODIFY -->
+    <!-- End Facebook Pixel Code -->
+    
+    <!-- FB Pixel that tracks when people visit our website -->
+    <script>
+    fbq('track', 'ViewContent');
+    </script>
+</head>
+
+<body>
+    <div id="parallax-container">
+        <img class="parallax display-none" id="parallax-0" src="img/Background.svg">
+        <img class="parallax display-none" id="parallax-1" src="img/Farthest Hill.svg">
+        <img class="parallax display-none" id="parallax-2" src="img/Middle Hill.svg">
+        <img class="parallax display-none" id="parallax-3" src="img/Closest Hill.svg">
+    </div>
+    <div id="bee-1" class="bee display-none">
+        <img src="img/hacklahoma_bee.svg" alt="A Really Cute Bee">
+        <div id="bee-1-speed-indicator" class="display-none" style="background-color: blue; height: 50px; width: 3px;">
+            <div id="bee-1-speed" style="background-color: red; height: 100%; width: 3px;"></div>
+        </div>
+        <p id="bee-1-stats" class="display-none"></p>
+        <p id="bee-1-restr" class="display-none"></p>
+    </div>
+    <div id="bee-2" class="bee display-none">
+        <img src="img/hacklahoma_bee.svg" alt="A Really Cute Bee">
+        <div id="bee-2-speed-indicator" class="display-none" style="background-color: blue; height: 50px; width: 3px;">
+            <div id="bee-2-speed" style="background-color: red; height: 100%; width: 3px;"></div>
+        </div>
+        <p id="bee-2-stats" class="display-none"></p>
+        <p id="bee-2-restr" class="display-none"></p>
+    </div>
+    <nav class="navbar">
+        <div class="navbar content">
+            <div class="navbar-half" id="nav-links">
+                <a class="" href="#location-anchor">Location</a>
+                <a class="" href="#agenda-anchor">Agenda</a>
+            </div>
+            <a class="navbar-logo-link" href="#splash-anchor"><img class="navbar-logo" src="img/hacklahoma19_centered.svg"/></a>
+            <div class="navbar-half" id="nav-links">
+                <a class="" href="#resources-anchor">Resources</a>
+                <a class="" href="#faq-anchor">FAQ</a>
+            </div>
+            <a id="mlh-trust-badge" href="https://mlh.io/seasons/na-2019/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2019-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg" alt="Major League Hacking 2019 Hackathon Season"></a>
+        </div>
+    </nav>
+    <a class="anchor" id="splash-anchor"></a>
+    <section class="splash">
+        <img class="splash-logo" src="img/hacklahoma19_centered.svg"/>
+        <div class="row justify-around" id="title-row">
+            <h1 class="splash-title">HACKLAHOMA</h1>
+        </div>
+        <div class="row justify-around" id="button-row">
+            <a class="link-button" href="https://hacklahoma.typeform.com/to/x3Hpf3"><h3>APPLY NOW</h3></a>
+        </div>
+        <div class="row content justify-between" id="info-row">
+            <div class="">
+                <h3>February 9-10, 2019</h3>
+            </div>
+            <div class="">
+                <h3>The University of Oklahoma</h3>
+            </div>
+        </div>
+    </section>
+    <div class="bg">
+        <a class="anchor" id="location-anchor"></a>
+        <section class="location">
+            <div class="content">
+                <h3 id="location-heading" class="heading">Location</h3>
+            </div>
+            <div class="location-desktop">
+                <div class="location-map">
+                    <h3>Devon Energy Hall</h3>
+                    <p>110 West Boyd Street Norman, OK 73019</p>
+                    <div class="map-frame"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3259.8269510118766!2d-97.44402318436396!3d35.210779163235486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b269d4244ae647%3A0xee193280b8b016ad!2sDevon+Energy+Hall%2C+Norman%2C+OK+73019!5e0!3m2!1sen!2sus!4v1546573751701" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+                </div>
+                <div class="spacer"></div>
+                <div class="location-map">
+                    <h3>Parking</h3>
+                    <p>Parking is allowed only in the lots highlighted in red</p>
+                    <div class="map-frame"><iframe src="https://www.google.com/maps/d/embed?mid=1mKRBR-mSlaId0mzKxDYRovgzPIjB25Rf" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+                </div>
+            </div>
+            <div class="location-mobile">
+                <h3>Devon Energy Hall</h3>
+                <p>110 West Boyd Street Norman, OK 73019</p>
+                    <div class="map-frame"><iframe id="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3259.8269510118766!2d-97.44402318436396!3d35.210779163235486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b269d4244ae647%3A0xee193280b8b016ad!2sDevon+Energy+Hall%2C+Norman%2C+OK+73019!5e0!3m2!1sen!2sus!4v1546573751701" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+                <h3>Parking</h3>
+                <p>Parking is allowed only in the lots highlighted in red</p>
+                <div class="map-frame"><iframe id="map-frame" src="https://www.google.com/maps/d/embed?mid=1mKRBR-mSlaId0mzKxDYRovgzPIjB25Rf" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+            </div>
+            <div class="floor-plans content">
+                <h3>Floor Plans</h3>
+                <div id="floor-plans" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="img/floor 1.png" />
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/floor 2.png" />
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/floor 3.png" />
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/floor 4.png" />
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/floor 5.png" />
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/repf.png" />
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#floor-plans" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#floor-plans" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <a class="anchor" id="agenda-anchor"></a>
+        <div class="agenda-background">
+            <section id="agenda" class="agenda content">
+                <h3 id="agenda-heading" class="heading">Agenda</h3>
+                <h3 style="text-align: center;">Hacking begins at 11:30 on Saturday!</h3>
+                <div id="calendar">
+
+                </div>
+                <h3 style="text-align: center;">Allow 10 minutes to setup before each workshop/activity.</h3>
+            </section>
+        </div>
+        <a class="anchor" id="resources-anchor"></a>
+        <section class="resources content" id="resources">
+            <h3 class="heading">Resources</h3>
+            <div class="bean-pile">
+                <div class="bean"><a href="#"><img src="img/sponsors/googleCloud.svg"/>Best Use of Google Cloud API</a></div>
+                <div class="bean"><a href="#"><img src="img/sponsors/twilio.png"/>Best Use of Twilio API</a></div>
+                <div class="bean"><a href="#"><img src="img/sponsors/lexisNexis.png"/>TBD</a></div>
+                <div class="bean"><a href="#"><img src="img/sponsors/karsun.png"/>TBD</a></div>
+                <div class="bean"><a href="#"><img src="img/sponsors/jpmc.png"/>TBD</a></div>
+                <div class="bean"><a href="#"><img src="img/sponsors/hobbyLobby.png"/>TBD</a></div>
+                <div class="bean bean-filler"></div>
+                <div class="bean bean-filler"></div>
+                <div class="bean bean-filler"></div>
+            </div>
+            <h3 style="text-align: center;"><a href="https://docs.google.com/document/d/12Q02Oqn5PS_LE-FE8GkcxEg05MpNv7Bb71G-GAOH6N4/edit#">General Hacker Resources</a></h3>
+        </section>
+        <a class="anchor" id="faq-anchor"></a>
+        <div id="faq-background">
+            <section id="faq" class="faq content">
+                <h3 id="faq-heading" class="heading">FAQ</h3>
+                <div class="faq-desktop">
+                    <div class="bean-pile justify-between">
+                        <div class="bean">
+                            <h5>Sounds cool! But what's a hackathon?</h5>
+                            <p>A hackathon is best described as an “invention marathon”. Anyone who has an interest in technology attends one to learn, build & share their creations over the course of a weekend in a relaxed and welcoming atmosphere. - MLH </p>
+                        </div>
+                        <div class="bean">
+                            <h5>Who can attend?</h5>
+                            <p>Any university student over the age of 18 can participate, regardless of major, background, or skill level. Participants must also abide by the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct.</a></p>
+                        </div>
+                        <div class="bean">
+                            <h5>Does this cost anything?</h5>
+                            <p>Admission to Hacklahoma is <b>free</b> for all attendees! Food, drinks, and sleeping areas are provided by us. Travel reimbursement will be granted based on our funding.</p>
+                        </div>
+                        <div class="bean">
+                            <h5>Can we have teams?</h5>
+                            <p>We encourage everyone to work with a team! Teams may contain up to 4 people. If you don't have one before coming to Hacklahoma, no worries! We will have a team-building session at the beginning of the hacking period.</p>
+                        </div>
+                        <div class="bean">
+                            <h5>Sweet! What should I bring?</h5>
+                            <p>Please bring your student ID for registration! You should also bring your computer, chargers, any hardware/software you plan on using, cell phone, toiletries, sleeping bag, pillow, and a change of clothes. We also recommend you bring a power strip just in case. </p>
+                        </div>
+                        <div class="bean">
+                            <h5>What if my question didn't get answered?</h5>
+                            <p>Hey, we're here to help! Email us at <a href="mailto:team@hacklahoma.org">team@hacklahoma.org</a> or reach out to us via Facebook, Twitter, or Instagram. </p>
+                        </div>
+                        <div class="bean bean-filler"></div>
+                        <div class="bean bean-filler"></div>
+                        <div class="bean bean-filler"></div>
+                        <div class="bean bean-filler"></div>
+                    </div>
+                </div>
+                <div class="faq-mobile">
+                    <div class="row">
+                        <div class="col-sm">
+                            <button class="collapsed" type="button" data-toggle="collapse" data-target="#faq1" aria-expanded="false" aria-controls="#faq1">Sounds cool! But what's a hackathon?</button>
+                            <div class="collapse multi-collapse" id="faq1">
+                                <div class="card card-body">
+                                    A hackathon is best described as an “invention marathon”. Anyone who has an interest in technology attends one to learn, build & share their creations over the course of a weekend in a relaxed and welcoming atmosphere. - MLH
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <button class="collapsed" type="button" data-toggle="collapse" data-target="#faq2" aria-expanded="false" aria-controls="#faq2">Who can attend?</button>
+                            <div class="collapse multi-collapse" id="faq2">
+                                <div class="card card-body">
+                                    Any university student over the age of 18 can participate, regardless of major, background, or skill level. Participants must also abide by the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct.</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <button class="collapsed" type="button" data-toggle="collapse" data-target="#faq3" aria-expanded="false" aria-controls="#faq3">Does this cost anything?</button>
+                            <div class="collapse multi-collapse" id="faq3">
+                                <div class="card card-body">
+                                    Admission to Hacklahoma is <b>free</b> for all attendees! Food, drinks, and sleeping areas are provided by us. Travel reimbursement will be granted based on our funding.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <button class="collapsed" type="button" data-toggle="collapse" data-target="#faq4" aria-expanded="false" aria-controls="#faq4">Can we have teams?</button>
+                            <div class="collapse multi-collapse" id="faq4">
+                                <div class="card card-body">
+                                    We encourage everyone to work with a team! Teams may contain up to 4 people. If you don't have one before coming to Hacklahoma, no worries! We will have a team-building session at the beginning of the hacking period.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <button class="collapsed" type="button" data-toggle="collapse" data-target="#faq5" aria-expanded="false" aria-controls="#faq5">Sweet! What should I bring?</button>
+                            <div class="collapse multi-collapse" id="faq5">
+                                <div class="card card-body">
+                                    Please bring your student ID for registration! You should also bring your computer, chargers, any hardware/software you plan on using, cell phone, toiletries, sleeping bag, pillow, and a change of clothes. We also recommend you bring a power strip just in case.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <button class="collapsed" type="button" data-toggle="collapse" data-target="#faq6" aria-expanded="false" aria-controls="#faq6">What if my question didn't get answered?</button>
+                            <div class="collapse multi-collapse" id="faq6">
+                                <div class="card card-body">
+                                    Hey, we're here to help! Email us at <a href="mailto:team@hacklahoma.org">team@hacklahoma.org</a> or reach out to us via Facebook, Twitter, or Instagram.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="content">
+                <a href="https://www.facebook.com/Hacklahoma/"><img src="img/facebook_d3.svg"></a>
+                <a href="https://twitter.com/hacklahoma"><img src="img/twitter_d3.svg"></a>
+                <a href="https://www.instagram.com/hacklahoma/"><img src="img/insta_d3.svg"></a>
+            </div>
+            <p>© 2018 Hacklahoma</p>
+        </footer>
+    </div>
+</body>
+</html>
