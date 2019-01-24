@@ -183,3 +183,9 @@
         width: 46%;
     }
 }
+
+@media (max-width: 475px) {
+    .fc-resource-cell {
+        font-size: 0.7em;
+    }
+}

@@ -11,10 +11,16 @@
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/live.css">
     <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/fullcalendar.min.css">
+    <link rel="stylesheet" href="styles/scheduler.min.css">
     <script type="text/javascript" src="scripts/logo_slide.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="scripts/carousel.min.js"></script>
     <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/moment.js"></script>
+    <script type="text/javascript" src="scripts/fullcalendar.min.js"></script>
+    <script type="text/javascript" src="scripts/scheduler.min.js"></script>
+    <script type="text/javascript" src="scripts/calendar.js"></script>
     
     <!-- Title -->
     <title>Hacklahoma 2019</title>
@@ -185,7 +191,11 @@
         <div class="agenda-background">
             <section id="agenda" class="agenda content">
                 <h3 id="agenda-heading" class="heading">Agenda</h3>
-                <p>Coming Soon!</p>
+                <h3 style="text-align: center;">Hacking begins at 11:30 on Saturday!</h3>
+                <div id="calendar">
+
+                </div>
+                <h3 style="text-align: center;">Allow 10 minutes to setup before each workshop/activity.</h3>
             </section>
         </div>
         <a class="anchor" id="resources-anchor"></a>

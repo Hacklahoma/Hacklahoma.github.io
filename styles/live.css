@@ -438,6 +438,10 @@ footer img {
   transform-origin: center center;
 }
 
+.fc-content {
+  padding: 5px;
+}
+
 /* debug 
 * {
   border: 1px solid red;
