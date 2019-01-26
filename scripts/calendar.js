@@ -122,11 +122,23 @@ $(function() {
                 resourceId: 'b',
                 title: 'Workshops',
                 start: '2019-02-09T13:30',
-                end: '2019-02-09T18:00'
+                end: '2019-02-09T14:30'
+            },
+            {
+                resourceId: 'b',
+                title: 'Karsun Solutions',
+                start: '2019-02-09T14:30',
+                end: '2019-02-09T15:30'
             },
             {
                 resourceId: 'b',
                 title: 'Workshops',
+                start: '2019-02-09T15:30',
+                end: '2019-02-09T18:00'
+            },
+            {
+                resourceId: 'b',
+                title: 'Google Maps',
                 start: '2019-02-09T19:00',
                 end: '2019-02-09T20:00'
             },
