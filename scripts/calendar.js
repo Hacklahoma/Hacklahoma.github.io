@@ -185,27 +185,9 @@ $(function() {
                 end: '2019-02-10T13:00'
             },
             {
-                resourceId: 'r',
-                title: 'Clean',
-                start: '2019-02-10T13:00',
-                end: '2019-02-10T14:30'
-            },
-            {
-                resourceId: 'at',
-                title: 'Clean',
-                start: '2019-02-10T12:00',
-                end: '2019-02-10T13:30'
-            },
-            {
                 resourceId: 'at',
                 title: 'Closing Ceremony',
                 start: '2019-02-10T13:30',
-                end: '2019-02-10T14:30'
-            },
-            {
-                resourceIds: ['a', 'b', 's'],
-                title: 'Clean',
-                start: '2019-02-10T12:00',
                 end: '2019-02-10T14:30'
             },
             {
@@ -213,12 +195,6 @@ $(function() {
                 title: 'Top 3 Presentations + Awards',
                 start: '2019-02-10T14:30',
                 end: '2019-02-10T15:00'
-            },
-            {
-                resourceIds: ['at', 'a', 'b', 's', 'r'],
-                title: 'Clean',
-                start: '2019-02-10T15:00',
-                end: '2019-02-10T16:30'
             }
         ],
 
