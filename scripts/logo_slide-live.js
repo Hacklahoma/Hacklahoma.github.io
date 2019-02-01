@@ -34,7 +34,9 @@ window.onload = function () {
 }
 
 window.onresize = function () {
-    handle_resize();
+    if(window.innerHeight >= 1060) {
+        handle_resize();
+    }
 }
 
 function slide_setup() {
