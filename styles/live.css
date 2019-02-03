@@ -403,6 +403,38 @@ a.anchor {
   display: block;
 }
 
+.tracks .bean-pile .bean {
+  padding: 10px;
+  margin: 10px;
+  border: solid #ffd58a;
+  border-radius: 15px;
+}
+
+.tracks .bean-pile .bean .heading {
+  font-family: "LemonMilk";
+  font-weight: 300;
+  color: #a97c50;
+  margin: -5px 0;
+}
+
+.tracks .bean-pile .bean a {
+  text-decoration: none;
+  color: #000;
+}
+
+.tracks .bean-pile .bean:hover {
+  background-color: #008A88;
+  color: #fff;
+}
+
+.tracks .bean-pile .bean:hover .heading {
+  color: #ffd58a;
+}
+
+.tracks .bean-pile .bean:hover a {
+  color: #fff;
+}
+
 footer {
   background-color: #a9d9bc;
   color: white;
