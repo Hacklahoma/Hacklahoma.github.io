@@ -15,11 +15,11 @@ $(function() {
 
         viewRender: function(view) {
             if(view.start < minDate) {
-                $('#calendar').fullCalendar('gotoDate', minDate);
+                $('#schedule').fullCalendar('gotoDate', minDate);
             }
 
             if (view.start > maxDate - 1) {
-                $('#calendar').fullCalendar('gotoDate', maxDate);
+                $('#schedule').fullCalendar('gotoDate', maxDate);
             }
         },
 
@@ -174,11 +174,11 @@ $(function() {
 
         viewRender: function(view) {
             if(view.start < minDate) {
-                $('#calendar').fullCalendar('gotoDate', minDate);
+                $('#workshops').fullCalendar('gotoDate', minDate);
             }
 
-            if (view.start > maxDate - 1) {
-                $('#calendar').fullCalendar('gotoDate', maxDate);
+            if (view.start > (minDate - 1)) {
+                $('#workshops').fullCalendar('gotoDate', minDate);
             }
         },
 
