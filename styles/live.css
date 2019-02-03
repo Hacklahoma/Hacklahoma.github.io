@@ -422,6 +422,11 @@ a.anchor {
   color: #000;
 }
 
+.tracks .bean-pile .bean .inner-link {
+  color: #a97c50;
+  text-decoration: underline;
+}
+
 .tracks .bean-pile .bean:hover {
   background-color: #008A88;
   color: #fff;
@@ -433,6 +438,11 @@ a.anchor {
 
 .tracks .bean-pile .bean:hover a {
   color: #fff;
+}
+
+.tracks .bean-pile .bean:hover .inner-link {
+  color: #ffd58a;
+  text-decoration: underline;
 }
 
 footer {
