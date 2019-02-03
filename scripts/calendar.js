@@ -77,18 +77,6 @@ $(function() {
                 end: '2019-02-09T11:30'
             },
             {
-                resourceId: 'a',
-                title: 'Workshops',
-                start: '2019-02-09T13:30',
-                end: '2019-02-09T18:00'
-            },
-            {
-                resourceId: 'a',
-                title: 'Workshops',
-                start: '2019-02-09T19:00',
-                end: '2019-02-09T20:00'
-            },
-            {
                 resourceId: 'b',
                 title: 'Sponsor/Mentor Check In',
                 start: '2019-02-09T08:00',
@@ -98,19 +86,7 @@ $(function() {
                 resourceId: 'b',
                 title: 'Lunch',
                 start: '2019-02-09T12:00',
-                end: '2019-02-09T12:30'
-            },
-            {
-                resourceId: 'b',
-                title: 'Workshops',
-                start: '2019-02-09T12:30',
-                end: '2019-02-09T18:00'
-            },
-            {
-                resourceId: 'b',
-                title: 'Workshops',
-                start: '2019-02-09T19:00',
-                end: '2019-02-09T20:00'
+                end: '2019-02-09T13:00'
             },
             {
                 resourceId: 'r',
