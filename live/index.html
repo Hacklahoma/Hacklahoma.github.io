@@ -81,8 +81,8 @@
             <a class="navbar-logo-link" href="#splash-anchor"><img class="navbar-logo" src="../img/hacklahoma19_centered.svg"/></a>
             <div class="navbar-half" id="nav-links">
                 <a class="" href="#resources-anchor">Resources</a>
-                <a class="blurred" href="#tracks-anchor">Tracks</a>
                 <a class="" href="#faq-anchor">FAQ</a>
+                <a class="" href="#tracks-anchor">Tracks</a>
             </div>
             <a id="mlh-trust-badge" href="https://mlh.io/seasons/na-2019/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2019-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg" alt="Major League Hacking 2019 Hackathon Season"></a>
         </div>
@@ -105,10 +105,10 @@
             </div>
         </div>
         <div class="row content justify-between" id="info-row">
-            <div class="">
+            <div class="wifi">
                 <h3>Wifi: OUGUEST</h3>
             </div>
-            <div class="">
+            <div class="slack">
                 <h3><a href="http://hacklahoma19.slack.com/" target="_blank" style="color: #ffd58a">Slack Workspace</a></h3>
             </div>
         </div>
@@ -179,7 +179,12 @@
             <section id="agenda" class="agenda content">
                 <h3 id="agenda-heading" class="heading">Agenda</h3>
                 <h3 style="text-align: center;">Hacking begins at 11:30 on Saturday!</h3>
-                <div id="calendar">
+                <h3>Main Schedule:</h3>
+                <div id="schedule">
+
+                </div>
+                <h3>Workshops Schedule:</h3>
+                <div id="workshops">
 
                 </div>
             </section>
@@ -187,13 +192,13 @@
         <a class="anchor" id="resources-anchor"></a>
         <section class="resources content" id="resources">
             <h3 class="heading">Resources</h3>
-            <h3 style="text-align: center;"><a href="https://docs.google.com/document/d/12Q02Oqn5PS_LE-FE8GkcxEg05MpNv7Bb71G-GAOH6N4/edit?usp=sharing">Here are some resources to get you started!</a></h3>
+            <h3 style="text-align: center;"><a href="https://docs.google.com/document/d/12Q02Oqn5PS_LE-FE8GkcxEg05MpNv7Bb71G-GAOH6N4/edit?usp=sharing" target="_blank">Here are some resources to get you started!</a></h3>
+            <h3>Prizes:</h3>
             <div class="bean-pile">
                 <div class="bean"><a href="#"><img src="../img/sponsors/googleCloud.svg"/>Best Use of Google Cloud API</a></div>
                 <div class="bean"><a href="#"><img src="../img/sponsors/twilio.png"/>Best Use of Twilio API</a></div>
                 <div class="bean"><a href="#"><img src="../img/sponsors/karsun.png"/>TBD</a></div>
                 <div class="bean"><a href="#"><img src="../img/sponsors/jpmc.png"/>TBD</a></div>
-                <div class="bean"><a href="#"><img src="../img/sponsors/hobbyLobby.png"/>TBD</a></div>
                 <div class="bean bean-filler"></div>
                 <div class="bean bean-filler"></div>
                 <div class="bean bean-filler"></div>
@@ -211,7 +216,7 @@
                         </div>
                         <div class="bean">
                             <h5>What should I bring?</h5>
-                            <p>Please bring your student ID for registration! You should also bring your computer, chargers, any hardware/software you plan on using, cell phone, toiletries, sleeping bag, pillow, and a change of clothes. We also recommend you bring a power strip just in case. </p>
+                            <p>Please bring your student ID for registration! You should also bring your computer, chargers, any hardware/software you plan on using, cell phone, toiletries, sleeping bag, pillow, and a change of clothes. We also recommend you bring a power strip just in case. <b>If you know what software/digital media you will be using for your project, it would be helpful to download them before the event to save you time.</b></p>
                         </div>
                         <div class="bean">
                             <h5>Can we have teams?</h5>
@@ -232,6 +237,10 @@
                         <div class="bean">
                             <h5>What if an emergency occurs?</h5>
                             <p>We will update this answer before the event with our emergency protocols.</p>
+                        </div>
+                        <div class="bean">
+                            <h5>I am being harassed/feel suspicious about something or someone...</h5>
+                            <p>If you are in an uncomfortable situation, please report this immediately to our staff. You may also refer to this <a href="https://docs.google.com/document/d/1NeWZhgI2odYzeRxqp8htB2xAY4fzee3E2Z7he6s0sVI/edit?usp=sharing" target="_blank">list of emergency contacts</a> if you don't feel comfortable sharing with us.</p>
                         </div>
                         <div class="bean">
                             <h5>What if my question didn't get answered?</h5>
@@ -256,8 +265,18 @@
                     </div>
                     <div class="row">
                         <div class="col-sm">
-                            <button class="collapsed" type="button" data-toggle="collapse" data-target="#faq4" aria-expanded="false" aria-controls="#faq4">Can we have teams?</button>
-                            <div class="collapse multi-collapse" id="faq4">
+                            <button class="collapsed" type="button" data-toggle="collapse" data-target="#faq2" aria-expanded="false" aria-controls="#faq2">What should I bring?</button>
+                            <div class="collapse multi-collapse" id="faq2">
+                                <div class="card card-body">
+                                    Please bring your student ID for registration! You should also bring your computer, chargers, any hardware/software you plan on using, cell phone, toiletries, sleeping bag, pillow, and a change of clothes. We also recommend you bring a power strip just in case. <b>If you know what software/digital media you will be using for your project, it would be helpful to download them before the event to save you time.</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <button class="collapsed" type="button" data-toggle="collapse" data-target="#faq3" aria-expanded="false" aria-controls="#faq3">Can we have teams?</button>
+                            <div class="collapse multi-collapse" id="faq3">
                                 <div class="card card-body">
                                     We encourage everyone to work with a team! Teams may contain up to 4 people. If you don't have one before coming to Hacklahoma, no worries! We will have a team-building session at the beginning of the hacking period.
                                 </div>
@@ -266,18 +285,8 @@
                     </div>
                     <div class="row">
                         <div class="col-sm">
-                            <button class="collapsed" type="button" data-toggle="collapse" data-target="#faq5" aria-expanded="false" aria-controls="#faq5">What should I bring?</button>
-                            <div class="collapse multi-collapse" id="faq5">
-                                <div class="card card-body">
-                                    Please bring your student ID for registration! You should also bring your computer, chargers, any hardware/software you plan on using, cell phone, toiletries, sleeping bag, pillow, and a change of clothes. We also recommend you bring a power strip just in case.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm">
-                            <button class="collapsed" type="button" data-toggle="collapse" data-target="#faq2" aria-expanded="false" aria-controls="#faq2">Will there be a place to sleep?</button>
-                            <div class="collapse multi-collapse" id="faq2">
+                            <button class="collapsed" type="button" data-toggle="collapse" data-target="#faq4" aria-expanded="false" aria-controls="#faq4">Will there be a place to sleep?</button>
+                            <div class="collapse multi-collapse" id="faq4">
                                 <div class="card card-body">
                                     The sleeping area will be located in the Rawl Engineering Practice Facility on the 2nd floor.
                                 </div>
@@ -286,8 +295,8 @@
                     </div>
                     <div class="row">
                         <div class="col-sm">
-                            <button class="collapsed" type="button" data-toggle="collapse" data-target="#faq3" aria-expanded="false" aria-controls="#faq3">How do I submit my project?</button>
-                            <div class="collapse multi-collapse" id="faq3">
+                            <button class="collapsed" type="button" data-toggle="collapse" data-target="#faq5" aria-expanded="false" aria-controls="#faq5">How do I submit my project?</button>
+                            <div class="collapse multi-collapse" id="faq5">
                                 <div class="card card-body">
                                     You can submit your project on our <a href="https://hacklahoma.devpost.com/" target="_blank">Devpost</a>.
                                 </div>
@@ -296,8 +305,8 @@
                     </div>
                     <div class="row">
                         <div class="col-sm">
-                            <button class="collapsed" type="button" data-toggle="collapse" data-target="#faq4" aria-expanded="false" aria-controls="#faq4">How do I get travel reimbursement?</button>
-                            <div class="collapse multi-collapse" id="faq4">
+                            <button class="collapsed" type="button" data-toggle="collapse" data-target="#faq6" aria-expanded="false" aria-controls="#faq6">How do I get travel reimbursement?</button>
+                            <div class="collapse multi-collapse" id="faq6">
                                 <div class="card card-body">
                                     To be reimbursed, tag us on social media with #Hacklahoma19, submit a project through Devpost, and show us a <b>physical receipt</b>.
                                 </div>
@@ -306,8 +315,8 @@
                     </div>
                     <div class="row">
                         <div class="col-sm">
-                            <button class="collapsed" type="button" data-toggle="collapse" data-target="#faq5" aria-expanded="false" aria-controls="#faq5">What if an emergency occurs?</button>
-                            <div class="collapse multi-collapse" id="faq5">
+                            <button class="collapsed" type="button" data-toggle="collapse" data-target="#faq7" aria-expanded="false" aria-controls="#faq7">What if an emergency occurs?</button>
+                            <div class="collapse multi-collapse" id="faq7">
                                 <div class="card card-body">
                                     We will update this answer before the event with our emergency protocols.
                                 </div>
@@ -316,8 +325,18 @@
                     </div>
                     <div class="row">
                         <div class="col-sm">
-                            <button class="collapsed" type="button" data-toggle="collapse" data-target="#faq6" aria-expanded="false" aria-controls="#faq6">What if my question didn't get answered?</button>
-                            <div class="collapse multi-collapse" id="faq6">
+                            <button class="collapsed" type="button" data-toggle="collapse" data-target="#faq8" aria-expanded="false" aria-controls="#faq8">I am being harassed/feel suspicious about something or someone...</button>
+                            <div class="collapse multi-collapse" id="faq8">
+                                <div class="card card-body">
+                                    If you are in an uncomfortable situation, please report this immediately to our staff. You may also refer to this <a href="https://docs.google.com/document/d/1NeWZhgI2odYzeRxqp8htB2xAY4fzee3E2Z7he6s0sVI/edit?usp=sharing" target="_blank">list of emergency contacts</a> if you don't feel comfortable sharing with us.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <button class="collapsed" type="button" data-toggle="collapse" data-target="#faq9" aria-expanded="false" aria-controls="#faq9">What if my question didn't get answered?</button>
+                            <div class="collapse multi-collapse" id="faq9">
                                 <div class="card card-body">
                                     Hey, we're here to help! For questions about your project, message in the #mentors channel in our <a href="http://hacklahoma19.slack.com/" target="_blank">Slack</a> workspace. Any other general questions can be asked in the #general channel.
                                 </div>
@@ -327,6 +346,41 @@
                 </div>
             </section>
         </div>
+        <a class="anchor" id="tracks-anchor"></a>
+        <section class="tracks content" id="resources">
+            <h3 class="heading">Tracks</h3>
+            <div class="bean-pile">
+                <div class="bean">
+                    <a href="https://github.com/jpa99/HR8-First-Timers-Track" target="_blank">
+                        <h3 class="heading">BUILD A BOT!</h3>
+                        <p>Hackers will create a bot integrated with an existing platform (e.g. Facebook Messenger, Slack, Alexa, Twitter, Reddit, etc.). First-time hackers can follow the provided walkthrough to set up a basic bot, and then extend it to provide additional functionality. Examples include connecting to a DB and storing user information, integrating ML/NLP for contextual rather than rules-based conversation, creating a specific service (e.g. pizza delivery), allowing users to play a game, etc. Judges will evaluate the project on its technical difficulty, effectiveness, creativity, and quality of user experience.</p>
+                        <p>Thanks to <a class="inner-link" href="https://github.com/jpa99" target="_blank">Joel Abraham</a> for creating this track!</p>
+                    </a>
+                </div>
+                <div class="bean">
+                    <a href="https://github.com/abhmul/DataScienceTrack" target="_blank">
+                        <h3 class="heading">MAKE SENSE OF DATA!</h3>
+                        <p>Have you shopped online and found advertisements on Facebook and Google for the same item? Or, say you’re chatting with your best friend and the keyboard suggests to you the exact words that you want to use in your sentence? How does YouTube recommend such great videos? Data science & machine learning have changed the usability of technology. This track will give you a brief introduction into some basic applications of machine learning and data science along with example prompts to compete in this track.</p>
+                        <p>Thanks to <a class="inner-link" href="https://github.com/abhmul" target="_blank">Abhijeet Mulgund</a> and <a class="inner-link" href="https://github.com/raymond-yuan" target="_blank">Raymond Yuan</a> for creating this track!</p>
+                    </a>
+                </div>
+                <div class="bean">
+                    <a href="https://github.com/jpa99/HR8-Design-Track" target="_blank">
+                        <h3 class="heading">(RE)DESIGN A BEAUTIFUL APP!</h3>
+                        <p>Accessibility and visual appeal are vital attributes of any app or website’s user interface. While still remaining functional on the back end, many apps and websites on many different platforms have deplorable user interfaces that needs lots of work. This year’s HackRice “reDesign” track hopes to improve those interfaces. Using your knowledge of design and graphics, you will be tasked with redesigning the user interface of an app or website used by the public today that you believe needs overhaul.</p>
+                        <p>Thanks to <a class="inner-link" href="https://github.com/jpa99" target="_blank">Joel Abraham</a> for creating this track!</p>
+                    </a>
+                </div>
+                <div class="bean">
+                    <a href="https://tutorial.djangogirls.org/en/" target="_blank">
+                        <h3 class="heading">BUILD A WEBSITE!</h3>
+                        <p>Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own? Well, we have good news for you! Programming is not as hard as it seems and we want to show you how fun it can be. This track will offer you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.</p>
+                        <p>Thanks to <a class="inner-link" href="https://github.com/DjangoGirls" target="_blank">Django Girls</a> for creating this track!</p>
+                    </a>
+                </div>
+            </div>
+            <h3 style="text-align: center;">Thanks to <a href="http://hack.rice.edu/">HackRice</a> for the helpful tracks!</h3>
+        </section>
         <footer>
             <div class="content">
                 <a href="https://www.facebook.com/Hacklahoma/"><img src="../img/facebook_d3.svg"></a>

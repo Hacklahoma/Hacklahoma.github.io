@@ -59,6 +59,14 @@
         text-align: center;
     }
 
+    .wifi {
+        margin-bottom: -20px;
+    }
+
+    .slack {
+        margin-top: -20px;
+    }
+
     #nav-links {
         display: none;
     }

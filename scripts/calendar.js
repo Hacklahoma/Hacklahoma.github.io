@@ -2,7 +2,7 @@ $(function() {
     var minDate = new Date('2019-02-10');
     var maxDate = new Date('2019-02-11');
 
-    $("#calendar").fullCalendar({
+    $("#schedule").fullCalendar({
         header: {
             left: 'title',
             center: '',
@@ -15,11 +15,11 @@ $(function() {
 
         viewRender: function(view) {
             if(view.start < minDate) {
-                $('#calendar').fullCalendar('gotoDate', minDate);
+                $('#schedule').fullCalendar('gotoDate', minDate);
             }
 
             if (view.start > maxDate - 1) {
-                $('#calendar').fullCalendar('gotoDate', maxDate);
+                $('#schedule').fullCalendar('gotoDate', maxDate);
             }
         },
 
@@ -33,7 +33,7 @@ $(function() {
             { id: 'at', title: 'Atrium' },
             { id: 'a', title: 'Classroom A' },
             { id: 'b', title: 'Classroom B' },
-            { id: 's', title: 'Small Room' },
+            { id: 'ac', title: 'Activity Room' },
             { id: 'r', title: 'REPF' }
         ],
 
@@ -43,19 +43,19 @@ $(function() {
             {
                 resourceIds: ['at', 'a', 'b'],
                 title: 'Opening',
-                start: '2019-02-09T12:00',
-                end: '2019-02-09T12:30'
+                start: '2019-02-09T11:30',
+                end: '2019-02-09T12:00'
             },
             {
-                resourceIds: ['at', 'a', 'b'],
+                resourceIds: ['at', 'a'],
                 title: 'Lunch',
-                start: '2019-02-09T12:30',
-                end: '2019-02-09T13:30'
+                start: '2019-02-09T12:00',
+                end: '2019-02-09T13:00'
             },
             {
                 resourceId: 'at',
                 title: 'Hacking',
-                start: '2019-02-09T13:30',
+                start: '2019-02-09T13:00',
                 end: '2019-02-09T18:00'
             },
             {
@@ -74,118 +74,58 @@ $(function() {
                 resourceId: 'a',
                 title: 'Attendee Check In',
                 start: '2019-02-09T09:00',
-                end: '2019-02-09T12:00'
-            },
-            {
-                resourceId: 'a',
-                title: 'Google Cloud',
-                start: '2019-02-09T13:30',
-                end: '2019-02-09T14:30'
-            },
-            {
-                resourceId: 'a',
-                title: 'Workshops',
-                start: '2019-02-09T14:30',
-                end: '2019-02-09T15:30'
-            },
-            {
-                resourceId: 'a',
-                title: 'iOS Workshop',
-                start: '2019-02-09T15:30',
-                end: '2019-02-09T16:30'
-            },
-            {
-                resourceId: 'a',
-                title: 'Workshops',
-                start: '2019-02-09T16:30',
-                end: '2019-02-09T18:00'
-            },
-            {
-                resourceId: 'a',
-                title: 'Workshops',
-                start: '2019-02-09T19:00',
-                end: '2019-02-09T20:00'
-            },
-            {
-                resourceId: 'a',
-                title: 'Activities',
-                start: '2019-02-09T20:00',
-                end: '2019-02-09T24:00'
+                end: '2019-02-09T11:30'
             },
             {
                 resourceId: 'b',
                 title: 'Sponsor/Mentor Check In',
                 start: '2019-02-09T08:00',
-                end: '2019-02-09T12:00'
+                end: '2019-02-09T11:30'
             },
             {
                 resourceId: 'b',
-                title: 'Workshops',
-                start: '2019-02-09T13:30',
-                end: '2019-02-09T14:30'
-            },
-            {
-                resourceId: 'b',
-                title: 'Karsun Solutions',
-                start: '2019-02-09T14:30',
-                end: '2019-02-09T15:30'
-            },
-            {
-                resourceId: 'b',
-                title: 'Workshops',
-                start: '2019-02-09T15:30',
-                end: '2019-02-09T18:00'
-            },
-            {
-                resourceId: 'b',
-                title: 'Google Maps',
-                start: '2019-02-09T19:00',
-                end: '2019-02-09T20:00'
-            },
-            {
-                resourceId: 'b',
-                title: 'Hacking',
-                start: '2019-02-09T20:00',
-                end: '2019-02-09T24:00'
-            },
-            {
-                resourceId: 's',
-                title: 'Activities',
-                start: '2019-02-09T13:30',
-                end: '2019-02-09T24:00'
+                title: 'Lunch',
+                start: '2019-02-09T12:00',
+                end: '2019-02-09T13:00'
             },
             {
                 resourceId: 'r',
-                title: 'Sleep',
-                start: '2019-02-09T08:00',
-                end: '2019-02-09T24:00'
+                title: 'Sleeping Rooms Open',
+                start: '2019-02-09T21:00',
+                end: '2019-02-10T09:30'
             },
             {
-                resourceIds: ['at', 'a', 'b', 's', 'r'],
-                title: 'Hacking',
+                resourceIds: ['at', 'a', 'b', 'ac'],
+                title: 'Midnight Snack',
                 start: '2019-02-10T00:00',
+                end: '2019-02-10T01:00'
+            },
+            {
+                resourceIds: ['at', 'a', 'b', 'ac'],
+                title: 'Hacking',
+                start: '2019-02-10T01:00',
                 end: '2019-02-10T07:00'
             },
             {
-                resourceIds: ['at', 'a', 'b', 's'],
+                resourceIds: ['at', 'a', 'b', 'ac'],
                 title: 'Breakfast',
                 start: '2019-02-10T07:00',
-                end: '2019-02-10T07:30'
+                end: '2019-02-10T08:00'
             },
             {
-                resourceIds: ['at', 'a', 'b', 's'],
+                resourceIds: ['at', 'a', 'b', 'ac'],
                 title: 'Hacking',
-                start: '2019-02-10T07:30',
-                end: '2019-02-10T11:00'
+                start: '2019-02-10T08:00',
+                end: '2019-02-10T11:30'
             },
             {
                 resourceId: 'r',
                 title: 'Devpost Submission',
                 start: '2019-02-10T10:30',
-                end: '2019-02-10T11:00'
+                end: '2019-02-10T11:30'
             },
             {
-                resourceIds: ['at', 'a', 'b', 's'],
+                resourceIds: ['at', 'a', 'b', 'ac'],
                 title: 'Lunch',
                 start: '2019-02-10T11:00',
                 end: '2019-02-10T12:00'
@@ -197,16 +137,161 @@ $(function() {
                 end: '2019-02-10T13:00'
             },
             {
-                resourceId: 'at',
+                resourceIds: ['at', 'a', 'b', 'ac'],
                 title: 'Closing Ceremony',
                 start: '2019-02-10T13:30',
                 end: '2019-02-10T14:30'
             },
             {
-                resourceIds: ['at', 'a', 'b', 's', 'r'],
-                title: 'Top 3 Presentations + Awards',
+                resourceIds: ['at', 'a', 'b', 'ac', 'r'],
+                title: 'Top 3 Hacks + Awards',
                 start: '2019-02-10T14:30',
                 end: '2019-02-10T15:00'
+            }
+        ],
+
+        eventBackgroundColor: '#ffd58a',
+
+        eventBorderColor: '#a97c50',
+
+        eventTextColor: '#000000',
+
+        displayEventTime: false,
+
+        schedulerLicenseKey: 'CC-Attribution-NonCommercial-NoDerivatives'
+    })
+
+    $("#workshops").fullCalendar({
+        header: {
+            left: 'title',
+            center: '',
+            right: 'prev, next',
+        },
+
+        defaultView: 'agendaDay',
+
+        defaultDate: '2019-02-09',
+
+        viewRender: function(view) {
+            if(view.start < minDate) {
+                $('#workshops').fullCalendar('gotoDate', minDate);
+            }
+
+            if (view.start > (minDate - 1)) {
+                $('#workshops').fullCalendar('gotoDate', minDate);
+            }
+        },
+
+        nowIndicator: true,
+        
+        allDaySlot: false,
+        
+        slotEventOverlap: false,
+
+        resources: [
+            { id: 'a', title: 'Classroom A' },
+            { id: 'b', title: 'Classroom B' },
+            { id: 'ac', title: 'Activity Room' }
+        ],
+
+        groupByDateAndResource: true,
+
+        events: [
+            {
+                resourceId: 'a',
+                title: 'Google Cloud',
+                start: '2019-02-09T13:30',
+                end: '2019-02-09T14:30'
+            },
+            {
+                resourceId: 'a',
+                title: 'Workshop TBD',
+                start: '2019-02-09T14:30',
+                end: '2019-02-09T15:30'
+            },
+            {
+                resourceId: 'a',
+                title: 'iOS Workshop',
+                start: '2019-02-09T15:30',
+                end: '2019-02-09T16:30'
+            },
+            {
+                resourceId: 'a',
+                title: 'Workshop TBD',
+                start: '2019-02-09T16:30',
+                end: '2019-02-09T17:30'
+            },
+            {
+                resourceId: 'a',
+                title: 'Sushi Making',
+                start: '2019-02-09T19:00',
+                end: '2019-02-09T20:00'
+            },
+            {
+                resourceId: 'b',
+                title: 'Intro To Programming',
+                start: '2019-02-09T12:30',
+                end: '2019-02-09T13:30'
+            },
+            {
+                resourceId: 'b',
+                title: 'Workshop TBD',
+                start: '2019-02-09T13:30',
+                end: '2019-02-09T14:30'
+            },
+            {
+                resourceId: 'b',
+                title: 'Karsun Solutions',
+                start: '2019-02-09T14:30',
+                end: '2019-02-09T15:30'
+            },
+            {
+                resourceId: 'b',
+                title: 'Techlahoma',
+                start: '2019-02-09T16:00',
+                end: '2019-02-09T16:30'
+            },
+            {
+                resourceId: 'b',
+                title: 'Workshop TBD',
+                start: '2019-02-09T16:30',
+                end: '2019-02-09T17:30'
+            },
+            {
+                resourceId: 'b',
+                title: 'Workshop TBD',
+                start: '2019-02-09T17:30',
+                end: '2019-02-09T18:00'
+            },
+            {
+                resourceId: 'b',
+                title: 'Google Maps',
+                start: '2019-02-09T19:00',
+                end: '2019-02-09T20:00'
+            },
+            {
+                resourceId: 'ac',
+                title: 'Team Building Lunch',
+                start: '2019-02-09T12:00',
+                end: '2019-02-09T13:00'
+            },
+            {
+                resourceId: 'ac',
+                title: 'Karaoke',
+                start: '2019-02-09T20:00',
+                end: '2019-02-09T21:00'
+            },
+            {
+                resourceId: 'ac',
+                title: 'Cup Stacking',
+                start: '2019-02-09T21:00',
+                end: '2019-02-09T22:00'
+            },
+            {
+                resourceId: 'ac',
+                title: 'Smash Tournament',
+                start: '2019-02-09T22:00',
+                end: '2019-02-09T24:00'
             }
         ],
 
