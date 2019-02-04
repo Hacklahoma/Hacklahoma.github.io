@@ -205,7 +205,7 @@ $(function() {
             },
             {
                 resourceId: 'a',
-                title: 'Workshop TBD',
+                title: 'JP Morgan & Chase Workshop',
                 start: '2019-02-09T14:30',
                 end: '2019-02-09T15:30'
             },
