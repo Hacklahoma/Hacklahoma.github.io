@@ -43,11 +43,17 @@ $(function() {
             {
                 resourceIds: ['at', 'a', 'b'],
                 title: 'Opening',
+                start: '2019-02-09T11:00',
+                end: '2019-02-09T11:30'
+            },
+            {
+                resourceIds: ['at', 'a', 'b'],
+                title: 'Hacking Starts',
                 start: '2019-02-09T11:30',
                 end: '2019-02-09T12:00'
             },
             {
-                resourceIds: ['at', 'a'],
+                resourceIds: ['at', 'a', 'b'],
                 title: 'Lunch',
                 start: '2019-02-09T12:00',
                 end: '2019-02-09T13:00'
@@ -74,19 +80,25 @@ $(function() {
                 resourceId: 'a',
                 title: 'Attendee Check In',
                 start: '2019-02-09T09:00',
-                end: '2019-02-09T11:30'
+                end: '2019-02-09T11:00'
+            },
+            {
+                resourceId: 'a',
+                title: 'Organizers Orientation',
+                start: '2019-02-09T13:00',
+                end: '2019-02-09T13:30'
             },
             {
                 resourceId: 'b',
                 title: 'Sponsor/Mentor Check In',
                 start: '2019-02-09T08:00',
-                end: '2019-02-09T11:30'
+                end: '2019-02-09T11:00'
             },
             {
                 resourceId: 'b',
-                title: 'Lunch',
-                start: '2019-02-09T12:00',
-                end: '2019-02-09T13:00'
+                title: 'New Hacker Orientation',
+                start: '2019-02-09T13:00',
+                end: '2019-02-09T13:30'
             },
             {
                 resourceId: 'r',
@@ -104,18 +116,18 @@ $(function() {
                 resourceIds: ['at', 'a', 'b', 'ac'],
                 title: 'Hacking',
                 start: '2019-02-10T01:00',
-                end: '2019-02-10T07:00'
-            },
-            {
-                resourceIds: ['at', 'a', 'b', 'ac'],
-                title: 'Breakfast',
-                start: '2019-02-10T07:00',
                 end: '2019-02-10T08:00'
             },
             {
                 resourceIds: ['at', 'a', 'b', 'ac'],
-                title: 'Hacking',
+                title: 'Breakfast',
                 start: '2019-02-10T08:00',
+                end: '2019-02-10T09:00'
+            },
+            {
+                resourceIds: ['at', 'a', 'b', 'ac'],
+                title: 'Hacking',
+                start: '2019-02-10T09:00',
                 end: '2019-02-10T11:30'
             },
             {
@@ -229,12 +241,6 @@ $(function() {
             },
             {
                 resourceId: 'b',
-                title: 'Intro To Programming',
-                start: '2019-02-09T12:30',
-                end: '2019-02-09T13:30'
-            },
-            {
-                resourceId: 'b',
                 title: 'Workshop TBD',
                 start: '2019-02-09T13:30',
                 end: '2019-02-09T14:30'
@@ -244,6 +250,12 @@ $(function() {
                 title: 'Karsun Solutions',
                 start: '2019-02-09T14:30',
                 end: '2019-02-09T15:30'
+            },
+            {
+                resourceId: 'b',
+                title: 'Git',
+                start: '2019-02-09T15:30',
+                end: '2019-02-09T16:00'
             },
             {
                 resourceId: 'b',
@@ -277,21 +289,15 @@ $(function() {
             },
             {
                 resourceId: 'ac',
-                title: 'Karaoke',
+                title: 'Cup Stacking',
                 start: '2019-02-09T20:00',
                 end: '2019-02-09T21:00'
             },
             {
                 resourceId: 'ac',
-                title: 'Cup Stacking',
+                title: 'Smash Tournament',
                 start: '2019-02-09T21:00',
                 end: '2019-02-09T22:00'
-            },
-            {
-                resourceId: 'ac',
-                title: 'Smash Tournament',
-                start: '2019-02-09T22:00',
-                end: '2019-02-09T24:00'
             }
         ],
 
