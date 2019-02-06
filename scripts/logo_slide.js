@@ -152,6 +152,7 @@ function slide_setup() {
     if (window.innerWidth <= 1060) {
         should_slide = false;
         splash_logo.style.visibility = "visible";
+        nav_logo.style.visibility = "hidden";
     } else {
         if (splash_logo == null) {
             should_slide = false;
