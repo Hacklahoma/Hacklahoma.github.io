@@ -200,4 +200,14 @@
     .fc-resource-cell {
         font-size: 0.7em;
     }
+
+    .splash h3 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 320px) {
+    .splash h3 {
+        font-size: 1em;
+    }
 }
