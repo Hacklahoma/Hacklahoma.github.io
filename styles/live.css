@@ -67,7 +67,7 @@ a {
 
 .bg {
   background-color: white;
-  padding-top: 1em;
+  /* padding-top: 1em; */
 }
 
 .row {
@@ -270,6 +270,19 @@ a.anchor {
 
 .link-button h3 {
   margin: 0px;
+}
+
+.wifi {
+  background-color: #a9d9bc;
+  margin: 0;
+  color: #ffffff;
+}
+
+.wifi #info-row {
+  flex: 1 1 10%;
+  text-shadow: 1px 2px 2px #666666;
+  font-family: "LemonMilk";
+  font-weight: 300;
 }
 
 #parallax-container {

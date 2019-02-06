@@ -1,4 +1,8 @@
 @media (max-width: 1580px) {
+    html {
+        overflow-x: hidden;
+    }
+
     .content {
         max-width: 80vw;
         margin: 0 10vw;
