@@ -88,22 +88,10 @@ $(function() {
                 end: '2019-02-09T11:00'
             },
             {
-                resourceId: 'a',
-                title: 'Organizers Orientation',
-                start: '2019-02-09T13:00',
-                end: '2019-02-09T13:30'
-            },
-            {
                 resourceId: 'b',
                 title: 'Sponsor and Mentor Check In',
                 start: '2019-02-09T08:00',
                 end: '2019-02-09T11:00'
-            },
-            {
-                resourceId: 'b',
-                title: 'New Hacker Orientation',
-                start: '2019-02-09T13:00',
-                end: '2019-02-09T13:30'
             },
             {
                 resourceId: 'r',
@@ -214,6 +202,12 @@ $(function() {
         events: [
             {
                 resourceId: 'a',
+                title: 'Organizers Orientation',
+                start: '2019-02-09T13:00',
+                end: '2019-02-09T13:30'
+            },
+            {
+                resourceId: 'a',
                 title: 'Google Cloud',
                 start: '2019-02-09T13:30',
                 end: '2019-02-09T14:30'
@@ -241,6 +235,12 @@ $(function() {
                 title: 'Sushi Making',
                 start: '2019-02-09T19:00',
                 end: '2019-02-09T20:00'
+            },
+            {
+                resourceId: 'b',
+                title: 'New Hacker Orientation',
+                start: '2019-02-09T13:00',
+                end: '2019-02-09T13:30'
             },
             {
                 resourceId: 'b',
