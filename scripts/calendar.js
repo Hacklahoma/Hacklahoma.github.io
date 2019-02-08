@@ -182,22 +182,12 @@ $(function() {
         header: {
             left: 'title',
             center: '',
-            right: 'prev, next',
+            right: '',
         },
 
         defaultView: 'agendaDay',
 
         defaultDate: '2019-02-09',
-
-        viewRender: function(view) {
-            if(view.start < minDate) {
-                $('#workshops').fullCalendar('gotoDate', minDate);
-            }
-
-            if (view.start > (minDate - 1)) {
-                $('#workshops').fullCalendar('gotoDate', minDate);
-            }
-        },
 
         nowIndicator: true,
 
@@ -230,19 +220,19 @@ $(function() {
             },
             {
                 resourceId: 'a',
-                title: 'JP Morgan & Chase Workshop',
+                title: 'Workshop TBD',
                 start: '2019-02-09T14:30',
                 end: '2019-02-09T15:30'
             },
             {
                 resourceId: 'a',
-                title: 'iOS Workshop',
+                title: 'JP Morgan & Chase',
                 start: '2019-02-09T15:30',
                 end: '2019-02-09T16:30'
             },
             {
                 resourceId: 'a',
-                title: 'Workshop TBD',
+                title: 'Alexa',
                 start: '2019-02-09T16:30',
                 end: '2019-02-09T17:30'
             },
@@ -284,7 +274,7 @@ $(function() {
             },
             {
                 resourceId: 'b',
-                title: 'Workshop TBD',
+                title: 'iOS Workshop',
                 start: '2019-02-09T17:30',
                 end: '2019-02-09T18:00'
             },
