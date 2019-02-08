@@ -370,6 +370,11 @@ a.anchor {
   color: #ffd58a;
 }
 
+.fc-title {
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
 #faq {
   margin-bottom: 0;
 }

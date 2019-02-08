@@ -32,6 +32,8 @@ $(function() {
         
         slotEventOverlap: false,
 
+        slotDuration: '00:10:00',
+
         resources: [
             { id: 'at', title: 'Atrium' },
             { id: 'a', title: 'Classroom A' },
@@ -93,7 +95,7 @@ $(function() {
             },
             {
                 resourceId: 'b',
-                title: 'Sponsor/Mentor Check In',
+                title: 'Sponsor and Mentor Check In',
                 start: '2019-02-09T08:00',
                 end: '2019-02-09T11:00'
             },
@@ -208,6 +210,8 @@ $(function() {
         allDaySlot: false,
         
         slotEventOverlap: false,
+
+        slotDuration: '00:15:00',
 
         resources: [
             { id: 'a', title: 'Classroom A' },
