@@ -1,6 +1,7 @@
 $(function() {
     var minDate = new Date('2019-02-10');
     var maxDate = new Date('2019-02-11');
+    var scrollTime = moment().format("HH") + ":00:00";
 
     $("#schedule").fullCalendar({
         header: {
@@ -24,6 +25,8 @@ $(function() {
         },
 
         nowIndicator: true,
+
+        scrollTime: scrollTime,
         
         allDaySlot: false,
         
@@ -195,6 +198,12 @@ $(function() {
         },
 
         nowIndicator: true,
+
+        minTime: "12:00:00",
+
+        maxTime: "22:00:00",
+
+        height: "auto",
         
         allDaySlot: false,
         
