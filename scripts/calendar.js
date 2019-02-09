@@ -244,7 +244,7 @@ $(function() {
             },
             {
                 resourceId: 'b',
-                title: 'Workshop TBD',
+                title: 'Twilio Workshop',
                 start: '2019-02-09T13:30',
                 end: '2019-02-09T14:30'
             },
