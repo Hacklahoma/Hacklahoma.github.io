@@ -206,18 +206,18 @@ $(function() {
                 start: '2019-02-09T13:00',
                 end: '2019-02-09T13:30'
             },
-            {
-                resourceId: 'a',
-                title: 'Google Cloud',
-                start: '2019-02-09T13:30',
-                end: '2019-02-09T14:30'
-            },
-            {
-                resourceId: 'a',
-                title: 'Workshop TBD',
-                start: '2019-02-09T14:30',
-                end: '2019-02-09T15:30'
-            },
+            // {
+            //     resourceId: 'a',
+            //     title: 'Workshop TBD',
+            //     start: '2019-02-09T13:30',
+            //     end: '2019-02-09T14:30'
+            // },
+            // {
+            //     resourceId: 'a',
+            //     title: 'Workshop TBD',
+            //     start: '2019-02-09T14:30',
+            //     end: '2019-02-09T15:30'
+            // },
             {
                 resourceId: 'a',
                 title: 'JP Morgan & Chase',
@@ -266,12 +266,12 @@ $(function() {
                 start: '2019-02-09T16:00',
                 end: '2019-02-09T16:30'
             },
-            {
-                resourceId: 'b',
-                title: 'Workshop TBD',
-                start: '2019-02-09T16:30',
-                end: '2019-02-09T17:30'
-            },
+            // {
+            //     resourceId: 'b',
+            //     title: 'Workshop TBD',
+            //     start: '2019-02-09T16:30',
+            //     end: '2019-02-09T17:30'
+            // },
             {
                 resourceId: 'b',
                 title: 'iOS Workshop',
