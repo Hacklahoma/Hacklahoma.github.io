@@ -200,7 +200,7 @@ a.anchor {
 }
 
 .navbar-half * {
-  flex-basis: 0;
+  /* flex-basis: 0; */
   text-align: center;
   margin-left: 10px;
   margin-right: 10px;
