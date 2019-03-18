@@ -187,8 +187,8 @@ a.anchor {
   flex-grow: 1;
   margin: auto auto;
   max-height: 80px;
-  height: 100%;
-  width: 100%;
+  height: 75%;
+  width: 75%;
   object-fit: contain;
 }
 
@@ -200,7 +200,7 @@ a.anchor {
 }
 
 .navbar-half * {
-  flex-basis: 0;
+  /* flex-basis: 0; */
   text-align: center;
   margin-left: 10px;
   margin-right: 10px;

@@ -1,0 +1,531 @@
+/* TODO: get rid of extra margin at bottom of FAQ (looks weird) */
+
+@font-face {
+    font-family: "LemonMilk";
+    src: url("../fonts/LemonMilk/LemonMilklight.otf");
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "LemonMilk";
+    src: url("../fonts/LemonMilk/LemonMilk.otf");
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Avenir";
+    src: url("../fonts/Avenir/AvenirNextLTPro-Regular.otf");
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  body {
+    margin: 0;
+    background-color: white;
+    font-family: "Avenir";
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  
+  #mlh-trust-badge {
+    display:block;
+    max-width:100px;
+    min-width:60px;
+    position:fixed;
+    right:50px;
+    top:0;
+    width:10%;
+    z-index:10000
+  }
+  
+  #mlh-trust-badge img {
+    width: 100%;
+  }
+  
+  section {
+    margin: 3em 0;
+  }
+  
+  h1 {
+    font-family: "LemonMilk";
+    font-size: 6em;
+    margin: 0;
+  }
+  
+  h3 {
+    font-size: 2em;
+  }
+  
+  h5 {
+    font-size: 1.4em;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .bg {
+    background-color: white;
+    /* padding-top: 1em; */
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .content {
+    max-width: 60vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+
+  .content a {
+    font-size: 1.5em;
+    font-weight: 300;
+    text-decoration: none;
+    margin-top: auto;
+    padding-left: 20px;
+  }
+
+  .content div {
+      padding-bottom: 10px;
+  }
+  
+  .justify-around {
+    justify-content: space-around;
+  }
+  
+  .justify-between {
+    justify-content: space-between;
+  }
+  
+  .hidden {
+    visibility: hidden;
+  }
+  
+  .display-none {
+    display: none;
+  }
+  
+  a.anchor {
+    display: block;
+    position: relative;
+    top: calc(-80px - 2em);
+    visibility: hidden;
+  }
+  
+  /* TEXT ONLY */
+  .blurred {
+    color: transparent;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Why bean?  Why not? */
+  .bean-pile {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .bean {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 30%;
+    margin: 1em 0;
+  }
+  
+  .resources .bean a, .resources .bean-small a {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .bean img, .bean a, .bean-small img, .bean-small a {
+    margin: auto;
+  }
+  
+  .bean-small {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 22%;
+    margin: 1em 0;
+  }
+  
+  .bean-filler {
+    height: 0;
+    margin: 0 !important;
+  }
+  
+  .navbar {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: #a9d9bc;
+    color: #a97c50;
+    display: flex;
+    justify-content: space-between;
+    /*box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);*/
+    z-index: 9998;
+  }
+  
+  .navbar.content {
+    margin: 0 20vw;
+  }
+  
+  .navbar-logo-link {
+    height: 100%;
+    transform-origin: center top;
+    will-change: transform;
+  }
+  
+  .navbar-logo {
+    flex-grow: 1;
+    margin: auto auto;
+    max-height: 80px;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  
+  .navbar-half {
+    flex-grow: 1;
+    max-width: calc(50% - 100px);
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .navbar-half * {
+    /* flex-basis: 0; */
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .navbar a {
+    color: #a97c50;
+    font-family: "LemonMilk";
+    font-size: 1.8em;
+    font-weight: 300;
+    text-decoration: none;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .navbar .blurred {
+    color: transparent;
+    text-shadow: 0 0 3px rgba(169, 124, 80, 1);
+  }
+  
+  .splash {
+    padding-top: 0px;
+    background-color: #a9d9bc;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    max-height: calc(100vh - 80px);
+  }
+  
+  .splash #logo-row {
+    display: block;
+    flex: 0 1 30%;
+  }
+  
+  .splash #title-row {
+    margin-bottom: 0px;
+    flex: 1 1 12%;
+    text-shadow: 0 0 2px #666666;
+  }
+  
+  .splash #button-row {
+    flex: 0 1 20%;
+  }
+  
+  .splash #info-row {
+    flex: 1 1 10%;
+    text-shadow: 1px 2px 2px #666666;
+    font-family: "LemonMilk";
+    font-weight: 300;
+  }
+  
+  .splash h3 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  
+  .splash-logo {
+    max-height: 400px;
+    max-width: 400px;
+    flex: 1 1 auto;
+    margin: 0 auto;
+    z-index: 9999;
+  }
+  
+  .link-button {
+    background-color: #ffd58a;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    box-shadow: 1px 2px 2px #666666;
+    margin: 5px;
+    height: 55px;
+  }
+  
+  .link-button:hover {
+    box-shadow: 0 0 1px white;
+  }
+  
+  .link-button h3 {
+    margin: 0px;
+  }
+  
+  .wifi {
+    background-color: #a9d9bc;
+    margin: 0;
+    color: #ffffff;
+  }
+  
+  .wifi #info-row {
+    flex: 1 1 10%;
+    text-shadow: 1px 2px 2px #666666;
+    font-family: "LemonMilk";
+    font-weight: 300;
+  }
+  
+  #parallax-container {
+    position: fixed;
+    min-height: 100vh;
+    width: 100%;
+    z-index: -50;
+  }
+  
+  .parallax {
+    position: fixed;
+    max-width: 100%;
+    z-index: -50;
+    will-change: transform;
+  }
+  
+  .heading {
+    font-family: "LemonMilk";
+    font-weight: 500;
+    color: #a97c50;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .about p {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+  
+  .location-desktop {
+    max-width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    text-align: center;
+  }
+  
+  .location-mobile {
+    display: none;
+  }
+  
+  .location-map {
+    flex: 1;
+  }
+  
+  .spacer {
+    width: 2em;
+  }
+  
+  .map-frame {
+    overflow: hidden;
+    padding-top: 75%;
+    position: relative;
+  }
+  
+  .map-frame iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  
+  .floor-plans {
+    text-align: center;
+  }
+  
+  #floor-plans .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23333' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  }
+  
+  #floor-plans .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23333' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+  }
+  
+  .agenda-background {
+    background-color: #008A88;
+    width: 100%;
+    height: auto;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  #agenda-heading {
+    color: #ffd58a;
+  }
+  
+  .fc-title {
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+  
+  #faq {
+    margin-bottom: 0;
+  }
+  
+  #faq-background {
+    background-color: #008A88;
+    width: 100%;
+    height: auto;
+    color: white;
+    padding-top: 5px;
+  }
+  
+  #faq-heading {
+    color: #ffd58a;
+  }
+  
+  .faq h5 {
+    margin: 0;
+  }
+  
+  .faq a {
+    color: #ffd58a;
+  }
+  
+  .faq-desktop {
+      display: block;
+  }
+  
+  .faq-mobile {
+      display: none;
+  }
+  
+  .resources img {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+  
+  .resources p {
+    text-align: center;
+  }
+  
+  .media {
+    display: block;
+  }
+  
+  .tracks .bean-pile .bean {
+    padding: 10px;
+    margin: 10px;
+    border: solid #ffd58a;
+    border-radius: 15px;
+  }
+  
+  .tracks .bean-pile .bean .heading {
+    font-family: "LemonMilk";
+    font-weight: 300;
+    color: #a97c50;
+    margin: -5px 0;
+  }
+  
+  .tracks .bean-pile .bean a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .tracks .bean-pile .bean .inner-link {
+    color: #a97c50;
+    text-decoration: underline;
+  }
+  
+  .tracks .bean-pile .bean:hover {
+    background-color: #008A88;
+    color: #fff;
+  }
+  
+  .tracks .bean-pile .bean:hover .heading {
+    color: #ffd58a;
+  }
+  
+  .tracks .bean-pile .bean:hover a {
+    color: #fff;
+  }
+  
+  .tracks .bean-pile .bean:hover .inner-link {
+    color: #ffd58a;
+    text-decoration: underline;
+  }
+  
+  footer {
+    background-color: #a9d9bc;
+    color: white;
+    height: auto;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+  
+  footer .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+  }
+  
+  footer a {
+    width: 60px;
+    height: 100%;
+    display: flex;
+  }
+  
+  footer img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .bee {
+    position: absolute;
+    width: 60px;
+    top: -30px;
+    left: -30px;
+    z-index: 1;
+    transform-origin: center center;
+  }
+  
+  .fc-content {
+    padding: 5px;
+  }
+
+  .description {
+    color: #a97c50;
+    text-align: center;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    font-size: 1.4em;
+  }
+  
+  /* debug 
+  * {
+    border: 1px solid red;
+  } */
+  
