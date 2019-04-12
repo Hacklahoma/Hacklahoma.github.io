@@ -64,6 +64,12 @@
   a {
     text-decoration: none;
   }
+
+  .role-description {
+    margin-left: 56px;
+    margin-top: 0px;
+    color: #666666;
+  }
   
   .bg {
     background-color: white;
@@ -89,7 +95,7 @@
   }
 
   .content div {
-      padding-bottom: 10px;
+      padding-bottom: 0px;
   }
   
   .justify-around {
