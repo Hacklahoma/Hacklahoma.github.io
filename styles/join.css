@@ -65,6 +65,11 @@
     text-decoration: none;
   }
 
+  #countdown {
+    font-size: 40px;
+    margin: 20px;
+  }
+
   .role-description {
     margin-left: 56px;
     margin-top: 0px;
