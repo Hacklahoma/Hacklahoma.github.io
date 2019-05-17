@@ -1,0 +1,91 @@
+/* TODO: get rid of extra margin at bottom of FAQ (looks weird) */
+
+@font-face {
+  font-family: "LemonMilk";
+  src: url("../fonts/LemonMilk/LemonMilklight.otf");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "LemonMilk";
+  src: url("../fonts/LemonMilk/LemonMilk.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../fonts/Avenir/AvenirNextLTPro-Regular.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  background-color: white;
+  font-family: "Avenir";
+  max-width: 100vw;
+  color: white;
+}
+
+h1 {
+  margin: 0;
+  margin-top: 15%;
+  text-align: center;
+  font-family: "Avenir";
+  font-size: 6em;
+}
+h3 {
+  text-align: center;
+  font-family: "Avenir";
+  font-weight: 300;
+}
+
+canvas {
+  position: absolute;
+  background: #4381e0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+}
+
+p {
+  user-select: text;
+}
+
+footer {
+  text-align: center;
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  font-size: .9em;
+  user-select: none;
+}
+
+.icons {
+  margin: 10px;
+  margin-top: 0px;
+}
+
+.interestedContainer {
+  width: 100%;
+  height: 72.62px;
+  margin-top: 100px;
+}
+
+#buttonInfo {
+  height: 100%;
+  margin: 0;
+  text-align: center;
+  font-size: 30px;
+}
+
+a {
+  color: white;
+  font-weight: bold;
+}
+
+ /* * {
+  border: 1px solid red;
+} */
