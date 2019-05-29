@@ -28,7 +28,7 @@ nav {
 .nav-container {
   display: inline-block;
 }
-nav p {
+nav a {
   float: left;
   margin: 10px;
   font-size: 1em;
@@ -54,6 +54,7 @@ nav p {
 .content-container {
   height: 700px;
   background: linear-gradient(170deg, #2B4162, #64748C /* #51637E */);
+  color: white;
 }
 
 * {
