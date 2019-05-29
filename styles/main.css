@@ -1,3 +1,8 @@
+:root {
+  --accent-color-1: #D65822; /* #D65822 #FF9366 #057F9B */
+  --accent-color-2: #FFD993; /* #FFD993 #06AED5 */
+}
+
 /* Importing fonts */
 @font-face {
   font-family: 'Avenir';
@@ -12,7 +17,7 @@ body {
 }
 a {
   text-decoration: none;
-  background: linear-gradient(130deg, #D65822, #FFD993, #2B4162, #64748C);
+  background: linear-gradient(130deg, var(--accent-color-1), var(--accent-color-2), #2B4162, #64748C);
   background-size: 300% 300%;
   background-position: 100% 90%;
   -webkit-background-clip: text;
@@ -55,7 +60,7 @@ nav a {
   /* for gradient animations */
   animation: title 15s linear infinite;
   animation-delay: -10s;
-  background: linear-gradient(150deg, #2B4162, #64748C, #FF9366, #FFD993, #2B4162, #64748C);
+  background: linear-gradient(150deg, #2B4162, #64748C, var(--accent-color-1), var(--accent-color-2), #2B4162, #64748C);
   background-size: 500% 500%;
   background-position: 100% 100%;
   -webkit-background-clip: text;
@@ -64,11 +69,21 @@ nav a {
 
 /* Content */
 .content-container {
-  height: 1500px;
+  height: 1000px;
   background: linear-gradient(170deg, #2B4162, #51637E /* #64748C */);
   background-size: 400% 400%;
   animation: background 15s ease infinite;
   color: white;
+}
+
+/* Footer */
+.footer-divider {
+  height: 3px;
+  background: linear-gradient(150deg, var(--accent-color-1) 30%, var(--accent-color-2));
+}
+.footer-container {
+  height: 150px;
+  background-color: #1C2A3F;
 }
 
 /* Animations */
