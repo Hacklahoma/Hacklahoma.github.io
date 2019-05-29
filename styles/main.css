@@ -1,0 +1,61 @@
+/* Variables */
+:root {
+  --header-background-color: #f4f4f4;
+  --header-color: #2B4162;
+  --foreground-background-color: #2B4162;
+  --foreground-color: #2B4162;
+}
+
+/* Importing fonts */
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/Avenir/AvenirNextLTPro-Regular.otf');
+  font-weight: normal;
+}
+
+/* Body */
+body {
+  margin: 0;
+  color: var(--foreground-color);
+  font-family: 'Avenir';
+}
+
+/* Navigation tabs */
+nav {
+  text-align: center;
+  padding-top: 5px;
+}
+.nav-container {
+  display: inline-block;
+}
+nav p {
+  float: left;
+  margin: 10px;
+  font-size: 1em;
+  color: var(--header-color);
+}
+
+/* Header */
+.header-container {
+  text-align: center;
+  height: 500px;
+  background-color: var(--header-background-color);
+}
+.header-container h1 {
+  display: inline-block;
+  margin-top: 150px;
+  font-size: 4em;
+  background: linear-gradient(170deg, #2B4162, #51637E /* #64748C */);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Content */
+.content-container {
+  height: 700px;
+  background: linear-gradient(170deg, #2B4162, #64748C /* #51637E */);
+}
+
+* {
+  /* border: 1px solid red; */
+}
