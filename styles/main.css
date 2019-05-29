@@ -1,11 +1,3 @@
-/* Variables */
-:root {
-  --header-background-color: #f4f4f4;
-  --header-color: #2B4162;
-  --foreground-background-color: #2B4162;
-  --foreground-color: #2B4162;
-}
-
 /* Importing fonts */
 @font-face {
   font-family: 'Avenir';
@@ -16,14 +8,28 @@
 /* Body */
 body {
   margin: 0;
-  color: var(--foreground-color);
   font-family: 'Avenir';
+}
+a {
+  text-decoration: none;
+  background: linear-gradient(130deg, #D65822, #FFD993, #2B4162, #64748C);
+  background-size: 300% 300%;
+  background-position: 100% 90%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: .75s;
+}
+a:hover {
+  background-position: 0% 0%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Navigation tabs */
 nav {
   text-align: center;
   padding-top: 5px;
+  width: 100%;
 }
 .nav-container {
   display: inline-block;
@@ -32,29 +38,48 @@ nav a {
   float: left;
   margin: 10px;
   font-size: 1em;
-  color: var(--header-color);
+  color: #2B4162;
 }
 
 /* Header */
 .header-container {
   text-align: center;
-  height: 500px;
-  background-color: var(--header-background-color);
+  height: 400px;
+  background-color: #f4f4f4
 }
 .header-container h1 {
   display: inline-block;
-  margin-top: 150px;
+  margin-top: 110px;
   font-size: 4em;
-  background: linear-gradient(170deg, #2B4162, #51637E /* #64748C */);
+  animation: title 15s linear infinite;
+  animation-delay: -10s;
+  background: linear-gradient(150deg, #2B4162, #64748C, #FF9366, #FFD993, #2B4162, #64748C);
+  background-size: 500% 500%;
+  background-position: 100% 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 /* Content */
 .content-container {
-  height: 700px;
-  background: linear-gradient(170deg, #2B4162, #64748C /* #51637E */);
+  height: 1500px;
+  background: linear-gradient(170deg, #2B4162, #51637E /* #64748C */);
+  background-size: 400% 400%;
+  animation: background 25s ease infinite;
   color: white;
+}
+
+/* Animations */
+@keyframes background {
+    0%{background-position:50% 0%}
+    50%{background-position:51% 100%}
+    100%{background-position:50% 0%}
+}
+@keyframes title {
+    0%{background-position:100% 100%}
+    95%{background-position:100% 100%}
+    100%{background-position:0% 0%}
+
 }
 
 * {
