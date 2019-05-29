@@ -45,6 +45,10 @@ nav a {
   font-size: 1em;
   color: #2B4162;
 }
+.active-tab {
+   font-weight:bold;
+   animation: title 7s linear reverse;
+}
 
 /* Header */
 .header-container {
@@ -96,7 +100,6 @@ nav a {
     0%{background-position:100% 100%}
     95%{background-position:100% 100%}
     100%{background-position:0% 0%}
-
 }
 
 * {
