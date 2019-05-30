@@ -53,7 +53,7 @@ nav a {
 /* Header */
 .header-container {
   text-align: center;
-  height: 400px;
+  height: 300px;
   background-color: #f4f4f4
 }
 .header-container h1 {
@@ -72,12 +72,108 @@ nav a {
 }
 
 /* Content */
-.content-container {
-  height: 1000px;
+.content-backsplash {
+  text-align: center;
+  height: auto;
   background: linear-gradient(170deg, #2B4162, #51637E /* #64748C */);
   background-size: 400% 400%;
-  animation: background 15s ease infinite;
+  animation: background 12s ease infinite;
   color: white;
+  margin: 0;
+}
+.content-container {
+  display: inline-block;
+  text-align: left;
+  width: 80%;
+  height: auto;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+.content-row {
+  height: 20vw;
+  font-size: 1.8vw;
+  margin-bottom: 5vw;
+}
+.home-team img {
+  width: 40%;
+  float: right;
+  margin-left: 10px;
+}
+.home-history img {
+  width: 40%;
+  float: left;
+  margin-right: 10px;
+  transition: .15s;
+}
+.content-row-info p {
+  margin: 0;
+  transition: .15s;
+}
+.content-row-info h1 {
+  margin: 0;
+  transition: .15s;
+}
+.content-row-info a {
+  font-weight: bold;
+  background: linear-gradient(130deg, var(--accent-color-2), #FF9366, #ddd, #ffffff);
+  background-size: 300% 300%;
+  background-position: 0% 0%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: .75s;
+  font-size: 1.7vw;
+  margin: 0;
+}
+.content-row-info a:hover {
+  background-position: 100% 90%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (min-width:1070px) {
+  .content-container {
+    width: 845px;
+  }
+  .content-row-info p {
+    font-size: 19px;
+  }
+  .content-row-info h1 {
+    font-size: 32px;
+  }
+  .content-row-info a {
+    font-size: 18px;
+  }
+  .content-row {
+    height: 216px;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width:720px) {
+  .content-container {
+    width: 95%;
+  }
+  .content-container p {
+    font-size: 17px;
+  }
+  .content-container h1 {
+    font-size: 26px;
+  }
+  .content-row-info a {
+    font-size: 16px;
+  }
+  .content-row {
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .content-row img {
+    float: none;
+    margin: 0;
+    width: 84%;
+    margin-left: 8%;
+  }
+  .content-row-info {
+    width: 84%;
+    margin-left: 8%;
+  }
 }
 
 /* Footer */
@@ -101,6 +197,9 @@ nav a {
     95%{background-position:100% 100%}
     100%{background-position:0% 0%}
 }
+
+/* Adjusting based on width */
+
 
 * {
   /* border: 1px solid red; */
