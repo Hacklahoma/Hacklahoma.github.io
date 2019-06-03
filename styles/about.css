@@ -20,6 +20,7 @@
 .about-content h1 {
   font-size: 2.5em;
   margin: 0;
+  margin-top: 25px;
 }
 .about-content p {
   font-size: 1.1em;
@@ -27,4 +28,24 @@
   letter-spacing: 1px;
   word-spacing: 2px;
   text-align: left;
+}
+
+/* FAQ Section */
+table {
+}
+tr {
+}
+th {
+  text-align: left;
+  font-size: 18px;
+  width: 33.33%;
+}
+td {
+  vertical-align: top;
+  text-align: left;
+  padding-right: 10px;
+}
+
+* {
+  /* border: 1px solid red; */
 }
