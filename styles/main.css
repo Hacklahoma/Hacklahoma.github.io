@@ -44,6 +44,7 @@ nav {
 }
 .nav-container {
   display: inline-block;
+  min-width: 170px;
 }
 nav a {
   float: left;
@@ -64,6 +65,7 @@ nav a {
 }
 .header-title {
   margin-top: 50px;
+  min-width: 170px;
 }
 .header-title h1 {
   margin: 0;
@@ -98,6 +100,17 @@ a:hover i {
   border-width: 0 2px 2px 0;
   transition: 1s;
 }
+@media (max-width:720px) {
+  .header-title h1 {
+    font-size: 8vw;
+  }
+}
+@media (max-width:480px) {
+  .header-title h1 {
+    font-size: 36px;
+  }
+}
+
 
 /* Content */
 .content-backsplash {
@@ -120,7 +133,7 @@ a:hover i {
 }
 .content-row {
   height: 20vw;
-  font-size: 1.5vw;
+  font-size: 1.4vw;
   margin-bottom: 5vw;
 }
 .home-team img {
@@ -138,10 +151,14 @@ a:hover i {
   margin: 0;
   transition: .15s;
   font-weight: normal;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  margin-bottom: 5px;
 }
 .content-row-info h1 {
   margin: 0;
   transition: .15s;
+  font-size: 24px;
 }
 .content-row-info a {
   font-weight: bold;
@@ -151,8 +168,7 @@ a:hover i {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: .75s;
-  font-size: 1.7vw;
-  margin: 0;
+  font-size: 16px;
 }
 .content-row-info a:hover {
   background-position: 100% 90%;
@@ -162,16 +178,14 @@ a:hover i {
 @media (min-width:1070px) {
 
   .content-row-info p {
-    font-size: 17px;
+    font-size: 15px;
   }
   .content-row-info h1 {
     font-size: 32px;
   }
-  .content-row-info a {
-    font-size: 18px;
-  }
   .content-row {
     height: 216px;
+    font-size: 0;
     margin-bottom: 50px;
   }
 }

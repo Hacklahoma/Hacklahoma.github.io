@@ -3,7 +3,7 @@
   height: 50px;
 }
 .content-backsplash {
-  height: 1000px;
+  height: auto;
 }
 
 * {
