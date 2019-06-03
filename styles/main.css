@@ -9,6 +9,11 @@
   src: url('../fonts/Avenir/AvenirNextLTPro-Regular.otf');
   font-weight: normal;
 }
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/Avenir/AvenirNextLTPro-Demi.otf');
+  font-weight: bold;
+}
 
 /* Body */
 body {
@@ -56,9 +61,12 @@ nav a {
   height: 300px;
   background-color: #f4f4f4
 }
-.header-container h1 {
+.header-title {
+  margin-top: 75px;
+}
+.header-title h1 {
+  margin: 0;
   display: inline-block;
-  margin-top: 110px;
   font-size: 4em;
   letter-spacing: 2px;
   /* for gradient animations */
@@ -69,6 +77,25 @@ nav a {
   background-position: 100% 100%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.header-title a {
+  font-size: 1.1em;
+}
+.header-title i {
+  border: solid #2B4162;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 2px;
+  margin-bottom: 4px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  animation: bump 10s ease-in-out infinite;
+  animation-delay: -3.5s;
+}
+a:hover i {
+  border: solid #FFD993;
+  border-width: 0 2px 2px 0;
+  transition: 1s;
 }
 
 /* Content */
@@ -85,13 +112,14 @@ nav a {
   display: inline-block;
   text-align: left;
   width: 80%;
+  max-width: 845px;
   height: auto;
   margin-top: 80px;
   margin-bottom: 50px;
 }
 .content-row {
   height: 20vw;
-  font-size: 1.8vw;
+  font-size: 1.5vw;
   margin-bottom: 5vw;
 }
 .home-team img {
@@ -108,6 +136,7 @@ nav a {
 .content-row-info p {
   margin: 0;
   transition: .15s;
+  font-weight: normal;
 }
 .content-row-info h1 {
   margin: 0;
@@ -130,11 +159,9 @@ nav a {
   -webkit-text-fill-color: transparent;
 }
 @media (min-width:1070px) {
-  .content-container {
-    width: 845px;
-  }
+
   .content-row-info p {
-    font-size: 19px;
+    font-size: 17px;
   }
   .content-row-info h1 {
     font-size: 32px;
@@ -181,9 +208,38 @@ nav a {
   height: 3px;
   background: linear-gradient(150deg, var(--accent-color-1) 30%, var(--accent-color-2));
 }
-.footer-container {
-  height: 150px;
+.footer-background {
+  height: 50px;
   background-color: #1C2A3F;
+  color: white;
+  text-align: center;
+}
+.footer-container {
+  width: 80%;
+  max-width: 845px;
+  display: inline-block;
+  text-align: right;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #d1d4d8;
+}
+.footer-container a {
+  margin: 0;
+  margin-right: 4%;
+  text-decoration: none;
+  background: initial;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  color: #d1d4d8;
+}
+.footer-container p {
+  margin: 0;
+  float: left;
+}
+@media (max-width:720px) {
+  .footer-container {
+    width: 95%;
+  }
 }
 
 /* Animations */
@@ -197,7 +253,13 @@ nav a {
     95%{background-position:100% 100%}
     100%{background-position:0% 0%}
 }
-
+@keyframes bump {
+    0%{margin-left: 0;}
+    48%{margin-left: 0;}
+    50%{margin-left: 4px;}
+    52%{margin-left: 0;}
+    100%{margin-left: 0;}
+}
 /* Adjusting based on width */
 
 
