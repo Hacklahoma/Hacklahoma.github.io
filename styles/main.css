@@ -70,7 +70,7 @@ nav a {
 .header-title h1 {
   margin: 0;
   display: inline-block;
-  font-size: 4em;
+  font-size: 5em;
   letter-spacing: 2px;
   /* for gradient animations */
   animation: title 15s linear infinite;
@@ -116,9 +116,9 @@ a:hover i {
 .content-backsplash {
   text-align: center;
   height: auto;
-  background: linear-gradient(170deg, #2B4162, #51637E /* #64748C */);
+  background: linear-gradient(170deg, #2B4162, #51637E /* #22344e #64748C */);
   background-size: 400% 400%;
-  animation: background 12s ease infinite;
+  animation: background 13s ease infinite;
   color: white;
   margin: 0;
 }
