@@ -26,6 +26,7 @@
 .team-container
 {
   display: inline-block;
+  text-align: center;
 }
 .timeline-item h1 {
   font-size: 3em;
@@ -42,14 +43,13 @@
   text-align: left;
 }
 .team-item {
-	float: left;
   position: relative;
 	width: 100px;
 	height: 100px;
   border: 1px solid #fff;
-  border-radius: 50px;
-  margin: 5px;
   color: #fff;
+  margin: 5px;
+  /* border-radius: 50px; */
   display: inline-block;
 }
 .team-item p {
