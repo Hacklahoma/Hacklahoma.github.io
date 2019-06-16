@@ -18,19 +18,20 @@
   display: inline-block;
 }
 .timeline-item {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   height: auto;
   display: inline-block;
 }
 .team-container
 {
   display: inline-block;
-  text-align: center;
+  text-align: left;
 }
 .timeline-item h1 {
+  border-bottom: 4px solid white;
+  text-align: center;
   font-size: 3em;
-  border-bottom: 1px solid white;
   background: linear-gradient(130deg, var(--accent-color-2), #FF9366, #ddd, #ffffff);
   background-size: 300% 300%;
   background-position: 0% 0%;
@@ -42,21 +43,32 @@
 .timeline-item p {
   text-align: left;
 }
+.team-container h3 {
+  font-size: 1.5em;
+  /* text-decoration: underline; */
+  margin: 0;
+  text-align: left;
+}
 .team-item {
   position: relative;
-	width: 100px;
+	width: 80px;
 	height: 100px;
-  border: 1px solid #fff;
   color: #fff;
-  margin: 5px;
+  margin: 0 20px 20px 0;
   /* border-radius: 50px; */
   display: inline-block;
 }
 .team-item p {
-  text-align: center;
-  padding-top: 15px;
-  margin-left: 5px;
-  width: 90px;
+  font-size: 10px;
+  white-space: nowrap;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.team-item img {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid white;
 }
 
 /* Content */
@@ -94,7 +106,7 @@ h2 {
   word-spacing: 2px;
   text-align: left;
 }
-.content-text a {
+.invert-link {
   font-weight: bold;
   background: linear-gradient(130deg, var(--accent-color-2), #FF9366, #ddd, #ffffff);
   background-size: 300% 300%;
@@ -103,7 +115,7 @@ h2 {
   -webkit-text-fill-color: transparent;
   transition: .75s;
 }
-.content-text a:hover {
+.invert-link:hover {
   background-position: 100% 90%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

@@ -84,7 +84,7 @@ nav a {
 .header-title a {
   font-size: 1.1em;
 }
-.header-title i {
+.go {
   border: solid #2B4162;
   border-width: 0 2px 2px 0;
   display: inline-block;
@@ -99,6 +99,10 @@ a:hover i {
   border: solid #FFD993;
   border-width: 0 2px 2px 0;
   transition: 1s;
+}
+.go-invert:hover {
+  border: solid #FFD993;
+  border-width: 0 2px 2px 0;
 }
 @media (max-width:720px) {
   .header-title h1 {
