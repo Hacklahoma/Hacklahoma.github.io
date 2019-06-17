@@ -23,6 +23,20 @@
   height: auto;
   display: inline-block;
 }
+.timeline-description {
+  text-align: left;
+}
+.timeline-description img {
+  width: 150px;
+  display: inline-block;
+  margin: 0;
+}
+.timeline-description div {
+  display: inline-block;
+  margin: 0 0 0 15px;
+  width: calc(100% - 180px);
+  vertical-align: top;
+}
 .team-container
 {
   display: inline-block;
@@ -39,9 +53,6 @@
   -webkit-text-fill-color: transparent;
   transition: .75s;
   margin: 0;
-}
-.timeline-item p {
-  text-align: left;
 }
 .team-container h3 {
   font-size: 1.5em;
