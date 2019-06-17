@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: 'Avenir';
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/Avenir/AvenirNextLTPro-Regular.otf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/Avenir/AvenirNextLTPro-Demi.otf');
+  font-weight: bold;
+}
+
+.header-container {
+  margin-top: calc(40vh - 160px);
+  width: 100%;
+  display: flex;
+}
+.header-title {
+  margin: 0;
+  margin-left: calc(50% / 7);
+  /* width: 50vw;
+  height: 50vh; */
+  width: 600px;
+  height: 350px;
+  /* background-color: #ffcbb3; */
+}
+.spacer {
+  width: 10%;
+}
+.header-text {
+  display: inline-block;
+  margin: 90px 25px;
+  margin-right: 150px;
+}
+.header-text h1 {
+  margin: 0;
+  font-size: 5em;
+  color: #ffcbb3;
+  text-shadow:
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+.header-text h2 {
+  margin: 0;
+  color: #ffcbb3;
+  text-shadow:
+   -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+     1px 1px 0 #fff;
+}
+
+.airplane-container {
+  z-index: -1;
+  position: absolute;
+  right: 20%;
+  float: right;
+  height: 500px;
+  margin-top: -75px;
+}
+.airplane-container img {
+}
+
+/* * { border: 1px solid black; } */
