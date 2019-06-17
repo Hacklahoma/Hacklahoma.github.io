@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: 'Avenir';
+  overflow: hidden;
 }
 
 @font-face {
@@ -64,7 +65,20 @@ body {
   height: 500px;
   margin-top: -75px;
 }
-.airplane-container img {
+
+
+@media (max-width:720px) {
+  .header-title h1 {
+    font-size: 3em;
+  }
+  .airplane-container {
+    right: 0;
+    height: 500px;
+    margin-top: -75px;
+  }
+  .airplane-container img{
+    height: 400px;
+  }
 }
 
 /* * { border: 1px solid black; } */
