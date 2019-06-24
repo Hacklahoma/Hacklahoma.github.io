@@ -18,18 +18,34 @@
   display: inline-block;
 }
 .timeline-item {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   height: auto;
   display: inline-block;
+}
+.timeline-description {
+  text-align: left;
+}
+.timeline-description img {
+  width: 150px;
+  display: inline-block;
+  margin: 0;
+}
+.timeline-description div {
+  display: inline-block;
+  margin: 0 0 0 15px;
+  width: calc(100% - 180px);
+  vertical-align: top;
 }
 .team-container
 {
   display: inline-block;
+  text-align: left;
 }
 .timeline-item h1 {
+  border-bottom: 4px solid white;
+  text-align: center;
   font-size: 3em;
-  border-bottom: 1px solid white;
   background: linear-gradient(130deg, var(--accent-color-2), #FF9366, #ddd, #ffffff);
   background-size: 300% 300%;
   background-position: 0% 0%;
@@ -38,25 +54,32 @@
   transition: .75s;
   margin: 0;
 }
-.timeline-item p {
+.team-container h3 {
+  font-size: 1.5em;
+  /* text-decoration: underline; */
+  margin: 0;
   text-align: left;
 }
 .team-item {
-	float: left;
   position: relative;
-	width: 100px;
+	width: 80px;
 	height: 100px;
-  border: 1px solid #fff;
-  border-radius: 50px;
-  margin: 5px;
   color: #fff;
+  margin: 0 20px 20px 0;
+  /* border-radius: 50px; */
   display: inline-block;
 }
 .team-item p {
-  text-align: center;
-  padding-top: 15px;
-  margin-left: 5px;
-  width: 90px;
+  font-size: 10px;
+  white-space: nowrap;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.team-item img {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid white;
 }
 
 /* Content */
@@ -94,7 +117,7 @@ h2 {
   word-spacing: 2px;
   text-align: left;
 }
-.content-text a {
+.invert-link {
   font-weight: bold;
   background: linear-gradient(130deg, var(--accent-color-2), #FF9366, #ddd, #ffffff);
   background-size: 300% 300%;
@@ -103,7 +126,7 @@ h2 {
   -webkit-text-fill-color: transparent;
   transition: .75s;
 }
-.content-text a:hover {
+.invert-link:hover {
   background-position: 100% 90%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
