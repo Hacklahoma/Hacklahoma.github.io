@@ -77,10 +77,10 @@ nav a {
   display: inline-block;
   font-size: 5em;
   letter-spacing: 2px;
+  filter: drop-shadow(4px 6px 4px rgba(0, 0, 0, 0.15));
   /* for gradient animations */
   animation: title 15s linear infinite;
   animation-delay: -10s;
-  filter: drop-shadow(2px 3px 2px rgba(0, 0, 0, 0.2));
   background: linear-gradient(150deg, var(--accent-color-3), var(--accent-color-4), var(--accent-color-1), var(--accent-color-2), var(--accent-color-3), var(--accent-color-4));
   background-size: 500% 500%;
   background-position: 100% 100%;
