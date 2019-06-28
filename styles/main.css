@@ -1,6 +1,9 @@
 :root {
   --accent-color-1: #D65822; /* #D65822 #FF9366 #057F9B */
   --accent-color-2: #FFD993; /* #FFD993 #06AED5 */
+  --accent-color-3: #2a3b5d; /* #2B4162 */
+  --accent-color-4: #435477; /* #64748C */
+  --footer-color: #0B1E3D;
 }
 
 /* Importing fonts */
@@ -17,13 +20,14 @@
 
 /* Body */
 body {
-  background-color: #1C2A3F;
+  /* background-color: var(--footer-color); */
+  background: linear-gradient(170deg, var(--accent-color-3), var(--accent-color-4));
   margin: 0;
   font-family: 'Avenir';
 }
 a {
   text-decoration: none;
-  background: linear-gradient(130deg, var(--accent-color-1), var(--accent-color-2), #2B4162, #64748C);
+  background: linear-gradient(130deg, var(--accent-color-1), var(--accent-color-2), var(--accent-color-3), var(--accent-color-4));
   background-size: 300% 300%;
   background-position: 100% 90%;
   -webkit-background-clip: text;
@@ -50,7 +54,7 @@ nav a {
   float: left;
   margin: 10px;
   font-size: 1em;
-  color: #2B4162;
+  color: var(--accent-color-3);
 }
 .active-tab {
    font-weight:bold;
@@ -61,7 +65,8 @@ nav a {
 .header-container {
   text-align: center;
   height: 260px;
-  background-color: #f4f4f4
+  background-color: #f4f4f4;
+  filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.3));
 }
 .header-title {
   margin-top: 50px;
@@ -75,7 +80,8 @@ nav a {
   /* for gradient animations */
   animation: title 15s linear infinite;
   animation-delay: -10s;
-  background: linear-gradient(150deg, #2B4162, #64748C, var(--accent-color-1), var(--accent-color-2), #2B4162, #64748C);
+  filter: drop-shadow(2px 3px 2px rgba(0, 0, 0, 0.2));
+  background: linear-gradient(150deg, var(--accent-color-3), var(--accent-color-4), var(--accent-color-1), var(--accent-color-2), var(--accent-color-3), var(--accent-color-4));
   background-size: 500% 500%;
   background-position: 100% 100%;
   -webkit-background-clip: text;
@@ -85,7 +91,7 @@ nav a {
   font-size: 1.1em;
 }
 .go {
-  border: solid #2B4162;
+  border: solid var(--accent-color-3);
   border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 2px;
@@ -120,7 +126,7 @@ a:hover i {
 .content-backsplash {
   text-align: center;
   height: auto;
-  background: linear-gradient(170deg, #2B4162, #51637E /* #22344e #64748C */);
+  background: linear-gradient(170deg, var(--accent-color-3), var(--accent-color-4));
   background-size: 400% 400%;
   animation: background 13s ease infinite;
   color: white;
@@ -132,7 +138,7 @@ a:hover i {
   width: 80%;
   max-width: 845px;
   height: auto;
-  margin-top: 80px;
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 .content-row {
@@ -229,7 +235,7 @@ a:hover i {
 }
 .footer-background {
   height: 50px;
-  background-color: #1C2A3F;
+  background-color: var(--footer-color);
   color: white;
   text-align: center;
 }
