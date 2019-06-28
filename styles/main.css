@@ -20,8 +20,7 @@
 
 /* Body */
 body {
-  /* background-color: var(--footer-color); */
-  background: linear-gradient(170deg, var(--accent-color-3), var(--accent-color-4));
+  background-color: var(--footer-color);
   margin: 0;
   font-family: 'Avenir';
 }
