@@ -1,3 +1,7 @@
+:root {
+  --transition-time: .5s;
+}
+
 /* Header */
 .header-container {
   height: 50px;
@@ -5,83 +9,47 @@
 
 /* Timeline */
 .timeline-wrapper {
-	overflow: hidden; /* simple clearfix */
+	overflow: hidden;
   margin-top: 50px;
   margin-bottom: 50px;
-  width: 50%;
+  width: 75%;
   display: inline-block;
   max-width: 845px;
 }
+@media (max-width:720px) {
+  .timeline-wrapper {
+    width: 95%;
+  }
+}
 .timeline-container {
-  width: auto;
-  height: auto;
-  display: inline-block;
+  margin-top: 50px;
 }
 .timeline-item {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  height: auto;
-  display: inline-block;
-}
-.timeline-description {
-  text-align: left;
-}
-.timeline-description img {
-  width: 150px;
-  display: inline-block;
-  margin: 0;
-}
-.timeline-description div {
-  display: inline-block;
-  margin: 0 0 0 15px;
-  width: calc(100% - 180px);
-  vertical-align: top;
-}
-.team-container
-{
-  display: inline-block;
-  text-align: left;
-}
-.timeline-item h1 {
-  border-bottom: 4px solid white;
-  text-align: center;
-  font-size: 3em;
-  background: linear-gradient(130deg, var(--accent-color-2), #FF9366, #ddd, #ffffff);
-  background-size: 300% 300%;
-  background-position: 0% 0%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: .75s;
-  margin: 0;
-}
-.team-container h3 {
-  font-size: 1.5em;
-  /* text-decoration: underline; */
-  margin: 0;
-  text-align: left;
-}
-.team-item {
-  position: relative;
-	width: 80px;
-	height: 100px;
-  color: #fff;
-  margin: 0 20px 20px 0;
-  /* border-radius: 50px; */
-  display: inline-block;
-}
-.team-item p {
-  font-size: 10px;
-  white-space: nowrap;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-}
-.team-item img {
   width: 100%;
-  border-radius: 3px;
-  border: 1px solid white;
+  height: 175px;
+  background-color: var(--accent-color-4);
+  border-radius: 30px;
+  transition: var(--transition-time);
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-
+.timeline-opened {
+  height: 500px;
+}
+.timeline-item img {
+  cursor: pointer;
+  position: absolute;
+  bottom: 15px;
+}
+.timeline-opened img {
+  transform: rotate(180deg);
+  transition: var(--transition-time);
+}
+.timeline-closed img {
+  transform: rotate(0deg);
+  transition: var(--transition-time);
+}
 /* Content */
 .content-backsplash {
   height: auto;
