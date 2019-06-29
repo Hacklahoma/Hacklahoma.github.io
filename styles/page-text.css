@@ -41,7 +41,11 @@
   cursor: pointer;
   position: absolute;
   bottom: 15px;
+  animation: buttonBounce 5s infinite ease-in-out;
 }
+#reveal-button-2020 {animation-delay: 0s}
+#reveal-button-2019 {animation-delay: .3s}
+#reveal-button-2018 {animation-delay: .6s}
 .timeline-opened img {
   transform: rotate(180deg);
   transition: var(--transition-time);
@@ -105,7 +109,12 @@ h2 {
   margin-right: 10px;
 }
 
-
+@keyframes buttonBounce {
+  0% {margin-bottom: 0;}
+  4% {margin-bottom: 5px;}
+  8% {margin-bottom: 0;}
+  100% {margin-bottom: 0;}
+}
 
 
 * {
