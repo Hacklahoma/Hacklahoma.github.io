@@ -42,6 +42,7 @@
   position: absolute;
   bottom: 15px;
   animation: buttonBounce 5s infinite ease-in-out;
+  width: 15px;
 }
 #reveal-button-2020 {animation-delay: 0s}
 #reveal-button-2019 {animation-delay: .3s}
