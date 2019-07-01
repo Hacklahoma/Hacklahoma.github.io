@@ -8,6 +8,71 @@
 }
 
 /* Timeline */
+.timeline-header {
+  /* border: 1px solid black; */
+  height: 105px;
+}
+.timeline-header-year {
+  height: 105px;
+  width: 25%;
+  margin-left: 5%;
+}
+.timeline-header-year svg {
+  width: 100%;
+  margin-top: 35px;
+}
+.timeline-header-year text {
+  font-weight: bold;
+}
+.timeline-header-p {
+  position: absolute;
+  width: 65%;
+  left: 33%;
+  top: 19px;
+  text-align: left;
+  font-size: 18px;
+}
+.timeline-header-p a {
+  font-weight: bold;
+  background: linear-gradient(130deg, var(--accent-color-2), #FF9366, #ddd, #ffffff);
+  background-size: 300% 300%;
+  background-position: 0% 0%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: .4s;
+}
+.timeline-header-p a:hover {
+  background-position: 100% 90%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: .75s;
+}
+@media (max-width:1115px) {
+  .timeline-header-p {
+    font-size: 16px;
+  }
+}
+@media (max-width:927px) {
+  .timeline-header-p {
+    font-size: 2.1vw;
+    top: 5px
+  }
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.reveal-container {
+  height: 300px;
+  width: 90%;
+  background-color: red;
+  position: absolute;
+  bottom: 40px;
+  left: 5%;
+  transition: var(--transition-time);
+  border-radius: 30px;
+}
 .timeline-wrapper {
 	overflow: hidden;
   margin-top: 50px;
@@ -16,23 +81,33 @@
   display: inline-block;
   max-width: 845px;
 }
-@media (max-width:720px) {
-  .timeline-wrapper {
-    width: 95%;
-  }
-}
 .timeline-container {
   margin-top: 50px;
 }
 .timeline-item {
   width: 100%;
-  height: 175px;
+  height: 150px;
   background-color: var(--accent-color-4);
   border-radius: 30px;
   transition: var(--transition-time);
+  transition-timing-function: ease-in-out;
   position: relative;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+@media (max-width:720px) {
+  .timeline-wrapper {
+    width: 95%;
+  }
+  .timeline-item {
+    height: 120px;
+  }
+  .timeline-header-p {
+    top: 8px
+  }
+  .timeline-header-year svg {
+    margin-top: 21px;
+  }
 }
 .timeline-opened {
   height: 500px;
