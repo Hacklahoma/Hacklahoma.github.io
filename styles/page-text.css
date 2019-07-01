@@ -100,7 +100,8 @@
     width: 95%;
   }
   .timeline-item {
-    height: 120px;
+    height: 20vw;
+    /* height: 120px; */
   }
   .timeline-header-p {
     top: 8px
