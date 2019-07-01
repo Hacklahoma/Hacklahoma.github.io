@@ -70,7 +70,6 @@
   position: absolute;
   bottom: 40px;
   left: 5%;
-  transition: var(--transition-time);
   border-radius: 30px;
 }
 .timeline-wrapper {
@@ -100,7 +99,7 @@
     width: 95%;
   }
   .timeline-item {
-    height: 20vw;
+    height: 20.5vw;
     /* height: 120px; */
   }
   .timeline-header-p {
