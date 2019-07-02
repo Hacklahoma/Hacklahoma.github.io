@@ -64,16 +64,15 @@
   pointer-events: none;
 }
 .reveal-container {
-  height: 300px;
+  height: 480px;
   width: 90%;
   background-color: red;
   position: absolute;
   bottom: 40px;
   left: 5%;
-  border-radius: 30px;
 }
 .timeline-wrapper {
-	overflow: hidden;
+  min-width: 260px;
   margin-top: 50px;
   margin-bottom: 50px;
   width: 75%;
@@ -96,21 +95,28 @@
 }
 @media (max-width:720px) {
   .timeline-wrapper {
-    width: 95%;
+    width: 90%;
   }
   .timeline-item {
-    height: 20.5vw;
+    /* height: 20.5vw; */
     /* height: 120px; */
   }
   .timeline-header-p {
-    top: 8px
+    left: 5%;
+    font-size: 12px;
+    top: 48px;
+    width: 90%;
   }
   .timeline-header-year svg {
     margin-top: 21px;
   }
+  .timeline-header-year  {
+    margin-left: 5%;
+    width: 100px;
+  }
 }
 .timeline-opened {
-  height: 500px;
+  height: 650px;
 }
 .timeline-item img {
   cursor: pointer;
