@@ -70,7 +70,7 @@
         <h2>A WALK IN THE PAST</h2>
         <div class="timeline-container">
           <!-- 2020 -->
-          <div class="timeline-item timeline-closed" id="2020">
+          <div class="timeline-item timeline-opened" id="2020"> <!-- change to timeline-closed class -->
             <div class="timeline-header">
               <div class="timeline-header-year">
                 <svg viewBox="0 -8 40 14">
@@ -87,10 +87,34 @@
                 <p>On February 9-10, we intend to host our 3rd annual hackathon. We expect over 350 students, 100 projects, and $50,000 raised for the event. <a href="../2020" target="_blank">View the 2020 website</a></p>
               </div>
             </div>
-            <div class="reveal-container hidden" id="2020-reveal">
-              <h1>test</h1>
+            <div class="reveal-container" id="2020-reveal"> <!-- add hidden class -->
+              <div class="reveal-wrapper">
+                <div class="reveal-logo">
+                  <img width="100%" src="../img/assets/logo2020.png" alt="">
+                </div>
+                <div class="reveal-text">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum erat ante, posuere at varius ac, eleifend at erat. Pellentesque tempor magna at ex ullamcorper, vitae pretium nisi mollis.</p>
+                </div>
+                <div class="team-container">
+                  <div class="team-title">
+                    <h1 style="margin:0;">The Team</h1>
+                  </div>
+                  <div class="team-content">
+                    <div class="team-item"></div>
+                    <div class="team-item"></div>
+                    <div class="team-item"></div>
+                    <div class="team-item"></div>
+                    <div class="team-item"></div>
+                    <div class="team-item"></div>
+                    <div class="team-item"></div>
+                    <div class="team-item"></div>
+                    <div class="team-item"></div>
+                    <div class="team-item"></div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <img id="reveal-button-2020" src="../img/assets/reveal-button.svg" alt="">
+            <img class="reveal-button" id="reveal-button-2020" src="../img/assets/reveal-button.svg" alt="">
           </div>
 
           <!-- 2019 -->
@@ -107,7 +131,7 @@
             </div>
             <div class="reveal-container hidden" id="2019-reveal">
             </div>
-            <img id="reveal-button-2019" src="../img/assets/reveal-button.svg" alt="">
+            <img class="reveal-button" id="reveal-button-2019" src="../img/assets/reveal-button.svg" alt="">
           </div>
 
           <!-- 2018 -->
@@ -124,7 +148,7 @@
             </div>
             <div class="reveal-container hidden" id="2018-reveal">
             </div>
-            <img id="reveal-button-2018" src="../img/assets/reveal-button.svg" alt="">
+            <img class="reveal-button" id="reveal-button-2018" src="../img/assets/reveal-button.svg" alt="">
           </div>
         </div>
       </div>

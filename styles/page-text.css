@@ -66,13 +66,61 @@
 .reveal-container {
   height: 480px;
   width: 90%;
-  background-color: red;
   position: absolute;
   bottom: 40px;
   left: 5%;
 }
+.reveal-wrapper {
+  position: relative;
+  /* border-top: 2px solid var(--accent-color-3); */
+  height: 480px;
+}
+.reveal-logo {
+  position: absolute;
+  /* border: 1px solid black; */
+  width: 20%;
+  height: auto;
+}
+.team-container {
+  position: absolute;
+  width: 100%;
+  height: 340px;
+  top: 130px;
+}
+.team-title {
+  position: absolute;
+  left: 0;
+}
+.team-content {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin-top: 32px;
+  height: calc(100% - 30px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.team-item {
+  border: 1px solid white;
+  border-radius: 30px;
+  background-color: white;
+  position: relative;
+  display: inline-block;
+  /* float: left; */
+  margin: 5px 5px;
+  height: 85px;
+  width: 300px;
+}
+.reveal-text {
+  position: absolute;
+  /* border: 1px solid black; */
+  height: auto;
+  font-size: 15px;
+  left: 25%;
+  width: 70%;
+  text-align: left;
+}
 .timeline-wrapper {
-  min-width: 260px;
+  min-width: 363px;
   margin-top: 50px;
   margin-bottom: 50px;
   width: 75%;
@@ -97,6 +145,12 @@
   .timeline-wrapper {
     width: 90%;
   }
+  .reveal-text {
+    font-size: 2vw;
+  }
+  .reveal-logo {
+    margin-top: 10px;
+  }
   .timeline-item {
     /* height: 20.5vw; */
     /* height: 120px; */
@@ -115,10 +169,15 @@
     width: 100px;
   }
 }
+@media (max-width:550px) {
+  .reveal-text {
+    font-size: 12px;
+  }
+}
 .timeline-opened {
   height: 650px;
 }
-.timeline-item img {
+.reveal-button {
   cursor: pointer;
   position: absolute;
   bottom: 15px;
@@ -128,11 +187,11 @@
 #reveal-button-2020 {animation-delay: 0s}
 #reveal-button-2019 {animation-delay: .3s}
 #reveal-button-2018 {animation-delay: .6s}
-.timeline-opened img {
+.timeline-opened .reveal-button {
   transform: rotate(180deg);
   transition: var(--transition-time);
 }
-.timeline-closed img {
+.timeline-closed .reveal-button {
   transform: rotate(0deg);
   transition: var(--transition-time);
 }
@@ -189,6 +248,23 @@ h2 {
   margin: 0;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+/** Scroll Bar **/
+.team-content::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: var(--accent-color-4);
+}
+.team-content::-webkit-scrollbar
+{
+	width: 3px;
+	background-color: var(--accent-color-4);
+}
+.team-content::-webkit-scrollbar-thumb
+{
+  border-radius: 3px;
+	background-color: #fff;
 }
 
 @keyframes buttonBounce {
