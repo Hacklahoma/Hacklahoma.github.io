@@ -100,8 +100,7 @@
   overflow-x: hidden;
 }
 .team-item {
-  border: 1px solid white;
-  border-radius: 30px;
+  border-radius: 15px;
   background-color: white;
   position: relative;
   display: inline-block;
@@ -109,6 +108,29 @@
   margin: 5px 5px;
   height: 85px;
   width: 300px;
+  overflow: hidden;
+  text-align: left;
+}
+.team-img {
+  position: absolute;
+  height: 85px;
+  width: 85px;
+}
+.team-img img {
+  height: 85px;
+}
+.team-p {
+  color: black;
+  margin-left: 95px;
+  margin-top: 21px;
+}
+.team-p h1 {
+  font-size: 18px;
+  margin: 0;
+}
+.team-p p {
+  font-size: 14px;
+  margin: 0;
 }
 .reveal-text {
   position: absolute;
