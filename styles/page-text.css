@@ -67,6 +67,7 @@
   height: 480px;
   width: 90%;
   position: absolute;
+  overflow: hidden;
   bottom: 40px;
   left: 5%;
 }
@@ -74,10 +75,12 @@
   position: relative;
   /* border-top: 2px solid var(--accent-color-3); */
   height: 480px;
+  overflow: hidden;
 }
 .reveal-logo {
   position: absolute;
   width: 20%;
+  overflow: hidden;
   height: auto;
 }
 .team-container {
