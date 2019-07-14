@@ -79,8 +79,8 @@ body {
   padding-bottom: 25px;
   display: inline-block;
   position: relative;
-  border: 5px solid #ffcbb3;
-  border-radius: 15px;
+  /* border: 5px solid #ffcbb3; */
+  /* border-radius: 15px; */
 }
 .sponsors-container h1 {
   right: 5%;
@@ -100,7 +100,8 @@ body {
 .sponsors-item {
   height: 150px;
   width: 150px;
-  border: 1px solid black;
+  border: 2px solid #ffcbb3;
+  border-radius: 10px;
   display: inline-block;
   margin: 15px;
 }
