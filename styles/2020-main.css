@@ -71,6 +71,7 @@ body {
   width: 100%;
   text-align: center;
   margin-bottom: 50px;
+  margin-top: 50px;
 }
 .sponsors-container {
   width: 80%;
@@ -83,9 +84,6 @@ body {
   /* border-radius: 15px; */
 }
 .sponsors-container h1 {
-  right: 5%;
-  margin: 0;
-  position: absolute;
   color: #ffcbb3;
   font-size: 3em;
   -webkit-text-stroke: 1px black;
@@ -94,16 +92,18 @@ body {
     1px 1px 0 #000;
 }
 .sponsors-gallery {
-  height: calc(100% - 50px);
-  margin-top: 50px;
+  height: calc(100%);
+  margin-top: -50px;
 }
 .sponsors-item {
-  height: 150px;
-  width: 150px;
-  border: 2px solid #ffcbb3;
-  border-radius: 10px;
+  width: 200px;
+  height: 100px;
+  overflow: hidden;
   display: inline-block;
   margin: 15px;
+}
+.sponsors-item img {
+  width: 100%;
 }
 
 @media (max-width:720px) {
@@ -112,6 +112,9 @@ body {
   }
   .sponsors-container h1 {
     font-size: 2em;
+  }
+  .sponsors-gallery {
+    margin-top: -20px;
   }
   .header-container {
     height: 290px;
@@ -123,6 +126,10 @@ body {
   }
   .airplane-container img{
     height: 400px;
+  }
+  .sponsors-item {
+    width: 120px;
+    height: 60px;
   }
 }
 
