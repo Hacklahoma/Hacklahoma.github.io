@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Avenir';
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -19,6 +19,7 @@ body {
   margin-top: calc(40vh - 160px);
   width: 100%;
   display: flex;
+  height: 500px;
 }
 .header-title {
   margin: 0;
@@ -60,19 +61,63 @@ body {
   z-index: -1;
   position: absolute;
   right: 20%;
-  float: right;
   height: 500px;
   margin-top: -75px;
 }
 
+/* Sponsors */
+.sponsors-wrapper {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.sponsors-container {
+  width: 80%;
+  max-width: 1000px;
+  height: 100%;
+  padding-bottom: 25px;
+  display: inline-block;
+  position: relative;
+  border: 5px solid #ffcbb3;
+  border-radius: 15px;
+}
+.sponsors-container h1 {
+  right: 5%;
+  margin: 0;
+  position: absolute;
+  color: #ffcbb3;
+  font-size: 3em;
+  -webkit-text-stroke: 1px black;
+  text-shadow:
+    2px 2px 0 #000,
+    1px 1px 0 #000;
+}
+.sponsors-gallery {
+  height: calc(100% - 50px);
+  margin-top: 50px;
+}
+.sponsors-item {
+  height: 150px;
+  width: 150px;
+  border: 1px solid black;
+  display: inline-block;
+  margin: 15px;
+}
 
 @media (max-width:720px) {
   .header-title h1 {
     font-size: 3em;
   }
+  .sponsors-container h1 {
+    font-size: 2em;
+  }
+  .header-container {
+    height: 290px;
+  }
   .airplane-container {
     right: 0;
-    height: 500px;
+    height: 900px;
     margin-top: -75px;
   }
   .airplane-container img{
