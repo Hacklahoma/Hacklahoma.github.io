@@ -137,9 +137,11 @@
 .reveal-text {
   position: absolute;
   /* border: 1px solid black; */
+  margin: 0;
   height: auto;
   font-size: 15px;
   left: 25%;
+  top: 20px;
   width: 70%;
   text-align: left;
 }
