@@ -198,15 +198,10 @@
 
 @media (max-width:630px) {
   .timeline-header-p {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
-@media (max-width:500px) {
-  .timeline-header-p {
-    font-size: 11px;
-  }
-}
 
 @media (max-width:550px) {
   .reveal-text {
