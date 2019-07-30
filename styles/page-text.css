@@ -179,11 +179,11 @@
   }
   .timeline-item {
     /* height: 20.5vw; */
-    /* height: 120px; */
+    height: 160px;
   }
   .timeline-header-p {
     left: 5%;
-    font-size: 12px;
+    font-size: 16px;
     top: 48px;
     width: 90%;
   }
@@ -195,6 +195,19 @@
     width: 100px;
   }
 }
+
+@media (max-width:630px) {
+  .timeline-header-p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width:500px) {
+  .timeline-header-p {
+    font-size: 11px;
+  }
+}
+
 @media (max-width:550px) {
   .reveal-text {
     font-size: 12px;
