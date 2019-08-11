@@ -99,7 +99,7 @@ function handle_resize() {
 
     // TODO: this is a hack, fix the underlying problem with the code that determines
     // the base parallax positions
-    window.scrollTo(0, 0)
+    // window.scrollTo(0, 0) REMOVED DUE TO MOBILE BUGS
 
     slide_setup();
     if (should_slide) {
@@ -112,7 +112,7 @@ function handle_resize() {
         logo_width = splash_client_rect.width;
         nav_logo.style.width = logo_width + "px";
 
-        logo_height = splash_client_rect.height;        
+        logo_height = splash_client_rect.height;
         nav_logo.style.height = logo_height + "px";
     } else {
         console.warn("A logo was not found, not applying animation.");

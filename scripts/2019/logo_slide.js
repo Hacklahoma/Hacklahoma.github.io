@@ -18,34 +18,34 @@ class Perlin {
     grad(i, x) {
         const h = i & 0xf;
         const grad = 1 + (h & 7);
-        
+
         if ((h & 8) !== 0) {
             return -grad * x;
         }
-        
+
         return grad * x;
     }
 
     getValue(x) {
         const i0 = Math.floor(x);
         const i1 = i0 + 1;
-        
+
         const x0 = x - i0;
         const x1 = x0 - 1;
-        
+
         let t0 = 1 - x0 * x0;
         t0 *= t0;
-        
+
         let t1 = 1 - x1 * x1;
         t1 *= t1;
-        
+
         const n0 = t0 * t0 * this.grad(this.perm[i0 & 0xff], x0);
         const n1 = t1 * t1 * this.grad(this.perm[i1 & 0xff], x1);
-        
+
         return 0.395 * (n0 + n1);
     }
 }
- 
+
 
 const debug = false;
 
@@ -201,7 +201,7 @@ function handle_resize() {
 
     // TODO: this is a hack, fix the underlying problem with the code that determines
     // the base parallax positions
-    window.scrollTo(0, 0)
+    // window.scrollTo(0, 0) REMOVED DUE TO MOBILE BUGS
 
     parallax_setup();
     slide_setup();
@@ -215,7 +215,7 @@ function handle_resize() {
         logo_width = splash_client_rect.width;
         nav_logo.style.width = logo_width + "px";
 
-        logo_height = splash_client_rect.height;        
+        logo_height = splash_client_rect.height;
         nav_logo.style.height = logo_height + "px";
     } else {
         console.warn("A logo was not found, not applying animation.");
@@ -230,7 +230,7 @@ function handle_scroll() {
             logo_offset = splash_client_rect.bottom - NAV_LOGO_BOTTOM;
 
             nav_logo.style.transform = "scale(" + Math.max(min_scale_factor, (logo_offset / max_logo_offset)) + ") translate(0px, " + Math.round(Math.max((logo_offset / max_logo_offset) * NAV_LOGO_BOTTOM, 0)) + "px)";
-        
+
             for (i = 0; i < parallax_components.length; i++) {
                 offset_top = Math.round((i / parallax_components.length) * window.scrollY) + "px";
                 parallax_components[i].style.transform = "translate(0px, -" + offset_top + ")";
@@ -294,4 +294,3 @@ function scale_speed(rot, x, y) {
 function mod(n, m) {
     return ((n % m) + m) % m;
 }
-  
