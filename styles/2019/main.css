@@ -250,6 +250,7 @@ a.anchor {
 
 .splash #info-row {
   flex: 1 1 10%;
+  text-align: center;
   text-shadow: 1px 2px 2px #666666;
   font-family: "LemonMilk";
   font-weight: 300;
