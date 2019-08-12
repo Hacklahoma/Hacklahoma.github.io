@@ -105,7 +105,7 @@ window.onload = function () {
         document.querySelector("#bee-2-restr").style.display = "block";
     }
 
-    handle_resize();
+    handle_resize(true);
 
     if (raf) {
         handle_scroll();
@@ -113,7 +113,7 @@ window.onload = function () {
 }
 
 window.onresize = function () {
-    handle_resize();
+    handle_resize(false);
 }
 
 function parallax_setup() {
@@ -193,11 +193,14 @@ function slide_setup() {
     }
 }
 
-function handle_resize() {
+function handle_resize(spawnOverride) {
+
+  if(window.innerWidth >= 970 || spawnOverride) {
     bee_1_x = Math.random() * document.body.clientWidth;
     bee_2_x = Math.random() * document.body.clientWidth;
     bee_1_y = Math.random() * window.innerHeight;
     bee_2_y = Math.random() * window.innerHeight;
+  }
 
     // TODO: this is a hack, fix the underlying problem with the code that determines
     // the base parallax positions
