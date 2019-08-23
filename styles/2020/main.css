@@ -71,6 +71,15 @@ body {
     2px 2px 0 #000,
     1px 1px 0 #000;
 }
+.date {
+  font-size: 2em;
+  margin: -14px 0 8px 0;
+  color: #f4d06f;
+  font-weight: bold;
+  text-shadow:
+    1px 1px 0 #000,
+    1px 1px 0 #000;
+}
 .header-text h2 {
   margin: 0;
   color: #ffcbb3;
@@ -133,6 +142,9 @@ body {
 @media (max-width:720px) {
   .header-title h1 {
     font-size: 3em;
+  }
+  .date {
+    font-size: 1.5em;
   }
   .sponsors-container h1 {
     font-size: 2em;
