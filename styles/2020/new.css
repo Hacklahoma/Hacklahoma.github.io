@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  height: 2000px;
+}
+
+/* Logo in the header */
+#logo {
+  width: 30vw;
+  height: calc(.94184397 * 30vw);
+  max-width: 500px;
+  max-height: calc(.94184397 * 500px);
+}
+.logo-container {
+  position: absolute;
+  right: 0;
+  top: 10vw;
+}
+
+/* The content container */
+.content-container {
+  position: absolute;
+  top: 0;
+  left: 12%;
+  width: 76%;
+  height: 100%;
+}
