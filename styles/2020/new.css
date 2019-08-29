@@ -1,9 +1,19 @@
 body {
   margin: 0;
+  padding:0;
   height: 2000px;
+  font-family: 'Avenir';
+  color: #25283D;
+  background-color: white;
 }
 
-/* Logo in the header */
+@font-face {
+  font-family: 'Avenir';
+  src: url('../../fonts/Avenir/Avenir.ttc');
+}
+
+/* HEADER */
+  /* logo */
 #logo {
   width: 30vw;
   height: calc(.94184397 * 30vw);
@@ -15,12 +25,64 @@ body {
   right: 0;
   top: 10vw;
 }
+  /* header text */
+.header-text-container {
+  width: 27vw;
+  height: 12.5vw;
+  margin-top: 12vw;
+  position: relative;
+}
+.header-text-container #title {
+  font-size: 4.5vw;
+  font-weight: bolder;
+  letter-spacing: 1.5px;
+  margin: 0;
+  position: absolute;
+}
+.header-text-container #subtitle {
+  font-size: 1.8vw;
+  font-weight: 400;
+  letter-spacing: .1vw;
+  margin: 0;
+  position: absolute;
+  top: 4.8vw;
+}
+  /* Register button */
+.register-button {
+  height: 2.5vw;
+  width: 8vw;
+  background-color: #75C079;
+  border-radius: 8px;
+  position: absolute;
+  top: 10vw;
+}
+.register-button p {
+  font-size: 1.4vw;
+  letter-spacing: .07vw;
+  font-weight: bold;
+  color: white;
+  margin: 0 0 0 0;
+  position: absolute;
+  left: 1.17vw;
+  top: .35vw;
+}
+  /* Event date */
+.date {
+  position: absolute;
+  top: 9vw;
+  left: 9vw;
+  margin: 0;
+  font-size: 1.4vw;
+  letter-spacing: .08vw;
+  font-weight: bold;
+  color: #75C079;
+}
 
 /* The content container */
 .content-container {
   position: absolute;
   top: 0;
-  left: 12%;
-  width: 76%;
+  left: 15%;
+  width: 70%;
   height: 100%;
 }
