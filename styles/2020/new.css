@@ -67,12 +67,12 @@ body {
   top: .35vw;
 }
   /* Event date */
-.date {
+.header-text-container #date {
   position: absolute;
-  top: 9vw;
-  left: 9vw;
+  top: -1.1vw;
+  left: .25vw;
   margin: 0;
-  font-size: 1.4vw;
+  font-size: 1.8vw;
   letter-spacing: .08vw;
   font-weight: bold;
   color: #75C079;
