@@ -57,6 +57,10 @@
 @media (max-width:720px) {
   nav {
     right: 5%;
+    font-size: .65em;
+  }
+  nav a {
+    margin: 0 15px 0 15px;
   }
   #logo {
     width: 216px;
@@ -77,7 +81,6 @@
   .header-text-container #subtitle {
     font-size: .786em;
     letter-spacing: .6px;
-    font-weight: 400;
     top: 41px;
   }
   .register-button {
@@ -104,6 +107,13 @@
 @media (max-width:520px) {
   nav {
     right: 1%;
+    font-size: .6em;
+  }
+  nav a {
+    margin: 0 10px 0 10px;
+  }
+  .header-text-container #subtitle {
+    font-weight: 400;
   }
   .content-container {
     margin-left: 10%;
