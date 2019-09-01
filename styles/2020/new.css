@@ -24,6 +24,17 @@ body {
 }
 
 /* NAV BAR */
+#nav-background {
+  position: fixed;
+  top: -55px;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  transition: .1s;
+  z-index: 1;
+  background-color: white;
+  box-shadow: 2px 2px 15px -5px rgba(0,0,0,.1);
+}
 nav {
   position: fixed;
   float: right;
