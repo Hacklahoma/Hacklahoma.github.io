@@ -93,9 +93,20 @@ nav a {
   height: 2.8vw;
   width: 8.5vw;
   background-color: #75C079;
+  border: 1px solid transparent;
   border-radius: 6px;
   box-shadow: 2px 2px 10px -1px rgba(0, 0, 0, .23);
   cursor: pointer;
+}
+.register-button:hover {
+  border: .5px solid #559A64;
+}
+.register-button:active {
+  border: .5px solid #559A64;
+  margin-top: 2px;
+  margin-left: 1px;
+  box-shadow: 2px 2px 10px -1px rgba(0, 0, 0, .23),
+        inset -2px -2px 10px rgba(0,0,0,0.15);
 }
 .register-button p {
   font-size: 1.4vw;
