@@ -7,7 +7,6 @@ addEventListener("resize", update);
 
 
 function update() {
-  console.log("Done");
   var currentScrollPos = window.pageYOffset;
   if (50 > currentScrollPos) {
     document.getElementById("nav-background").style.top = "-55px";
