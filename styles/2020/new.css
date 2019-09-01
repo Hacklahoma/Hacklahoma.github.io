@@ -59,12 +59,13 @@ body {
 }
   /* Register button */
 .register-button {
+  position: absolute;
+  top: 10.8vw;
   height: 2.8vw;
   width: 8.5vw;
   background-color: #75C079;
   border-radius: 6px;
-  position: absolute;
-  top: 10.8vw;
+  box-shadow: 2px 2px 10px -1px rgba(0, 0, 0, .23);
   cursor: pointer;
 }
 .register-button p {
