@@ -1,13 +1,14 @@
 body {
   margin: 0;
-  padding:0;
+  padding: 0;
   height: 2000px;
   font-family: 'Avenir';
-  color: #;
+  color: #25283d;
   background-color: white;
+  overflow-x: hidden;
 }
 *::selection {
-    background: #E9F3F9;
+  background: #E9F3F9;
 }
 .highlight {
   background: linear-gradient(180deg, rgba(255,255,255,0) 60%,  #fffb87 60%);
@@ -20,6 +21,23 @@ body {
 @font-face {
   font-family: 'Bebas';
   src: url('../../fonts/Bebas/Bebas-Regular.ttf');
+}
+
+/* NAV BAR */
+nav {
+  position: fixed;
+  float: right;
+  margin-top: 15px;
+  right: 15%;
+  z-index: 1;
+}
+nav a {
+  margin: 0 18px 0 18px;
+  font-size: .65em;
+  font-weight: bold;
+  letter-spacing: .8px;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* HEADER */
@@ -38,8 +56,8 @@ body {
 .header-text-container {
   width: 27vw;
   height: 12.5vw;
-  margin-top: 12vw;
-  position: relative;
+  top: 12vw;
+  position: absolute;
 }
 .header-text-container #title {
   font-size: 5.2vw;
@@ -92,26 +110,26 @@ body {
 
 /* The content container */
 .content-container {
-  position: absolute;
-  top: 0;
-  left: 15%;
+  position: relative;
+  margin-left: 15%;
   width: 70%;
   height: 100%;
 }
 
 /* Background SVGs */
 .background-container #one {
+  position: absolute;
   stroke-width: 60px;
 }
 .background-container #two {
+  position: absolute;
   stroke-width: 60px;
-  margin-top: 10vw;
-  transition: .5s;
+  top: calc(10vw + 167px);
 }
 
 /* Animations */
-@keyframes pulsing {
-    0%{stroke-width:50px}
-    50%{stroke-width:60px}
-    100%{stroke-width:50px}
+@keyframes example {
+    0%{}
+    50%{}
+    100%{}
 }

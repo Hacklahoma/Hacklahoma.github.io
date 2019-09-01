@@ -1,4 +1,7 @@
 @media (min-width:1440px) {
+  nav {
+    right: calc((100% - 1008px) / 2);
+  }
   #logo {
     width: 432px;
     height: 406px;
@@ -9,7 +12,7 @@
   .header-text-container {
     width: 388px;
     height: 180px;
-    margin-top: 173px;
+    top: 173px;
   }
   .header-text-container #title {
     font-size: 4.68em;
@@ -40,7 +43,7 @@
     letter-spacing: 1.2px;
   }
   .content-container {
-    left: calc((100% - 1008px) / 2);
+    margin-left: calc((100% - 1008px) / 2);
     width: 1008px;
   }
   .background-container #two {
@@ -52,6 +55,9 @@
 }
 
 @media (max-width:720px) {
+  nav {
+    right: 5%;
+  }
   #logo {
     width: 216px;
     height: 203px;
@@ -62,7 +68,7 @@
   .header-text-container {
     width: 195px;
     height: 100px;
-    margin-top: 85px;
+    top: 85px;
   }
   .header-text-container #title {
     font-size: 2.3em;
@@ -71,6 +77,7 @@
   .header-text-container #subtitle {
     font-size: .786em;
     letter-spacing: .6px;
+    font-weight: 400;
     top: 41px;
   }
   .register-button {
@@ -82,7 +89,7 @@
   .register-button p {
     font-size: .68em;
     letter-spacing: .8px;
-    left: 11px;
+    left: 10px;
     top: 4.5px;
   }
   .header-text-container #date {
@@ -92,25 +99,21 @@
     font-size: .79em;
     letter-spacing: 1px;
   }
-  .background-container #two {
-    margin-top: 100px;
-  }
 }
 
 @media (max-width:520px) {
-  .content-container {
-    left: 10%;
-    width: 80%;
+  nav {
+    right: 1%;
   }
-  .background-container #two {
-    margin-top: 150px;
+  .content-container {
+    margin-left: 10%;
+    width: 80%;
   }
 }
 
 @media (max-width:430px) {
   .content-container {
-    left: 5%;
+    margin-left: 5%;
     width: 90%;
   }
-
 }
