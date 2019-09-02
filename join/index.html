@@ -1,0 +1,250 @@
+<!-- Im not a good web dev. Sorry for this mess. - John Tran -->
+<!doctype html>
+<html lang="en">
+<head>
+
+	<!-- Charset attribute for the webpage -->    
+    <meta charset="utf-8">
+
+    <!-- Bootstrap stylesheets and scripts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../styles/carousel.css">
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/join.css">
+    <link rel="stylesheet" href="../styles/mobile.css">
+    <link rel="stylesheet" href="../styles/fullcalendar.min.css">
+    <link rel="stylesheet" href="../styles/scheduler.min.css">
+    <script type="text/javascript" src="../scripts/logo_slide-live.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../scripts/carousel.min.js"></script>
+    <script type="text/javascript" src="../scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../scripts/moment.js"></script>
+    <script type="text/javascript" src="../scripts/fullcalendar.min.js"></script>
+    <script type="text/javascript" src="../scripts/scheduler.min.js"></script>
+    <script type="text/javascript" src="../scripts/calendar.js"></script>
+    
+    <!-- Title -->
+    <title>Hacklahoma 2019</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../img/favicon/safari-pinned-tab.svg" color="#ffd58a">
+    <meta name="msapplication-config" content="../img/favicon/browserconfig.xml">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Description for search engines. -->
+    <meta name="description" content="Hacklahoma. February 9-10 2019. Come create with us at our second annual hackathon!" />
+    
+    <!-- Facebook pixel stuff. -->
+    <meta property="og:title" content="HACKLAHOMA">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://hacklahoma.org/img/facebookCardImage.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:url" content="https://hacklahoma.org">
+    <meta property="og:description" content="Apply to be part of the Organizing Team!">
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+        document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1555823664723200'); // Insert your pixel ID here.
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1555823664723200&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- DO NOT MODIFY -->
+    <!-- End Facebook Pixel Code -->
+    
+    <!-- FB Pixel that tracks when people visit our website -->
+    <script>
+    fbq('track', 'ViewContent');
+    </script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar content">
+            <!-- <div class="navbar-half" id="nav-links">
+                <a class="" href="https://hacklahoma.org/">Home</a>
+            </div> -->
+            <a class="navbar-logo-link" href="#splash-anchor"><img class="navbar-logo" src="../img/hacklahoma19_centered.svg"/></a>
+            <!-- <div class="navbar-half" id="nav-links">
+                <a class="" href="https://docs.google.com/document/d/1884BmDBdVEx7Ka9OZjM4D-NHTc-xITPUM0KfesOuKpY/edit?usp=sharing" target="_blank">Role Descriptions</a>
+            </div> -->
+            <a id="mlh-trust-badge" href="https://mlh.io/seasons/na-2019/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2019-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg" alt="Major League Hacking 2019 Hackathon Season"></a>
+        </div>
+    </nav>
+    <a class="anchor" id="splash-anchor"></a>
+    <section class="splash">
+        <img class="splash-logo" src="../img/hacklahoma19_centered.svg"/>
+        <div class="row justify-around" id="title-row">
+            <h1 class="splash-title">HACKLAHOMA</h1>
+        </div>
+        <div class="row content justify-between" id="info-row">
+            <div class="">
+                <h3>Organizing Team Applications</h3>
+            </div>
+    </section>
+    <div class="bg">
+        <section class="apps">
+            <div class="description">
+                <!-- <p><b><a style="text-decoration: none" href="https://docs.google.com/document/d/1884BmDBdVEx7Ka9OZjM4D-NHTc-xITPUM0KfesOuKpY/edit?usp=sharing" target="_blank">
+                    You can find the responsibilities of each role here.</a></b>
+                    <p> -->
+                        <!-- Display the countdown timer in an element -->
+                        <p id="countdown"></p>
+                        <script>
+                            var countDownDate = new Date("Apr 20, 2019 00:00:00").getTime();
+
+                            // Update the count down every 1 second
+                            var x = setInterval(function () {
+
+                                // Get todays date and time
+                                var now = new Date().getTime();
+                                // Find the distance between now and the count down date
+                                var distance = countDownDate - now;
+                                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                                document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+                                    + minutes + "m " + seconds + "s ";
+
+                                if (distance < 0) {
+                                    clearInterval(x);
+                                    document.getElementById("countdown").innerHTML = "Applications are closed.";
+                                }
+                            }, 1000);
+                        </script>
+                    Applications are due <b>April 19, 2019</b>. Applying sooner is better because our applications are <b>rolling</b>.
+                    This means that we immediately select and interview applicants all the way up to <b>April 19, 2019</b>, which is the day we finish interviews and decide who joins our team.
+                    If you pass the interview, you will need to accept the offer and then attend orientation.
+                    Orientation will be on <b>April 27, 2019 (time & location TBD)</b>. This is mandatory. 
+                    By applying, you understand that you will have to meet virtually over the summer. We plan during the summer too.
+                </p>
+                <p>Questions? Email <a style="text-decoration: none" href="mailto:team@hacklahoma.org">team@hacklahoma.org</a></p>
+            </div>
+        </section>
+        <!-- <a class="anchor" id="executive-anchor"></a>
+        <section class="apps">
+            <div class="content">
+                <h3 id="apps-heading" class="heading">Executive</h3>
+                <div><a href="">• Executive Director (2)</a></div>
+            </div>
+        </section> -->
+        <a class="anchor" id="sponsoring-anchor"></a>
+        <section class="apps">
+            <div class="content">
+                <h3 id="apps-heading" class="heading">Sponsoring & Finance</h3>
+                <div><a href="https://forms.gle/e3kj3FWJ3xTQomPP9" target="_blank">• Sponsoring & Finance Director</a></div>
+                <p class="role-description">
+                    The Sponsoring & Finance Director ensures that the Sponsor Liaisons are fulfilling their duties. They create the budget, documents expenses and revenue,
+                    and Sponsorship Packet. All purchases go through them. They also assist the Sponsor Liaisons with finding
+                    and contacting companies.
+                </p>
+                <div><a href="https://forms.gle/9KfjhBKbQ9pxq4i49" target="_blank">• Sponsor Liaison (2)</a></div>
+                <p class="role-description">
+                    The Sponsor Liaisons are the main contact for sponsors. They pinpoint companies who would 
+                    make great sponsors. They obtain sponsors via emailing, calling, meeting in person, 
+                    networking, and leveraging pre-existing networks. They fill out grant,
+                    sponsorship, and funding applications too.
+                </p>
+            </div>
+        </section>
+        <a class="anchor" id="marketing-anchor"></a>
+        <section class="apps">
+            <div class="content">
+                <h3 id="apps-heading" class="heading">Marketing</h3>
+                <div><a href="https://forms.gle/z2nfqFUWuEu3NzHk9" target="_blank">• Graphic Designer</a></div>
+                <p class="role-description">
+                    The Graphic Designer creates various graphics for social media, the website, etc. They develop the logo and branding guidelines and
+                    design documentation, which includes but is not limited to: Sponsorship packet, invoices, press kit. The applicant must
+                    have graphic design experience.
+                </p>
+                <div><a href="https://forms.gle/YFGpRGLj943uQtuH7" target="_blank">• Creative Director</a></div>
+                <p class="role-description">
+                    The Creative Director sets the creative direction of Hacklahoma’s theme and brand. They work in all aspects of marketing
+                    including quotas, promotional products, and the website. They ensure that the marketing team is on track.
+                </p>
+                <div><a href="https://forms.gle/c9YBy3Dz9fnBkhZ39" target="_blank">• Public Relations Officer</a></div>
+                <p class="role-description">
+                    The Public Relations Officer maintains Hacklahoma's public image. They manage social media accounts and
+                    send email campaigns. They coordinate all contact with press/media and generates opportunities to promote Hackahoma in press/media.
+                </p>
+                <div><a>• <strike>Marketing Strategist</strike></a> (position is filled)</div>
+                <p class="role-description">
+                    The Marketing Strategist is responsible for developing and executing a cohesive and successful marketing strategy. They
+                    set and keep track of marketing quotas with the Creative Director. They also work with the Public Relations Officer
+                    to create content for social media and email campaigns.
+                </p>
+                <div><a>• <strike>Community Outreach Coordinator</strike></a> (application is closed)</div>
+                <p class="role-description">
+                    The Community Outreach Coordinator is responsible for communicating with other hackathons, 
+                    schools, clubs/organizations, and classes. They uphold Hacklahoma's image and relationship with them. 
+                    They also direct Hacklahoma Campus Ambassadors.
+                </p>
+            </div>
+        </section>
+        <a class="anchor" id="operations-anchor"></a>
+        <section class="apps">
+            <div class="content">
+                <h3 id="apps-heading" class="heading">Operations</h3>
+                <div><a href="https://forms.gle/XtC471rm1NSY34NQ7" target="_blank">• Operations Officer (1)</a></div>
+                <p class="role-description">
+                    The Operations Officers are responsible for event operations. They research and tour prospective event venues, create the
+                    layout for them, create the schedule, and are responsible for event safety/risk management and asset inventory.
+                </p>
+                <div><a href="https://forms.gle/gjppf5huxPjVA6Y76" target="_blank">• Sponsor Experience Officer</a></div>
+                <p class="role-description">
+                    The Sponsor Experience Officer ensures that sponsors are having a quality experience. They
+                    ensure that sponsors are prepared for the event and have all of the information that they need. They
+                    also work with sponsors to plan their hosted workshops, activities, and what kind of swag they bring.
+                </p>
+                <div><a>• <strike>Hacker Experience Officer</strike></a> (application is closed)</div>
+                <p class="role-description">
+                    The Hacker Experience Officer brainstorms and brings highly creative, 
+                    innovative, original event experiences for hackers. They get and heed feedback from hackers at 
+                    Hacklahoma and other hackathons to improve the hacker experience and ensure they are having a quality experience at the event.
+                </p>
+            </div>
+        </section>
+        <a class="anchor" id="tech-anchor"></a>
+        <section class="apps">
+            <div class="content">
+                <h3 id="apps-heading" class="heading">Tech</h3>
+                <div><a href="https://forms.gle/ZeYTa8UrmoxxefFR7" target="_blank">• Web Developer</a></div>
+                <p class="role-description">
+                    The Web Developer develops the website for Hacklahoma including the “Live” event site and other web pages. The applicant must
+                    have web development experience.
+                </p>
+                <div><a>• <strike>Technology Director</strike></a> (position is filled)</div>
+                <p class="role-description">
+                    The Tech Director is responsible for developing and managing all Hacklahoma technology assets hardware and software. 
+                    They build Hacklahoma’s online registration/check-in system and forms. They're also
+                    responsible for collecting resources/tutorials to help hackers use hardware and software.
+                </p>
+            </div>
+        </section>
+        <footer>
+            <div class="content">
+                <a href="https://www.facebook.com/Hacklahoma/"><img src="../img/facebook_d3.svg"></a>
+                <a href="https://twitter.com/hacklahoma"><img src="../img/twitter_d3.svg"></a>
+                <a href="https://www.instagram.com/hacklahoma/"><img src="../img/insta_d3.svg"></a>
+            </div>
+            <p>© 2019 Hacklahoma</p>
+        </footer>
+    </div>
+</body>
+</html>
