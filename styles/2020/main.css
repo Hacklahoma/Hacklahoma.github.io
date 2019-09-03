@@ -87,6 +87,7 @@ nav a {
   font-weight: 400;
   letter-spacing: .07vw;
   margin: 0;
+  left: .16vw;
   position: absolute;
   top: 6vw;
 }
@@ -127,7 +128,7 @@ nav a {
 .header-text-container #date {
   position: absolute;
   top: -1.1vw;
-  left: .25vw;
+  left: .15vw;
   margin: 0;
   font-size: 1.8vw;
   letter-spacing: .08vw;
