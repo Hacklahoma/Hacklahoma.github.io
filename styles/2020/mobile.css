@@ -61,6 +61,7 @@
   }
   nav a {
     margin: 0 15px 0 15px;
+    font-weight: normal;
   }
   #logo {
     width: 216px;
@@ -111,9 +112,6 @@
   }
   nav a {
     margin: 0 10px 0 10px;
-  }
-  .header-text-container #subtitle {
-    font-weight: 400;
   }
   .content-container {
     margin-left: 10%;
