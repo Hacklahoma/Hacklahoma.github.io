@@ -34,14 +34,27 @@
     <div class="content-container">
       <div id="nav-background">
       </div>
-      <nav id="navbar">
+      <!-- <nav id="navbar">
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">FAQ</a>
         <a href="#">Schedule</a>
         <a href="#">Contact</a>
         <a href="#">Sponsors</a>
-      </nav>
+      </nav> -->
+      <ul id="navbar" class="hamburger-navbar-close">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Schedule</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Sponsors</a></li>
+      </ul>
+      <div id="hamburger-menu-container" onclick="hamburger()">
+        <div class="hamburger-menu-item"></div>
+        <div class="hamburger-menu-item"></div>
+        <div class="hamburger-menu-item"></div>
+      </div>
       <div class="logo-container">
         <svg id="logo" viewBox="0 0 595 664" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <path d="M332.737223,0 C397.564363,0 436.969326,46.0036887 487.813713,87.3692168 C534.032139,124.971196 593.791642,155.149939 612.33824,212.269485 C651.287749,332.225621 626.163138,415.158869 529.901977,485.144463 C479.278017,521.950044 405.789068,503.459394 311.722477,504.958246 C226.922001,506.309452 121.24342,531.415351 73.2283601,496.506542 C-28.0483453,422.874453 102.471907,317.892544 140.714654,200.113083 C178.957401,82.3336213 208.981094,0 332.737223,0 Z" id="logo-background" fill="#E9F3F9"></path>

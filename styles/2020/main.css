@@ -40,20 +40,71 @@ body {
   background-color: white;
   box-shadow: 2px 2px 15px -5px rgba(0,0,0,.1);
 }
-nav {
+.navbar-hidden {
+  opacity: 0;
+  pointer-events: none;
+  cursor: default;
+}
+#navbar {
   position: fixed;
   float: right;
-  margin-top: 15px;
+  text-align: right;
+  margin-top: 15.5px;
   right: 15%;
   z-index: 1;
 }
-nav a {
-  margin: 0 18px 0 18px;
+#navbar li {
+  display: inline;
+  list-style: none;
+  margin: 0 20px 0 20px;
   font-size: .65em;
   font-weight: bold;
   letter-spacing: .8px;
   text-decoration: none;
   color: inherit;
+}
+#navbar a {
+  letter-spacing: .8px;
+  text-decoration: none;
+  color: inherit;
+}
+/* HAMBURGER MENU */
+#hamburger-menu-container {
+  height: 22.5px;
+  width: 30px;
+  position: fixed;
+  right: 40px;
+  top: 13.75px;
+  z-index: 1;
+  cursor: none;
+  pointer-events: none;
+  opacity: 0;
+  /* border: 1px solid black; */
+}
+.hamburger-menu-item {
+  width: 100%;
+  height: 3px;
+  background-color: #25283d;
+  border-radius: 5px;
+  transition: .1s;
+}
+#hamburger-menu-container div:nth-child(2) {
+  margin: 6px 0 6px 0;
+}
+.hamburger-open-top {
+  transform-origin: center;
+  transform: rotate(45deg) translate(6px, 7px);
+  transition: .1s;
+}
+.hamburger-open-center {
+  transform-origin: center;
+  transform: scaleX(0);
+  transition: .1s;
+}
+.hamburger-open-bottom {
+  transform-origin: center;
+  transform: rotate(-45deg) translate(6px, -6px);
+  transition: .1s;
 }
 
 /* HEADER */

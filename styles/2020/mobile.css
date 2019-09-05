@@ -1,5 +1,5 @@
 @media (min-width:1440px) {
-  nav {
+  #navbar {
     right: calc((100% - 1008px) / 2);
   }
   #logo {
@@ -56,13 +56,31 @@
 }
 
 @media (max-width:720px) {
-  nav {
-    right: 5%;
-    font-size: .65em;
+  .hamburger-navbar-close {
+    cursor: default;
+    pointer-events: none;
+    opacity: 0;
   }
-  nav a {
-    margin: 0 15px 0 15px;
-    font-weight: normal;
+  #hamburger-menu-container {
+    opacity: 1;
+    cursor: pointer;
+    pointer-events: all;
+  }
+  #navbar {
+    margin-top: 30px;
+    right: 0;
+    background-color: white;
+    padding-right: 40px;
+    border-bottom-left-radius: 10px;
+  }
+  #navbar li {
+    display: inherit;
+    margin: 20px 0 20px 0;
+  }
+  #navbar a {
+    letter-spacing: .8px;
+    text-decoration: none;
+    color: inherit;
   }
   #logo {
     width: 216px;
@@ -108,13 +126,6 @@
 }
 
 @media (max-width:520px) {
-  nav {
-    right: 1%;
-    font-size: .6em;
-  }
-  nav a {
-    margin: 0 10px 0 10px;
-  }
   .content-container {
     margin-left: 10%;
     width: 80%;
