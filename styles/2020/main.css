@@ -45,12 +45,14 @@ body {
   pointer-events: none;
   cursor: default;
 }
+.navbar-right {
+  right: 15%;
+}
 #navbar {
   position: fixed;
   float: right;
   text-align: right;
   margin-top: 15.5px;
-  right: 15%;
   z-index: 1;
 }
 #navbar li {

@@ -20,6 +20,14 @@ function update() {
 var open = false;
 var menu = document.getElementsByClassName("hamburger-menu-item");
 var navbar = document.getElementById("navbar");
+addEventListener("resize", handleResize);
+
+function handleResize() {
+  if(window.innerWidth > 720)
+    if(open = true)
+      hamburger()
+}
+
 function hamburger() {
   if(open) { // if currently opened
     menu[0].classList.remove("hamburger-open-top");
