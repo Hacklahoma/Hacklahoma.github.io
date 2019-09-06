@@ -1,4 +1,7 @@
 @media (min-width:1440px) {
+  .header-container {
+    height: 562px;
+  }
   #navbar {
     right: calc((100% - 1008px) / 2);
   }
@@ -55,7 +58,29 @@
   }
 }
 
+@media (max-width:960px) {
+  .content-container {
+    width: 75%;
+    margin-left: 12.5%;
+  }
+}
+
 @media (max-width:720px) {
+  .about-container img {
+    float: none;
+    width: 60%;
+    margin-left: 20%;
+    max-width: none;
+    margin-top: 15px;
+  }
+  .about-container p {
+    float: none;
+    width: 100%;
+    max-width: none;
+  }
+  .header-container {
+    height: 276px;
+  }
   .navbar-right {
     right: 0px;
   }

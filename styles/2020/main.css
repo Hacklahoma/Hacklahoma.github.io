@@ -110,6 +110,10 @@ body {
 }
 
 /* HEADER */
+.header-container {
+  position: relative;
+  height: 39vw;
+}
   /* logo */
 #logo {
   width: 30vw;
@@ -188,11 +192,38 @@ body {
   font-weight: bold;
 }
 
+/* Section styles */
+.section-header {
+  margin: 0;
+}
+.section-paragraph {
+  margin: 0;
+  font-size: 1.1em;
+}
+
+/* About section */
+.about-container {
+  position: relative;
+  margin-top: 120px;
+  overflow: hidden;
+}
+.about-container p {
+  float:left;
+  width: 55%;
+  max-width: 500px;
+}
+.about-container img {
+  float: right;
+  width: 43%;
+  max-width: 350px;
+  margin-top: -30px;
+}
+
 /* The content container */
 .content-container {
   position: relative;
-  margin-left: 15%;
-  width: 70%;
+  margin-left: 17.5%;
+  width: 65%;
   height: 100%;
 }
 
