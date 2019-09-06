@@ -1,0 +1,22 @@
+@media (min-width:1440px) {
+
+}
+
+@media (min-width:1200px) {
+  .faq-item {
+    width: calc(33% - 9px);
+  }
+}
+
+@media (min-width:720px) and (max-width:1200px) {
+  .faq-item {
+    width: calc(50% - 11px);
+  }
+}
+
+@media (max-width:720px) {
+  .faq-item {
+    width: calc(100% - 8px);
+    min-width: 250px;
+  }
+}
