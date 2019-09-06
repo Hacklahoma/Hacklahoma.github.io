@@ -63,13 +63,16 @@
     width: 75%;
     margin-left: 12.5%;
   }
+  .video-container img {
+    margin-top: 0px;
+  }
 }
 
 @media (max-width:720px) {
-  .about-container img {
+
+  .video-container img {
     float: none;
-    width: 60%;
-    margin-left: 20%;
+    width: 100%;
     max-width: none;
     margin-top: 15px;
   }
@@ -77,6 +80,7 @@
     float: none;
     width: 100%;
     max-width: none;
+    font-size: .9em;
   }
   .header-container {
     height: 276px;
