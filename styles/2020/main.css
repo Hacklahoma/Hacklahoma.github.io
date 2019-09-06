@@ -232,6 +232,18 @@ body {
 .faq-item h4 {
   margin: 17px;
 }
+.faq-item svg {
+  float: right;
+  margin-top: 17px;
+  margin-right: 17px;
+  stroke: #D3D3D3;
+  stroke-width: 3;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  width: 21px;
+  height: 15px;
+}
 
 /* The content container */
 .content-container {
