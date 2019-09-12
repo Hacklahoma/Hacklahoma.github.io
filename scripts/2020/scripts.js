@@ -17,31 +17,52 @@ function update() {
 
 
 // manages hamburger menu
-var open = false;
-var menu = document.getElementsByClassName("hamburger-menu-item");
-var navbar = document.getElementById("navbar");
-addEventListener("resize", handleResize);
+const hamburger = document.querySelector(".hamburger");
+const lines = document.querySelectorAll(".hamburger .line");
+const navLinks = document.querySelector("nav");
 
-function handleResize() {
-  if(window.innerWidth > 720)
-    if(open = true)
-      hamburger()
-}
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("open");
+  lines.forEach(i => {
+    i.classList.toggle("open");
+  });
+});
 
-function hamburger() {
-  if(open) { // if currently opened
-    menu[0].classList.remove("hamburger-open-top");
-    menu[1].classList.remove("hamburger-open-center");
-    menu[2].classList.remove("hamburger-open-bottom");
-    navbar.classList.add("hamburger-navbar-close");
-    open = false;
+addEventListener("resize", () => {
+  if(window.innerWidth > 720 && navLinks.classList.contains("open")) {
+    navLinks.classList.toggle("open");
+    lines.forEach(i => {
+      i.classList.toggle("open");
+    });
   }
-  else { // if currently closed
-    menu[0].classList.add("hamburger-open-top");
-    menu[1].classList.add("hamburger-open-center");
-    menu[2].classList.add("hamburger-open-bottom");
-    navbar.classList.remove("hamburger-navbar-close");
-    open = true;
-  }
+});
 
-}
+
+// var open = false;
+// var menu = document.getElementsByClassName("hamburger-menu-item");
+// var navbar = document.getElementById("navbar");
+// addEventListener("resize", handleResize);
+//
+// function handleResize() {
+//   if(window.innerWidth > 720)
+//     if(open = true)
+//       hamburger()
+// }
+//
+// function hamburger() {
+//   if(open) { // if currently opened
+//     menu[0].classList.remove("hamburger-open-top");
+//     menu[1].classList.remove("hamburger-open-center");
+//     menu[2].classList.remove("hamburger-open-bottom");
+//     navbar.classList.add("hamburger-navbar-close");
+//     open = false;
+//   }
+//   else { // if currently closed
+//     menu[0].classList.add("hamburger-open-top");
+//     menu[1].classList.add("hamburger-open-center");
+//     menu[2].classList.add("hamburger-open-bottom");
+//     navbar.classList.remove("hamburger-navbar-close");
+//     open = true;
+//   }
+//
+// }

@@ -12,9 +12,11 @@
   font-family: 'Bebas';
   src: url('../../fonts/Bebas/Bebas-Regular.ttf');
 }
-body {
+* {
   margin: 0;
   padding: 0;
+}
+body {
   height: 2000px;
   font-family: 'Avenir';
   color: #25283d;
@@ -27,19 +29,7 @@ body {
 .highlight {
   background: linear-gradient(180deg, rgba(255,255,255,0) 60%,  #fffb87 60%);
 }
-
-/* NAV BAR */
-#nav-background {
-  position: fixed;
-  top: -55px;
-  left: 0;
-  height: 50px;
-  width: 100%;
-  transition: .1s;
-  z-index: 1;
-  background-color: white;
-  box-shadow: 2px 2px 15px -5px rgba(0,0,0,.1);
-}
+/*
 .navbar-hidden {
   opacity: 0;
   pointer-events: none;
@@ -70,7 +60,6 @@ body {
   text-decoration: none;
   color: inherit;
 }
-/* HAMBURGER MENU */
 #hamburger-menu-container {
   height: 22.5px;
   width: 30px;
@@ -81,7 +70,6 @@ body {
   cursor: none;
   pointer-events: none;
   opacity: 0;
-  /* border: 1px solid black; */
 }
 .hamburger-menu-item {
   width: 100%;
@@ -107,12 +95,51 @@ body {
   transform-origin: center;
   transform: rotate(-45deg) translate(6px, -6px);
   transition: .1s;
-}
+} */
 
 /* HEADER */
 .header-container {
   position: relative;
   height: 39vw;
+}
+/* NAV BAR */
+#nav-background {
+  position: fixed;
+  top: -55px;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  transition: .1s;
+  z-index: 1;
+  background-color: white;
+  box-shadow: 2px 2px 15px -5px rgba(0,0,0,.1);
+}
+nav {
+  position: fixed;
+  right: 25%;
+  height: 50px;
+  width: inherit;
+  z-index: 1;
+  /* below prevents lag when resizing to mobile */
+  -webkit-transform: translateX(150px);
+  transform: translateX(150px);
+}
+.nav-links {
+  display: flex;
+  position: fixed;
+  top: 15px;
+  right: 17.5%;
+  list-style: none;
+  width: 500px;
+  justify-content: space-around;
+  align-items: right;
+  z-index: 1;
+}
+.nav-links li a {
+  color: black;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 1px;
 }
   /* logo */
 #logo {
