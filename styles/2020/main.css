@@ -234,11 +234,11 @@ nav {
 }
 
 /* background svgs */
-.background-container #one {
+.background-container svg:nth-child(1) {
   position: absolute;
   stroke-width: 60px;
 }
-.background-container #two {
+.background-container svg:nth-child(2) {
   position: absolute;
   stroke-width: 60px;
   top: calc(10vw + 167px);
