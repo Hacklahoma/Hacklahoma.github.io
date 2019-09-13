@@ -1,10 +1,9 @@
+/* DESKTOP */
 @media (min-width:1440px) {
+  /* header */
   .header-container {
     height: 562px;
   }
-  /* #navbar {
-    right: calc((100% - 1008px) / 2);
-  } */
   #logo {
     width: 432px;
     height: 406px;
@@ -27,6 +26,14 @@
     top: 86px;
     left: 3px;
   }
+  .header-text-container #date {
+    position: absolute;
+    top: -15.84px;
+    left: 2.2px;
+    font-size: 1.62em;
+    letter-spacing: 1.2px;
+  }
+  /* register button */
   .register-button {
     height: 40px;
     width: 123px;
@@ -39,13 +46,7 @@
     left: 20px;
     top: 9px;
   }
-  .header-text-container #date {
-    position: absolute;
-    top: -15.84px;
-    left: 2.2px;
-    font-size: 1.62em;
-    letter-spacing: 1.2px;
-  }
+  /* background */
   .content-container {
     margin-left: calc((100% - 1008px) / 2);
     width: 1008px;
@@ -58,6 +59,7 @@
   }
 }
 
+/* STYLE FIXES */
 @media (max-width:960px) {
   .content-container {
     width: 75%;
@@ -67,7 +69,10 @@
     margin-top: 0px;
   }
 }
+
+/* TABLET */
 @media (max-width:720px) {
+  /* nav bar/hamburger */
   .line {
     width: 30px;
     height: 3px;
@@ -128,6 +133,7 @@
     font-size: 14px;
     margin: 0;
   }
+  /* about */
   .video-container img {
     float: none;
     width: 100%;
@@ -140,43 +146,10 @@
     max-width: none;
     font-size: .9em;
   }
+  /* header */
   .header-container {
     height: 276px;
   }
-  /*
-  .navbar-right {
-    right: 0px;
-  }
-  #hamburger-menu-container {
-    opacity: 1;
-    cursor: pointer;
-    pointer-events: all;
-  }
-  #navbar {
-    padding-top: 30px;
-    width: 200px;
-    margin: 0;
-    background-color: white;
-    height: 100vh;
-    border-bottom-left-radius: 10px;
-    box-shadow: 3px 3px 15px -5px rgba(0,0,0,.5);
-  }
-  #navbar li {
-    display: inherit;
-    margin: 8vh 50px 8vh 0;
-    font-size: 1em;
-  }
-  #navbar a {
-    letter-spacing: .8px;
-    text-decoration: none;
-    color: inherit;
-  }
-  .hamburger-navbar-close {
-    cursor: default;
-    pointer-events: none;
-    right: -240px;
-  }
-  */
   #logo {
     width: 216px;
     height: 203px;
@@ -199,6 +172,14 @@
     letter-spacing: .6px;
     top: 45px;
   }
+  .header-text-container #date {
+    position: absolute;
+    top: -6px;
+    left: 1px;
+    font-size: .79em;
+    letter-spacing: 1px;
+  }
+  /* register button */
   .register-button {
     height: 25px;
     width: 69px;
@@ -211,15 +192,9 @@
     left: 10.5px;
     top: 6.5px;
   }
-  .header-text-container #date {
-    position: absolute;
-    top: -6px;
-    left: 1px;
-    font-size: .79em;
-    letter-spacing: 1px;
-  }
 }
 
+/* PHONE */
 @media (max-width:520px) {
   .content-container {
     margin-left: 10%;
@@ -227,6 +202,7 @@
   }
 }
 
+/* SMALL SMALL... */
 @media (max-width:430px) {
   .content-container {
     margin-left: 5%;
