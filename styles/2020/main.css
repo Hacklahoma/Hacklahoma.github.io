@@ -173,12 +173,13 @@ nav {
 /* about section */
 .about-container {
   display: inline-block;
+  width: 100%;
+  margin-bottom: 30px;
 }
 .about-info {
   display: inline-block;
   max-width: 500px;
   width: 54%;
-  margin-bottom: 50px;
 }
 .about-info p {
   font-size: 1.1em;
@@ -234,14 +235,23 @@ nav {
 }
 
 /* background svgs */
-.background-container svg:nth-child(1) {
+.background-container {
   position: absolute;
+  width: 100%;
+}
+.background-container svg {
+  position: relative;
   stroke-width: 60px;
+  z-index: -1;
+  overflow: visible;
+}
+.background-container svg:nth-child(1) {
 }
 .background-container svg:nth-child(2) {
-  position: absolute;
-  stroke-width: 60px;
-  top: calc(10vw + 167px);
+  margin-top: 10vw;
+}
+.background-container svg:nth-child(3) {
+  margin-top: 570px;
 }
 
 /* animations */

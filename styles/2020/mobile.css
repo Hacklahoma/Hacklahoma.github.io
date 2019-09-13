@@ -49,10 +49,11 @@
   /* background */
   .content-container {
     margin-left: calc((100% - 1008px) / 2);
+    align-self: center;
     width: 1008px;
   }
-  .background-container #two {
-    margin-top: calc(200px - 10vw);
+  .background-container svg:nth-child(2) {
+    margin-top: calc(200px - 5vw);
     transition: .5s;
     stroke-width: 52px;
     transform: rotate(-8deg) scale(1.2) translate(10px, 0px);
@@ -67,6 +68,9 @@
   }
   .about-info p {
     font-size: .98em;
+  }
+  .background-container svg:nth-child(3) {
+    margin-top: 610px;
   }
 }
 
@@ -195,7 +199,13 @@
     padding: 0 10px;
     margin-top: 6px;
   }
-
+  /* background */
+  .background-container svg:nth-child(2) {
+    margin-top: calc(200px - 12vw);
+  }
+  .background-container svg:nth-child(3) {
+    margin-top: 1170px;
+  }
 }
 
 /* PHONE */
