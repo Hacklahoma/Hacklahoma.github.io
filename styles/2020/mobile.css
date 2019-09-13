@@ -135,8 +135,10 @@
   }
   /* about */
   .video-container {
-    float: left;
-    width: 100%;
+    float: none;
+    margin-left: 10%;
+    width: 80%;
+    margin-bottom: 20px;
     max-width: none;
   }
   .about-info {
