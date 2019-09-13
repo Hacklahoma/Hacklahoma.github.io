@@ -13,7 +13,7 @@
   }
   .header-text-container {
     width: 388px;
-    height: 180px;
+    height: 288px;
     top: 173px;
   }
   .header-text-container #title {
@@ -33,18 +33,18 @@
     font-size: 1.62em;
     letter-spacing: 1.2px;
   }
-  /* register button */
-  .register-button {
-    height: 40px;
-    width: 123px;
-    border-radius: 8px;
-    top: 155px;
+  /* buttons */
+  .buttons {
+    height: 130px;
   }
-  .register-button p {
+  .button {
+    height: 40px;
+  }
+  .button p {
     font-size: 1.26em;
     letter-spacing: 1px;
-    left: 20px;
-    top: 9px;
+    padding: 0 20px;
+    margin-top: 9px;
   }
   /* background */
   .content-container {
@@ -160,7 +160,7 @@
   }
   .header-text-container {
     width: 195px;
-    height: 100px;
+    height: 145px;
     top: 85px;
   }
   .header-text-container #title {
@@ -180,19 +180,20 @@
     font-size: .79em;
     letter-spacing: 1px;
   }
-  /* register button */
-  .register-button {
-    height: 25px;
-    width: 69px;
-    border-radius: 6px;
-    top: 80px;
+  /* buttons */
+  .buttons {
+    height: 65px;
   }
-  .register-button p {
+  .button {
+    height: 25px;
+  }
+  .button p {
     font-size: .68em;
     letter-spacing: .8px;
-    left: 10.5px;
-    top: 6.5px;
+    padding: 0 10px;
+    margin-top: 6px;
   }
+
 }
 
 /* PHONE */
