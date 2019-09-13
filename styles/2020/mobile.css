@@ -148,7 +148,6 @@
   .about-info {
     max-width: none;
     width: 100%;
-    margin-bottom: 50px;
   }
   .about-container p {
     font-size: .9em;
@@ -204,7 +203,7 @@
     margin-top: calc(200px - 12vw);
   }
   .background-container svg:nth-child(3) {
-    margin-top: 1170px;
+    margin-top: 1090px;
   }
 }
 

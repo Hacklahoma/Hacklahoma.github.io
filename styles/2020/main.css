@@ -36,6 +36,7 @@ body {
 .header-container {
   position: relative;
   height: 39vw;
+  border: 1px solid black;
 }
 /* nav bar */
 #nav-background {
@@ -166,7 +167,7 @@ nav {
 /* section styles */
 .section-container {
   position: relative;
-  margin-top: 120px;
+  margin-top: 100px;
   overflow: hidden;
 }
 
@@ -251,7 +252,7 @@ nav {
   margin-top: 10vw;
 }
 .background-container svg:nth-child(3) {
-  margin-top: 570px;
+  margin-top: 550px;
 }
 
 /* animations */
