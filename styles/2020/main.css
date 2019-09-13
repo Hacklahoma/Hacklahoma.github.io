@@ -162,8 +162,8 @@ nav {
 }
 
 /* about section */
-.about-container:nth-child(2) {
-  padding: 275px 0;
+.about-container {
+  display: inline-block;
 }
 .about-info {
   display: inline-block;
