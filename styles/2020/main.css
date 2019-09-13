@@ -155,13 +155,6 @@ nav {
 }
 
 /* section styles */
-.section-header {
-  margin: 0;
-}
-.section-paragraph {
-  margin: 0;
-  font-size: 1.1em;
-}
 .section-container {
   position: relative;
   margin-top: 120px;
@@ -169,16 +162,32 @@ nav {
 }
 
 /* about section */
-.about-container p {
-  float:left;
-  width: 55%;
-  max-width: 500px;
+.about-container:nth-child(2) {
+  padding: 275px 0;
 }
-.video-container img {
-  float: right;
+.about-info {
+  display: inline-block;
+  max-width: 500px;
+  width: 54%;
+  margin-bottom: 50px;
+}
+.about-info p {
+  font-size: 1.1em;
+}
+.video-container {
+  display: inline-block;
   width: 43%;
   max-width: 350px;
-  margin-top: -30px;
+  margin-top: auto;
+}
+.video-container img {
+  width: 100%;
+}
+.right {
+  float: right;
+}
+.left {
+  float: left;
 }
 
 /* faq section (RIP) */

@@ -60,13 +60,13 @@
 }
 
 /* STYLE FIXES */
-@media (max-width:960px) {
+@media (max-width:968px) {
   .content-container {
     width: 75%;
     margin-left: 12.5%;
   }
-  .video-container img {
-    margin-top: 0px;
+  .about-info p {
+    font-size: .98em;
   }
 }
 
@@ -134,16 +134,17 @@
     margin: 0;
   }
   /* about */
-  .video-container img {
-    float: none;
+  .video-container {
+    float: left;
     width: 100%;
     max-width: none;
-    margin-top: 15px;
+  }
+  .about-info {
+    max-width: none;
+    width: 100%;
+    margin-bottom: 50px;
   }
   .about-container p {
-    float: none;
-    width: 100%;
-    max-width: none;
     font-size: .9em;
   }
   /* header */
