@@ -36,7 +36,6 @@ body {
 .header-container {
   position: relative;
   height: 39vw;
-  border: 1px solid black;
 }
 /* nav bar */
 #nav-background {
