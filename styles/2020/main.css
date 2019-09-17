@@ -17,7 +17,6 @@
   padding: 0;
 }
 body {
-  height: 2000px;
   font-family: 'Avenir';
   color: #25283d;
   background-color: white;
@@ -208,6 +207,8 @@ nav {
   background: #333333;
   border-radius: 12px;
   position: relative;
+  cursor: pointer;
+  user-select: none;
 }
 .archive-item p {
   position: absolute;
@@ -227,7 +228,7 @@ nav {
   right: 0;
   top: 8%;
   height: 60%;
-
+  pointer-events: none;
 }
 .archive-row2 {
   text-align: center;
