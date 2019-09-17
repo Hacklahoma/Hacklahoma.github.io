@@ -72,6 +72,13 @@
   .background-container svg:nth-child(3) {
     margin-top: 610px;
   }
+  /* archive */
+  .archive-row2 li {
+    height: 170px;
+  }
+  .archive-row3 li {
+    height: 170px;
+  }
 }
 
 /* TABLET */
