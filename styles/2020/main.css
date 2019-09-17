@@ -200,6 +200,53 @@ nav {
   float: left;
 }
 
+/* archive */
+.archive-row2 {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  margin-top: 20px;
+}
+.archive-row2 li {
+  display: inline-block;
+  float: left;
+  height: 270px;
+  width: calc(50% - 10px);
+  background: lightseagreen;
+  border-radius: 12px;
+}
+.archive-row2 li:nth-child(1) {
+  margin-right: 20px;
+}
+.archive-row3 {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  margin-top: 20px;
+}
+.archive-row3 li {
+  display: inline-block;
+  float: left;
+  height: 270px;
+  width: calc(33.33% - 13.33px);
+  background: lightseagreen;
+  border-radius: 12px;
+}
+.archive-row3 li:nth-child(1) {
+  margin-right: 20px;
+}
+.archive-row3 li:nth-child(2) {
+  margin-right: 20px;
+}
+#newest {
+  float: right;
+  margin: 0;
+  width: 100%;
+  height: 270px;
+  border-radius: 12px;
+  background: skyblue;
+}
+
 /* faq section (RIP) */
 /* .faq-item {
   height: 50px;
