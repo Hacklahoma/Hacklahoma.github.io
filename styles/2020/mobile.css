@@ -74,10 +74,10 @@
   }
   /* archive */
   .archive-row2 li {
-    height: 170px;
+    height: 220px;
   }
   .archive-row3 li {
-    height: 170px;
+    height: 220px;
   }
 }
 
@@ -211,6 +211,13 @@
   }
   .background-container svg:nth-child(3) {
     margin-top: 1090px;
+  }
+  /* archive */
+  .archive-row2 li {
+    height: 150px;
+  }
+  .archive-row3 li {
+    height: 150px;
   }
 }
 
