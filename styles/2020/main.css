@@ -21,6 +21,7 @@ body {
   color: #25283d;
   background-color: white;
   overflow-x: hidden;
+  min-width: 500px;
 }
 /* changes highlight color to blue */
 *::selection {
