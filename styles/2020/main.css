@@ -280,7 +280,7 @@ nav {
 }
 .newest-card p {
   display: inline-block;
-  width: 35px;
+  text-align: center;
   color: #25283d;
 }
 .newest-card h1 {

@@ -220,6 +220,9 @@
   .archive-item {
     height: 150px;
   }
+  .archive-item p {
+    font-size: 12px;
+  }
   /* newest archive */
   .newest-text .newest-title {
     font-size: 36px;
@@ -239,7 +242,11 @@
   }
   .newest-card {
     height: 190px;
-    width: 150px;
+    width: 30vw;
+  }
+  .newest-card h1 {
+    top: 50px;
+    font-size: 4vw;
   }
 }
 
