@@ -223,7 +223,7 @@
   /* newest archive */
   .newest-text .newest-title {
     font-size: 36px;
-    letter-spacing: .4px;
+    letter-spacing: normal;
   }
   .newest-text .newest-subtitle {
     font-size: 16px;
