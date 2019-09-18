@@ -16,22 +16,15 @@
     height: 288px;
     top: 173px;
   }
-  .header-text-container #title {
+  .title {
     font-size: 4.68em;
     letter-spacing: 1px;
   }
-  .header-text-container #subtitle {
+  .subtitle {
     font-size: 1.57em;
     letter-spacing: 1.2px;
     top: 86px;
     left: 3px;
-  }
-  .header-text-container #date {
-    position: absolute;
-    top: -15.84px;
-    left: 2.2px;
-    font-size: 1.62em;
-    letter-spacing: 1.2px;
   }
   /* buttons */
   .buttons {
@@ -58,6 +51,23 @@
     stroke-width: 52px;
     transform: rotate(-8deg) scale(1.2) translate(10px, 0px);
   }
+  /* newest archive */
+  .newest-text .newest-title {
+    font-size: 72px;
+    letter-spacing: 1px;
+  }
+  .newest-text .newest-subtitle {
+    font-size: 31.6px;
+  }
+  .newest-text .newest-subtitle span {
+    font-size: 43.2px;
+  }
+  .newest-text .highlight {
+    top: 108px;
+    left: 55px;
+    height: 18px;
+    width: 82px;
+  }
 }
 
 /* STYLE FIXES */
@@ -75,6 +85,10 @@
   /* archive */
   .archive-item {
     height: 220px;
+  }
+  #newest-container {
+    margin-right: 5%;
+    width: 90%;
   }
 }
 
@@ -172,22 +186,15 @@
     height: 145px;
     top: 85px;
   }
-  .header-text-container #title {
+  .title {
     top: 2px;
     font-size: 2.3em;
     letter-spacing: .8px;
   }
-  .header-text-container #subtitle {
+  .subtitle {
     font-size: .786em;
     letter-spacing: .6px;
     top: 45px;
-  }
-  .header-text-container #date {
-    position: absolute;
-    top: -6px;
-    left: 1px;
-    font-size: .79em;
-    letter-spacing: 1px;
   }
   /* buttons */
   .buttons {
@@ -212,6 +219,27 @@
   /* archive */
   .archive-item {
     height: 150px;
+  }
+  /* newest archive */
+  .newest-text .newest-title {
+    font-size: 36px;
+    letter-spacing: .8px;
+  }
+  .newest-text .newest-subtitle {
+    font-size: 16px;
+  }
+  .newest-text .newest-subtitle span {
+    font-size: 22px;
+  }
+  .newest-text .highlight {
+    top: 54px;
+    left: 27.5px;
+    height: 9.3px;
+    width: 41px;
+  }
+  .newest-card {
+    height: 190px;
+    width: 150px;
   }
 }
 
