@@ -95,7 +95,7 @@
 /* TABLET */
 @media (max-width:720px) {
   /* nav bar/hamburger */
-  .line {
+  .hamburger .line {
     width: 30px;
     height: 3px;
     background: #25283d;
