@@ -55,11 +55,11 @@
           </div>
           <nav>
             <ul class="nav-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">2020</a></li>
-              <li><a href="#">Archive</a></li>
-              <li><a href="#">Contact</a></li>
+              <li id="home-tab">Home</li>
+              <li id="about-tab">About</li>
+              <li id="newest-tab">2020</li>
+              <li id="archive-tab">Archive</li>
+              <li id="contact-tab">Contact</li>
             </ul>
           </nav>
           <!-- Logo -->
@@ -89,6 +89,8 @@
       </section>
 
       <!-- ABOUT ------------>
+      <!-- for tab link -->
+      <a name="about"></a>
       <section class="section-container">
         <div class="about-container">
           <div class="video-container right">
@@ -122,17 +124,19 @@
       </section>
 
       <!-- ARCHIVE ------------>
+      <!-- for tab link -->
+      <a name="newest"></a>
       <section class="section-container">
         <div id="newest-container">
           <div class="newest-text">
             <h1 class="newest-title">Hacklahoma</h1>
             <div class="highlight"></div><p class="newest-subtitle">in <span>2020</span></p>
-            <div class="button">
+            <div id="newest-button" class="button">
               <p>Learn more</p>
             </div>
           </div>
 
-          <div class="newest-card archive-item">
+          <div id="newest-card" class="newest-card archive-item">
             <h1>Coming<br>soon</h1>
             <p>2020</p>
           </div>
@@ -141,12 +145,16 @@
         <div class="archive-container">
           <ul class="archive-row2">
             <li id="year2019" class="archive-item">
+              <!-- for tab link -->
+              <a name="archive"></a>
               <img src="../img/assets/logo2019.png">
               <p>2019<p>
             </li>
             <li id="year2018" class="archive-item">
               <img src="../img/assets/logo2018.png">
               <p>2018<p>
+              <!-- ignore this anchor for button presses -->
+              <a name="archive-info-anchor"></a>
             </li>
           </ul>
           <!-- Use row with 3 columns when needed -->
@@ -166,7 +174,7 @@
           </ul> -->
         </div>
 
-        <div class="archive-info">
+        <div id="archive-info">
           <div class="archive-info-container">
             <div class="head">
               <h1 id="year">2020</h1>
@@ -177,15 +185,15 @@
 
             <div class="stats">
               <div class="stats-item">
-                <h1>200</h1>
+                <h1 id="participants">200</h1>
                 <p>participants</p>
               </div>
               <div class="stats-item">
-                <h1>52</h1>
+                <h1 id="projects">52</h1>
                 <p>projects</p>
               </div>
               <div class="stats-item">
-                <h1>21</h1>
+                <h1 id="sponsors">21</h1>
                 <p>sponsors</p>
               </div>
             </div>
@@ -203,6 +211,8 @@
       </section>
 
       <!-- CONTACT ------------>
+      <!-- for tab link -->
+      <a name="contact"></a>
       <section class="section-container">
         <div class="contact-container">
           <div class="contact-text">

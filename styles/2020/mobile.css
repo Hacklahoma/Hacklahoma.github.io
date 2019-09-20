@@ -156,7 +156,7 @@
     transform: rotate(-45deg) translate(6px, -6px);
     transition: transform .1s;
   }
-  .nav-links li a {
+  .nav-links li {
     float: right;
     font-size: 14px;
     margin: 0;
@@ -223,11 +223,25 @@
     margin-top: 1090px;
   }
   /* archive */
+  .archive-container {
+    margin-top: -25px;
+    height: 410px;
+  }
   .archive-item {
     height: 150px;
   }
   .archive-item p {
     font-size: 12px;
+  }
+  .archive-info-container .head #year {
+    font-size: 50px;
+  }
+  .archive-info-container .head {
+    height: 50px;
+  }
+  #team-button {
+    width: 100%;
+    max-width: 300px;
   }
   /* newest archive */
   .newest-text .newest-title {
