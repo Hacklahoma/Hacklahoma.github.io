@@ -90,6 +90,12 @@
     margin-right: 5%;
     width: 90%;
   }
+  .stats-item h1 {
+    font-size: 20px;
+  }
+  .stats-item p {
+    font-size: 16px;
+  }
 }
 
 /* TABLET */

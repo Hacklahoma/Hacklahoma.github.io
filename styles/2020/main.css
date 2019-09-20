@@ -202,7 +202,7 @@ nav {
   background: grey;
   cursor: pointer;
   user-select: none;
-  box-shadow: 2px 2px 15px -1px rgba(0, 0, 0, .25);
+  box-shadow: 2px 2px 15px -1px rgba(0, 0, 0, .18);
 }
 .archive-item p {
   position: absolute;
@@ -258,10 +258,11 @@ nav {
 .archive-info {
   margin-top: 50px;
   width: 100%;
-  height: 700px;
+  height: 300px;
   border: 1px solid transparent;
   border-radius: 10px;
-  background: #f4f4f4;
+  background: #fcfcfc;
+  box-shadow: 2px 2px 15px -1px rgba(0, 0, 0, .18);
 }
 .archive-info-container {
   width: 80%;
@@ -273,6 +274,7 @@ nav {
   width: 100%;
   height: 60px;
   position: relative;
+  margin-bottom: 35px;
 }
 .archive-info-container .head #year {
   font-size: 60px;
@@ -288,17 +290,44 @@ nav {
   right: 0;
   background: #75C079;
 }
-.archive-info-container .line {
+/* .archive-info-container .line {
   width: 100%;
-  height: 3px;
-  background: #ccc;
+  height: 0px;
+  background: #aaa;
   margin: 20px 0;
+} */
+#team-button {
+  margin-top: 30px;
+  width: 300px;
+  height: 50px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 15px -1px rgba(0, 0, 0, .16);
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+#team-button p {
+  position: absolute;
+  top: 15px;
+  left: 22px;
+  font-weight: bold;
+  font-size: 18px;
+}
+#team-button img {
+  src: url("../../img/assets/2020/exit-button.svg");
+  width: 15px;
+  position: absolute;
+  right: 25px;
+  top: 20px;
 }
 .stats {
   width: 100%;
 }
 .stats-item {
   display: inline-block;
+}
+.stats-item p {
+  opacity: .8;
 }
 .stats-item:nth-child(1) {
   width: 40%;
