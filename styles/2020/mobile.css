@@ -89,6 +89,10 @@
   #newest-container {
     margin-right: 5%;
     width: 90%;
+    height: 220px;
+  }
+  #archive-info {
+    margin-top: 50px;
   }
   .stats-item h1 {
     font-size: 20px;
@@ -244,6 +248,9 @@
     max-width: 300px;
   }
   /* newest archive */
+  #newest-container {
+    height: 190px; /* must change card height as well */
+  }
   .newest-text .newest-title {
     font-size: 36px;
     letter-spacing: -.2px;
@@ -261,12 +268,15 @@
     width: 41px;
   }
   .newest-card {
-    height: 190px;
+    height: 190px;/* must change container height as well */
     width: 30vw;
   }
   .newest-card h1 {
     top: 50px;
     font-size: 4vw;
+  }
+  #archive-info {
+    margin-top: 20px;
   }
 }
 

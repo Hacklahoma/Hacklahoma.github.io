@@ -81,6 +81,7 @@ function newest() {
     sponsors.innerHTML ="N/A";
     archive.style.height = "300px";
     archive.style.opacity = "1";
+    jump("archive-info-anchor");
   }
   if(opened != "2020" && opened != "") {
     archive.style.height = "0";
@@ -96,7 +97,6 @@ function newest() {
       archive.style.opacity = "1";
     }, 267);
   }
-  jump("archive-info-anchor");
   opened = "2020";
 }
 
