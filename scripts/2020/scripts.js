@@ -90,7 +90,9 @@ function newest() {
     participants.innerHTML = participants2020;
     projects.innerHTML = projects2020;
     sponsors.innerHTML = sponsors2020;
-    website.href = "../" + year.innerHTML;
+    website.removeAttribute('target');
+    website.removeAttribute('href');
+    website.getElementsByClassName("button")[0].style.cursor = "not-allowed";
     archive.style.height = "300px";
     archive.style.opacity = "1";
     jump("archive-info-anchor");
@@ -103,7 +105,9 @@ function newest() {
       participants.innerHTML = participants2020;
       projects.innerHTML = projects2020;
       sponsors.innerHTML = sponsors2020;
-      website.href = "../" + year.innerHTML;
+      website.removeAttribute('target');
+      website.removeAttribute('href');
+      website.getElementsByClassName("button")[0].style.cursor = "not-allowed";
     }, 333);
     setTimeout(function (){
       archive.style.height = "300px";
@@ -120,6 +124,8 @@ function year2019() {
     projects.innerHTML = projects2019;
     sponsors.innerHTML = sponsors2019;
     website.href = "../" + year.innerHTML;
+    website.target = "_blank";
+    website.getElementsByClassName("button")[0].style.cursor = "pointer";
     archive.style.height = "300px";
     archive.style.opacity = "1";
   }
@@ -132,6 +138,8 @@ function year2019() {
       projects.innerHTML = projects2019;
       sponsors.innerHTML = sponsors2019;
       website.href = "../" + year.innerHTML;
+      website.target = "_blank";
+      website.getElementsByClassName("button")[0].style.cursor = "pointer";
     }, 333);
     setTimeout(function (){
       archive.style.height = "300px";
@@ -147,6 +155,8 @@ function year2018() {
     projects.innerHTML = projects2018;
     sponsors.innerHTML = sponsors2018;
     website.href = "../" + year.innerHTML;
+    website.target = "_blank";
+    website.getElementsByClassName("button")[0].style.cursor = "pointer";
     archive.style.height = "300px";
     archive.style.opacity = "1";
   }
@@ -159,6 +169,8 @@ function year2018() {
       projects.innerHTML = projects2018;
       sponsors.innerHTML = sponsors2018;
       website.href = "../" + year.innerHTML;
+      website.target = "_blank";
+      website.getElementsByClassName("button")[0].style.cursor = "pointer";
     }, 333);
     setTimeout(function (){
       archive.style.height = "300px";
