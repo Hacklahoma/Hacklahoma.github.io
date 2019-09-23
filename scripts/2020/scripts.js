@@ -57,6 +57,16 @@ addEventListener("resize", () => {
 
 
 /* archive functions */
+const participants2020 = "350 <font size=\"-1\">expected</font>";
+const projects2020 = "100 <font size=\"-1\">expected</font>";
+const sponsors2020 = "30 <font size=\"-1\">expected</font>";
+const participants2019 = "217";
+const projects2019 = "52";
+const sponsors2019 = "32";
+const participants2018 = "208";
+const projects2018 = "47";
+const sponsors2018 = "18";
+
 const archive = document.getElementById("archive-info");
 const year = document.getElementById("year");
 const participants = document.getElementById("participants");
@@ -66,6 +76,7 @@ const newestButton = document.getElementById("newest-button");
 const newestCard = document.getElementById("newest-card");
 const card2019 = document.getElementById("year2019");
 const card2018 = document.getElementById("year2018");
+const website = document.getElementById("archive-website");
 var opened = "";
 
 newestButton.onclick = function() {newest()};
@@ -76,9 +87,10 @@ card2018.onclick = function() {year2018()};
 function newest() {
   if(opened == "") {
     year.innerHTML ="2020";
-    participants.innerHTML ="N/A";
-    projects.innerHTML ="N/A";
-    sponsors.innerHTML ="N/A";
+    participants.innerHTML = participants2020;
+    projects.innerHTML = projects2020;
+    sponsors.innerHTML = sponsors2020;
+    website.href = "../" + year.innerHTML;
     archive.style.height = "300px";
     archive.style.opacity = "1";
     jump("archive-info-anchor");
@@ -88,9 +100,10 @@ function newest() {
     archive.style.opacity = "0";
     setTimeout(function (){
       year.innerHTML ="2020";
-      participants.innerHTML ="N/A";
-      projects.innerHTML ="N/A";
-      sponsors.innerHTML ="N/A";
+      participants.innerHTML = participants2020;
+      projects.innerHTML = projects2020;
+      sponsors.innerHTML = sponsors2020;
+      website.href = "../" + year.innerHTML;
     }, 333);
     setTimeout(function (){
       archive.style.height = "300px";
@@ -103,9 +116,10 @@ function newest() {
 function year2019() {
   if(opened == "") {
     year.innerHTML ="2019";
-    participants.innerHTML ="N/A";
-    projects.innerHTML ="N/A";
-    sponsors.innerHTML ="N/A";
+    participants.innerHTML = participants2019;
+    projects.innerHTML = projects2019;
+    sponsors.innerHTML = sponsors2019;
+    website.href = "../" + year.innerHTML;
     archive.style.height = "300px";
     archive.style.opacity = "1";
   }
@@ -114,9 +128,10 @@ function year2019() {
     archive.style.opacity = "0";
     setTimeout(function (){
       year.innerHTML ="2019";
-      participants.innerHTML ="N/A";
-      projects.innerHTML ="N/A";
-      sponsors.innerHTML ="N/A";
+      participants.innerHTML = participants2019;
+      projects.innerHTML = projects2019;
+      sponsors.innerHTML = sponsors2019;
+      website.href = "../" + year.innerHTML;
     }, 333);
     setTimeout(function (){
       archive.style.height = "300px";
@@ -128,9 +143,10 @@ function year2019() {
 function year2018() {
   if(opened == "") {
     year.innerHTML ="2018";
-    participants.innerHTML ="N/A";
-    projects.innerHTML ="N/A";
-    sponsors.innerHTML ="N/A";
+    participants.innerHTML = participants2018;
+    projects.innerHTML = projects2018;
+    sponsors.innerHTML = sponsors2018;
+    website.href = "../" + year.innerHTML;
     archive.style.height = "300px";
     archive.style.opacity = "1";
   }
@@ -139,9 +155,10 @@ function year2018() {
     archive.style.opacity = "0";
     setTimeout(function (){
       year.innerHTML ="2018";
-      participants.innerHTML ="N/A";
-      projects.innerHTML ="N/A";
-      sponsors.innerHTML ="N/A";
+      participants.innerHTML = participants2018;
+      projects.innerHTML = projects2018;
+      sponsors.innerHTML = sponsors2018;
+      website.href = "../" + year.innerHTML;
     }, 333);
     setTimeout(function (){
       archive.style.height = "300px";
