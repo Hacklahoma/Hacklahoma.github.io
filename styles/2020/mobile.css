@@ -132,6 +132,7 @@
     width: 150px;
     height: 100vh;
     background: #fff;
+    z-index: 2;
     box-shadow: 3px 3px 15px -5px rgba(0,0,0,.5);
     -webkit-transform: translateX(150px);
 		transform: translateX(150px);
@@ -142,7 +143,7 @@
     cursor: pointer;
     right: 5%;
     top: 10px;
-    z-index: 2;
+    z-index: 3;
   }
   .nav-links {
     right: 40px;
