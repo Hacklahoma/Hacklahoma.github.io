@@ -430,6 +430,7 @@ nav {
 /* contact */
 .contact-container {
   width: 100%;
+  color: white;
   text-align: center;
 }
 .contact-text h1 {
@@ -437,12 +438,14 @@ nav {
 }
 .contact-text a {
   text-decoration: none;
-  color: #1E36DA;
+  color: #6478FF;
   font-weight: bold;
 }
 .contact-text {
   text-align: left;
+  margin-top: 50px;
   display: inline-block;
+  width: 80%;
   max-width: 600px;
 }
 .social-container {
@@ -451,31 +454,42 @@ nav {
 .icons {
   display: inline-block;
   width: 100%;
-  margin-top: 5px;
+  margin-top: 20px;
   text-align: center;
 }
 .icons img {
-  width: 24px;
+  width: 20px;
   margin: 15px;
+  filter: invert();
 }
 
 /* footer */
 .footer {
   display: inline-block;
-  position: absolute;
-  top: 10px;
+  text-align: center;
   z-index: 1;
+  width: 100%;
+  margin-bottom: 10px;
+  color: white;
   font-size: 11px;
   opacity: .9;
-  margin-bottom: 10px;
+  margin-top: 70px;
 }
-.footer-background {
+#bottom-plane {
   position: absolute;
-  background: white;
-  width: 200vw;
-  height: 40px;
-  left: -100vw;
-  box-shadow: -2px -2px 15px -5px rgba(0,0,0,.1);
+  margin-top: -350px;
+  width: 400px;
+  z-index: 1;
+  transform: scaleX(-1);
+  filter: grayscale(.4) brightness(1.15);
+  margin-left: calc(100% - 400px);
+}
+#trees {
+  position: absolute;
+  top: -75px;
+  left: 10%;
+  width: 400px;
+  z-index: 0;
 }
 
 /* the content container */
@@ -485,26 +499,34 @@ nav {
   width: 65%;
   height: 100%;
 }
+.bottom-content {
+  background: url("../../img/assets/2020/grass.svg");
+  /* background: red; */
+  background-size: cover;
+  border: 1px solid white;
+  margin-top: 100px;
+  position: relative;
+}
 
 /* background svgs */
-.background-container {
+/* .background-container {
   position: absolute;
   width: 100%;
-}
-.background-container svg {
+} */
+/* .background-container svg {
   position: relative;
   stroke-width: 60px;
   z-index: -1;
   overflow: visible;
-}
-.background-container svg:nth-child(1) {
+} */
+/* .background-container svg:nth-child(1) {
 }
 .background-container svg:nth-child(2) {
   margin-top: 10vw;
 }
 .background-container svg:nth-child(3) {
   margin-top: 550px;
-}
+} */
 
 /* animations */
 @keyframes example {
