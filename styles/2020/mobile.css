@@ -246,7 +246,7 @@
   #trees {
     position: absolute;
     top: -50px;
-    left: 10%;
+    left: -10px;
     width: 250px;
     z-index: 0;
   }
