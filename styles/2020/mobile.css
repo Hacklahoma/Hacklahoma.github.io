@@ -241,7 +241,7 @@
   } */
   #bottom-plane {
     width: 200px;
-    margin-left: calc(106% - 200px);
+    margin-left: calc(100% - 200px);
   }
   #trees {
     position: absolute;
