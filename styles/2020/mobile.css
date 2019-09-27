@@ -241,6 +241,7 @@
   } */
   #bottom-plane {
     width: 200px;
+    margin-top: -420px;
     margin-left: calc(100% - 200px);
   }
   #trees {
