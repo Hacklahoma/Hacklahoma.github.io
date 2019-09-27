@@ -93,7 +93,8 @@ function newest() {
     website.removeAttribute('target');
     website.removeAttribute('href');
     website.getElementsByClassName("button")[0].style.cursor = "not-allowed";
-    archive.style.height = "300px";
+    // archive.style.height = "300px";
+    archive.style.height = "235px";
     archive.style.opacity = "1";
     jump("archive-info-anchor");
   }
@@ -110,7 +111,8 @@ function newest() {
       website.getElementsByClassName("button")[0].style.cursor = "not-allowed";
     }, 333);
     setTimeout(function (){
-      archive.style.height = "300px";
+      // archive.style.height = "300px";
+      archive.style.height = "235px";
       archive.style.opacity = "1";
     }, 267);
   }
@@ -126,7 +128,8 @@ function year2019() {
     website.href = "../" + year.innerHTML;
     website.target = "_blank";
     website.getElementsByClassName("button")[0].style.cursor = "pointer";
-    archive.style.height = "300px";
+    // archive.style.height = "300px";
+    archive.style.height = "235px";
     archive.style.opacity = "1";
   }
   if(opened != "2019" && opened != "") {
@@ -142,7 +145,8 @@ function year2019() {
       website.getElementsByClassName("button")[0].style.cursor = "pointer";
     }, 333);
     setTimeout(function (){
-      archive.style.height = "300px";
+      // archive.style.height = "300px";
+      archive.style.height = "235px";
       archive.style.opacity = "1";
     }, 267);
   }
@@ -157,7 +161,8 @@ function year2018() {
     website.href = "../" + year.innerHTML;
     website.target = "_blank";
     website.getElementsByClassName("button")[0].style.cursor = "pointer";
-    archive.style.height = "300px";
+    // archive.style.height = "300px";
+    archive.style.height = "235px";
     archive.style.opacity = "1";
   }
   if(opened != "2018" && opened != "") {
@@ -173,7 +178,8 @@ function year2018() {
       website.getElementsByClassName("button")[0].style.cursor = "pointer";
     }, 333);
     setTimeout(function (){
-      archive.style.height = "300px";
+      // archive.style.height = "300px";
+      archive.style.height = "235px";
       archive.style.opacity = "1";
     }, 267);
   }
