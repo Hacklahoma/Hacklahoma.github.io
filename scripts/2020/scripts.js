@@ -185,3 +185,9 @@ function year2018() {
   }
   opened = "2018";
 }
+
+
+/* scroll reveal */
+AOS.init({
+  once: true, // whether animation should happen only once - while scrolling down
+});
