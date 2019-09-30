@@ -85,7 +85,7 @@ nav {
 .logo-container {
   position: absolute;
   right: 0;
-  top: 10vw;
+  top: 13vw;
 }
   /* header text */
 .header-text-container {
@@ -122,9 +122,9 @@ nav {
   display: inline-block;
   position: relative;
   height: 2.8vw;
-  margin: 2px 0;
+  margin: 4px 4px;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: .8vw;
   box-shadow: 2px 2px 10px -1px rgba(0, 0, 0, .23);
   cursor: pointer;
 }
