@@ -502,7 +502,7 @@ nav {
   height: 45vw;
   min-height: 350px;
   max-height: 620px;
-  background-image: linear-gradient(0, #fff, #E9F3F9);
+  background-image: linear-gradient(0, #fff, #F7FCFF);
 }
 .background-container img {
   position: absolute;
@@ -510,6 +510,7 @@ nav {
   max-width: 130px;
   min-width: 65px;
   left: -105px;
+  opacity: .7;
 }
 .background-container img:nth-child(1) {
   top: 5px;
