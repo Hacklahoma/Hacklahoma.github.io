@@ -128,24 +128,12 @@ nav {
   box-shadow: 2px 2px 10px -1px rgba(0, 0, 0, .23);
   cursor: pointer;
 }
-    /* button colors */
-.button:nth-child(1) {
-  background-color: #75C079;
-}
-.button:nth-child(2) {
-  background-color: #F4D06F;
-}
-.button:nth-child(3) {
-  background-color: #5B6299;
-}
-.button:nth-child(4) {
-  background-color: #75C079;
-}
 .button:active {
   box-shadow: 2px 2px 10px -1px rgba(0, 0, 0, .23),
         inset -.1vw -.1vw .7vw rgba(0,0,0,0.075);
 }
 .button p {
+  text-shadow: 2px 1px 3px rgba(0,0,0, .1);
   font-size: 1.4vw;
   letter-spacing: .07vw;
   font-weight: bold;
