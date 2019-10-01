@@ -22,6 +22,11 @@ body {
   background-color: white;
   overflow-x: hidden;
 }
+/* canvas */
+canvas {
+  background: #aaa;
+  position: absolute;
+}
 /* changes highlight color to blue */
 *::selection {
   background: #E9F3F9;
@@ -491,16 +496,39 @@ nav {
 }
 
 /* background svgs */
-/* .background-container {
+.background-container {
   position: absolute;
   width: 100%;
-} */
-/* .background-container svg {
-  position: relative;
-  stroke-width: 60px;
-  z-index: -1;
-  overflow: visible;
-} */
+  height: 45vw;
+  min-height: 350px;
+  max-height: 620px;
+  background-image: linear-gradient(0, #fff, #E9F3F9);
+}
+.background-container img {
+  position: absolute;
+  width: 20%;
+  max-width: 130px;
+  min-width: 65px;
+  left: -105px;
+}
+.background-container img:nth-child(1) {
+  top: 5px;
+}
+.background-container img:nth-child(2) {
+  top: 15%;
+}
+.background-container img:nth-child(3) {
+  top: 30%;
+}
+.background-container img:nth-child(4) {
+  top: 38%;
+}
+.background-container img:nth-child(5) {
+  top: 60%;
+}
+.background-container img:nth-child(6) {
+  top: 80%;
+}
 /* .background-container svg:nth-child(1) {
 }
 .background-container svg:nth-child(2) {
