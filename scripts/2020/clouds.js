@@ -4,7 +4,7 @@ var clouds = [];
 
 for(var i = 0; i < cloudRefs.length; i++) {
   var cloud = {
-    v: Math.random() * (.6 - .2) + .2, // velocity at which cloud moves
+    v: Math.random() * (.25 - .1) + .1, // velocity at which cloud moves
     pos: Math.random() * (window.innerWidth - (-140)) + (-140), // position of cloud from the left
     ref: cloudRefs[i] // the reference
   };
