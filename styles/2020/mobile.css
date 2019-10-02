@@ -309,6 +309,7 @@
   .contact-text {
     font-size: 14px;
   }
+
 }
 
 /* PHONE */
@@ -317,6 +318,9 @@
     margin-left: 10%;
     width: 80%;
   }
+  .footer {
+    font-size: 7px;
+  }
 }
 
 /* SMALL SMALL... */
@@ -324,5 +328,8 @@
   .content-container {
     margin-left: 5%;
     width: 90%;
+  }
+  .footer {
+    font-size: 6px;
   }
 }

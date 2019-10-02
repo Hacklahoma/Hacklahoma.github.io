@@ -21,12 +21,6 @@ html, body {
   color: #25283d;
   background-color: white;
   overflow-x: hidden;
-  margin-bottom: -100px;
-}
-/* canvas */
-canvas {
-  background: #aaa;
-  position: absolute;
 }
 /* changes highlight color to blue */
 *::selection {
@@ -487,23 +481,27 @@ nav {
   width: 65%;
   height: 100%;
 }
-.bottom-content {
+.bottom-container {
   background: url("../../img/assets/2020/grass.svg");
   /* background: red; */
   background-size: cover;
+  bottom: 0;
+  position: absolute;
   width: calc(100vw + 20px);
   left: -10px;
-  margin-bottom: 95px;
+}
+.bottom-content {
+  height: 510px;
   border: 1px solid white;
-  margin-top: 100px;
   position: relative;
+  overflow: hidden;
 }
 
 /* background svgs */
 .background-container {
   position: absolute;
   width: 100vw;
-  height: 45vw;
+  height: 46vw;
   min-height: 350px;
   max-height: 620px;
   overflow-x: hidden;
@@ -545,7 +543,7 @@ nav {
   top: 60%;
 }
 .background-container img:nth-child(6) {
-  top: 75%;
+  top: 70%;
 }
 /* .background-container svg:nth-child(1) {
 }
