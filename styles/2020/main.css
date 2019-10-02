@@ -502,15 +502,28 @@ nav {
   height: 45vw;
   min-height: 350px;
   max-height: 620px;
+  overflow-x: hidden;
+  overflow-y: visible;
   background-image: linear-gradient(0, #fff, #F7FCFF);
 }
-.background-container img {
+.background-container .cloud {
   position: absolute;
   width: 18%;
   max-width: 130px;
   min-width: 45px;
   left: -105px;
   opacity: .7;
+}
+.background-container .kite {
+  opacity: 0;
+  width: 15%;
+  position: absolute;
+  min-width: 200px;
+  top: 4vw;
+  left: -40px;
+  opacity: .7;
+  animation: kite 5s infinite;
+  animation-timing-function: linear;
 }
 .background-container img:nth-child(1) {
   top: 5px;
@@ -540,8 +553,8 @@ nav {
 } */
 
 /* animations */
-@keyframes example {
-    0%{}
-    50%{}
-    100%{}
+@keyframes kite {
+    0%{top: 4vw;}
+    50%{top: 5vw;}
+    100%{top: 4vw;}
 }

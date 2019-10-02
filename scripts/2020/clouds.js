@@ -1,5 +1,5 @@
 var cloudRefs = document.getElementsByClassName("cloud");
-
+var resize = false;
 var clouds = [];
 
 for(var i = 0; i < cloudRefs.length; i++) {
@@ -21,14 +21,4 @@ function step(timestamp) { // each frame
   }
   window.requestAnimationFrame(step); // tick tock
 }
-
 window.requestAnimationFrame(step);
-
-handleResize();
-function handleResize() {
-}
-
-
-function Point(x,y) {
-
-}
