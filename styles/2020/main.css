@@ -21,6 +21,7 @@ html, body {
   color: #25283d;
   background-color: white;
   overflow-x: hidden;
+  margin-bottom: -1px;
 }
 /* canvas */
 canvas {
@@ -490,6 +491,8 @@ nav {
   background: url("../../img/assets/2020/grass.svg");
   /* background: red; */
   background-size: cover;
+  width: calc(100vw + 20px);
+  left: -10px;
   border: 1px solid white;
   margin-top: 100px;
   position: relative;
