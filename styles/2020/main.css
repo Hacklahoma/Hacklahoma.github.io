@@ -16,7 +16,7 @@
   margin: 0;
   padding: 0;
 }
-body {
+html, body {
   font-family: 'Avenir';
   color: #25283d;
   background-color: white;
