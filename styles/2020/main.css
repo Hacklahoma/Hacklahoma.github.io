@@ -21,7 +21,7 @@ html, body {
   color: #25283d;
   background-color: white;
   overflow-x: hidden;
-  margin-bottom: -1px;
+  margin-bottom: -100px;
 }
 /* canvas */
 canvas {
@@ -459,7 +459,7 @@ nav {
   width: 100%;
   margin-bottom: 10px;
   color: white;
-  font-size: 11px;
+  font-size: 10px;
   opacity: .9;
   margin-top: 70px;
 }
@@ -493,6 +493,7 @@ nav {
   background-size: cover;
   width: calc(100vw + 20px);
   left: -10px;
+  margin-bottom: 95px;
   border: 1px solid white;
   margin-top: 100px;
   position: relative;

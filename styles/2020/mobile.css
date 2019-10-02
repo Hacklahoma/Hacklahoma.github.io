@@ -303,6 +303,12 @@
   #archive-info {
     margin-top: 20px;
   }
+  .footer {
+    font-size: 8px;
+  }
+  .contact-text {
+    font-size: 14px;
+  }
 }
 
 /* PHONE */
