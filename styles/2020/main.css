@@ -498,7 +498,7 @@ nav {
 /* background svgs */
 .background-container {
   position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 45vw;
   min-height: 350px;
   max-height: 620px;
@@ -541,7 +541,7 @@ nav {
   top: 60%;
 }
 .background-container img:nth-child(6) {
-  top: 80%;
+  top: 75%;
 }
 /* .background-container svg:nth-child(1) {
 }
