@@ -1,113 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
+  <head>
 	  <!-- Charset attribute for the webpage -->
     <meta charset="utf-8">
 
     <!-- Meta, stylesheets and scripts -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="icon" href="img/assets/logo2020.png">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <link rel="stylesheet" href="styles/hub/main.css">
+    <link rel="stylesheet" href="styles/hub/mobile.css">
+    <link rel="stylesheet" href="styles/hub/faq.css">
+    <link rel="icon" href="img/hub/logo.png">
+    <!-- For reavel on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Title -->
-    <title>Hacklahoma</title>
+    <title>Hacklahoma </title>
 
     <!-- Description for search engines -->
-    <meta name="description" content="Hacklahoma. February 8-9 2020. Come create with us at our third annual hackathon!" />
-    <!--
-        <!- - Facebook pixel stuff - ->
-        <meta property="og:title" content="HACKLAHOMA">
-        <meta property="og:type" content="website">
-        <meta property="og:image" content="https://hacklahoma.org/img/facebookCardImage.png">
-        <meta property="og:image:width" content="1200">
-        <meta property="og:image:height" content="630">
-        <meta property="og:image:type" content="image/png">
-        <meta property="og:url" content="https://hacklahoma.org">
-        <meta property="og:description" content="Hacklahoma. February 8-9 2020. Come create with us at our third annual hackathon!">
+    <meta name="description" content="Hacklahoma. February 8-9 . Come create with us at our third annual hackathon!" />
+  </head>
 
-        <!- - Facebook Pixel Code - ->
-        <script>
-            !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-            n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-            document,'script','https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '1555823664723200'); // Insert your pixel ID here.
-            fbq('track', 'PageView');
-        </script>
-        <noscript>
-          <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1555823664723200&ev=PageView&noscript=1"/>
-        </noscript>
-
-        <!- - FB Pixel that tracks when people visit our website - ->
-        <script>
-        fbq('track', 'ViewContent');
-        </script>
-      -->
-</head>
-
-<body>
-  <!-- Header -->
-  <section>
-    <div class="header-container">
-      <!-- Navigation tabs -->
-      <nav>
-        <div class="nav-container">
-          <a class="active-tab" href="">Home</a>
-          <a href="./about/">About</a>
-          <a href="./timeline/">Timeline</a>
-          <a href="./contact/">Contact</a>
-        </div>
-      </nav>
-      <!-- Title -->
-      <div class="header-title">
-        <h1>Hacklahoma</h1>
-        <br>
-        <a href="./2020">Hacklahoma 2020 <i class="go"></i></a>
-      </div>
+  <body>
+    <!-- TODO: FIX WEIRD BEHAVIOR -->
+    <!-- Background -->
+    <div data-aos="fade-in" class="background-container">
+      <img class="cloud" src="img/assets/hub/cloud-med.svg" alt="">
+      <img class="cloud" src="img/assets/hub/cloud-med.svg" alt="">
+      <img class="cloud" src="img/assets/hub/cloud-small.svg" alt="">
+      <img class="cloud" src="img/assets/hub/cloud-med.svg" alt="">
+      <img class="cloud" src="img/assets/hub/cloud-small.svg" alt="">
+      <img class="cloud" src="img/assets/hub/cloud-small.svg" alt="">
+      <img class="kite" src="img/assets/hub/kite-blue.png" alt="">
     </div>
-  </section>
 
-  <!-- Content -->
-  <section>
-    <div class="content-backsplash">
-      <div class="content-container">
-        <!-- Hacker History -->
-        <div class="content-row home-history">
-          <img src="img/media/hackers-overhead.jpg" alt="hackers overhead">
-          <div class="content-row-info">
+    <div class="content-container">
+      <!-- HEADER ------------>
+      <section>
+        <!-- Navbar -->
+        <div class="header-container">
+          <div id="nav-background">
+          </div>
+          <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <nav>
+            <ul class="nav-links">
+              <li id="home-tab">Home</li>
+              <li id="about-tab">About</li>
+              <li id="newest-tab">2020</li>
+              <li id="archive-tab">Archive</li>
+              <li id="contact-tab">Contact</li>
+            </ul>
+          </nav>
+          <!-- Logo -->
+          <div class="logo-container">
+            <img id="logo" src="img/assets/hub/flying-logo.png" alt="">
+          </div>
+          <!-- Header Content -->
+          <div class="header-text-container">
+            <p class="title">Hacklahoma</p>
+            <p class="subtitle">Join us for Oklahoma's <span class="highlight"> best </span> hackathon!</p>
+            <div class="buttons">
+              <div style="background:#75C079;" class="button">
+                <p>Hacklahoma 2020</p>
+              </div>
+              <div style="background:#F4D06F;" class="button">
+                <p>Stay updated</p>
+              </div>
+              <!-- <div style="background:#5B6299;" class="button">
+                <p>Join the team</p>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT ------------>
+      <!-- for tab link -->
+      <a name="about"></a>
+      <section class="section-container">
+        <div data-aos="fade-right" class="about-container">
+          <div class="video-container right">
+            <img src="img/assets/hub/video-thumbnail.png" alt="">
+          </div>
+          <div class="about-info left">
             <h1>What's Hacklahoma?</h1>
-            <p>Hacklahoma is an annual 24-hour hackathon held at the University of Oklahoma. Over three hundred students from across the country come to collaborate, build, and share their awesome projects with us! Hacklahoma provides a comfortable learning environment for all hackers to use their creativity and innovation at its full potential. We encourage students from all backgrounds, experience levels, and majors to participate!</p>
-            <a href="./about/">Learn more</a>
+            <p>Hacklahoma is an annual 24-hour hackathon held at the University of Oklahoma. Over three hundred students from across the country come to collaborate, build, and share their awesome projects with us! Hacklahoma provides a comfortable learning environment for all hackers to use their creativity and innovation at its full potential.</p>
           </div>
         </div>
-        <!-- Hacklahoma Team -->
-        <div style="margin-bottom: 0" class="content-row home-team">
-          <img src="img/media/hacklahoma-staff-2018.jpg" alt="hacklahoma team">
-          <div class="content-row-info">
-            <h1>Our History</h1>
-            <p>Founded in 2017, Hacklahoma aims to organize and invite hackers to an annual hackathon. In the past 2 years, Hacklahoma has had over 500 students attend, 80 projects made, and $60,000 raised. Over these years, Hacklahoma has become a driving force in tech by partnering with many organizations like Major League Hacking, Hack DFW, and many more.</p>
-            <a href="./timeline/">Learn more</a>
+
+        <div data-aos="fade-left" class="about-container">
+          <div class="video-container left">
+            <img src="img/media/hacklahoma-staff-2018_cropped.jpg" alt="">
+          </div>
+          <div class="about-info right">
+            <h1>Who We Are</h1>
+            <p>We are a group of students from the University of Oklahoma who are passionate about fostering innovation and collaboration in Oklahoma’s tech industry. Today, our team consists of 12 individuals across 4 subteams - Marketing, Operations, Sponsoring & Finance, and Technology.</p>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Footer -->
-  <section>
-    <div class="footer-divider"></div>
-    <div class="footer-background">
-      <div class="footer-container">
-        <p>© 2019 Hacklahoma</p>
-        <a href="">Home</a>
-        <a href="./about/">About</a>
-        <a href="./timeline/">Timeline</a>
-        <a style="margin-right: 0;" href="./contact/">Contact</a>
-      </div>
-    </div>
-  </section>
+        <div data-aos="fade-right" class="about-container">
+          <div class="video-container right">
+            <img src="img/media/hackers-overhead_cropped.jpg" alt="">
+          </div>
+          <div class="about-info left">
+            <h1>What We Do</h1>
+            <p>Hacklahoma’s mission is to kindle creativity and innovation in Oklahoma and develop a thriving tech community. We strive to be an organization where all of our team members feel included and have opportunities to gain experience and grow.</p>
+          </div>
+        </div>
+      </section>
 
-</body>
+      <!-- ARCHIVE ------------>
+      <!-- for tab link -->
+      <a name="newest"></a>
+      <section class="section-container">
+        <div data-aos="fade-up" id="newest-container">
+          <div class="newest-text">
+            <h1 class="newest-title">Hacklahoma</h1>
+            <div class="highlight"></div><p class="newest-subtitle">in <span>2020</span></p>
+            <div id="newest-button" style="background:#75C079;" class="button">
+              <p>Learn more</p>
+            </div>
+          </div>
+
+          <div id="newest-card" class="newest-card archive-item">
+            <h1>Coming<br>soon</h1>
+            <p>2020</p>
+          </div>
+        </div>
+
+        <div class="archive-container">
+          <a name="archive"></a>
+          <ul class="archive-row2">
+            <li data-aos="fade-right" id="year2019" class="archive-item">
+              <!-- for tab link -->
+
+              <img src="img/assets/logo2019.png">
+              <p>2019<p>
+            </li>
+            <li data-aos="fade-left" id="year2018" class="archive-item">
+              <img src="img/assets/logo2018.png">
+              <p>2018<p>
+              <!-- ignore this anchor for button presses -->
+              <a name="archive-info-anchor"></a>
+            </li>
+          </ul>
+          <!-- Use row with 3 columns when needed -->
+          <!-- <ul class="archive-row3">
+            <li class="archive-item">
+              <img src="img/assets/logo2018.png">
+              <p>2018<p>
+            </li>
+            <li class="archive-item">
+              <img src="img/assets/logo2018.png">
+              <p>2018<p>
+            </li>
+            <li class="archive-item">
+              <img src="img/assets/logo2018.png">
+              <p>2018<p>
+            </li>
+          </ul> -->
+        </div>
+
+        <div id="archive-info">
+          <div class="archive-info-container">
+            <div class="head">
+              <h1 id="year">2020</h1>
+              <a id="archive-website" target="_blank" href=""><div class="button"><p>View website</p></div></a>
+            </div>
+
+            <!-- <div class="line"></div> -->
+
+            <div class="stats">
+              <div class="stats-item">
+                <h1 id="participants">200</h1>
+                <p>participants</p>
+              </div>
+              <div class="stats-item">
+                <h1 id="projects">52</h1>
+                <p>projects</p>
+              </div>
+              <div class="stats-item">
+                <h1 id="sponsors">21</h1>
+                <p>sponsors</p>
+              </div>
+            </div>
+
+<!-- TODO: TEAM CONTAINER -->
+            <!-- <div id="team-button">
+              <p>Meet the team</p>
+              <img src="img/assets/hub/arrow-down.svg">
+            </div>
+
+            <div class="team-container">
+
+            </div> -->
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="bottom-content">
+      <!-- CONTACT ------------>
+      <!-- for tab link -->
+      <div class="bottom-container">
+        <a name="contact"></a>
+        <section data-aos="fade-up" class="section-container">
+          <div class="contact-container">
+            <div class="contact-text">
+              <h1>Contact Our Team</h1>
+              <p>We'd love to hear from you! Contact us at <a href="mailto:team@hacklahoma.org">team@hacklahoma.org</a> or through social media. If you plan on sponsoring us, please visit our <a href="#">Sponsor Packet</a>. We look forward to hearing from you!</p>
+            </div>
+          </div>
+          <div class="social-container">
+            <div class="icons">
+              <a href="https://www.facebook.com/Hacklahoma/" target="_blank"><img src="img/assets/hub/facebook.svg" alt=""></a>
+              <a href="https://twitter.com/hacklahoma" target="_blank"><img src="img/assets/hub/twitter.svg" alt=""></a>
+              <a href="https://www.instagram.com/hacklahoma/" target="_blank"><img src="img/assets/hub/instagram.svg" alt=""></a>
+            </div>
+          </div>
+        </section>
+        <img data-aos="fade-right" id="bottom-plane" src="img/assets/hub/flying-logo.png" alt="">
+        <img id="trees" src="img/assets/hub/trees.png" alt="">
+        <!-- FOOTER ------------>
+          <div class="footer">
+            <p>Copyright © 2019 <b>Hacklahoma</b> ~ Made with ♥ in Norman</p>
+          </div>
+          <div class="footer-background"></div>
+        </div>
+    </div>
+
+    <script src="scripts/hub/scripts.js"></script>
+    <script src="scripts/hub/clouds.js"></script>
+  </body>
 </html>
