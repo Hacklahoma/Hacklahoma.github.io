@@ -45,12 +45,9 @@
     align-self: center;
     width: 1008px;
   }
-  /* .background-container svg:nth-child(2) {
-    margin-top: calc(200px - 5vw);
-    transition: .5s;
-    stroke-width: 52px;
-    transform: rotate(-8deg) scale(1.2) translate(10px, 0px);
-  } */
+  .background-container .kite {
+    margin-top: -2vw;
+  }
   #bottom-plane {
     width: 500px;
     margin-top: -420px;

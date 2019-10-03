@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Avenir';
-  src: url('../../fonts/Avenir/AvenirLTStd-Black.woff');
+  src: url('../../fonts/Avenir/AvenirLTStd-Black.otf');
   font-weight: bold;
 }
 @font-face {
@@ -75,10 +75,13 @@ nav {
   opacity: .9;
 }
 /* global sections */
+.section-cover {
+  text-align: center;
+}
 .section {
   display: inline-block;
+  text-align: left;
   margin-top: 170px;
-  margin-left: 10%;
   width: 80%;
 }
 /* header */
@@ -88,8 +91,6 @@ nav {
 .header-content .title {
   font-size: 36px;
   letter-spacing: .8px;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
 }
 .header-content .loc-date {
   font-size: 14px;
@@ -97,6 +98,7 @@ nav {
 .header-content .register-info {
   margin-top: 30px;
   color: #464646;
+  font-size: 14px;
 }
 .header-content .register {
   display: inline-block;
@@ -105,7 +107,7 @@ nav {
 .header-content .register .learn-more {
   float: right;
   color: #8BC68E;
-  margin-top: 10px;
+  margin-top: 12px;
   margin-left: 10px;
 }
 .header-content .register .learn-more a {
@@ -133,7 +135,7 @@ nav {
   font-weight: bold;
   color: white;
   padding: 0 20px;
-  margin-top: 9px;
+  margin-top: 10px;
   user-select: none;
 }
 

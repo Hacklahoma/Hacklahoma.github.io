@@ -522,6 +522,7 @@ nav {
   width: 15%;
   position: absolute;
   min-width: 200px;
+  max-width: 528px;
   top: 4vw;
   left: -40px;
   opacity: .7;

@@ -1,5 +1,8 @@
 /* DESKTOP */
 @media (min-width:1440px) {
+  .section {
+    width: 1152px;
+  }
 }
 
 /* STYLE FIXES */
@@ -70,6 +73,31 @@
     font-size: 14px;
     margin: 0;
   }
+  /* header */
+  .header-content {
+    text-align: center;
+    width: 100%;
+  }
+  .header-content .title {
+    font-size: 32px;
+  }
+  .header-content .loc-date {
+    font-size: 14px;
+  }
+  .header-content .register-info {
+    font-size: 14px;
+  }
+  .header-content .register .learn-more {
+    margin-top: 9px;
+  }
+  /* button */
+  .button {
+    height: 36px;
+  }
+  .button p {
+    font-size: 15px;
+    margin-top: 10px;
+  }
 }
 
 /* PHONE */
@@ -78,4 +106,26 @@
 
 /* SMALL SMALL... */
 @media (max-width:430px) {
+  /* header */
+  .header-content .title {
+    font-size: 23px;
+  }
+  .header-content .loc-date {
+    font-size: 11px;
+  }
+  .header-content .register-info {
+    font-size: 10px;
+  }
+  .header-content .register .learn-more {
+    margin-top: 9px;
+    font-size: 13px;
+  }
+  /* button */
+  .button {
+    height: 32px;
+  }
+  .button p {
+    font-size: 13px;
+    margin-top: 8px;
+  }
 }
