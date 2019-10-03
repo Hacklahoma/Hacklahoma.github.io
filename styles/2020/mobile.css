@@ -1,0 +1,81 @@
+/* DESKTOP */
+@media (min-width:1440px) {
+}
+
+/* STYLE FIXES */
+@media (max-width:968px) {
+}
+
+/* TABLET */
+@media (max-width:720px) {
+  /* nav bar/hamburger */
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: #25283d;
+    margin: 5px;
+    border-radius: 25px;
+    transition: transform .1s;
+  }
+  nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 150px;
+    height: 150vh;
+    background: #fff;
+    z-index: 2;
+    box-shadow: 3px 3px 15px -5px rgba(0,0,0,.5);
+    -webkit-transform: translateX(150px);
+    transform: translateX(150px);
+    transition: transform 200ms linear;
+  }
+  .hamburger {
+    position: fixed;
+    cursor: pointer;
+    right: 5%;
+    top: 10px;
+    z-index: 3;
+  }
+  .nav-links {
+    right: 40px;
+    top: 60px;
+    height: 250px;
+    width: auto;
+    flex-direction: column;
+    pointer-events: all;
+  }
+  nav.open {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    transition: transform 200ms linear;
+  }
+  .hamburger .line:nth-child(1).open {
+    transform-origin: center;
+    transform: rotate(45deg) translate(6px, 5px);
+    transition: transform .1s;
+  }
+  .hamburger .line:nth-child(2).open {
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform .1s;
+  }
+  .hamburger .line:nth-child(3).open {
+    transform-origin: center;
+    transform: rotate(-45deg) translate(6px, -6px);
+    transition: transform .1s;
+  }
+  .nav-links li {
+    float: right;
+    font-size: 14px;
+    margin: 0;
+  }
+}
+
+/* PHONE */
+@media (max-width:520px) {
+}
+
+/* SMALL SMALL... */
+@media (max-width:430px) {
+}
