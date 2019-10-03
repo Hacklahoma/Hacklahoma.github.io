@@ -491,6 +491,7 @@ nav {
   left: -10px;
 }
 .bottom-content {
+  margin-top: 50px;
   height: 510px;
   border: 1px solid white;
   position: relative;
