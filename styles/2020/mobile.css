@@ -180,21 +180,23 @@
   }
   .register-content {
     margin-top: 18px;
-    height: 110px;
+    height: 105px;
   }
   .register-content h1 {
     font-size: 14px;
   }
   .register-content p {
-    margin-top: 8px;
+    margin-top: 5px;
     font-size: 8px;
   }
   .register-content .button {
     margin-left: 9px;
-    height: 26px;
+    height: 24px;
+    border-radius: 7px;
   }
   .register-content .button p {
-    margin-top: 7px;
+    margin-top: 6px;
+    letter-spacing: .5px;
     padding: 0 1.8vw;
     font-size: 10px;
   }
