@@ -9,10 +9,10 @@
 @media (max-width:968px) {
   /* about */
   .about-content h1 {
-    font-size: 30px;
+    font-size: 26px;
   }
   .about-content p {
-    font-size: 14px;
+    font-size: 13px;
   }
   /* registering */
   .register-item {
@@ -134,6 +134,10 @@
   #about .section {
     margin-bottom: 130px;
   }
+  .about-content {
+    width: 80%;
+    margin-left: 10%;
+  }
   .about-content h1 {
     font-size: 22px;
   }
@@ -177,6 +181,7 @@
   .register-item {
     width: 120px;
     height: calc(1.20533333333 * 120px);
+    margin: 0;
   }
   .register-content {
     margin-top: 18px;
