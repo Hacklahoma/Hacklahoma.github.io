@@ -20,7 +20,6 @@ html, body {
   font-family: 'Avenir';
   color: black;
   background-color: white;
-  padding-bottom: 300px;
 }
 a {
   text-decoration: none;
@@ -214,6 +213,7 @@ nav {
 }
 #tracks .section-background {
   fill: #F0FAFF;
+  transform: scaleX(-1);
 }
 .track-content {
   text-align: center;
@@ -226,8 +226,6 @@ nav {
 }
 .track-content p {
   color: #327C99;
-  position: relative;
-  bottom: 0;
 }
 .tracks-container {
   background: skyblue;
@@ -236,6 +234,103 @@ nav {
   opacity: .25;
   margin-bottom: 30px;
 }
+/* faq content */
+#faq {
+  margin-top: 200px;
+}
+#faq .section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#faq .section-background {
+  fill: #F4FFF0;
+}
+.faq-content {
+  text-align: center;
+}
+.faq-content h1 {
+  color: #F4FFF0;
+  text-shadow: 3px 2px 0px #22691A;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: #22691A;
+}
+.faq-container {
+  background: limegreen;
+  height: 500px;
+  margin-top: 10px;
+  opacity: .1;
+  margin-bottom: 30px;
+}
+/* schedule content */
+#schedule {
+  margin-top: 200px;
+}
+#schedule .section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#schedule .section-background {
+  fill: #FEF4FF;
+  transform: scaleX(-1);
+}
+.schedule-content {
+  text-align: center;
+}
+.schedule-content h1 {
+  color: #FEF4FF;
+  text-shadow: 3px 2px 0px #B157B7;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: #B157B7;
+}
+.schedule-content p {
+  color: #B157B7;
+}
+.schedule-container {
+  height: 0px;
+  margin-top: 10px;
+  opacity: .1;
+  margin-bottom: 30px;
+}
+/* sponsors content */
+#sponsors {
+  margin-top: 200px;
+}
+#sponsors .section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#sponsors .section-background {
+  fill: #F4F4F4;
+}
+.sponsors-content {
+  text-align: center;
+}
+.sponsors-content h1 {
+  color: #F4F4F4;
+  text-shadow: 3px 2px 0px #373737;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: #373737;
+}
+.sponsors-content p {
+  color: #373737;
+}
+.sponsors-content p a {
+  color: #373737;
+}
+.sponsors-container {
+  height: 400px;
+  margin-top: 10px;
+  opacity: .1;
+  margin-bottom: 30px;
+}
+/* footer */
+#footer {
+  margin-top: 100px;
+  background: #F2F7FF;
+  height: 120px;
+  width: 100vw;
+}
+
 /* button */
 .button {
   display: inline-block;
