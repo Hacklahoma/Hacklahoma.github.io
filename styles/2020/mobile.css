@@ -1,12 +1,40 @@
 /* DESKTOP */
 @media (min-width:1440px) {
   .section {
-    width: 1152px;
+    width: 975px;
   }
 }
 
 /* STYLE FIXES */
 @media (max-width:968px) {
+  /* about */
+  .about-content h1 {
+    font-size: 30px;
+  }
+  .about-content p {
+    font-size: 14px;
+  }
+  /* registering */
+  .register-item {
+    width: 200px;
+    height: calc(1.20533333333 * 200px);
+  }
+  .register-content {
+    height: 180px;
+  }
+  .register-content h1 {
+    font-size: 23px;
+  }
+  .register-content p {
+    font-size: 13px;
+  }
+  .register-content .button {
+    margin-left: 20px;
+    font-size: 14px;
+  }
+  .register-content .button p {
+    font-size: 14px;
+  }
 }
 
 /* TABLET */
@@ -73,6 +101,10 @@
     font-size: 14px;
     margin: 0;
   }
+  /* global sections */
+  .section {
+    width: 80%;
+  }
   /* header */
   .header-content {
     text-align: center;
@@ -98,10 +130,75 @@
     font-size: 15px;
     margin-top: 10px;
   }
+  /* about */
+  #about .section {
+    margin-bottom: 130px;
+  }
+  .about-content h1 {
+    font-size: 22px;
+  }
+  .about-content p {
+    font-size: 10px;
+  }
+  /* registering */
+  .register-item {
+    width: 150px;
+    height: calc(1.20533333333 * 150px);
+    margin: 3px;
+  }
+  .register-container {
+    margin-top: -100px;
+  }
+  .register-content {
+    margin-top: 18px;
+    height: 138px;
+  }
+  .register-content h1 {
+    font-size: 18px;
+  }
+  .register-content p {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  .register-content .button {
+    margin-left: 12px;
+    height: 30px;
+  }
+  .register-content .button p {
+    margin-top: 8px;
+    padding: 0 2vw;
+    font-size: 12px;
+  }
 }
 
 /* PHONE */
 @media (max-width:520px) {
+  /* registering */
+  .register-item {
+    width: 120px;
+    height: calc(1.20533333333 * 120px);
+  }
+  .register-content {
+    margin-top: 18px;
+    height: 110px;
+  }
+  .register-content h1 {
+    font-size: 14px;
+  }
+  .register-content p {
+    margin-top: 8px;
+    font-size: 8px;
+  }
+  .register-content .button {
+    margin-left: 9px;
+    height: 26px;
+  }
+  .register-content .button p {
+    margin-top: 7px;
+    padding: 0 1.8vw;
+    font-size: 10px;
+  }
+
 }
 
 /* SMALL SMALL... */
