@@ -177,6 +177,11 @@
 
 /* PHONE */
 @media (max-width:520px) {
+  /* about */
+  .about-content {
+    width: 100%;
+    margin-left: 0;
+  }
   /* registering */
   .register-item {
     width: 120px;
@@ -185,14 +190,14 @@
   }
   .register-content {
     margin-top: 18px;
-    height: 105px;
+    height: 108px;
   }
   .register-content h1 {
     font-size: 14px;
   }
   .register-content p {
-    margin-top: 5px;
-    font-size: 8px;
+    margin-top: 0px;
+    font-size: 7px;
   }
   .register-content .button {
     margin-left: 9px;

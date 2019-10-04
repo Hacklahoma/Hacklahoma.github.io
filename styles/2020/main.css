@@ -164,6 +164,7 @@ nav {
   height: calc(1.20533333333 * 235px);
   position: relative;
   overflow: hidden;
+  vertical-align: bottom;
 }
 .register-item img {
   position: absolute;
@@ -202,6 +203,38 @@ nav {
 .register-content .button p {
   margin-top: 10px;
   font-size: 14px;
+}
+/* track content */
+#tracks {
+  margin-top: 200px;
+}
+#tracks .section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#tracks .section-background {
+  fill: #F0FAFF;
+}
+.track-content {
+  text-align: center;
+}
+.track-content h1 {
+  color: #F0FAFF;
+  text-shadow: 3px 2px 0px #327C99;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: #327C99;
+}
+.track-content p {
+  color: #327C99;
+  position: relative;
+  bottom: 0;
+}
+.tracks-container {
+  background: skyblue;
+  height: 150px;
+  margin-top: 10px;
+  opacity: .25;
+  margin-bottom: 30px;
 }
 /* button */
 .button {
