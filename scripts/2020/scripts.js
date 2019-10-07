@@ -1,21 +1,25 @@
 /* tab navigations NOT UPDATED FOR 2020 */
 // const homeTab = document.getElementById("home-tab");
-// const aboutTab = document.getElementById("about-tab");
-// const newestTab = document.getElementById("newest-tab");
-// const archiveTab = document.getElementById("archive-tab");
-// const contactTab = document.getElementById("contact-tab");
-//
+const aboutTab = document.getElementById("about-tab");
+const tracksTab = document.getElementById("tracks-tab");
+const faqTab = document.getElementById("faq-tab");
+const scheduleTab = document.getElementById("schedule-tab");
+const sponsorsTab = document.getElementById("sponsors-tab");
+const registerButton = document.getElementById("register-button");
+
 // homeTab.onclick = function() {jump("")};
-// aboutTab.onclick = function() {jump("about")};
-// newestTab.onclick = function() {jump("newest")};
-// archiveTab.onclick = function() {jump("archive")};
-// contactTab.onclick = function() {jump("contact")};
-//
-// function jump(h) {
-//   var url = location.href;
-//   location.href = "#" + h;
-//   history.replaceState(null,null,url);
-// }
+aboutTab.onclick = function() {jump("about")};
+tracksTab.onclick = function() {jump("tracks")};
+faqTab.onclick = function() {jump("faq")};
+scheduleTab.onclick = function() {jump("schedule")};
+sponsorsTab.onclick = function() {jump("sponsors")};
+registerButton.onclick = function() {jump("register")};
+
+function jump(h) {
+  var url = location.href;
+  location.href = "#" + h;
+  history.replaceState(null,null,url);
+}
 
 /* manages hamburger menu */
 const hamburger = document.querySelector(".hamburger");

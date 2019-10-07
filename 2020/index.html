@@ -37,7 +37,7 @@
       </a>
       <nav>
         <ul class="nav-links">
-          <li id="home-tab">Home</li>
+          <!-- <li id="home-tab">Home</li> -->
           <li id="about-tab">About</li>
           <li id="tracks-tab">Tracks</li>
           <li id="faq-tab">FAQ</li>
@@ -59,10 +59,10 @@
               Submit before Friday, January 17th at 11:59PM CST!
             </p>
             <div class="register">
-              <div style="background:#75C079;" class="button">
+              <div id="register-button" style="background:#75C079;" class="button">
                 <p>Register</p>
               </div>
-              <p class="learn-more">or <a href="">learn more</a>.</p>
+              <p class="learn-more">or <a style="cursor: pointer;" onclick="jump('about')">learn more</a>.</p>
             </div>
           </div>
         </div>
@@ -79,15 +79,15 @@
             <p>University of Oklahoma’s <a href="../">Hacklahoma</a> is known for organizing Oklahoma’s biggest hackathons. Anyone who has an interest in technology attends a hackathon to learn, build and share their creations in a relaxed and collaborative atmosphere. Even those with little to no experience are welcome to attend and learn!</p>
           </div>
         </div>
-        <div class="register-container">
+        <div id="register" class="register-container">
           <div class="register-item">
             <img src="../img/assets/2020/attendee-background.png">
             <div class="register-content">
               <h1>ATTENDEE</h1>
               <p>Participate in Oklahoma’s biggest hackathon and inspire new innovations.</p>
-              <div class="button">
+              <a href="https://hacklahoma.herokuapp.com"><div class="button">
                 <p>Register</p>
-              </div>
+              </div></a>
             </div>
           </div>
           <div class="register-item">
