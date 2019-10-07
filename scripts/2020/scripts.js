@@ -51,16 +51,19 @@ function faqClicked(id) {
       i.style.maxHeight = "0";
     });
     faqImgs.forEach(i => {
-      i.src = "../img/assets/2020/arrow-down.svg";
-      i.style.marginTop = "20px";
+      // i.src = "../img/assets/2020/arrow-down.svg";
+      i.style.transform = "rotate(0)"
+      i.style.marginTop = "18px";
     });
-    refImg.src = "../img/assets/2020/exit-button.svg";
-    refImg.style.marginTop = "15px";
+    // refImg.src = "../img/assets/2020/exit-button.svg";
+    // refImg.style.marginTop = "15px";
+    refImg.style.transform = "rotate(180deg)"
     ref.style.maxHeight = "200px";
   }
   else {
-    refImg.src = "../img/assets/2020/arrow-down.svg";
-    refImg.style.marginTop = "20px";
+    // refImg.src = "../img/assets/2020/arrow-down.svg";
+    // refImg.style.marginTop = "18px";
+    refImg.style.transform = "rotate(0)"
     ref.style.maxHeight = "0";
   }
 }

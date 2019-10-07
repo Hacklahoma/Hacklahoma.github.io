@@ -323,6 +323,7 @@ nav {
   margin-right: 20px;
   width: 13px;
   vertical-align: baseline;
+  transition: transform .5s;
 }
 .faq-item-q {
   font-size: 14px;
