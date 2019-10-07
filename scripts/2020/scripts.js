@@ -39,6 +39,32 @@ addEventListener("resize", () => {
   }
 });
 
+/* FAQ systems */
+const faqItems = document.querySelectorAll(".faq-item-a");
+const faqImgs = document.querySelectorAll(".faq-item-img");
+
+function faqClicked(id) {
+  var ref = document.getElementById(id);
+  var refImg = document.getElementById(id+"image");
+  if(ref.style.maxHeight != "200px") {
+    faqItems.forEach(i => {
+      i.style.maxHeight = "0";
+    });
+    faqImgs.forEach(i => {
+      i.src = "../img/assets/2020/arrow-down.svg";
+      i.style.marginTop = "20px";
+    });
+    refImg.src = "../img/assets/2020/exit-button.svg";
+    refImg.style.marginTop = "15px";
+    ref.style.maxHeight = "200px";
+  }
+  else {
+    refImg.src = "../img/assets/2020/arrow-down.svg";
+    refImg.style.marginTop = "20px";
+    ref.style.maxHeight = "0";
+  }
+}
+
 /* scroll reveal */
 AOS.init({
   once: true, // whether animation should happen only once - while scrolling down

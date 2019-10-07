@@ -9,7 +9,7 @@
                 <g id="Reveal" transform="translate(0.000000, 1067.000000)">
                     <g id="Closed-4" transform="translate(145.000000, 377.000000)">
                         <g id="Exit-Button" transform="translate(375.000000, 17.000000)">
-                            <circle id="Oval" fill="#D8D8D8" cx="12.5" cy="12.5" r="12.5"></circle>
+                            <circle id="Oval" fill="#22691A" cx="12.5" cy="12.5" r="12.5"></circle>
                             <polyline id="Path-2" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="9 8 12.5 12 16 8"></polyline>
                             <polyline id="Path-2" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(12.500000, 14.000000) rotate(180.000000) translate(-12.500000, -14.000000) " points="9 12 12.5 16 16 12"></polyline>
                         </g>
