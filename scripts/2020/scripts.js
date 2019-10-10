@@ -52,28 +52,40 @@ addEventListener("resize", () => {
 const faqItems = document.querySelectorAll(".faq-item-a");
 const faqImgs = document.querySelectorAll(".faq-item-img");
 
-function faqClicked(id) {
-  var ref = document.getElementById(id);
-  var refImg = document.getElementById(id+"image");
-  if(ref.style.maxHeight != "200px") {
+// for(var i = 0; i < faqItems.length; i++) {
+//   faqItems[i].addEventListener("click", () => {
+//     faqItems[i].style.opacity = 0;
+//   });
+// }
+
+
+function faqClicked(ref) {
+  var refChildren = ref.childNodes;
+  for (var i = 0; i < ref.childNodes.length; i++) {
+      if (ref.childNodes[i].className == "faq-item-img") {
+        var refImg = ref.childNodes[i];
+        continue;
+      }
+      if (ref.childNodes[i].className == "faq-item-a") {
+        var refAns = ref.childNodes[i];
+        continue;
+      }
+  }
+
+  if(refAns.style.maxHeight != "200px") {
     faqItems.forEach(i => {
       i.style.maxHeight = "0";
     });
     faqImgs.forEach(i => {
-      // i.src = "../img/assets/2020/arrow-down.svg";
       i.style.transform = "rotate(0)"
       i.style.marginTop = "18px";
     });
-    // refImg.src = "../img/assets/2020/exit-button.svg";
-    // refImg.style.marginTop = "15px";
     refImg.style.transform = "rotate(180deg)"
-    ref.style.maxHeight = "200px";
+    refAns.style.maxHeight = "200px";
   }
   else {
-    // refImg.src = "../img/assets/2020/arrow-down.svg";
-    // refImg.style.marginTop = "18px";
     refImg.style.transform = "rotate(0)"
-    ref.style.maxHeight = "0";
+    refAns.style.maxHeight = "0";
   }
 }
 
