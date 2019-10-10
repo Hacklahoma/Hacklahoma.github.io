@@ -16,9 +16,14 @@ sponsorsTab.onclick = function() {jump("sponsors")};
 registerButton.onclick = function() {jump("register")};
 
 function jump(h) {
-  var url = location.href;
-  location.href = "#" + h;
-  history.replaceState(null,null,url);
+  if(h == "top") {
+    scroll(0,0);
+  }
+  else {
+    var url = location.href;
+    location.href = "#" + h;
+    history.replaceState(null,null,url);
+  }
 }
 
 /* manages hamburger menu */

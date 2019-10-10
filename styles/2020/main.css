@@ -418,8 +418,60 @@ nav {
   background: #F2F7FF;
   height: 120px;
   width: 100vw;
+  position: relative;
+  color: #1A345F;
 }
-
+.footer-container {
+  width: 68%;
+  margin-left: 16%;
+  position: relative;
+  height: 120px;
+}
+.footer-left {
+  position: absolute;
+  height: 52%;
+  left: 0;
+  top: 24%;
+}
+.footer-left img {
+  height: 100%;
+  float: left;
+}
+.footer-left-content {
+  position: absolute;
+  left: 100px;
+}
+.footer-left-content h1 {
+  font-family: 'Bebas';
+  letter-spacing: 1px;
+  font-size: 24px;
+}
+.footer-left-content p {
+  font-size: 10.4px;
+}
+.footer-social {
+  height: 14px;
+  margin-top: 5px;
+  position: relative;
+}
+.footer-social img {
+  margin-right: 20px;
+}
+.footer-right {
+  margin-top: 20px;
+  line-height: 20px;
+  float: right;
+  font-size: 14px;
+}
+.footer-right p:hover {
+  text-decoration: underline;
+  color: #386ABE;
+  cursor: pointer;
+}
+.footer-right a {
+  font-weight: normal;
+  color: #1A345F;
+}
 /* button */
 .button {
   display: inline-block;
