@@ -9,6 +9,11 @@
   font-weight: normal;
 }
 @font-face {
+  font-family: 'Avenir';
+  src: url('../../fonts/Avenir/AvenirLTStd-Black.otf');
+  font-weight: 800;
+}
+@font-face {
   font-family: 'Bebas';
   src: url('../../fonts/Bebas/Bebas-Regular.ttf');
 }
@@ -136,7 +141,7 @@ nav {
   text-shadow: 2px 1px 3px rgba(0,0,0, .1);
   font-size: 1.4vw;
   letter-spacing: .07vw;
-  font-weight: bold;
+  font-weight: 800;
   color: white;
   margin: 0 0 0 0;
   padding: 0 1.35vw;
