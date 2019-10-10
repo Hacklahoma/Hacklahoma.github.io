@@ -49,18 +49,12 @@ addEventListener("resize", () => {
 });
 
 /* FAQ systems */
-const faqItems = document.querySelectorAll(".faq-item-a");
+const faqAnswers = document.querySelectorAll(".faq-item-a");
 const faqImgs = document.querySelectorAll(".faq-item-img");
-
-// for(var i = 0; i < faqItems.length; i++) {
-//   faqItems[i].addEventListener("click", () => {
-//     faqItems[i].style.opacity = 0;
-//   });
-// }
-
 
 function faqClicked(ref) {
   var refChildren = ref.childNodes;
+  // getting references from children
   for (var i = 0; i < ref.childNodes.length; i++) {
       if (ref.childNodes[i].className == "faq-item-img") {
         var refImg = ref.childNodes[i];
@@ -71,9 +65,9 @@ function faqClicked(ref) {
         continue;
       }
   }
-
+  // setting values
   if(refAns.style.maxHeight != "200px") {
-    faqItems.forEach(i => {
+    faqAnswers.forEach(i => {
       i.style.maxHeight = "0";
     });
     faqImgs.forEach(i => {
@@ -86,6 +80,29 @@ function faqClicked(ref) {
   else {
     refImg.style.transform = "rotate(0)"
     refAns.style.maxHeight = "0";
+  }
+}
+
+// assign to columns
+const faqColumns = document.querySelectorAll(".faq-column");
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqUpdate();
+window.addEventListener("resize", faqUpdate);
+function faqUpdate() {
+  var columns;
+  if(window.innerWidth > 907) {
+    columns = 3;
+  }
+  else if((window.innerWidth >= 600) || (window.innherWidth <= 907)) {
+    columns = 2;
+  }
+  else {
+    columns = 1;
+  }
+
+  for(var i = 0; i < faqItems.length; i++) {
+    faqColumns[i%columns].appendChild(faqItems[i]);
   }
 }
 
