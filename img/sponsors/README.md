@@ -1,0 +1,1 @@
+All logos must be 2:1 and clear background.

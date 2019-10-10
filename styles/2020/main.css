@@ -407,10 +407,15 @@ nav {
   color: #373737;
 }
 .sponsors-container {
-  height: 400px;
   margin-top: 10px;
-  opacity: .1;
+  opacity: 1;
   margin-bottom: 30px;
+  position: relative;
+}
+.sponsors-container img {
+  width: 25%;
+  max-width: 200px;
+  margin: 0 10px;
 }
 /* footer */
 #footer {
