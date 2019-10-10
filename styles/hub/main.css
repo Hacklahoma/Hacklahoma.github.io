@@ -505,6 +505,7 @@ nav {
 
 /* background svgs */
 .background-container {
+  user-select: none;
   position: absolute;
   width: 100vw;
   height: 46vw;
