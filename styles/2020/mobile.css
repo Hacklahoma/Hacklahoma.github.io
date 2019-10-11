@@ -173,6 +173,13 @@
     padding: 0 2vw;
     font-size: 12px;
   }
+  /* tracks */
+  .track-item {
+    margin: 0 10px;
+  }
+  .track-item img {
+    height: 100px;
+  }
   /* footer */
   .footer-container {
     width: 90%;
@@ -183,30 +190,17 @@
     position: absolute;
     width: 100%;
   }
-  .bheader {
-    top: 0;
-  }
   .bheader img {
-    position: absolute;
-    top: 150px;
     right: 0;
     left: 0;
     opacity: .7;
     margin: auto;
   }
-  .bright {
-    margin-top: 150px;
-  }
   .bright img {
-    position: absolute;
     right: 10px;
     width: 100px;
   }
-  .bleft {
-    margin-top: 150px;
-  }
   .bleft img {
-    position: absolute;
     left: 10px;
     width: 100px;
   }

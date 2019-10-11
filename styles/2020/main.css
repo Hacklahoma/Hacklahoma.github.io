@@ -44,7 +44,7 @@ a:hover {
 }
 .bheader img {
   position: absolute;
-  top: 150px;
+  top: 120px;
   right: 20%;
   width: 300px;
 }
@@ -269,7 +269,7 @@ nav {
 .track-item {
   position: relative;
   display: inline-block;
-  margin: 0 30px;
+  margin: 0 1.8vw;
 }
 .track-item img {
   height: 150px;
