@@ -40,58 +40,31 @@ a:hover {
 
 .bheader {
   top: 0;
-  height: 600px;
+  width: 100%;
 }
 .bheader img {
   position: absolute;
   top: 150px;
   right: 20%;
-  height: 300px;
+  width: 300px;
 }
 
-.babout {
+.bright {
   margin-top: 150px;
 }
-.babout img {
+.bright img {
   position: absolute;
   right: 10%;
-  height: 150px;
+  width: 150px;
 }
 
-.btracks {
+.bleft {
   margin-top: 150px;
 }
-.btracks img {
+.bleft img {
   position: absolute;
   left: 10%;
-  height: 150px;
-}
-
-.bfaq {
-  margin-top: 150px;
-}
-.bfaq img {
-  position: absolute;
-  right: 10%;
-  height: 150px;
-}
-
-.bschedule {
-  margin-top: 150px;
-}
-.bschedule img {
-  position: absolute;
-  left: 10%;
-  height: 150px;
-}
-
-.bsponsors {
-  margin-top: 150px;
-}
-.bsponsors img {
-  position: absolute;
-  right: 10%;
-  height: 150px;
+  width: 150px;
 }
 
 /* nav */
