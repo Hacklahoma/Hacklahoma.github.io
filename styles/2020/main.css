@@ -290,11 +290,16 @@ nav {
   color: #327C99;
 }
 .tracks-container {
-  background: skyblue;
-  height: 150px;
-  margin-top: 10px;
-  opacity: .25;
+  margin-top: 20px;
   margin-bottom: 30px;
+}
+.track-item {
+  position: relative;
+  display: inline-block;
+  margin: 0 30px;
+}
+.track-item img {
+  height: 150px;
 }
 /* faq content */
 #faq {
