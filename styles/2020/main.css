@@ -244,6 +244,7 @@ nav {
 }
 #tracks .section {
   margin-top: 50px;
+  width: 100%;
   margin-bottom: 50px;
 }
 #tracks .section-background {
@@ -264,6 +265,7 @@ nav {
 }
 .tracks-container {
   margin-top: 20px;
+  width: 100%;
   margin-bottom: 30px;
 }
 .track-item {
