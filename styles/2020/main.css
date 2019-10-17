@@ -272,6 +272,24 @@ nav {
   position: relative;
   display: inline-block;
   margin: 0 1.8vw;
+  cursor: pointer;
+  color: #327C99;
+  opacity: .8;
+}
+.track-item:hover {
+  opacity: 1;
+  /* text-decoration: underline;
+  text-decoration-color: #327C99; */
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: #327C99;
+  color: #fff !important;
+  text-shadow: 1px 1px 0px #327C99;
+}
+.track-item h3 {
+  font-size: 16px;
+  margin: 20px 0;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 .track-item img {
   height: 150px;
@@ -345,19 +363,19 @@ nav {
   display: inline-block;
   border: 1px solid #22691A;
   box-shadow: 3px 2px #22691A;
-  border-radius: 12px;
-  margin: 5px 8px;
-  width: 250px;
+  border-radius: 16px;
+  margin: 8px 8px;
+  width: 260px;
   vertical-align: top;
   background: white;
   color: #22691A;
   cursor: pointer;
 }
 .faq-item:nth-child(odd) {
-  transform: skewY(.5deg);
+  transform: skewY(.3deg);
 }
 .faq-item:nth-child(even) {
-  transform: skewY(-.5deg);
+  transform: skewY(-.3deg);
 }
 .faq-item img {
   float: right;
@@ -371,7 +389,7 @@ nav {
   font-size: 14px;
   float: left;
   text-align: left;
-  padding: 12px 0;
+  padding: 11px 0;
   margin-top: 2px;
   margin-left: 15px;
 }
