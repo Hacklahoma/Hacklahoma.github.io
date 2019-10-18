@@ -1,21 +1,21 @@
 @font-face {
   font-family: 'Avenir';
-  src: url('../../fonts/Avenir/AvenirLTStd-Medium.woff');
+  src: url('../fonts/Avenir/AvenirLTStd-Medium.woff');
   font-weight: bold;
 }
 @font-face {
   font-family: 'Avenir';
-  src: url('../../fonts/Avenir/AvenirLTStd-Light.woff');
+  src: url('../fonts/Avenir/AvenirLTStd-Light.woff');
   font-weight: normal;
 }
 @font-face {
   font-family: 'Avenir';
-  src: url('../../fonts/Avenir/AvenirLTStd-Black.otf');
+  src: url('../fonts/Avenir/AvenirLTStd-Black.otf');
   font-weight: 800;
 }
 @font-face {
   font-family: 'Bebas';
-  src: url('../../fonts/Bebas/Bebas-Regular.ttf');
+  src: url('../fonts/Bebas/Bebas-Regular.ttf');
 }
 * {
   margin: 0;
@@ -312,7 +312,7 @@ nav {
   font-size: 18px;
 }
 #team-button img {
-  src: url("../../img/assets/hub/exit-button.svg");
+  src: url("../img/assets/exit-button.svg");
   width: 15px;
   position: absolute;
   right: 25px;
@@ -357,7 +357,7 @@ nav {
   width: 180px;
   border-radius: 8px;
   float: right;
-  background: url("../../img/assets/hub/lined-paper.jpg");
+  background: url("../img/assets/lined-paper.jpg");
   background-size: cover;
 }
 .newest-card p {
@@ -407,7 +407,7 @@ nav {
   display: inline-block;
 }
 #year2019 {
-  background: url("../../img/assets/hub/2019-background.png");
+  background: url("../img/assets/2019-background.png");
   background-size: cover;
 }
 #year2018 {
@@ -487,7 +487,7 @@ nav {
   height: 100%;
 }
 .bottom-container {
-  background: url("../../img/assets/hub/grass.svg");
+  background: url("../img/assets/grass.svg");
   /* background: red; */
   background-size: cover;
   bottom: 0;

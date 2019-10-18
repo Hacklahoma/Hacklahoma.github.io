@@ -90,7 +90,7 @@ function newest() {
     participants.innerHTML = participants2020;
     projects.innerHTML = projects2020;
     sponsors.innerHTML = sponsors2020;
-    website.href = year.innerHTML;
+    website.href = "https://" + year.innerHTML + ".hacklahoma.org";
     website.target = "_blank";
     // archive.style.height = "300px"; for meet team
     archive.style.height = "235px";
@@ -105,7 +105,7 @@ function newest() {
       participants.innerHTML = participants2020;
       projects.innerHTML = projects2020;
       sponsors.innerHTML = sponsors2020;
-      website.href = year.innerHTML;
+      website.href = "https://" + year.innerHTML + ".hacklahoma.org";
       website.target = "_blank";
     }, 333);
     setTimeout(function (){
@@ -123,7 +123,7 @@ function year2019() {
     participants.innerHTML = participants2019;
     projects.innerHTML = projects2019;
     sponsors.innerHTML = sponsors2019;
-    website.href = year.innerHTML;
+    website.href = "https://" + year.innerHTML + ".hacklahoma.org";
     website.target = "_blank";
     website.getElementsByClassName("button")[0].style.cursor = "pointer";
     // archive.style.height = "300px"; for meet team
@@ -138,7 +138,7 @@ function year2019() {
       participants.innerHTML = participants2019;
       projects.innerHTML = projects2019;
       sponsors.innerHTML = sponsors2019;
-      website.href = year.innerHTML;
+      website.href = "https://" + year.innerHTML + ".hacklahoma.org";
       website.target = "_blank";
       website.getElementsByClassName("button")[0].style.cursor = "pointer";
     }, 333);
@@ -156,7 +156,7 @@ function year2018() {
     participants.innerHTML = participants2018;
     projects.innerHTML = projects2018;
     sponsors.innerHTML = sponsors2018;
-    website.href = year.innerHTML;
+    website.href = "https://" + year.innerHTML + ".hacklahoma.org";
     website.target = "_blank";
     website.getElementsByClassName("button")[0].style.cursor = "pointer";
     // archive.style.height = "300px"; for meet team
@@ -171,7 +171,7 @@ function year2018() {
       participants.innerHTML = participants2018;
       projects.innerHTML = projects2018;
       sponsors.innerHTML = sponsors2018;
-      website.href = year.innerHTML;
+      website.href = "https://" + year.innerHTML + ".hacklahoma.org";
       website.target = "_blank";
       website.getElementsByClassName("button")[0].style.cursor = "pointer";
     }, 333);
