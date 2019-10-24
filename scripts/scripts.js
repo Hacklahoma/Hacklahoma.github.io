@@ -57,7 +57,7 @@ addEventListener("resize", () => {
 
 
 /* archive functions */
-const participants2020 = "~350";
+const participants2020 = "~400";
 const projects2020 = "~100";
 const sponsors2020 = "~30";
 const participants2019 = "217";
