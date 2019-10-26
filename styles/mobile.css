@@ -269,10 +269,18 @@
     font-size: .9em;
   }
   .archive-info-container .head #year {
-    font-size: 4em;
+    font-size: 3.2em;
   }
   .archive-info-container .head {
     height: 50px;
+  }
+  .archive-info-container .button {
+    height: 40px;
+  }
+  .archive-info-container .button p {
+    font-size: 1.2em;
+    padding: 0 15px;
+    margin-top: 9px;
   }
   #team-button {
     width: 100%;
@@ -346,6 +354,15 @@
     height: 40%;
     top: 30%;
   }
+  .archive-info-container .button {
+    height: 35px;
+  }
+  .archive-info-container .button p {
+    font-size: 1em;
+    letter-spacing: auto;
+    padding: 0 10px;
+    margin-top: 9px;
+  }
 }
 
 /* SMALL SMALL... */
@@ -353,6 +370,15 @@
   .content-container {
     margin-left: 5%;
     width: 90%;
+  }
+  .archive-info-container .button {
+    height: 32px;
+  }
+  .archive-info-container .button p {
+    font-size: .8em;
+    letter-spacing: auto;
+    padding: 0 8px;
+    margin-top: 9px;
   }
   .footer {
     font-size: .4em;
