@@ -77,7 +77,7 @@ nav {
 .nav-links li {
   color: black;
   text-decoration: none;
-  font-size: 12px;
+  font-size: .8em;
   letter-spacing: 1px;
   cursor: pointer;
 }
@@ -108,7 +108,7 @@ nav {
 }
 .subtitle {
   font-size: 1.75vw;
-  font-weight: 400;
+  font-weight: bold;
   letter-spacing: .07vw;
   margin: 0;
   left: .16vw;
@@ -167,8 +167,12 @@ nav {
   max-width: 500px;
   width: 54%;
 }
+.about-info h1 {
+  font-size: 1.7em;
+  font-weight: 800;
+}
 .about-info p {
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 .video-container {
   display: inline-block;
@@ -196,7 +200,7 @@ nav {
   background: grey;
   cursor: pointer;
   user-select: none;
-  box-shadow: 2px 2px 15px -1px rgba(0, 0, 0, .18);
+  box-shadow: 2px 2px 15px -1px rgba(0, 0, 0, .13);
   transition: margin-top .25s ease;
 }
 .archive-item:hover {
@@ -211,7 +215,9 @@ nav {
   right: 0;
   bottom: 5%;
   color: white;
-  font-weight: bold;
+  font-weight: 800;
+  font-size: 1.2em;
+  letter-spacing: 2px;
 }
 .archive-item img {
   position: absolute;
@@ -264,7 +270,7 @@ nav {
   border: 1px solid transparent;
   border-radius: 10px;
   background: #fcfcfc;
-  box-shadow: 2px 2px 15px -1px rgba(0, 0, 0, .18);
+  box-shadow: 2px 2px 15px -1px rgba(0, 0, 0, .13);
   transition-property: height, opacity;
   transition: .3s;
 }
@@ -281,7 +287,7 @@ nav {
   margin-bottom: 35px;
 }
 .archive-info-container .head #year {
-  font-size: 60px;
+  font-size: 4em;
   height: 60px;
   display: inline-block;
   position: absolute;
@@ -309,7 +315,7 @@ nav {
   top: 15px;
   left: 22px;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.2em;
 }
 #team-button img {
   src: url("../img/assets/exit-button.svg");
@@ -340,8 +346,8 @@ nav {
 #newest-container {
   float: right;
   margin: 0;
-  margin-right: 10%;
-  width: 80%;
+  /* margin-right: 0%; */
+  width: 100%;
   height: 250px;
   position: relative;
   margin-bottom: 25px;
@@ -349,34 +355,42 @@ nav {
 .newest-text {
   position: absolute;
   top: 50%;
+  left: 15%;
   transform: translateY(-50%);
   display: inline-block;
 }
 .newest-card {
+  position: relative;
   height: 250px;
-  width: 180px;
+  width: 100%;
+  z-index: -1;
   border-radius: 8px;
-  float: right;
   /* background-color: rgb(244, 219, 144); */
   background-color: white;
   background: url("../img/assets/2020-background.png");
   background-size: cover;
-  background-position: center;
+  background-position: right;
   /* background-size: 150px; */
 }
-.newest-card p {
+.newest-card:hover {
+  margin-top: inherit;
+  transition: none;
+}
+/* .newest-card p {
   display: inline-block;
   text-align: center;
   color: #25283d;
-}
+} */
 .newest-card img {
   position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  top: 15%;
-  height: 50%;
+  /* right: 0; */
+  /* right: 0; */
+  margin:0;
+  right: 15%;
+  left: auto;
+  /* border: 1px solid black; */
+  top: 20%;
+  height: 60%;
   pointer-events: none;
 }
 .newest-text .newest-title {
@@ -423,6 +437,7 @@ nav {
   text-align: center;
 }
 .contact-text h1 {
+  font-size: 1.7em;
   text-align: left;
 }
 .contact-text a {
@@ -431,6 +446,7 @@ nav {
   font-weight: bold;
 }
 .contact-text {
+  font-size: 1.2em;
   text-align: left;
   margin-top: 50px;
   display: inline-block;
@@ -460,7 +476,7 @@ nav {
   width: 100%;
   margin-bottom: 10px;
   color: white;
-  font-size: 10px;
+  font-size: .6em;
   opacity: .9;
   margin-top: 70px;
 }

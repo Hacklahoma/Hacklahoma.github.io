@@ -17,13 +17,13 @@
     top: 173px;
   }
   .title {
-    font-size: 4.68em;
+    font-size: 5.2em;
     letter-spacing: 1px;
   }
   .subtitle {
-    font-size: 1.57em;
+    font-size: 1.65em;
     letter-spacing: 1.2px;
-    top: 86px;
+    top: 92px;
     left: 3px;
   }
   /* buttons */
@@ -58,14 +58,18 @@
   }
   /* newest archive */
   .newest-text .newest-title {
-    font-size: 72px;
+    font-size: 4.8em;
     letter-spacing: 1px;
   }
+  .newest-card img {
+    height: 70%;
+    top: 15%;
+  }
   .newest-text .newest-subtitle {
-    font-size: 31.6px;
+    font-size: 2.1em;
   }
   .newest-text .newest-subtitle span {
-    font-size: 43.2px;
+    font-size: 1.3em;
   }
   .newest-text .highlight {
     top: 108px;
@@ -84,30 +88,35 @@
   .about-info p {
     font-size: .98em;
   }
-  /* .background-container svg:nth-child(3) {
-    margin-top: 610px;
-  } */
   /* archive */
   .archive-item {
     height: 220px;
   }
   #newest-container {
-    margin-right: 5%;
-    width: 90%;
+    width: 100%;
     height: 220px;
+  }
+  .newest-card img {
+    right: 10%;
+  }
+  .newest-text {
+    left: 10%;
   }
   #archive-info {
     margin-top: 50px;
   }
   .stats-item h1 {
-    font-size: 20px;
+    font-size: 1.3em;
   }
   .stats-item p {
-    font-size: 16px;
+    font-size: 1em;
   }
   #bottom-plane {
     width: 300px;
     margin-left: calc(104% - 300px);
+  }
+  .contact-text {
+    font-size: 1.1em;
   }
 }
 
@@ -172,7 +181,7 @@
   }
   .nav-links li {
     float: right;
-    font-size: 14px;
+    font-size: 1em;
     margin: 0;
   }
   /* about */
@@ -257,10 +266,10 @@
     height: 150px;
   }
   .archive-item p {
-    font-size: 12px;
+    font-size: .9em;
   }
   .archive-info-container .head #year {
-    font-size: 50px;
+    font-size: 4em;
   }
   .archive-info-container .head {
     height: 50px;
@@ -274,14 +283,28 @@
     height: 190px; /* must change card height as well */
   }
   .newest-text .newest-title {
-    font-size: 36px;
+    font-size: 2.3em;
     letter-spacing: -.2px;
   }
+  .newest-text .button {
+    height: 20px;
+    top: -3px;
+    width: 83px;
+    left: 5px;
+  }
+  .newest-text .button p {
+    margin-left: -2px;
+    margin-top: 4px;
+    width: 83px;
+  }
+  .newest-text {
+    left: 8%;
+  }
   .newest-text .newest-subtitle {
-    font-size: 16px;
+    font-size: 1.2em;
   }
   .newest-text .newest-subtitle span {
-    font-size: 22px;
+    font-size: 1.15em;
   }
   .newest-text .highlight {
     top: 54px;
@@ -291,20 +314,24 @@
   }
   .newest-card {
     height: 190px;/* must change container height as well */
-    width: 30vw;
   }
   .newest-card h1 {
     top: 50px;
     font-size: 4vw;
   }
+  .newest-card img {
+    height: 50%;
+    top: 25%;
+    right: 10%;
+  }
   #archive-info {
     margin-top: 20px;
   }
   .footer {
-    font-size: 8px;
+    font-size: .5em;
   }
   .contact-text {
-    font-size: 14px;
+    font-size: .9em;
   }
 
 }
@@ -315,6 +342,10 @@
     margin-left: 10%;
     width: 80%;
   }
+  .newest-card img {
+    height: 40%;
+    top: 30%;
+  }
 }
 
 /* SMALL SMALL... */
@@ -324,6 +355,6 @@
     width: 90%;
   }
   .footer {
-    font-size: 6px;
+    font-size: .4em;
   }
 }

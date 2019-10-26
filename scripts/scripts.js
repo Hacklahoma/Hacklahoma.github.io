@@ -73,14 +73,14 @@ const participants = document.getElementById("participants");
 const projects = document.getElementById("projects");
 const sponsors = document.getElementById("sponsors");
 const newestButton = document.getElementById("newest-button");
-const newestCard = document.getElementById("newest-card");
+// const newestCard = document.getElementById("newest-card");
 const card2019 = document.getElementById("year2019");
 const card2018 = document.getElementById("year2018");
 const website = document.getElementById("archive-website");
 var opened = "";
 
 newestButton.onclick = function() {newest()};
-newestCard.onclick = function() {newest()};
+// newestCard.onclick = function() {newest()};
 card2019.onclick = function() {year2019()};
 card2018.onclick = function() {year2018()};
 
